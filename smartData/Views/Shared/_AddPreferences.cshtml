@@ -1,0 +1,33 @@
+﻿@model Core.Domain.smPreference
+
+@{
+    ViewBag.Title = "Add Preference";
+    Layout = null;
+}
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+<script src="~/Scripts/User/Add_Preference.js"></script>
+
+@using (Ajax.BeginForm("AddPreference", "Preference", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, OnSuccess = "AddPreferenceSuccess(data)" }, new { @id = "AddPreference" }))
+{
+    @Html.HiddenFor(m => m.PreferenceId)
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header  modal-header-custom">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title modal-title-custom">Add Preference</h4>
+            </div>
+            <div class="modal-body">
+                <div class="social-media-wrap clearfix">
+                    @Html.TextBoxFor(m => m.Preference, new { @placeholder = "Add Preference" })
+                    @Html.ValidationMessageFor(m => m.Preference)
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancel" tabindex="900">Close</button>
+                <button type="submit" class="btn btn-circlr" id="btnPreference" tabindex="800">Add</button>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,308 @@
+﻿@model smartData.Models.User.UserDashboardModel
+
+@{
+    ViewBag.Title = "::Social Media::";
+    Layout = "~/Views/Shared/_UserInnerLayout.cshtml";
+}
+
+
+<script src="~/Scripts/User/GetSocialMediaList.js"></script>
+<script type="text/javascript">
+ 
+    $(document).ready(function () {
+        // SRohit
+        $('#facebookdiv').click(function () {
+           
+           
+            if ($("#facebookdiv").find('a').length == 0) {
+              
+                BootstrapDialog.alert('You can not add  more than 1 account.');
+            }          
+        });
+        $('#linkeddiv').click(function () {
+          
+
+          
+            if ($("#linkeddiv").find('a').length == 0) {
+                BootstrapDialog.alert('You can not add more than 1 account.');
+
+            }
+
+        });
+        $('#twitterDiv').click(function () {
+                   
+            
+            if ($("#twitterDiv").find('a').length == 0) {
+                BootstrapDialog.alert('You can not add more than 1 account.');
+
+            }
+        });
+
+        //SRohit
+    })
+@functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+}
+    }
+
+    // Antiforgery Token
+    var token = '@TokenHeaderValue()';
+    // alert(token);
+    var headers = {};
+    headers["RequestVerificationToken"] = token;
+
+    $(document).ready(function () {
+        $(".bootstrap-table").css("margin-top", "-50px");
+    })
+
+</script>
+
+
+@*<<<<<<< .mine
+
+    <section class="wrapper scrollable tb-filter-static ">
+        <h2 class="social_media">Manage Social Media</h2>
+        <div class="white_bg">
+            <div class="row socialmediaall socialmediaall_manage ">
+                <div class="col-md-7 col-sm-6 col-xs-12">
+                    <h3 class="commohead">Add Social media account for which you want to publish this post</h3>
+                </div>
+
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    @if (Model.FacebookProfile.Count > 0)
+    =======*@
+
+<section class="wrapper scrollable tb-filter-static ">
+    <h2 class="social_media">Manage Social Media</h2>
+    <div class="white_bg">
+        <div class="row socialmediaall socialmediaall_manage ">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <h3 class="commohead">Click social media icons to add your account</h3>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                @if (Model.FacebookProfile.Count > 0)
+                {
+                    foreach (var fbProfile in Model.FacebookProfile)
+                    {
+
+                        if (fbProfile.IsAccountActive == true)
+                        {
+                            <div class="box_top_prtclr" id="facebookdiv" title="Added Facebook Account">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </div>
+                        }
+                        else if (fbProfile.IsAccountActive == false)
+                        {
+                            <div class="box_top_prtclr" id="facebookdiv">
+                                <a href="@Url.Action("AddFacebookAuth", "Home")" title="Add Facebook Account">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        }
+
+
+                    }
+                }
+
+
+                else
+                {
+                    <div class="box_top_prtclr" id="facebookdiv">
+                        <a href="@Url.Action("AddFacebookAuth", "Home")" title="Add Facebook Account">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                }
+
+                @if (Model.LinkedInProfile.Count > 0)
+{
+    {
+        foreach (var liProfile in Model.LinkedInProfile)
+        {
+            if (liProfile.IsAccountActive == true)
+            {
+                <div class="box_top_prtclr linkedin_bg" id="linkeddiv" title="Added LinkedIn Account">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+
+            }
+            else if (liProfile.IsAccountActive == false)
+            {
+                <div id="linkeddiv" class="box_top_prtclr  linkedin_bg" title="Add LinkedIn Account">
+                    <a href="@Url.Action("AddLinkedinAuth","Home")">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            }
+        }
+    }
+
+}
+
+                else
+                {
+                    <div id="linkeddiv" class="box_top_prtclr linkedin_bg">
+                        <a href="@Url.Action("AddLinkedinAuth", "Home")" title="Add LinkedIn Account">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                }
+
+
+                @if (Model.TwitterProfile.Count > 0)
+{
+    {
+        foreach (var twProfile in Model.TwitterProfile)
+        {
+            if (twProfile.IsAccountActive == true)
+            {
+                <div id="twitterDiv" class="box_top_prtclr twitter_bg" title="Added Twitter Account">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+            }
+            else if (twProfile.IsAccountActive == false)
+            {
+                <div id="twitterDiv" class="box_top_prtclr twitter_bg" title="Add Twitter Account">
+                    <a href="@Url.Action("AddTwitterAuth","Home")">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </div>
+            }
+        }
+    }
+}
+                else
+                {
+                    <div id="twitterDiv" class="box_top_prtclr twitter_bg" title="Add Twitter Account">
+                        <a href="@Url.Action("AddTwitterAuth","Home")">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                }
+
+
+
+                @*@if (Model.GooglePlusProfile.Count > 0)
+                    {
+                        foreach (var gpProfile in Model.GooglePlusProfile)
+                        {
+                            if (gpProfile.IsAccountActive == true )
+                            {
+                                <div class="box_top_prtclr googleplus_bg" title="Added Google Plus Account">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                </div>
+                            }
+                            else if (gpProfile.IsAccountActive == false )
+                            {
+
+                                <div class="box_top_prtclr googleplus_bg" title="Add Google Plus Account">
+                                    <a href="@Url.Action("AddGooglePlusAuth","Home")">
+                                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            }
+                        }
+                    }
+                    else
+                    {
+                        <div class="box_top_prtclr googleplus_bg" title="Add Google Plus Account">
+                            <a href="@Url.Action("AddGooglePlusAuth","Home")">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    }*@
+            </div>
+        </div>
+
+        @*<div id="custom-toolbar" class="filter-sction">
+
+            <div class="row">
+                @*<div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="firstName" placeholder="First Name" type="text"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="lastName" placeholder="Last Name" type="text"></div>
+                    <div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="emailId" placeholder="Email Id" type="text"></div>*@
+        @*<div class="col-md-3 col-sm-6 col-xs-6">
+            <button class="btn btn-success greenbtn" id="btnFilter" type="button" value="Filter" name="btnFilter" style="display:none">Filter</button>*@
+        @*<div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="phoneNumber" placeholder="Phone Number" type="text"></div>*@
+        @*</div>
+            </div>
+
+            <div class="row mrgntp">
+                <div class="col-sm-12">*@
+
+
+        @*<button class="btn btn-info btn-sm reset-filter btn-circlr" disabled id="resetBtn">Reset</button>
+            <button type="button" class="btn btn-primary btn-sm add-btn btn-circlr" data-toggle="modal" data-target="#addStaff">Add</button>*@
+        @*</div>
+                </div>
+            </div>*@
+
+        <button class="btn btn-success greenbtn" id="btnFilter" type="button" value="Filter" name="btnFilter" style="display:none">Filter</button>
+        <table class="table table-hover" data-toolbar="#post" data-show-columns="true" data-show-filter="true" data-click-to-select="true" id="grid" style=" margin-top: -58px;">
+            <thead>
+                <tr>
+                    <th data-field="FirstName">First Name</th>
+                    <th data-field="LastName">Last Name</th>
+                    <th data-field="ClinicStaffRoleName">Email Id</th>
+                    <th data-field="EmailId">Photo</th>
+
+                </tr>
+            </thead>
+        </table>
+    
+    </div>
+
+</section>
+
+<div class="modal" id="setPereference" tabindex="-1" role="dialog" aria-labelledby="setPereference">
+    @Html.Partial("_SetFaceBookPreference")
+</div>
+
+@*<h3 class="pageHeading"><span class="fa fa-users"></span> Manage Social Media Accounts </h3>*@
+@*<div id="custom-toolbar" class="filter-sction">
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="firstName" placeholder="First Name" type="text"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="lastName" placeholder="Last Name" type="text"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="emailId" placeholder="Email Id" type="text"></div>
+
+        </div>
+
+        <div class="row mrgntp">
+            <div class="col-sm-12">
+                <button class="btn btn-success greenbtn" id="btnFilter" type="button" value="Filter" name="btnFilter">Filter</button>
+                <button class="btn btn-info btn-sm reset-filter btn-circlr" disabled id="resetBtn">Reset</button>
+                <button type="button" class="btn btn-primary btn-sm add-btn btn-circlr" data-toggle="modal" data-target="#addStaff">Add</button>
+            </div>
+        </div>
+    </div>*@
+
+<input type="hidden" id="TokenValue" value='@TokenHeaderValue()' />
+<input type="hidden" id="currentUserId" value='@smartData.Common.SessionManager.LoggedInUser.UserID' />
+
+@*<input type="hidden" id="clinicId" value='@Model.ClinicId' />*@
+
+
+<style>
+    .bootstrap-table {
+        padding: 0 20px;
+    }
+
+    .socialmediaall.socialmediaall_manage {
+        box-shadow: none;
+    }
+
+    .bars.pull-left {
+        margin-bottom: 0 !important;
+        margin-top: 0;
+    }
+
+    .socialmediaall.socialmediaall_manage {
+        padding: 23px 5px 15px;
+    }
+</style>
+

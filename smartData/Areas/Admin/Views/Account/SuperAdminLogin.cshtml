@@ -1,0 +1,166 @@
+﻿@model smartData.Models.LoginViewModel
+
+@{
+    ViewBag.Title = "::Welcome::";
+    Layout = "~/Views/Shared/_UserOuterLayout.cshtml";
+}
+
+@section CSSLinks
+    {
+
+}
+
+
+<script src="~/Scripts/Jscripts/confirm.js"></script>
+<link href="~/Content/confirm.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        debugger;
+        var msg = $("#message").val();
+        if (msg == "success") {
+            $.confirm({
+                title: 'Congratulations!',
+                content: 'Your account has been registered please login to continue.',
+                type: 'green',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+        if (msg == "error") {
+            $.confirm({
+                title: 'Encountered an error!',
+                content: 'Something went wrong.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+
+        if (msg == "successReset") {
+            $.confirm({
+                title: 'Congratulations!',
+                content: 'The reset password link has been sent to your email.',
+                type: 'green',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+        if (msg == "errorInvalidUser") {
+            $.confirm({
+                title: 'Error!',
+                content: 'Invalid Username or Password.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+    })
+</script>
+<input type="hidden" value="@TempData["Message"]" id="message" /> 
+
+
+@System.Web.Optimization.Styles.Render("~/bundles/bootstrapCss")
+<style>
+    .modal-dialog {
+        margin-left: -300px;
+    }
+
+    .modal-header {
+        color: #ffffff;
+        background-color: #3276b1;
+        border-color: #285e8e;
+    }
+
+    body {
+        padding-top: 0px !important;
+    }
+</style>
+
+@if (Model != null)
+{
+    <input type="hidden" value="@Model.user" id="hdnuser" />
+}
+
+<section class="main-container fit-assemnt-step-first thankyoubg">
+    <section class="login-box" id="loginForm">
+        <h2> <img src="@Url.Content("~/Images/logo.png")"> </h2>
+        @*@{
+            <p style="padding-left:30px;">@TempData["Message"]</p>
+        }*@
+
+        @using (Html.BeginForm("SuperAdminLogin", "Account", FormMethod.Post, new { @Area = "Admin", @class = "" }))
+        {
+            @*@Html.AntiForgeryToken()*@
+            @Html.ValidationSummary(true)
+            <ul>
+
+                 <li>
+                    @*@Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })*@
+                    @Html.Label("Email", new { @class = "" })
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "", @autofocus = "autofocus" })
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </li>
+
+                <li>
+                    @Html.LabelFor(m => m.Password, new { @class = "nomrgn-btm" })
+                    @Html.PasswordFor(m => m.Password, new { @class = "" })
+                    @Html.ValidationMessageFor(m => m.Password)
+                </li>
+
+               
+                <li class="terms-cndtns">
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe)
+                    @Html.ActionLink("Forgot Password", "ResetPasswordSuperAdmin")
+                </li>
+
+                <li>
+                    <input type="submit" value="Sign in" class="bluebtn" />
+                </li>
+
+                @*<li>
+                        @Html.ActionLink("Create a new account", "Register")
+                    </li>*@
+            </ul>
+
+        }
+    </section>
+</section>
+
+
+@section Scripts {
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+    @System.Web.Optimization.Scripts.Render("~/bundles/bootstrapgrid")
+    <script>
+        $(document).ready(function () {
+            debugger;
+            var msg = "@ViewBag.ErrMessage";
+            if (msg == "True") {
+                BootstrapDialog.show({
+                    message: 'You are not authorized to view this page.',
+                    buttons: [{
+                        label: 'Ok',
+                        cssClass: 'btn-primary',
+                        action: function (dialogItself) {
+                            dialogItself.close();
+                        }
+                    }]
+                });
+            }
+           
+        });
+    </script>
+}
+

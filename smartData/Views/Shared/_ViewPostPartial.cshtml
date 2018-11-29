@@ -1,0 +1,56 @@
+﻿
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header  modal-header-custom">
+         Post Information
+        </div>
+        <div class="modal-body">
+            <div class="social-media-wrap clearfix">
+                <div> <p id="postMedia"></p></div>
+               <div > <p id="postText"> </p> </div>              
+            <ul style="display:inline-block">             
+                  <li class="social-likes-li">
+                      <div class="likes-wrap">
+                          <div id="likesNames" class="like-hover">
+                              <span class="fa fa-thumbs-up"></span>
+                              <span id="postlikes"> </span>
+                          </div>
+                          <div class="onhover-like">
+                              <div id="likesName"></div>
+                          </div>
+                      </div>
+                  </li>
+                <li>
+                    <span class="fa fa-comment"></span> <span id="commentsCount"> </span>
+                </li>
+                
+             
+                @*<li>
+                    <span id="postCommentsNames"></span> <span id="postComments"></span>
+                </li>*@
+                
+              
+
+          </ul>
+                <div class="comment-section">
+                    <div class="comment-wrap">
+                        <span id="postCommentsNames"></span> 
+                        <span id="postComments"></span>
+                      
+                    </div>    
+                    
+                </div>
+
+            </div>
+                
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+        </div>
+    </div>
+</div>
+
+<style>
+    p#postMedia {font-size: 18px;color: #365899;}
+    p#postText {color: #90949c;}
+</style>

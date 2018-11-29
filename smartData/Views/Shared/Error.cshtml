@@ -1,0 +1,39 @@
+﻿@model System.Web.Mvc.HandleErrorInfo
+@{
+
+    ViewBag.Title = "Error";
+}
+<link href="~/Content/css/ErrorPage.css" rel="stylesheet" />
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <!-- main -->
+    <div class="agileits-main">
+        <div class="agileinfo-row">
+
+            <div class="smblayouts-errortext">
+                <h2>4<span>0</span>4</h2>
+
+                <h1>Sorry! The page you were looking for could not be found </h1>
+
+                <div class="agile-search">
+                    <form action="#" method="post">
+                        <input type="button" value="Go Back" onclick="goBack()" name="Back" id="btnGoBack" required="">
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

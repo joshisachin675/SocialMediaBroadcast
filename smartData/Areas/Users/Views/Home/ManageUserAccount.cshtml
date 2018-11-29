@@ -1,0 +1,726 @@
+﻿@model Core.Domain.Users
+
+
+@{
+    ViewBag.Title = "Manage user Account";
+    Layout = "~/Views/Shared/_UserInnerLayout.cshtml";
+}
+
+<style>
+    .field-validation-error {
+        color: red;
+    }
+    body {
+        padding: 10px;
+    }
+
+    #exTab1 .tab-content {
+        color: white;
+        background-color: #428bca;
+        padding: 5px 15px;
+    }
+
+    #exTab2 h3 {
+        color: white;
+        background-color: #428bca;
+        padding: 5px 15px;
+    }
+
+    /* remove border radius for the tab */
+
+    #exTab1 .nav-pills > li > a {
+        border-radius: 0;
+    }
+
+    /* change border radius for the tab , apply corners on top*/
+
+    #exTab3 .nav-pills > li > a {
+        border-radius: 4px 4px 0 0;
+    }
+
+    #exTab3 .tab-content {
+        color: white;
+        background-color: #428bca;
+        padding: 5px 15px;
+    }
+    #exTab4 .tab-content {
+        color: white;
+        background-color: #428bca;
+        padding: 5px 15px;
+    }
+
+
+
+
+
+
+</style>
+
+
+<h2>ManagePost</h2>
+
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+<link href="~/Scripts/dropzone/basic.css" rel="stylesheet" />
+<link href="~/Scripts/dropzone/dropzone.css" rel="stylesheet" />
+<script src="~/Scripts/User/common.js"></script>
+<script src="~/Scripts/jquery.maskedinput.min.js"></script>
+<script src="~/Scripts/User/ManageUser.js"></script>
+
+<script>
+    jQuery(function ($) {
+        $(".PhoneNumber").mask("999-999-9999");
+    });
+</script>
+
+<style>
+    .shrtcls {
+        color: #ff0000;
+        display: block;
+        font-size: 12px;
+        line-height: 22px;
+    }
+</style>
+
+<section id="content" class="generalwhole-form">
+    <section class="vbox">
+        <section class="scrollable padder sc-padding" style="margin-top:-45px">
+            <div class="m-b-md">
+                <h3 class="m-b-none"></h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="editform ef-nwdth">
+                        <section class="panel panel-default panelbodyform">
+                            <div class="form-title">
+                                <h3>Client Information</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div id="exTab2" class="container nacv-tab-fix">
+                                        <div class="col-md-12">
+                                            @using (Ajax.BeginForm("ManageUserAccount", "Home", new AjaxOptions() { OnBegin = "return ValidateForm()", OnSuccess = "AfterUpdate", OnFailure = "" }))
+                                            {
+                                                @Html.AntiForgeryToken()
+
+                                                @Html.HiddenFor(m => m.UserId)
+
+                                                <ul class="nav nav-tabs">
+                                                    <li class="active">
+                                                        <a href="#1" data-toggle="tab">Client Profile</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#2" data-toggle="tab">Online Profile</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#3" data-toggle="tab">Lead Generation</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#4" data-toggle="tab">Password</a>
+                                                    </li>
+
+                                                </ul>
+
+                                                <div class="tab-content ">
+                                                    <div class="tab-pane active" id="1">
+
+                                                        <span class="sec-seprate">Client Profile</span>
+                                                        <div class="row">
+                                                            <div class="col-md-2">
+                                                                <div class="form-group user_details">
+                                                                    <label><b>Title</b> <span class="requiredStar"></span></label>
+                                                                    @Html.DropDownListFor(m => m.Title, new List<SelectListItem>
+                                               {
+                                                     new SelectListItem() {Text = "Mr.", Value="Mr."},
+                                                        new SelectListItem() {Text = "Ms.", Value="Ms."},
+                                               }, new { @class = "form-control", id = "Title", autofocus = "autofocus", })
+
+                                                                    @*@Html.TextBoxFor(m => m.Title, new { @id = "Title", @name = "Title", @class = "form-control AlphabaticWithSpace", @maxlength = "100", autofocus = "autofocus", placeholder = "Enter Title" })*@
+                                                                    @Html.ValidationMessageFor(m => m.Title)
+
+                                                                </div>
+                                                                </div>
+                                                            <div class="col-md-5">
+                                                                <div class="form-group user_details">
+                                                                    <label><b>First Name</b> <span class="requiredStar">*</span></label>
+                                                                    @Html.TextBoxFor(m => m.FirstName, new { @id = "FirstName", @name = "FirstName", @class = "form-control AlphabaticWithSpace", @maxlength = "100", autofocus = "autofocus", placeholder = "Enter your name" })
+                                                                    @Html.ValidationMessageFor(m => m.FirstName)
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-5">
+                                                                <div class="form-group user_details">
+                                                                    <label><b>Last Name</b> <span class="requiredStar">*</span></label>
+                                                                    @Html.TextBoxFor(m => m.LastName, new { @id = "LastName", @name = "LastName", @class = "form-control AlphabaticWithSpace", @maxlength = "100", autofocus = "autofocus", placeholder = "Enter your name" })
+                                                                    @Html.ValidationMessageFor(m => m.LastName)
+                                                                </div>
+
+                                                                @Html.HiddenFor(m => m.Photo, new { @id = "Photo", @name = "Photo" })
+
+
+
+                                                            </div>
+                                                            </div>
+
+                                                        <div class="row">
+                                                            
+                                                            <div class="col-md-6">
+                                                                <div class="form-group user_details">
+                                                                    <label><b>Email</b> </label>
+                                                                    @Html.TextBoxFor(m => m.Email, new { @id = "Email", @maxlength = "100", @name = "Email", @class = "form-control input-lg", @placeholder = "test@example.com" })
+                                                                    @Html.ValidationMessageFor(m => m.Email)
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group user_details">
+                                                                    <label><b>Phone</b> </label>
+                                                                    @Html.TextBoxFor(m => m.PhoneNumber, new { @id = "PhoneNumber", @maxlength = "15", @name = "PhoneNumber", @class = "form-control input-lg PhoneNumber", @placeholder = "" })
+                                                                    @Html.ValidationMessageFor(m => m.PhoneNumber)
+                                                                </div>
+                                                            </div>
+
+                                                            </div>
+                                                        <div class="row">
+                                                            
+                                                            <div class="col-md-6">
+                                                                <div class="form-group user_details">
+                                                                    <label><b> Country</b> </label>
+
+                                                                    @Html.DropDownListFor(m => m.Country, ViewBag.country as List<SelectListItem>, new { @class = "form-control", id = "country", autofocus = "autofocus"})
+
+
+                                                                    @Html.ValidationMessageFor(m => m.Country)
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group user_details">
+                                                                    <label><b> Province/State</b> </label>
+                                                                    @Html.DropDownListFor(m => m.ProvinceState, new List<SelectListItem>
+                                               {
+                                                     new SelectListItem() {Text = "---Select Province---", Value="0"},
+
+                                               }, new { @class = "form-control", id = "State", autofocus = "autofocus", })
+
+                                                                    @Html.ValidationMessageFor(m => m.ProvinceState)
+
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                        <div class="row">
+                                                            
+                                                            
+                                                            <div class="col-md-12">
+                                                                <div class="form-group user_details">
+                                                                    <label><b>Brokerage / Company</b> </label>
+                                                                    @Html.TextBoxFor(m => m.CompanyName, new { @id = "CompanyName", @maxlength = "100", @name = "CompanyName", @class = "form-control input-lg", @placeholder = "Enter Company Name" })
+                                                                    @Html.ValidationMessageFor(m => m.CompanyName)
+                                                                </div>
+                                                            </div>
+                                                            </div>
+
+                                                    </div>
+                                                    <div class="tab-pane" id="2">
+
+                                                        <span class="sec-seprate">Online Profile</span>
+                                                     
+                                                        <div class="row">
+                                                            <div class="col-md-8">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group user_details">
+                                                                        <label><b>Display Name</b> </label>
+                                                                        @Html.TextBoxFor(m => m.DisplayName, new { @id = "DisplayName", @name = "DisplayName", @class = "form-control AlphabaticWithSpace", @maxlength = "100", autofocus = "autofocus", placeholder = "Enter your name" })
+                                                                        @Html.ValidationMessageFor(m => m.DisplayName)
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group user_details">
+                                                                        <label><b> Status</b> </label>
+                                                                        @Html.TextBoxFor(m => m.Status, new { @id = "Status", @maxlength = "100", @name = "Status", @class = "form-control input-lg", @placeholder = "Status" })
+                                                                        @Html.ValidationMessageFor(m => m.Status)
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group user_details">
+                                                                        <label><b>Short Name</b> </label>
+                                                                        @Html.TextBoxFor(m => m.Shortname, new { @id = "Shortname", @maxlength = "100", @name = "Shortname", @class = "form-control input-lg", @placeholder = "test_example" })
+                                                                        @Html.ValidationMessageFor(m => m.Shortname)
+                                                                        <div id="shortnameerror" class="shrtcls"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group user_details">
+                                                                        <label><b>Facebook Profile</b> </label>
+                                                                        @Html.TextBoxFor(m => m.FacebookProfile, new { @id = "FacebookProfile", @maxlength = "100", @name = "FacebookProfile", @class = "form-control input-lg", @placeholder = " Facebook profile" })
+                                                                        @Html.ValidationMessageFor(m => m.FacebookProfile)
+                                                                     
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group user_details">
+                                                                        <label><b>Twitter Profile</b> </label>
+                                                                        @Html.TextBoxFor(m => m.TwitterProfile, new { @id = "TwitterProfile", @maxlength = "100", @name = "TwitterProfile", @class = "form-control input-lg", @placeholder = "Twitter profile" })
+                                                                        @Html.ValidationMessageFor(m => m.TwitterProfile)
+                                                                      
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group user_details">
+                                                                        <label><b>LinkedIn Profile</b> </label>
+                                                                        @Html.TextBoxFor(m => m.LinkedInProfile, new { @id = "LinkedInProfile", @maxlength = "100", @name = "LinkedInProfile", @class = "form-control input-lg", @placeholder = "LinkedIn Profile" })
+                                                                        @Html.ValidationMessageFor(m => m.LinkedInProfile)
+                                                                       
+                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                            <div class="col-md-4 text-center">
+                                                                <div class="form-group user_details">
+                                                                    <label><b> Photo</b> </label>
+                                                                    <div id="uploadImageProfile" class="uploadImageProfile">
+                                                                        <span id="uploadImageProfile"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 text-center">
+                                                                <input type="button" name="name" id="btnUploadPhoto" class="btn btn-primary" data-toggle="modal" data-target="#mdlPhotoUpload" value="Upload Photo" />
+                                                                <input type="button" name="" id="btnRemovePhoto" class="btn btn-danger" data-toggle="" data-target="" value="Remove Photo" />
+                                                            </div>
+                                                        </div>
+                                                     
+                                                    
+                                                 
+
+                                                     
+                                                        
+                                                    </div>
+                                                    <div class="tab-pane" id="3">
+                                                        <span class="sec-seprate">Lead Generation Forms</span>
+
+
+
+
+
+                                                        <div class="editor-field">
+
+                                                            @if (Model != null && Model.LandingPageList != null)
+                                                            {
+
+
+                                                                for (int i = 0; i < Model.LandingPageList.Count; i++)
+                                                                {
+                                                            @Html.CheckBoxFor(m => m.LandingPageList[i].active)
+                                                            @Model.LandingPageList[i].label
+                                                            @Html.HiddenFor(m => m.LandingPageList[i].id)
+
+                                                            <br>
+                                                                }
+
+
+                                                            }
+
+
+
+
+
+
+                                                            <br />
+
+
+
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="tab-pane" id="4">
+                                                        <span class="sec-seprate">Change Password</span>
+
+                                                        <span title="Leave blank if you don't want to change it." class="" aria-hidden="true"> Leave blank if you don't want to change it.</span>
+                                                        <br />
+                                                        <br />
+
+                                                        <div class="form-group user_details">
+
+
+                                                            <label class="control-label">Password</label>
+                                                            @Html.PasswordFor(m => m.Password, new { @id = "Password", @name = "Password", @maxlength = "50", @placeholder = "", @class = "form-control input-lg" })
+
+                                                            <p id="passValidation" style="display:none; color:red">Password expects 1 Capital letter, 1 digit and the length should be between 8-12 characters </p>
+                                                        </div>
+                                                        @*<div class="form-group user_details">
+                            <label class="control-label info-text"><i class="fa fa-info-circle" aria-hidden="true"></i>Leave blank if you don't want to change it.</label>
+                        </div>*@
+                                                        <div class="form-group user_details">
+                                                            <label class="control-label">Confirm Password</label>
+                                                            @Html.PasswordFor(m => m.ConfirmPassword, new { @id = "ConfirmPassword", @name = "Confirm Password", @maxlength = "50", @placeholder = "", @class = "form-control input-lg" })
+                                                        </div>
+                                                    </div>
+                                                </div>
+    <div class="text-center">
+        <input type="submit"  id="registerSubmit" value="Save" class="btn btn-primary user_save" tabindex="4" />
+       
+    </div>
+                                            }
+                                        </div>
+
+
+
+
+                                            
+                                        </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="modal" id="mdlPhotoUpload" tabindex="-1" role="dialog" aria-labelledby="mdlPhotoUpload">
+        @Html.Partial("_UploadPhoto", Model)
+    </div>
+</section>
+
+<script src="~/Scripts/Jscripts/jquery-2.2.3.js"></script>
+<link href="~/Content/jquery.qtip.css" rel="stylesheet" />
+<script src="~/Scripts/Jscripts/jquery.qtip.js"></script>
+<script src="~/Scripts/dropzone/dropzone.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+@{
+    var userId = smartData.Common.SessionManager.LoggedInUser.UserID;
+}
+
+<input type="hidden" id="currentUserId" value='@userId' />
+<input type="hidden" value="@ViewBag.imgUrl" id="imgurl" />
+<input type="hidden" value="@ViewBag.UserTitle" id="UserTitle" />
+
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        debugger;
+        //$(".drag_drp_file").tooltip();
+
+        $("#registerSubmittmp").click(function () {
+   $("#registerSubmit").click();
+
+
+                    
+        });
+
+        ////Btn Upload Click Open Pop up
+        $("#savePhoto").click(function () {
+            debugger
+            var ImageValue = $("#dropzoneForm img").attr("src");
+
+                $("#TesError").remove();
+                $("#mdlPhotoUpload").modal('hide')
+                $('.modal-backdrop').css('position', 'fixed');
+                $('.modal-backdrop').hide()
+                $("#registerSubmit").click();
+
+        });
+        $("#btnUploadPhoto").click(function () {
+            debugger
+           
+            var objDZ = Dropzone.forElement("#dropzoneForm");
+            objDZ.removeAllFiles(true);
+            //objDZ.emit("resetFiles");
+
+        });
+     
+        $("#btnRemovePhoto").click(function () {
+            debugger
+            BootstrapDialog.show({
+                title: 'Confirmation',
+                message: 'Are you sure you want to remove your photo?',
+                buttons: [{
+                    label: 'No',
+                    cssClass: 'btn-danger',
+                    action: function (dialogItself) {
+                        dialogItself.close();
+                    }
+                },
+                {
+                    label: 'Yes',
+                    cssClass: 'btn-primary',
+                    action: function (dialogItself) {
+                        $("#Photo").val("");
+                        $("#Photo").html("");
+                        $('.UploadedImage').hide();
+                        $('.uploadImageProfile').hide();
+                       // $("#registerSubmit").click();
+                        dialogItself.close();
+                    }
+                }]
+            });
+
+
+
+
+
+
+         
+
+        });
+
+        
+
+        ////Btn Upload Click Open Pop up
+
+
+
+
+
+
+
+        $("#country").val(@Model.Country);
+
+
+
+        debugger
+        var countryID = parseInt($("#country").val());
+        $("#State").empty();
+        $.ajax({
+            type: 'GET',
+            url: $_BaseUrl + '/Users/api/AdminApi/getstate',
+            data: { id: countryID },
+            contentType: "application/json; charset=utf-8",
+            success: function (states) {
+
+                debugger
+                if (states.length == 0) {
+                    $("#State").append('<option value="0">--Select Province/State-- </option>');
+                }
+                //for (var i = 0; i < states.length; i++) {
+                //    $("#State").append('<option value="' + states[i].StateId + '">' +
+                //       states[i].StateName + '</option>');
+                //}
+
+
+                $.each(states, function (i, state) {
+                    $("#State").append('<option value="' + state.StateId + '">' +
+                         state.StateName + '</option>');
+
+                    //if (state.CountryId == countryID) {
+                    //    $("#State").val(state.StateId);
+                    //}
+
+                });
+                $("#State").val(@Model.ProvinceState);
+            },
+            error: function (ex) {
+                //alert('Failed to retrieve states.' + ex);
+            }
+        });
+        return false;
+
+
+
+
+
+
+        $('.drag_drp_file').qtip({
+            content: "Please upload only .jpg, .png, .jpeg files.",
+            show: 'mouseover',
+            hide: 'mouseout'
+        });
+
+        var tit = $("#UserTitle").val();
+
+        $("#Title").val([tit, tit]).prop("selected", true);
+
+
+
+
+
+
+    });
+
+    var url = $_BaseUrl + $("#imgurl").val();
+    if ($("#imgurl").val() != "") {
+        debugger
+        $('.UploadedImage').append('<div class="dz-preview dz-processing dz-image-preview dz-success dz-complete"><div class="dz-image"><img data-dz-thumbnail height="108px" width="108px" alt="' + $("#imgurl").val() + '" src="' + url + '"/></div></div>');
+        $('.uploadImageProfile').append('<div class="dz-preview dz-processing dz-image-preview dz-success dz-complete"><div class="dz-image"><img data-dz-thumbnail height="108px" width="108px" alt="' + $("#imgurl").val() + '" src="' + url + '"/></div></div>');
+    }
+    else {
+        var url = $_BaseUrl + '/Images/noimage.png';
+        $('.uploadImageProfile').append('<div class="dz-preview dz-processing dz-image-preview dz-success dz-complete"><div class="dz-image"><img data-dz-thumbnail height="108px" width="108px" alt="' + $("#imgurl").val() + '" src="' + url + '"/></div></div>');
+        $('.UploadedImage').remove();
+
+    }
+
+
+
+
+
+    $("#country").change(function () {
+        debugger
+        var countryID = parseInt($("#country").val());
+        $("#State").empty();
+        $.ajax({
+            type: 'GET',
+            url: $_BaseUrl + '/Users/api/AdminApi/getstate',
+            data: { id: countryID },
+            contentType: "application/json; charset=utf-8",
+            success: function (states) {
+
+                debugger
+               
+                //for (var i = 0; i < states.length; i++) {
+                //    $("#State").append('<option value="' + states[i].StateId + '">' +
+                //       states[i].StateName + '</option>');
+                //}
+
+
+                $.each(states, function (i, state) {
+                    $("#State").append('<option value="' + state.StateId + '">' +
+                         state.StateName + '</option>');
+
+                });
+            },
+            error: function (ex) {
+                //   alert('Failed to retrieve states.' + ex);
+            }
+        });
+        return false;
+    })
+   // var minImageWidth = 50,
+   //minImageHeight = 50;
+    Dropzone.options.dropzoneForm = {
+        maxFiles: 1,
+        maxFilesize: 2,
+        acceptedFiles: ".jpeg,.jpg,.png,.gif",
+        init: function () {
+            // debugger;
+            var self = this;
+            // config self.options.addRemoveLinks = true;
+            self.options.dictRemoveFile = "Delete";
+            //New file added
+            self.on("addedfile", function (file) {
+                debugger;
+                var count = self.files.length;
+                //  alert(count);
+                // alert(self.maxFiles);
+                if (count > 1) {
+                    alert("You cannot upload more than 1 files");
+                    this.removeFile(file);
+                    return false;
+                }
+            });
+            this.on("thumbnail", function (file) {
+                debugger;
+                file.acceptDimensions();
+                //if (file.width <= minImageWidth || file.height <= minImageHeight) {
+                //    file.acceptDimensions();
+                //}
+                //else {
+                //    file.rejectDimensions();
+
+                //}
+            });
+            this.on("complete", function (data) {
+                debugger;
+                // alert(data.xhr.responseText);
+                //var res = eval('(' + data.xhr.responseText + ')');
+                //    var res = JSON.parse(data.xhr.responseText);
+
+                var s = JSON.stringify(data.acceptDimensions.arguments)
+                if (s.indexOf("Please") > -1) {
+
+                }
+                else {
+                    var userID = $("#UserId").val()
+
+                    if (data.type == "image/jpeg") {
+                        var image = userID + '.jpg';
+                    }
+                    if (data.type == "image/jpg") {
+                        var image = userID + '.jpg';
+                    }
+                    if (data.type == "image/gif") {
+                        var image = userID + '.gif';
+                    }
+                    if (data.type == "image/png") {
+                        var image = userID + '.png';
+                    }
+                    $("#Photo").val(image);
+                    $("#Photo").html(image);
+                  
+                    var scr = $("#dropzoneForm img").attr('src')
+                    $('.uploadImageProfile').show();
+                  //  $('.uploadImageProfile').css('display', "");
+                    $('#uploadImageProfile img').attr('src', scr);
+                   
+                }
+           
+            
+                if (data.name != null) {
+                    debugger
+                    $('.UploadedImage').hide();
+                    $('.UploadedImage img').attr('src', scr)
+                  // $('.uploadImageProfile').append('<div class="dz-preview dz-processing dz-image-preview dz-success dz-complete"><div class="dz-image"><img data-dz-thumbnail height="108px" width="108px" alt="" src="' + url + '"/></div></div>');
+                }
+            });
+
+
+            this.on("addedfile", function (file) {
+                debugger;
+             
+                // Create the remove button
+             
+                var removeButton = Dropzone.createElement("<button id='removeImage'>Remove file</button>");
+
+                // Capture the Dropzone instance as closure.
+                var _this = this;
+                removeButton.addEventListener("click", function (e) {
+                    // Make sure the button click doesn't submit the form:
+                    e.preventDefault();
+                    e.stopPropagation();
+                    // Remove the file preview.
+                    _this.removeFile(file);
+
+                    /// SRohit 
+
+                    //$("#Photo").val("");
+                    //$("#Photo").html("");
+
+
+                    /// Added by SRohit
+                    // If you want to the delete the file on the server as well,
+                    // you can do the AJAX request here.
+                });
+                // Add the button to the file preview element.
+                file.previewElement.appendChild(removeButton);
+
+            });
+            this.on('resetFiles', function () {
+                if (this.files.length != 0) {
+                    for (i = 0; i < this.files.length; i++) {
+                        this.files[i].previewElement.remove();
+                    }
+                    this.files.length = 0;
+                }
+            });
+
+        },
+        accept: function (file, done) {
+            debugger;
+            file.acceptDimensions = done;
+          //  file.rejectDimensions = function () { done("Please upload image with 50*50 px"); };
+        }
+    };
+
+
+
+
+
+</script>
+
+
+

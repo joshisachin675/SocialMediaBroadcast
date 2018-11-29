@@ -1,0 +1,127 @@
+﻿@model smartData.Models.User.UserDashboardModel
+
+@{
+    ViewBag.Title = "ManagePost";
+    Layout = "~/Views/Shared/_UserInnerLayout.cshtml";
+}
+
+<h2>ManagePost</h2>
+
+
+<style>
+   body.modal-open {
+        padding-right: 17px !important;
+    }
+    .modal-open {
+    }
+        .modal-open .inner-table-filter-fx-PS .columns.columns-right.btn-group.pull-right {
+            position: absolute;
+            right: 39px !important;
+            top: 188px;
+        }
+        .modal-open .username-ryt-right.dropdown.clearfix {
+            margin-right: 50px !important;
+        }
+ 
+    .bootstrap-table {
+        padding: 0 20px;
+    margin-top: 20px;
+    }
+    .keep-open.btn-group {
+        margin-right: 20px;
+    }
+</style>
+
+<script type="text/javascript">
+
+@functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+}
+    }
+
+    // Antiforgery Token
+    var token = '@TokenHeaderValue()';
+    // alert(token);
+    var headers = {};
+    headers["RequestVerificationToken"] = token;
+
+</script>
+<script src="~/Scripts/User/GetPost.js"></script>
+<section class=" wrapper scrollable inner-table-filter-fx-PS">
+@*<<<<<<< .mine
+    <h2>Manage Post</h2>
+
+    <div id="custom-toolbar" class="filter-sction">
+        <div>
+            @Html.ActionLink("Manage Past Post", "ManagePost", "Home", new { id = "Past_post", @class = "btn btn-primary lg Past_Post" })
+            @Html.ActionLink("Manage Future Post", "ManageFuturePost", "Home", new { id = "Future_post", @class = "btn btn-primary lg" })
+            @Html.ActionLink("Create Post", "CreatePost", "Home", new { id = "Create_post", @class = "btn btn-primary lg" })
+
+        </div>
+=======*@
+    <h2 class="social_media">Manage Post</h2>
+    <div class="white_bg">
+        <div id="custom-toolbar" class="filter-sction">
+            <div>
+                @Html.ActionLink("Republish Past Posts", "ManagePost", "Home", new { id = "Past_post", @class = "btn btn-primary lg Past_Post" })
+                @Html.ActionLink("Manage Future Post", "ManageFuturePost", "Home", new { id = "Future_post", @class = "btn btn-primary lg" })
+                @Html.ActionLink("Create Post", "CreatePost", "Home", new { id = "Create_post", @class = "btn btn-primary lg" })
+
+            </div>
+            <div id="custom-toolbar" class="filter-sction">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-3"><input class="form-control manage_post" id="Description" placeholder=" Description" type="text"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><input class="form-control manage_post" id="Url" placeholder=" Url" type="text"></div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <button class="btn btn-success greenbtn" id="btnFilter" type="button" value="Filter" name="btnFilter">Filter</button>
+                        <button class="btn btn-info reset-filter btn-circlr" disabled id="resetBtn">Reset</button>
+                    </div>
+                </div>
+
+                <div class="row mrgntp">
+                    <div class="col-sm-12">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mrgntp">
+                <div class="col-sm-12">
+
+                    @*<button class="btn btn-info btn-sm reset-filter btn-circlr" disabled id="resetBtn">Reset</button>
+                        <button type="button" class="btn btn-primary btn-sm add-btn btn-circlr" data-toggle="modal" data-target="#addStaff">Add</button>*@
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-hover" data-toolbar="#post" data-show-columns="true" data-show-filter="true" data-click-to-select="true" id="grid">
+            <thead>
+                <tr>
+                    <th data-field="Name"> Name</th>
+                    <th data-field="SocialMedia"> SocialMedia</th>
+
+                    <th data-field="Description"> Description</th>
+                    <th data-field="Url">Url</th>
+                    <th data-field="ImageUrl" id="image_get" class="dz-image-preview">Photo</th>
+
+                </tr>
+            </thead>
+        </table>
+    </div>
+</section>
+@{
+    var userId = smartData.Common.SessionManager.LoggedInUser.UserID;
+}
+<input type="hidden" id="TokenValue" value='@TokenHeaderValue()' />
+<input type="hidden" id="currentUserId" value='@userId' />
+
+
+<div class="modal" id="viewPostModal" tabindex="-1" role="dialog" aria-labelledby="viewPostModal">
+    @Html.Partial("_ViewPostPartial");
+</div>

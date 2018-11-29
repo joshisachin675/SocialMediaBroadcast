@@ -1,0 +1,288 @@
+﻿@model Core.Domain.smHomeValue
+
+
+<h2>Edit Leads</h2>
+
+<script src="~/Scripts/jquery.maskedinput.min.js"></script>
+
+<script src="~/Scripts/User/EditLeads.js"></script>
+<script src="~/Scripts/User/common.js"></script>
+<script>
+    jQuery(function ($) {
+        $(".PhoneNumber").mask("999-999-9999");
+    });
+
+
+    var IsExists = false;
+
+  
+</script>
+
+
+
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header  modal-header-custom">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title modal-title-custom">Edit Leads</h4>
+        </div>
+        @{
+            var USerType = smartData.Common.SessionManager.LoggedInUser.UserType;
+            var method = "";
+            var Controllesr = "";
+            if (USerType ==1)
+            {
+                 method = "ManageLeads";
+                 Controllesr = "Home";
+            }
+            else
+            {
+                 method = "ManageLeadsAdmin";
+                 Controllesr = "ManageContent";
+            }
+            
+        }
+
+        @using (Ajax.BeginForm(method, Controllesr, new AjaxOptions() { OnBegin = "return ValidateFormLeads()", OnSuccess = "AfterUpdate", OnFailure = "" }))
+                                            {
+        <div class="modal-body">
+
+            <div class="col-md-12">
+             
+                                            @Html.AntiForgeryToken()
+
+                                            @Html.HiddenFor(m => m.HomeValueId)
+                      @Html.HiddenFor(m => m.HomeValueId, new { @id = "HomeValueId"})
+                      @Html.HiddenFor(m => m.IPAddress, new { @id = "IPAddress" })
+                      @Html.HiddenFor(m => m.DateSubmit, new { @id = "DateSubmit" })
+                      
+                                            <div class="row">
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group user_details">
+                                                        <label><b>First Name</b> <span class="requiredStar">*</span></label>
+                                                        @Html.TextBoxFor(m => m.FirstName, new { @id = "FirstName", @name = "FirstName", @class = "form-control ", @maxlength = "100", autofocus = "autofocus", placeholder = "Enter your fastName" })
+                                                        @Html.ValidationMessageFor(m => m.FirstName)
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group user_details">
+                                                        <label><b> Last Name</b> <span class="requiredStar">*</span></label>
+                                                        @Html.TextBoxFor(m => m.LastName, new { @id = "LastName", @name = "LastName", @class = "form-control ", @maxlength = "100", autofocus = "autofocus", placeholder = "Enter your lastName" })
+                                                        @Html.ValidationMessageFor(m => m.FirstName)
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group user_details">
+                                                        <label><b>Email</b> </label>
+                                                        @Html.TextBoxFor(m => m.EmailAddress, new { @id = "EmailAddress", @maxlength = "100", @name = "Email", @class = "form-control ", @placeholder = "test@example.com" })
+                                                        @Html.ValidationMessageFor(m => m.EmailAddress)
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group user_details">
+                                                        <label><b>Phone</b> </label>
+                                                        @Html.TextBoxFor(m => m.PhoneNumber, new { @id = "PhoneNumber", @maxlength = "15", @name = "PhoneNumber", @class = "form-control  PhoneNumber", @placeholder = "Phone Number" })
+                                                        @Html.ValidationMessageFor(m => m.PhoneNumber)
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group user_details">
+                                                        <label><b> Search Address</b> </label>
+
+
+                                                        @Html.TextBoxFor(m => m.Address, new { @id = "Address", @name = "Address", @class = "form-control ", @placeholder = "Address" })
+
+                                                        @Html.ValidationMessageFor(m => m.Address)
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group user_details">
+                                                        <label><b> Postal Code</b> </label>
+
+
+                                                        @Html.TextBoxFor(m => m.PostalCode, new { @id = "PostalCode", @maxlength = "15", @name = "PostalCode", @class = "form-control ", @placeholder = "Postal Code" })
+
+                                                        @Html.ValidationMessageFor(m => m.PostalCode)
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                    <div class="row">
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group user_details">
+                                                        <label><b> Street Address</b> </label>
+
+
+                                                        @Html.TextBoxFor(m => m.StreetAddress, new { @id = "StreetAddress", @name = "StreetAddress", @class = "form-control ", @placeholder = "Street Address" })
+
+                                                        @Html.ValidationMessageFor(m => m.StreetAddress)
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group user_details">
+                                                        <label><b> City</b> </label>
+
+
+                                                        @Html.TextBoxFor(m => m.City, new { @id = "City", @maxlength = "15", @name = "City", @class = "form-control ", @placeholder = "City" })
+
+                                                        @Html.ValidationMessageFor(m => m.City)
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                    <div class="row">
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group user_details">
+                                                        <label><b> Unit</b> </label>
+
+
+                                                        @Html.TextBoxFor(m => m.Unit, new { @id = "Unit", @maxlength = "15", @name = "Unit", @class = "form-control ", @placeholder = "Unit" })
+
+                                                        @Html.ValidationMessageFor(m => m.Unit)
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group user_details">
+                                                        <label><b> Province</b> </label>
+
+
+                                                        @Html.TextBoxFor(m => m.Province, new { @id = "Province", @name = "Province", @class = "form-control ", @placeholder = "Province" })
+
+                                                        @Html.ValidationMessageFor(m => m.Province)
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <div class="form-group user_details">
+                                <label><b>Time to Act</b> <span class="requiredStar"></span></label>
+                                @Html.DropDownListFor(m => m.TimePeriodId, new List<SelectListItem>
+                                               {
+                                                     new SelectListItem() {Text = "Choose One.", Value=""},
+                                                        new SelectListItem() {Text = "Immediately ", Value="0"},
+                                                         new SelectListItem() {Text = "3 months", Value="3"},
+                                                          new SelectListItem() {Text = "6 months", Value="6"},
+                                                           new SelectListItem() {Text = "Just looking to stay informed.", Value="12"},
+                                                            new SelectListItem() {Text = "None of Above", Value=""},
+                                               }, new { @class = "form-control", id = "TimePeriodId", autofocus = "autofocus", })
+
+                                @*@Html.TextBoxFor(m => m.Title, new { @id = "Title", @name = "Title", @class = "form-control AlphabaticWithSpace", @maxlength = "100", autofocus = "autofocus", placeholder = "Enter Title" })*@
+                                @Html.ValidationMessageFor(m => m.TimePeriodId)
+
+                            </div>
+                        </div>
+                  
+
+                                            </div>
+             
+
+
+
+
+
+
+
+
+
+                                           
+                                            <div class="text-center">
+                                                @*<input type="submit" id="registerSubmit" value="Save" class="btn btn-primary user_save" tabindex="4" />*@
+
+                                            </div>
+                                            
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancel" tabindex="900">Close</button>
+            <button type="submit" class="btn  btn-primary" id="btnPreference" tabindex="800">Update</button>
+        </div>
+                                            }
+    </div>
+    </div>
+
+
+
+
+
+
+    @{
+        var userId = smartData.Common.SessionManager.LoggedInUser.UserID;
+    }
+
+    <input type="hidden" id="currentUserId" value='@userId' />
+    <input type="hidden" value="@ViewBag.imgUrl" id="imgurl" />
+    <input type="hidden" value="@ViewBag.UserTitle" id="UserTitle" />
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            debugger;
+            //$(".drag_drp_file").tooltip();
+
+            $("#registerSubmittmp").click(function () {
+                $("#registerSubmit").click();
+
+
+
+            });
+
+            ////Btn Upload Click Open Pop up
+
+
+
+            ////Btn Upload Click Open Pop up
+
+
+
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+        // var minImageWidth = 50,
+        //minImageHeight = 50;
+
+
+
+
+
+
+    </script>
+
+
+

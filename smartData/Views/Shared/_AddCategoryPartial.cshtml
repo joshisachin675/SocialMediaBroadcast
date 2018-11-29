@@ -1,0 +1,104 @@
+﻿@model Core.Domain.smIndustry
+
+@{
+    ViewBag.Title = "Add Category";
+    Layout = null;
+}
+
+<style>
+    .field-validation-error{
+        color:red;
+    }
+</style>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+<script src="~/Scripts/Admin/AddCategory.js"></script>
+
+@using (Ajax.BeginForm("AddCategory", "ManageCategory", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace,OnBegin = "return ValidateIndustryAdd()", OnSuccess = "AddCategorySuccess(data)" }, new { @id = "AddCategory" }))
+{
+    @Html.HiddenFor(m => m.IndustryId)
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header  modal-header-custom">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title modal-title-custom">Add Category</h4>
+            </div>
+            <div class="modal-body">
+                <div class="social-media-wrap clearfix">
+                    @Html.TextBoxFor(m => m.IndustryName, new { @placeholder="Add Industry"})
+                    @Html.ValidationMessageFor(m => m.IndustryName)
+                </div>
+                <div class="social-media-wrap clearfix">
+                    @Html.TextBoxFor(m => m.IndustryShortName, new { @placeholder = "Add short name" })
+                    @Html.ValidationMessageFor(m => m.IndustryShortName)
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+                <button type="submit" class="btn btn-circlr" id="btnCategory" tabindex="800">Add</button>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    function ValidateIndustryAdd() {
+        debugger;
+        var isValid = true;
+        var IndustryName = $("#IndustryName").val();
+        var shortName = $("#IndustryShortName").val();
+        $.ajax({
+            url: $_UrlCheckDuplicateIndustry,
+            type: "Get",
+            data: { IndustryName: IndustryName },
+            async: false,
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                debugger;
+                if (data == "exists") {
+                    debugger;
+                    isValid = false;
+                    $messageData = $("<span>Information</span>");
+                    var popTimer = parseInt($("#hdnPopUpTimer").val());       setTimeout("$.each(BootstrapDialog.dialogs, function(id, dialog){dialog.close();});",popTimer);
+                    BootstrapDialog.configDefaultOptions({ cssClass: 'bstDialg' });
+                    BootstrapDialog.show({ title: "<span>Information</span>", type: BootstrapDialog.TYPE_DANGER, message: 'Industry already exists.' });
+
+
+             
+                }
+                else {
+                    $.ajax({
+                        url: $_UrlCheckDuplicateShortIndustry,
+                        type: "Get",
+                        data: { shortName: shortName },
+                        async: false,
+                        contentType: "application/json; charset=utf-8",
+                        success: function (data) {
+                            debugger;
+                            if (data == "exists") {
+                                debugger;
+                                isValid = false;
+                                $messageData = $("<span>Information</span>");
+                                var popTimer = parseInt($("#hdnPopUpTimer").val());       setTimeout("$.each(BootstrapDialog.dialogs, function(id, dialog){dialog.close();});",popTimer);
+                                BootstrapDialog.configDefaultOptions({ cssClass: 'bstDialg' });
+                                BootstrapDialog.show({ title: "<span>Information</span>", type: BootstrapDialog.TYPE_DANGER, message: 'Industry Short Name already exists.' });
+
+                           
+                            }
+                            else {
+                                return isValid;
+                            }
+                        }
+                    });
+
+                    return isValid;
+                }
+
+            },
+
+        });
+        return isValid;
+    }
+</script>

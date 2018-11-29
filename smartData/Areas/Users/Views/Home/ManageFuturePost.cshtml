@@ -1,0 +1,162 @@
+﻿@model Core.Domain.smPost
+
+@{
+    ViewBag.Title = "ManageFuturePost";
+    Layout = "~/Views/Shared/_UserInnerLayout.cshtml";
+}
+<link href="~/Scripts/dropzone/basic.css" rel="stylesheet" />
+<link href="~/Scripts/dropzone/dropzone.css" rel="stylesheet" />
+<link href="~/Content/bootstrap-tagsinput.css" rel="stylesheet" />
+
+<script src="~/Scripts/dropzone/dropzone.js"></script>
+<script src="~/Scripts/User/GetFuturePost.js"></script>
+<script src="~/Scripts/bootstrap-tagsinput.js"></script>
+
+<script type="text/javascript">
+
+ @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+
+        }
+    }
+    // Antiforgery Token
+    var token = '@TokenHeaderValue()';
+    // alert(token);
+    var headers = {};
+    headers["RequestVerificationToken"] = token;
+
+
+</script>
+
+<script>
+    Dropzone.options.dropzoneForm = {
+        maxFiles: 1,
+        acceptedFiles: ".jpeg,.jpg,.png,.gif",
+        init: function () {
+            // debugger;
+            var self = this;
+            // config self.options.addRemoveLinks = true;
+            self.options.dictRemoveFile = "Delete";
+            //New file added
+            self.on("addedfile", function (file) {
+                var count = self.files.length;
+                //  alert(count);
+                // alert(self.maxFiles);
+                if (count > 1) {
+                    //alert("You cannot upload more than 1 files");
+                    BootstrapDialog.show({
+                        message: 'You cannot upload more than 1 files.',
+                        buttons: [{
+                            label: 'Ok',
+                            cssClass: 'btn-primary',
+                            action: function (dialogItself) {
+                                dialogItself.close();
+                            }
+                        }]
+                    });
+                    this.removeFile(file);
+                    return false;
+                }
+            });
+
+            this.on("complete", function (data) {
+                // alert(data.xhr.responseText);
+                //var res = eval('(' + data.xhr.responseText + ')');
+                var res = JSON.parse(data.xhr.responseText);
+            });
+
+
+            this.on("addedfile", function (file) {
+                $('.UploadedImage img').remove();
+                // Create the remove button
+                var removeButton = Dropzone.createElement("<button id='removeImage'>Remove file</button>");
+                // Capture the Dropzone instance as closure.
+                var _this = this;
+                removeButton.addEventListener("click", function (e) {
+                    // Make sure the button click doesn't submit the form:
+                    e.preventDefault();
+                    e.stopPropagation();
+                    // Remove the file preview.
+                    _this.removeFile(file);
+                    // If you want to the delete the file on the server as well,
+                    // you can do the AJAX request here.
+                });
+                // Add the button to the file preview element.
+                file.previewElement.appendChild(removeButton);
+            });
+
+        }
+    };
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#txtKeywords").tagsinput('items');
+    });
+</script>
+
+
+
+<section class="wrapper scrollable inner-table-filter-fx">
+    <h2 class="social_media">Manage Future Post</h2>
+    <div class="white_bg side_pad_20px">
+        <div class="mar_top_20"></div>
+        <div id="custom-toolbar" class="filter-sction">
+            <div class="switch-post-btn">
+                @Html.ActionLink("Republish Past Posts", "ManagePost", "Home", new { id = "Past_post", @class = "btn btn-primary lg" })
+                @Html.ActionLink("Manage Future Post", "ManageFuturePost", "Home", new { id = "Future_post", @class = "btn btn-primary lg Past_Post" })
+                @Html.ActionLink("Create Post", "CreatePost", "Home", new { id = "Create_post", @class = "btn btn-primary lg Past_Post" })
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3"><input class="form-control  manage_post" id="Description" placeholder=" Description" type="text"></div>
+                <div class="col-md-3 col-sm-3 col-xs-3"><input class="form-control  manage_post" id="Url" placeholder=" Url" type="text"></div>
+
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <button class="btn btn-success greenbtn" id="btnFilter" type="button" value="Filter" name="btnFilter">Filter</button>
+                    <button class="btn btn-info reset-filter btn-circlr" disabled id="resetBtn">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-hover" data-toolbar="#post" data-show-columns="true" data-show-filter="true" data-click-to-select="true" id="grid">
+            <thead>
+                <tr>
+                    <th data-field="Name"> Name</th>
+                    <th data-field="SocialMedia"> SocialMedia</th>
+                    <th data-field="Description"> Description</th>
+                    <th data-field="Url">Url</th>
+                    <th data-field="ImageUrl">Photo</th>
+
+                </tr>
+            </thead>
+        </table>
+    </div>
+</section>
+
+
+
+<div class="modal" id="editContent" tabindex="-1" role="dialog" aria-labelledby="editContent">
+    @Html.Partial("_EditFuturePost")
+</div>
+
+@{
+    var userId = smartData.Common.SessionManager.LoggedInUser.UserID;
+}
+<input type="hidden" id="TokenValue" value='@TokenHeaderValue()' />
+<input type="hidden" id="currentUserId" value='@userId' />
+
+<!--Loader-->
+<div class="loadercontainingdiv">
+    <img src="~/Images/loadernew.gif" class="loaderprtclr" />
+</div>
+<!--End Loader-->
+
+
+<style>
+    .keep-open.btn-group{margin-right:20px;}
+</style>

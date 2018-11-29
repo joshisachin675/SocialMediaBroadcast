@@ -1,0 +1,122 @@
+﻿<script language="javascript" type="text/javascript">
+
+    $URL = {
+        _GetSchedulerData: '@Url.Action("GetSchedulerCommonData", "Scheduler", new { area = "Scheduler" })',
+        _GetAppointments: '@Url.Action("GetAppointments", "Scheduler", new { area = "Scheduler" })',
+        _EditAppointments: '@Url.Action("EditAppointments", "Scheduler", new { area = "Scheduler" })',
+        _CreateAppointments: '@Url.Action("CreateAppointments", "Scheduler", new { area = "Scheduler" })',
+        _DeleteAppointments: '@Url.Action("DeleteAppointments", "Scheduler", new { area = "Scheduler" })',
+        _Users: '@Url.Action("Create", "Users", new { area = "Users" })',
+        _GetAccessPermissionList: '@Url.Action("GetAccessPermissionList", "PagePermission", new { area = "PagePermission" })',
+        _AddDemo: '@Url.Action("AddDemo", "PagePermission", new { area = "PagePermission" })',
+        _UserEditPopup: '@Url.Action("ShowEditPopup", "Users", new { area = "Users" })',
+        _MassUpdateUser: '@Url.Action("MassUpdateUser", "Users", new { area = "Users" })',
+        _IsUserPermitedtoDelete: '@Url.Action("IsUserPermitedtoDelete", "Users", new { area = "Users" })',
+        _CreateUserRoles: '@Url.Action("CreateUserRoles", "Users", new { area = "Users" })',
+        _DeleteUser: '@Url.Action("DeleteConfirmed", "Users", new { area = "Users" })',
+        _DeleteUserRolesById: '@Url.Action("DeleteUserRolesById", "Users", new { area = "Users" })',
+        _GetUserRolesById: '@Url.Action("GetUserRolesById", "Users", new { area = "Users" })',
+        _CreateModule: '@Url.Action("Create", "Modules", new { area = "Modules" })',
+        _CreateRoles: '@Url.Action("Create", "Roles", new { area = "Roles" })',
+        _MassUpdateRole: '@Url.Action("MassUpdate", "Roles", new { area = "Roles" })',
+        _DeleteModulePermission: '@Url.Action("DeleteModulePermission", "ModulePermission", new { area = "ModulePermissions" })',
+        _GetModulePermission: '@Url.Action("GetModulePermission", "ModulePermission", new { area = "ModulePermissions" })',
+        _CreateFullPermission: '@Url.Action("CreateFullPermission", "ModulePermission", new { area = "ModulePermissions" })',
+        _GetAllScreenPermission: '@Url.Action("GetAllScreenPermission", "ModulePermission", new { area = "ModulePermissions" })',
+        _GetPermissionList: '@Url.Action("GetPermissionList", "ScreenPermissions", new { area = "ScreenPermissions" })',
+        _DeleteScreenPermission: '@Url.Action("DeleteScreenPermission", "ScreenPermissions", new { area = "ScreenPermissions" })',
+        _AddScreenPermission: '@Url.Action("AddScreenPermission", "ScreenPermissions", new { area = "ScreenPermissions" })',
+        _ScannedRecordDetailsByScannedRecordID: '@Url.Action("ScannedRecordDetailsByScannedRecordID", "Home", new { area = "Scan" })',
+        _MassDeleteScannedRecord: '@Url.Action("MassDeleteScannedRecord", "Home", new { area = "Scan" })',
+        _ScanHomeIndex: '@Url.Action("index", "Home", new { area = "Scan" })',
+        _DeleteRecordsScan: '@Url.Action("DeleteRecords", "Home", new { area = "Scan" })',
+        _GetAllImagesByScannedRecordID: '@Url.Action("GetAllImagesByScannedRecordID", "Home", new { area = "Scan" })',
+        _UsersIndex: '@Url.Action("Index", "Users", new { area = "Users" })',
+        _RolesIndex: '@Url.Action("Index", "Roles", new { area = "Roles" })',
+        _CreateScreen: '@Url.Action("Create", "Screen", new { area = "Screens" })',
+        _EditScreenAction: '@Url.Action("EditScreenAction", "screen", new { area = "screens" })',
+        _ScreenAction: '@Url.Action("ScreenAction", "screen", new { area = "screens" })',
+        _showGridlIst: '@Url.Action("showGridlIst", "screen", new { area = "screens" })',
+
+
+    }
+    // User Module
+    $_UpdateSocialMediaStatus = "@Url.Action("UpdateSocialMediaStatus", "Home", new { @Area = "Users" })";
+    $_GetSocialMediaAccounts = "@Url.Action("GetSocialMedia", "Home", new { @Area = "Users" })";
+    $_BaseUrl = "@System.Web.Configuration.WebConfigurationManager.AppSettings["SiteUrl"].ToString()";
+    $_PostDetails = "@Url.Action("PostContent", "Post", new { @Area = "Users" })";
+    $_PostContentDetails = "@Url.Action("PostContent", "ManageContent", new { @Area = "Admin" })";
+    $_UpdateContentDetails = "@Url.Action("UpdateContent", "ManageContent", new { @Area = "Admin" })";
+    $_CheckRssFeedUrlAction = "@Url.Action("CheckRssFeedUrl", "ManageRssFeeds", new { @area = "Admin" })";
+    $_AddRssFeedUrlAction = "@Url.Action("AddRssFeed", "ManageRssFeeds", new { @area = "Admin" })";
+    $_ReadRssFeedAction = "@Url.Action("RssRead", "ManageRssFeeds", new { @area = "Admin" })";
+    $_UpdateContentPost = "@Url.Action("UpdateContent", "Home", new { @Area = "Users" })";
+    $_GetScheduledPost = "@Url.Action("GetScheduledPost", "Home", new { @Area = "Users" })";
+    $_UpdatePreference = "@Url.Action("UpdatePreference", "Preference", new { @Area = "Users" })";
+    $_GetStateByCountry = "@Url.Action("GetAllSubIndustry", "ManageContent", new { @Area = "Admin" })";
+    $_GetUserByEmailandIndustry = "@Url.Action("GetUserByEmailandIndustry", "ManageAdmin", new { @Area = "Admin" })";
+    $_UrlGetUserByEmailandIndustryId = "@Url.Action("GetUserByEmailandIndustryId", "ManageAdmin", new { @Area = "Admin" })";
+    $_AddRssData = "@Url.Action("AddRssData", "ManageRssFeeds", new { @Area = "Admin" })";
+    $_GetContentFromSocialMedia = "@Url.Action("GetContentFromSocialMedia", "Post", new { @Area = "Users" })";
+    $_IgnoreRssData = "@Url.Action("IgnoreRssData", "ManageRssFeeds", new { @Area = "Admin" })";
+    $_UrlGetPostChartData = "@Url.Action("GetPostDetailsChart", "Reports", new { @Area = "Users" })";
+    $_WatermarkImg = "@Url.Action("SaveByteArrayAsImage", "Post", new { @Area = "Users" })";
+    $_saveFile = "@Url.Action("SaveUploadedFile", "Post", new { @Area = "Users" })";
+    $_savewaterMarkImage = "@Url.Action("saveWaterMark", "Reports", new { @Area = "Users" })";
+    $_getwaterMarkImageDetails = "@Url.Action("GetwaterMark", "Reports", new { @Area = "Users" })";
+    $_saveWtaermakLogo = "@Url.Action("SaveUploadedLogoWateramrk", "Reports", new { @Area = "Users" })";
+    $_UrlGetIndustryById = "@Url.Action("GetIndustryById", "ManageContent", new { @Area = "Admin" })";
+    $_UrlCheckDuplicateSubIndustry = "@Url.Action("CheckDuplicateSubIndustry", "ManageCategory", new { @Area = "Admin" })";
+    $_UrlCheckDuplicateIndustry = "@Url.Action("CheckDuplicateIndustry", "ManageCategory", new { @Area = "Admin" })";
+    $_UrlAddPublishingTime = "@Url.Action("AddPublishingTime", "Schedule", new { @Area = "Users" })";
+    $_UrlGetPublishingTimeByDay = "@Url.Action("GetPublishingTimeByDay", "Schedule", new { @Area = "Users" })";
+    $_UrlDeletePublishingTime = "@Url.Action("DeletePublishingTime", "Schedule", new { @Area = "Users" })";
+    $_UrlSuperAdminSwitchLogin = "@Url.Action("SwitchSuperAdminLogin", "Account", new { @Area = "Admin" })";
+    $_UrlGetUserById = "@Url.Action("GetUserById", "Account", new { @Area = "Admin" })";
+    $_UrlCheckDuplicateContent = "@Url.Action("CheckDuplicateContent", "ManageContent", new { @Area = "Admin" })";
+    $_UrlGetUserByEmail = "@Url.Action("GetUserByEmail", "Account", new { @Area = "Admin" })";
+    $_UrlGetTimeZone = "@Url.Action("gettimeZoneOffset", "Home", new { @Area = "Users" })";
+    $_UrlGetPostsCounts = "@Url.Action("GetPostsCountsByDate", "Home", new { @Area = "Users" })";
+    $_UrladdPrefrences = "@Url.Action("AddPreference", "Preference", new { @Area = "Users" })";
+    $_UrlDeletePrefrence = "@Url.Action("DeletePreference", "Preference", new { @Area = "Users" })";
+    $_UrlSavePostDetails = "@Url.Action("SavePostDataByPublishingTime", "Schedule", new { @Area = "Users" })";
+    $_UrlGetPostLikesData = "@Url.Action("GetLikesOnPosts", "Reports", new { @Area = "Users" })";
+    $_UrlGetPostCommentsData = "@Url.Action("GetCommentsOnPosts", "Reports", new { @Area = "Users" })";
+    $_UrlSavecalenderEvents = "@Url.Action("SaveCalenderEvents", "Home", new { @Area = "Users" })";
+    $_UrlPostNowSaveCalender = "@Url.Action("PostNowContent", "Home", new { @Area = "Users" })";
+    $_UrlGetcalenderEvents = "@Url.Action("GetEvents", "Home", new { @Area = "Users" })";
+    $_UrlGetContentById = "@Url.Action("GetContentById", "Home", new { @Area = "Users" })";
+    $_UrlDeleteScheduleEvents = "@Url.Action("DeleteCalenderEvents", "Home", new { @Area = "Users" })";
+    $_UrlPostNowScheduleEvents = "@Url.Action("PostNow", "Schedule", new { @Area = "Users" })";
+    $_UrlUpdateContentStatusOnCalender = "@Url.Action("UpdateContentStatusOnCalender", "Home", new { @Area = "Users" })";
+    $_UrlGetFeedByUrl = "@Url.Action("GetRssFeedUrl", "ManageRssFeeds", new { @Area = "Admin" })";
+    $_UrlGetFeedByName = "@Url.Action("GetRssFeedName", "ManageRssFeeds", new { @Area = "Admin" })";
+    $_UrlEventBydate = "@Url.Action("GetEventsBydate", "Home", new { @Area = "Users" })";
+    $_UrlGetId = "@Url.Action("GetContentId", "Home", new { @Area = "Users" })";
+    $_UrlSaveCalenderEventsDrag = "@Url.Action("SaveCalenderEventsDrag", "Home", new { @Area = "Users" })";
+    $_UrlGetContentByEventId = "@Url.Action("GetContentByEventId", "Home", new { @Area = "Users" })";
+    $_UrlGetContentByNewId = "@Url.Action("GetContentByNewId", "Home", new { @Area = "Users" })";
+    $_UrlUpdateScheduleEvents = "@Url.Action("UpdateScheduleEvents", "Home", new { @Area = "Users" })";
+    $_UrlCheckDuplicateShortIndustry = "@Url.Action("CheckDuplicateShortIndustry", "ManageCategory", new { @Area = "Admin" })";
+    $_SaveTermsAndCondition = "@Url.Action("SaveTermsAndCondition", "ManageContent", new { @Area = "Admin" })";   // SRohit Save Terms And Conditions 
+    $_UpdateTermsAndCondition = "@Url.Action("UpdateTermsAndCondition", "ManageContent", new { @Area = "Admin" })";   // SRohit Update Terms And Conditions 
+    $_SyncFacebookPage = "@Url.Action("SyncFacebookPage", "Post", new { @Area = "Users" })";
+    $_FatchDatafromURL = "@Url.Action("FatchData", "ManageContent", new { @Area = "Admin" })";    /// Added by SRohit
+    $_GetContentListScheduler = "@Url.Action("GetContentListScheduler", "Home", new { @Area = "Users" })";
+    $_GetLeadManage = "@Url.Action("GetLeadManage", "Schedule", new { @Area = "Users" })";
+    $_GetContentPreference = "@Url.Action("GetContentPreference", "Schedule", new { @Area = "Users" })";
+    $_UrlSaveAutoPreferenceDetails  = "@Url.Action("SaveAutoPreferenceDetails", "Schedule", new { @Area = "Users" })";
+    $_UrlSaveAutoLandPageDetail = "@Url.Action("SaveAutoLandPageDetail", "Schedule", new { @Area = "Users" })";
+    $_GetSavedLeadManage = "@Url.Action("GetSavedLeadManage", "Schedule", new { @Area = "Users" })";
+    $_GetSavedContentPreference = "@Url.Action("GetSavedContentPreference", "Schedule", new { @Area = "Users" })";
+    $_UrlUpdateAutoPreference = "@Url.Action("UpdateAutoPreference", "Schedule", new { @Area = "Users" })";
+    $_UrlDeleteAutoPreference = "@Url.Action("DeleteAutoPreference", "Schedule", new { @Area = "Users" })";
+
+    
+    
+
+    
+
+    @*$_GetUserByEmailandIndustryInAccount = "@Url.Action("GetUserByEmailInd", "Home", new { @Area = "Users" })";*@
+
+</script>

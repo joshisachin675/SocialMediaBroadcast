@@ -1,0 +1,82 @@
+﻿
+
+@model Core.Domain.smSubIndustry
+@if (Model != null && Model != null)
+{
+
+      <input type="checkbox" id="PreferenceCheckAllsaved" value="Select All" class="PreferenceCheckallSaved" /><label>Select All </label> <br/>
+    for (int i = 0; i < Model.dataList.Count(); i++)
+    {
+      
+        <input type="checkbox" id="PreferenceCheck" class="SavedPreferenceCheck"   checked="@Model.dataList[i].Preference" data-subindustryname="@Model.dataList[i].SubIndustryName" data-subindustryid="@Model.dataList[i].SubIndustryId" />
+
+      @*@Html.CheckBoxFor(m => m.dataList[i].Preference, new { @class = "PreferenceCheck", data_subIndustryId =  })*@
+        @Model.dataList[i].SubIndustryName
+        @Html.HiddenFor(m => m.dataList[i].SubIndustryId, new { @class="idSubindustry"})
+    
+
+        <br>
+    }
+
+
+}
+<script>
+
+
+
+
+    $(".PreferenceCheckallSaved").change(function () {
+    debugger
+    if ($(this).is(':checked')) {
+        $(".SavedPreferenceCheck").prop('checked', true);
+    }
+    else {
+        $(".SavedPreferenceCheck").prop('checked', false);
+    }
+
+
+    });
+
+    //$(".SavedPreferenceCheck").change(function () {
+    //debugger
+    //    var subIndId = [];
+    //    var subIndIdName = [];
+    //    subIndId.push($(this).attr("data-SubIndustryId"));
+    //    subIndIdName.push($(this).attr("data-SubindustryName"));
+    //    if($(this).is(':checked')){ 
+    //    var JsonWorkInfo = {};
+    //    JsonWorkInfo.SelectedPreferences = subIndId;
+    //    JsonWorkInfo.SelectedPreferencesName = subIndIdName;
+    //    JsonWorkInfo.Status = true;
+    //    $.ajax({
+    //        url: $_UrlSaveAutoPreferenceDetails,
+    //        type: "Get",
+    //        data: { "PostInformation": JSON.stringify(JsonWorkInfo) },
+    //        success: function (result) {
+    //           // BootstrapDialog.alert("Post is scheduled Successfully");
+    //        }
+
+
+    //    })
+    //    }
+    //    else {
+    //        var JsonWorkInfo = {};
+    //        JsonWorkInfo.SelectedPreferences = subIndId;
+    //        JsonWorkInfo.SelectedPreferencesName = subIndIdName;
+    //        JsonWorkInfo.Status = false;
+    //        $.ajax({
+    //            url: $_UrlSaveAutoPreferenceDetails,
+    //            type: "Get",
+    //            data: { "PostInformation": JSON.stringify(JsonWorkInfo) },
+    //            success: function (result) {
+    //                //BootstrapDialog.alert("Post is scheduled Successfully");
+    //            }
+
+
+    //        })
+    //    }
+
+      
+
+    //});
+</script>

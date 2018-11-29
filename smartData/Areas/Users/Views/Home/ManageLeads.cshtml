@@ -1,0 +1,109 @@
+﻿@model smartData.Models.User.UserDashboardModel
+
+
+@{
+    ViewBag.Title = "Manage Leads";
+    Layout = "~/Views/Shared/_UserInnerLayout.cshtml";
+}
+
+<h2>Manage Leads</h2>
+
+
+<style>
+    body.modal-open {
+        padding-right: 17px !important;
+    }
+
+    .modal-open {
+    }
+
+        .modal-open .inner-table-filter-fx-PS .columns.columns-right.btn-group.pull-right {
+            position: absolute;
+            right: 39px !important;
+            top: 188px;
+        } 
+
+        .modal-open .username-ryt-right.dropdown.clearfix {
+            margin-right: 50px !important;
+        }
+
+    .bootstrap-table {
+        padding: 0 20px;
+        margin-top: 20px;
+    }
+
+    .keep-open.btn-group {
+        margin-right: 20px;
+    }
+</style>
+<script src="~/Scripts/User/ManageLeads.js"></script>
+<script type="text/javascript">
+
+@functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+}
+    }
+
+    // Antiforgery Token
+    var token = '@TokenHeaderValue()';
+    // alert(token);
+    var headers = {};
+    headers["RequestVerificationToken"] = token;
+
+</script>
+
+<section class=" wrapper scrollable inner-table-filter-fx-PS">
+  
+    <h2 class="social_media">Manage Leads</h2>
+    <div class="white_bg">
+        <div id="custom-toolbar" class="filter-sction">
+            
+            <div id="custom-toolbar" class="filter-sction">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-3"><input class="form-control manage_post" id="name" placeholder=" Name" type="text"></div>
+                    <div class="col-md-3 col-sm-3 col-xs-3"><input class="form-control manage_post" id="email" placeholder=" Email" type="text"></div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <button class="btn btn-success greenbtn" id="btnFilterleads" type="button" value="Filter" name="btnFilterleads">Filter</button>
+                        <button class="btn btn-info reset-filter btn-circlr" disabled id="resetBtn">Reset</button>
+                    </div>
+                </div>
+
+                <div class="row mrgntp">
+                    <div class="col-sm-12">
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mrgntp">
+                <div class="col-sm-12">
+
+                    @*<button class="btn btn-info btn-sm reset-filter btn-circlr" disabled id="resetBtn">Reset</button>
+                        <button type="button" class="btn btn-primary btn-sm add-btn btn-circlr" data-toggle="modal" data-target="#addStaff">Add</button>*@
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-hover" data-toolbar="#post" data-show-columns="true" data-show-filter="true" data-click-to-select="true" id="tblmanageLeads">
+           
+        </table>
+    </div>
+</section>
+<div class="modal" id="mdlEditLeads" tabindex="-1" role="dialog" aria-labelledby="mdlEditLeads">
+    @Html.Partial("_EditLeads")
+</div>
+@{
+    var userId = smartData.Common.SessionManager.LoggedInUser.UserID;
+    var usertype = smartData.Common.SessionManager.LoggedInUser.UserType;
+}
+<input type="hidden" id="TokenValue" value='@TokenHeaderValue()' />
+<input type="hidden" id="currentUserId" value='@userId' />
+<input type="hidden" id="currentUserType" value='@usertype' />
+
+

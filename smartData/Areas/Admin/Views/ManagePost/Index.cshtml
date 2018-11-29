@@ -1,0 +1,76 @@
+﻿@model smartData.Models.User.UserDashboardModel
+
+@{
+    ViewBag.Title = "::Manage Post::";
+    Layout = "~/Views/Shared/_AdminInnerLayout.cshtml";
+}
+
+<script src="~/Scripts/Admin/GetPostList.js"></script>
+
+<script type="text/javascript">
+  @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+
+        }
+    }
+    // Antiforgery Token
+    var token = '@TokenHeaderValue()';
+    // alert(token);
+    var headers = {};
+    headers["RequestVerificationToken"] = token;
+</script>
+
+<section class="wrapper scrollable">
+    <h3>View Post</h3>
+    <div id="custom-toolbar" class="filter-sction">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                @Html.DropDownList("socialMedia", new List<SelectListItem>
+                     {
+                        new SelectListItem() {Text = "Select Social Media---",Value=""},
+                        new SelectListItem() {Text = "Facebook", Value="Facebook"},
+                        new SelectListItem() {Text = "LinkedIn", Value="LinkedIn"},
+                         new SelectListItem() {Text = "Twitter", Value="Twitter"}                     
+                      }, new { @class = "form-control", @id = "socialMedia" })
+            </div>
+            @*<div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="socialMedia" placeholder="Social Media" type="text"></div>*@
+            <div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="firstName" placeholder="First Name" type="text"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="lastName" placeholder="Last Name" type="text"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+                <button class="btn btn-success greenbtn" id="btnFilter" type="button" value="Filter" name="btnFilter">Filter</button>
+                <button class="btn btn-info reset-filter btn-circlr" id="resetBtn">Reset</button>
+                @*<button type="button" class="btn btn-primary add-btn btn-circlr" data-toggle="modal" data-target="#addContent">Add</button>*@
+            </div>
+        </div>
+
+        <div class="row mrgntp">
+            <div class="col-sm-12">
+
+            </div>
+        </div>
+    </div>
+    @*<div class="post-modify-table">*@
+        <table class="table table-hover" data-toolbar="#post" data-show-columns="true" data-show-filter="true" data-click-to-select="true" id="grid">
+            <thead>
+                <tr>
+                    <th data-field="FirstName">Social Media</th>
+                    <th data-field="LastName">User</th>
+                </tr>
+            </thead>
+        </table>
+    @*</div>*@
+</section>
+
+<input type="hidden" id="TokenValue" value='@TokenHeaderValue()' />
+<input type="hidden" id="UserType" value="@smartData.Common.SessionManager.LoggedInUser.UserType" />
+<input type="hidden" id="IndustryId" value="@smartData.Common.SessionManager.LoggedInUser.IndustryId" />
+<!--Loader-->
+<div class="loadercontainingdiv">
+    <img src="~/Images/loadernew.gif" class="loaderprtclr" />
+</div>
+<!--End Loader-->

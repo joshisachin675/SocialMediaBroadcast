@@ -1,0 +1,262 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_userinnerlayout.cshtml";
+}
+<script src="~/Scripts/JqGrid/jquery-1.11.0.min.js"></script>
+<script src="~/Scripts/datepicker/bootstrap-datepicker.js"></script>
+<script src="~/Scripts/charts/flot/jquery.flot.min.js"></script>
+<script src="~/Scripts/charts/flot/jquery.flot.grow.js"></script>
+<script src="~/Scripts/charts/flot/jquery.flot.tooltip.min.js"></script>
+<script src="~/Scripts/charts/flot/jquery.flot.categories.js"></script>
+<script src="~/Scripts/User/GetReports.js"></script>
+<link href="~/Scripts/datepicker/datepicker.css" rel="stylesheet" />
+<script src="~/Scripts/datepicker/moment.min.js"></script>
+<link href="~/Content/css/app.css" rel="stylesheet" />
+
+<style>
+    #chart_div text {
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-size: 14px !important;
+    }
+
+    /*#chart_divNew .flot-base {
+        width: 1230px !important;
+    }*/
+    
+     #chart_div {
+        background: none !important;
+        margin: 135px auto;
+        margin-left: 11%;
+    }
+
+    div#chart_div {
+        width: 1229px !important;
+    }
+
+    #chart_div {
+        background: none !important;
+        margin: 135px auto;
+        margin-left: 7%;
+    }
+
+        #chart_div text {
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+            font-size: 13px !important;
+        }
+
+    div#chart_div {
+        width: 1229px !important;
+    }
+
+
+    w {
+    }
+
+
+    .btn-primary {
+        color: #fff;
+        background-color: #428bca;
+        border-color: #357ebd;
+    }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #428bca;
+            border-color: #357ebd;
+        }
+
+
+    #chart_div {
+        background: none !important;
+        margin: 135px auto;
+        margin-left: 7%;
+    }
+
+    .legendLabel {
+        font-size: 15px;
+    }
+
+
+    .tickLabel {
+        max-width: 40px !important;
+    }
+
+    .graph {
+        background: none repeat scroll 0 0 #f4f4f4;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+        margin: 30px 0;
+        width: 100%;
+        padding-bottom: 45px;
+    }
+
+    .mid-box {
+        background: none repeat scroll 0 0 #fff;
+        padding: 0px;
+        float: right;
+        margin-top: 40px;
+        margin-right: 33px;
+        width: 43%;
+    }
+
+    .tp-head-tab {
+        border: 1px solid #9db1c5;
+        border-radius: 4px;
+        float: right;
+        margin: 0 10px 0 0;
+        box-shadow: 0 2px 2px #c8c8c8;
+        padding: 0;
+    }
+
+    .normalwhtbtn {
+        color: #9db1c5 !important;
+        display: block;
+        background: #fff;
+        padding: 10px 20px;
+        border: 1px solid #9db1c5;
+        border-radius: 4px;
+        box-shadow: 0 2px 2px #c8c8c8;
+    }
+
+    .graph {
+        background: none repeat scroll 0 0 #f4f4f4;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+        margin: 30px 0;
+        width: 92%;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        margin-left: 6%;
+        margin-top: 80px;
+        padding: 0 15px;
+        background: #fff;
+    }
+
+    div#chart_div {
+        width: 100% !IMPORTANT;
+        MARGIN-LEFT: 7PX;
+        /* margin: 0 15px; */
+        padding: 3px 24px !important;
+    }
+
+
+    .like {
+        float: left;
+        margin-left: -4pc;
+        color: #9db1c5 !important;
+        display: block;
+        background: #fff;
+        border: 1px solid #9db1c5;
+        border-radius: 4px;
+        box-shadow: 0 2px 2px #c8c8c8;
+        height: 40px;
+        margin-right: 1pc;
+    }
+    .new-tabs {
+        float:none !important;
+    }
+    .all-wrap > li {
+       display:inline-block;
+    }
+    .mid-box {
+        background: none repeat scroll 0 0 #fff;
+        padding: 0px;
+        float: right;
+        margin-top: 40px;
+        margin-right: 33px;
+        width: 59%;
+    }
+
+
+    .form-title{
+        margin:0 -15px;
+    }
+</style>
+
+<div class="graph">
+    <div class="form-title">
+        <h3>View Reports</h3>
+    </div>
+    <div class="mid-box text-right clearfix">
+        <ul class="all-wrap clearfix">
+            <li style="position: relative;">
+                <ul class="tp-head-tab new-tabs clearfix ">
+                    <li><a href="javascript:void(0)" onclick="reloadChart(this)" class="active">Day</a></li>
+                    <li><a href="javascript:void(0)" onclick="reloadChart(this)">Week</a></li>
+                    <li><a href="javascript:void(0)" onclick="reloadChart(this)">Month</a></li>
+                </ul>
+            </li>
+            @*<li style="position: relative; top: -16px;">
+                <ul class="like new-tabs clearfix">
+                    <li>
+                        @Html.DropDownList("drpLikes", new List<SelectListItem> { new SelectListItem() { Text = "Select", Value = "0" }, new SelectListItem() { Text = "Likes", Value = "1" }, new SelectListItem() { Text = "Comments", Value = "2" }, }, new { @class = "form-control", id = "drpLikes", @style = "border: 0px " })
+                    </li>
+                </ul>
+            </li>*@
+            <li>
+                <a href="javascript:void(0)" class="orange-btn OpenDatePicker normalwhtbtn new-tabs clearfix">
+                    <div id="ParentDateSelector">
+                        <div id="DateSelector" style="float: right; cursor: pointer; color: #4a647e ; font-size: 15px; font-weight: normal; text-shadow: none; width:auto; line-height:16px;">
+                        </div>
+                        <div>
+                            <div id="DateSelectorInnerDiv" style="background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 1px solid rgba(0, 0, 0, 0.15); border-radius: 4px; box-shadow: none; clear: both; color: #4a647e; cursor: pointer; font-size: 14px; font-weight: 600; height: 135px; padding: 13px; position: absolute; top: 137px; right: 22px; width: 253px; z-index: 999; display: none; margin-top: 76px; margin-right: 20px; ">
+                                <table>
+                                    <tr>
+                                        <td>From&nbsp;:</td>
+                                        <td>
+                                            <input type="text" id="DateSelectorFrom" style="height: 25px; width:100%; margin-left: 10px" class="datepicker-input " readonly="readonly" />
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>To&nbsp;:</td>
+                                        <td>
+                                            <input type="text" id="DateSelectorTo" style="height: 25px; width: 100%; margin-left: 10px" class="datepicker-input " readonly="readonly" />
+                                        </td>
+                                    </tr>
+
+                                </table>
+
+
+                                @*<div class="datesbtns">
+                            <span id="Today" style="padding: 5px 5px 5px 5px; box-shadow: rgba(0, 0, 0, 0.8); cursor: pointer; background: #FFFFFF; border: 1px solid #A8BECB; border-radius: 3px;">Today</span>&nbsp;&nbsp;&nbsp;
+                            <span id="LastSeven" style="padding: 5px 5px 5px 5px; box-shadow: rgba(0, 0, 0, 0.8); cursor: pointer; background: #FFFFFF; border: 1px solid #A8BECB; border-radius: 3px;">Last 7 Days</span>&nbsp;&nbsp;&nbsp;
+                            <span id="LastThirty" style="padding: 5px 5px 5px 5px; box-shadow: rgba(0, 0, 0, 0.8); cursor: pointer; background: #FFFFFF; border: 1px solid #A8BECB; border-radius: 3px;">Last 30 Days</span>
+                        </div>*@
+
+
+                                <input type="button" class="datepick-update" value="Update" style="background: none repeat scroll 0 0 #8ab850;  border-radius: 2px; color: #fff; display: inline-block; float: right;   font-size: 14px;
+    padding: 7px 15px; border:1px solid #8B9DAF; cursor: pointer" id="UpdateGridByDate" />
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+        
+        
+        
+
+        
+    </div>
+
+    <div class="in-box clearfix" style="background: white">
+        <!--<img src="images/map.png" alt="" title="" />-->
+        <div id="chart_div" style="width: 1097px; height: 250px; background: white">
+            <div style="margin-left: 500px; padding-top: 100px;">
+                <img src="~/Images/ajax-loader.gif" />
+            </div>
+        </div>            <!--<img src="images/map.png" alt="" title="" />-->
+    </div>
+    <div class="in-box clearfix" style="background: white ;" >
+        <div id="chart_divNew" style="width: 1097px; height: 250px; background: white; display: none">
+            <div style="margin-left: 500px; padding-top: 100px;">
+                <img src="~/Images/ajax-loader.gif" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<input type="hidden" id="hdnUserId" value="@smartData.Common.SessionManager.LoggedInUser.UserID" />

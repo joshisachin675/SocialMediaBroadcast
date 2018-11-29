@@ -1,0 +1,1223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{195319FB-7ACF-401B-A85E-0CA53EB435A5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>smartData</RootNamespace>
+    <AssemblyName>smartData</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ASPSnippets.GoogleAPI">
+      <HintPath>C:\Users\rohitg\Downloads\ASPSnippets.GoogleAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>C:\Users\poojad\Desktop\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>C:\Users\SRohitj\Desktop\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Commons">
+      <HintPath>C:\Users\rohitg\Downloads\dotnet_v3.2.0\Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Edi.Web.SyndicationFeed">
+      <HintPath>..\packages\Edi.Web.SyndicationFeed.2.2.0\lib\net45\Edi.Web.SyndicationFeed.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah.Mvc, Version=2.0.0.29988, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Elmah.MVC.2.1.1\lib\net40\Elmah.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.23.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Google.Apis.1.23.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.23.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Google.Apis.Auth.1.23.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.23.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Google.Apis.Auth.1.23.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.23.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Google.Apis.Core.1.23.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Oauth2.v2">
+      <HintPath>C:\Users\rohitg\Downloads\gplus-quickstart-csharp-master\gplus-quickstart-csharp-master\gplus-quickstart-csharp\bin\Google.Apis.Oauth2.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.23.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Google.Apis.1.23.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Plus.v1">
+      <HintPath>C:\Users\rohitg\Downloads\gplus-quickstart-csharp-master\gplus-quickstart-csharp-master\gplus-quickstart-csharp\bin\Google.Apis.Plus.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Urlshortener.v1">
+      <HintPath>..\packages\Google.Apis.Urlshortener.v1.1.23.0.138\lib\net45\Google.Apis.Urlshortener.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="Hammock">
+      <HintPath>..\..\..\..\..\..\..\SchedularDemo\packages\TweetSharp-Unofficial.2.3.1.2\lib\4.0\Hammock.dll</HintPath>
+    </Reference>
+    <Reference Include="Hammock.ClientProfile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c148cfba29ed1a4d, processorArchitecture=MSIL">
+      <HintPath>..\packages\TweetSharp.2.3.1\lib\4.0\Hammock.ClientProfile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Data.Edm.5.6.2\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Data.OData.5.6.2\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Data.Services.Client.5.6.2\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Owin.Host.SystemWeb.3.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Owin.Security.3.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Owin.Security.Cookies.3.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Owin.Security.Facebook.3.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Owin.Security.Google.3.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.WebHelpers.3.2.2\lib\net45\Microsoft.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.WindowsAzure.ConfigurationManager.2.0.3\lib\net40\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Unofficial.Microsoft.WindowsAzure.Diagnostics.2.5.0.0\lib\net40\Microsoft.WindowsAzure.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Unofficial.Microsoft.WindowsAzure.ServiceRuntime.2.5.0.0\lib\net40\Microsoft.WindowsAzure.ServiceRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\WindowsAzure.Storage.4.3.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Ninject.MVC3.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=2.4.1.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\vikast\Desktop\SRohit\V3\www.stylecompare.co.uk\Bin\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="Sparkle.LinkedInNET, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sparkle.LinkedInNET.1.0.13\lib\net45\Sparkle.LinkedInNET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Spatial, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\System.Spatial.5.6.2\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="TweetSharp, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c148cfba29ed1a4d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\SchedularDemo\packages\TweetSharp-Unofficial.2.3.1.2\lib\4.0\TweetSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.WebPages.Data.3.2.2\lib\net45\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Microsoft.AspNet.WebPages.WebData.3.2.2\lib\net45\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+    <Reference Include="Zlib.Portable">
+      <HintPath>..\packages\Zlib.Portable.Signed.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\BabyLonBridgeWebContext-20140703104038.mdf" />
+    <Content Include="App_Data\BabyLonBridgeWebContext-20140703104038_log.ldf">
+      <DependentUpon>BabyLonBridgeWebContext-20140703104038.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\DefaultConnection.mdf" />
+    <Content Include="App_Data\DefaultConnection_log.ldf">
+      <DependentUpon>DefaultConnection.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\UserManagement.mdf" />
+    <Content Include="App_Data\UserManagement_log.ldf">
+      <DependentUpon>UserManagement.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="Areas\Users\Images\fb.jpg" />
+    <Content Include="Areas\Users\Images\linkedin.png" />
+    <Content Include="Areas\Users\Images\loading2.gif" />
+    <Content Include="Areas\Users\Images\loadingmessage.png" />
+    <Content Include="Content\bootstrap-combined.min.css" />
+    <Content Include="Content\bootstrap-tagsinput.css" />
+    <Content Include="Content\bootstrap-timepicker.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Common.css" />
+    <Content Include="Content\confirm.css" />
+    <Content Include="Content\css\app.css" />
+    <Content Include="Content\css\bootstrap-theme.min.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\ErrorPage.css" />
+    <Content Include="Content\css\Font-OpenSans.css" />
+    <Content Include="Content\css\fontselect.css" />
+    <Content Include="Content\css\intro.css" />
+    <Content Include="Content\css\jquery.mCustomScrollbar.css" />
+    <Content Include="Content\css\master.css" />
+    <Content Include="Content\css\media.css" />
+    <Content Include="Content\css\schedulerCalander.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\watermakfont.css" />
+    <Content Include="Content\css\watermark.css" />
+    <Content Include="Content\datepicker.css" />
+    <Content Include="Content\daterangepicker.css" />
+    <Content Include="Content\fullcalender.css" />
+    <Content Include="Content\homevalue-style.css" />
+    <Content Include="Content\jquery.contextMenu.css" />
+    <Content Include="Content\jquery.jqGrid\ellipsis-xbl.xml" />
+    <Content Include="Content\jquery.jqGrid\jquery-ui.css" />
+    <Content Include="Content\jquery.jqGrid\ui.jqgrid.css" />
+    <Content Include="Content\jquery.qtip.css" />
+    <Content Include="Content\moment.min.js" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\User\PasswordCheck.css" />
+    <Content Include="DemoPage1.html" />
+    <Content Include="DemoPage2.html" />
+    <Content Include="DemoPage3.html" />
+    <Content Include="fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\roboto_medium\RobotoMedium.svg" />
+    <Content Include="fonts\roboto_regular\roboto-regular.svg" />
+    <Content Include="GenericErrorPage.htm" />
+    <Content Include="Global.asax" />
+    <Content Include="Areas\Users\Views\Users\_AddUser.cshtml" />
+    <Content Include="Areas\Users\Views\Users\NoPermissionUser.cshtml" />
+    <Content Include="Areas\Users\Views\Account\Register.cshtml" />
+    <Content Include="Areas\Users\Views\Account\ResetPassword.cshtml" />
+    <Content Include="Areas\Users\Views\Account\ChangePassword.cshtml" />
+    <Content Include="Areas\Users\Views\Home\Index.cshtml" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="fonts\roboto_medium\RobotoMedium.eot" />
+    <Content Include="fonts\roboto_medium\RobotoMedium.ttf" />
+    <Content Include="fonts\roboto_medium\RobotoMedium.woff" />
+    <Content Include="fonts\roboto_medium\RobotoMedium.woff2" />
+    <Content Include="fonts\roboto_regular\roboto-regular.eot" />
+    <Content Include="fonts\roboto_regular\roboto-regular.ttf" />
+    <Content Include="fonts\roboto_regular\roboto-regular.woff" />
+    <Content Include="fonts\roboto_regular\roboto-regular.woff2" />
+    <Content Include="Areas\Users\Views\Account\Login.cshtml" />
+    <Content Include="Areas\Users\Views\Home\ManageSocialMedia.cshtml" />
+    <Content Include="Areas\Admin\Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Areas\Admin\Views\Account\Login.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\Register.cshtml" />
+    <Content Include="Areas\Users\Views\External\NoPermission.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageAdmin\Index.cshtml" />
+    <Content Include="homevalue\css\homevalue-style.css" />
+    <Content Include="homevalue\images\bg.jpg" />
+    <Content Include="homevalue\index.asp" />
+    <Content Include="index.asp" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\back_login.jpg" />
+    <Content Include="Images\bg1.png" />
+    <Content Include="Images\bg2.png" />
+    <Content Include="Images\bg3.png" />
+    <Content Include="Images\bottom-image.png" />
+    <Content Include="Images\check_box_without_check.png" />
+    <Content Include="Images\check_box_with_check.png" />
+    <Content Include="Images\close_icon_black2.png" />
+    <Content Include="Images\cross.png" />
+    <Content Include="Images\login-bg.jpg" />
+    <Content Include="Images\noimage.png" />
+    <Content Include="Images\no_document.png" />
+    <Content Include="Images\post%2840x40%29.png" />
+    <Content Include="Images\sample-2-c.jpg" />
+    <Content Include="Images\social-media2.jpg" />
+    <Content Include="Images\social_media.png" />
+    <Content Include="Images\Untitled-1.png" />
+    <Content Include="Images\WallImages\3\download.jpg" />
+    <Content Include="Default.asp" />
+    <Content Include="PrivacyPolicy.html" />
+    <Content Include="Scripts\Admin\EditAdminPassword.js" />
+    <Content Include="Scripts\Admin\EditSubIndustry.js" />
+    <Content Include="Scripts\Admin\GetActivityLog.js" />
+    <Content Include="Scripts\Admin\GetSubIndustryList.js" />
+    <Content Include="Scripts\Admin\GetTermsAndConditions.js" />
+    <Content Include="Scripts\Admin\GetUsersListForSuperadmin.js" />
+    <Content Include="Scripts\Admin\Read_Rss.js" />
+    <Content Include="Scripts\Admin\SelectCategoryPartial.js" />
+    <Content Include="Scripts\BootStrapDateTimePicker\bootstrap-datetimepicker.js" />
+    <Content Include="Scripts\BootStrapDateTimePicker\bootstrap-timepicker.js" />
+    <Content Include="Scripts\BootStrapGrid\bootstrap-toggle.min.js" />
+    <Content Include="Scripts\BootstrapMultiselect.js" />
+    <Content Include="Scripts\charts\easypiechart\jquery.easy-pie-chart.js" />
+    <Content Include="Scripts\charts\flot\demo.js" />
+    <Content Include="Scripts\charts\flot\jquery.flot.animator.min.js" />
+    <Content Include="Scripts\charts\flot\jquery.flot.categories.js" />
+    <Content Include="Scripts\charts\flot\jquery.flot.grow.js" />
+    <Content Include="Scripts\charts\flot\jquery.flot.min.js" />
+    <Content Include="Scripts\charts\flot\jquery.flot.orderBars.js" />
+    <Content Include="Scripts\charts\flot\jquery.flot.pie.min.js" />
+    <Content Include="Scripts\charts\flot\jquery.flot.resize.js" />
+    <Content Include="Scripts\charts\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="Scripts\charts\sparkline\jquery.sparkline.min.js" />
+    <Content Include="Scripts\datepicker\bootstrap-datepicker.js" />
+    <Content Include="Scripts\datepicker\datepicker.css" />
+    <Content Include="Scripts\datepicker\moment.min.js" />
+    <Content Include="Scripts\JqGrid\bootstrap-popover.js" />
+    <Content Include="Scripts\JqGrid\bootstrap-tooltip.js" />
+    <Content Include="Scripts\JqGrid\jquery-ui.js" />
+    <Content Include="Areas\Users\Views\Post\Service.cshtml" />
+    <Content Include="Areas\Users\Views\Account\TermsConditions.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageContent\TermsAndConditions.cshtml" />
+    <Content Include="Areas\Users\Views\Home\ManageLeads.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageContent\Partial1.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageContent\ManageLeadsAdmin.cshtml" />
+    <Content Include="Areas\Users\Views\Home\SchedularCalendar.cshtml" />
+    <Content Include="Areas\Users\Views\Account\LinkExpire.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\LinkExpire.cshtml" />
+    <Content Include="Areas\Users\Views\Error\Error.cshtml" />
+    <Content Include="Areas\Users\Views\Error\NotFound.cshtml" />
+    <None Include="Properties\PublishProfiles\SMB_108.pubxml" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery.maskedinput.js" />
+    <Content Include="Scripts\jquery.maskedinput.min.js" />
+    <Content Include="Scripts\Jscripts\confirm.js" />
+    <Content Include="Scripts\Jscripts\contextmenu.js" />
+    <Content Include="Scripts\Jscripts\daterangepicker.js" />
+    <Content Include="Scripts\Jscripts\file-validator.js" />
+    <Content Include="Scripts\Jscripts\fullcalender.js" />
+    <Content Include="Scripts\Jscripts\highlight.js" />
+    <Content Include="Scripts\Jscripts\jquery.fontselect.min.js" />
+    <Content Include="Scripts\Jscripts\jquery.qtip.js" />
+    <Content Include="Scripts\Jscripts\jquery.watermark.js" />
+    <Content Include="Scripts\Jscripts\jquery.watermark.min.js" />
+    <Content Include="Scripts\Jscripts\main.js" />
+    <Content Include="Scripts\Jscripts\makedinput.js" />
+    <Content Include="Scripts\Jscripts\watermark.js" />
+    <Content Include="Scripts\Jscripts\watermark.min.js" />
+    <Content Include="Scripts\Jscripts\watermarker.js" />
+    <Content Include="Scripts\timeout\imeout-dialog.css" />
+    <Content Include="Scripts\timeout\timeout-dialog.js" />
+    <Content Include="Scripts\timeout\timeout-icon.png" />
+    <Content Include="Scripts\User\Add_Preference.js" />
+    <Content Include="Scripts\User\common.js" />
+    <Content Include="Scripts\User\CreatePost.js" />
+    <Content Include="Scripts\User\EditLeads.js" />
+    <Content Include="Scripts\User\EditPreference.js" />
+    <Content Include="Scripts\User\GetPreferences.js" />
+    <Content Include="Scripts\User\GetReports.js" />
+    <Content Include="Scripts\User\ManageLeads.js" />
+    <Content Include="Scripts\User\ManageUser.js" />
+    <Content Include="Scripts\User\PublishingTime.js" />
+    <Content Include="Scripts\User\register.js" />
+    <Content Include="Scripts\User\SchedulerCalendar.js" />
+    <Content Include="Views\Shared\_AddAdminPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageUser\Index.cshtml" />
+    <Content Include="Areas\Users\Views\External\SessionExpire.cshtml" />
+    <Content Include="Scripts\Admin\AddCategory.js" />
+    <Content Include="Scripts\Admin\EditCategory.js" />
+    <Content Include="Scripts\Admin\EditContent.js" />
+    <Content Include="Scripts\Admin\GetCategories.js" />
+    <Content Include="Scripts\Admin\GetPostList.js" />
+    <Content Include="Scripts\Admin\Rssfeed.js" />
+    <Content Include="Scripts\bootstrap-tagsinput.js" />
+    <Content Include="Scripts\User\EditFuture.js" />
+    <Content Include="Scripts\User\GetFuturePost.js" />
+    <Content Include="Scripts\User\GetPost.js" />
+    <Content Include="Scripts\User\home.js" />
+    <Content Include="Views\Shared\_AddContentPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageContent\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ManagePost\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageCategory\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageRssFeeds\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageRssFeeds\RssRead.cshtml" />
+    <Content Include="Areas\Users\Views\Home\Post.cshtml" />
+    <Content Include="Areas\Users\Views\Home\ManagePost.cshtml" />
+    <Content Include="Areas\Users\Views\Home\ManageFuturePost.cshtml" />
+    <Content Include="Areas\Users\Views\Preference\ManagePreference.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageCategory\GetAllSubCategory.cshtml" />
+    <Content Include="Areas\Users\Views\Reports\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\ResetPasswordAdmin.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\ChangePasswordAdmin.cshtml" />
+    <Content Include="Areas\Users\Views\Reports\EditWaterMark.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\SuperAdminLogin.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageActivity\Index.cshtml" />
+    <Content Include="Areas\Users\Views\Schedule\ManagePublishingTimes.cshtml" />
+    <Content Include="Content\timepicker.less" />
+    <Content Include="Areas\Users\Views\Home\ManageUserAccount.cshtml" />
+    <Content Include="Areas\Users\Views\Home\CreatePost.cshtml" />
+    <Content Include="Areas\Users\Views\Post\GetResults.cshtml" />
+    <Content Include="Areas\Users\Views\Post\GetResultsForStatus.cshtml" />
+    <Content Include="Areas\Users\Views\Post\GetResultsTwitter.cshtml" />
+    <Content Include="Areas\Users\Views\Post\GetResultsTwitterForStatus.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\ResetPasswordSuperAdmin.cshtml" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
+    <None Include="Properties\PublishProfiles\HealthCare.pubxml" />
+    <None Include="Resources\addon\dynamsoft.webtwain.addon.barcode.intellisense.js" />
+    <Content Include="Images\fb.jpg" />
+    <Content Include="Images\feed1.png" />
+    <Content Include="Images\feed2.png" />
+    <Content Include="Images\feed3.png" />
+    <Content Include="Images\google.jpg" />
+    <Content Include="Images\linkedin.png" />
+    <Content Include="Images\loadernew.gif" />
+    <Content Include="Images\loading2.gif" />
+    <Content Include="Images\loadingmessage.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\logo1.png" />
+    <Content Include="Images\logo2.png" />
+    <Content Include="Images\message.png" />
+    <Content Include="Images\notification.png" />
+    <Content Include="Images\thanks-page-bg.jpg" />
+    <Content Include="Images\thanks-page-bg1.jpg" />
+    <Content Include="Images\twitter.jpg" />
+    <Content Include="Images\user.jpg" />
+    <Content Include="Resources\addon\dynamsoft.webtwain.addon.barcode.intellisense.nonvs.js" />
+    <Content Include="Resources\addon\dynamsoft.webtwain.addon.barcode.js" />
+    <None Include="Resources\addon\dynamsoft.webtwain.addon.webcam.intellisense.js" />
+    <Content Include="Resources\addon\dynamsoft.webtwain.addon.webcam.intellisense.nonvs.js" />
+    <Content Include="Resources\addon\dynamsoft.webtwain.addon.webcam.js" />
+    <Content Include="Resources\DynamicWebTWAIN.cab" />
+    <Content Include="Resources\DynamicWebTWAINHTML5Edition.exe" />
+    <Content Include="Resources\DynamicWebTWAINx64.cab" />
+    <Content Include="Resources\dynamsoft.webtwain.config.js" />
+    <Content Include="Resources\dynamsoft.webtwain.initiate.js" />
+    <Content Include="Resources\dynamsoft.webtwain.install.js" />
+    <None Include="Resources\dynamsoft.webtwain.intellisense.js" />
+    <Content Include="Resources\dynamsoft.webtwain.intellisense.nonvs.js" />
+    <Content Include="Resources\reference\btn-down-install-plugin.gif" />
+    <Content Include="Resources\reference\hint.css" />
+    <Content Include="Resources\reference\html5_editor.css" />
+    <Content Include="Resources\reference\imgs\changeimagesize.png" />
+    <Content Include="Resources\reference\imgs\close.png" />
+    <Content Include="Resources\reference\imgs\crop.png" />
+    <Content Include="Resources\reference\imgs\crop_grey.png" />
+    <Content Include="Resources\reference\imgs\deskew.png" />
+    <Content Include="Resources\reference\imgs\fit.png" />
+    <Content Include="Resources\reference\imgs\fith.png" />
+    <Content Include="Resources\reference\imgs\fitw.png" />
+    <Content Include="Resources\reference\imgs\flip.png" />
+    <Content Include="Resources\reference\imgs\hand.png" />
+    <Content Include="Resources\reference\imgs\img.png" />
+    <Content Include="Resources\reference\imgs\mirror.png" />
+    <Content Include="Resources\reference\imgs\next.png" />
+    <Content Include="Resources\reference\imgs\next_grey.png" />
+    <Content Include="Resources\reference\imgs\originalsize.png" />
+    <Content Include="Resources\reference\imgs\plug-in-blocked.png" />
+    <Content Include="Resources\reference\imgs\previous.png" />
+    <Content Include="Resources\reference\imgs\previous_grey.png" />
+    <Content Include="Resources\reference\imgs\print.png" />
+    <Content Include="Resources\reference\imgs\rectselect.png" />
+    <Content Include="Resources\reference\imgs\restore.png" />
+    <Content Include="Resources\reference\imgs\rotate.png" />
+    <Content Include="Resources\reference\imgs\rotateleft.png" />
+    <Content Include="Resources\reference\imgs\rotateright.png" />
+    <Content Include="Resources\reference\imgs\save.png" />
+    <Content Include="Resources\reference\imgs\stretch.png" />
+    <Content Include="Resources\reference\imgs\zoomin.png" />
+    <Content Include="Resources\reference\imgs\zoomin_grey.png" />
+    <Content Include="Resources\reference\imgs\zoomout.png" />
+    <Content Include="Resources\reference\imgs\zoomout_grey.png" />
+    <Content Include="Resources\reference\loading.gif" />
+    <Content Include="Resources\reference\logo.gif" />
+    <Content Include="Scripts\Admin\AddAdminStaff.js" />
+    <Content Include="Scripts\Admin\AddContent.js" />
+    <Content Include="Scripts\Admin\GetAdminUsersList.js" />
+    <Content Include="Scripts\Admin\GetContentList.js" />
+    <Content Include="Scripts\Admin\GetUsersList.js" />
+    <Content Include="Scripts\BootStrapDateTimePicker\bootstrap-datetimepicker.min.css" />
+    <Content Include="Scripts\BootStrapDateTimePicker\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\BootStrapDateTimePicker\jquery-ui.min.js" />
+    <Content Include="Scripts\BootStrapDateTimePicker\moment-with-locales.js" />
+    <Content Include="Scripts\Admin\tinymce.min.js" />
+    <Content Include="Scripts\dropzone\basic.css" />
+    <Content Include="Scripts\dropzone\basic.min.css" />
+    <Content Include="Scripts\dropzone\dropzone-amd-module.js" />
+    <Content Include="Scripts\dropzone\dropzone-amd-module.min.js" />
+    <Content Include="Scripts\dropzone\dropzone.css" />
+    <Content Include="Scripts\dropzone\dropzone.js" />
+    <Content Include="Scripts\dropzone\dropzone.min.css" />
+    <Content Include="Scripts\dropzone\dropzone.min.js" />
+    <Content Include="Scripts\JqGrid\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\Jscripts\bootstrap.js" />
+    <Content Include="Scripts\Jscripts\jquery-2.2.3.js" />
+    <Content Include="Scripts\Jscripts\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Scripts\js\Account.js" />
+    <Content Include="Scripts\js\demo.js" />
+    <Content Include="Scripts\js\loginfo.js" />
+    <Content Include="Scripts\js\menu.js" />
+    <Content Include="Scripts\js\module.js" />
+    <Content Include="Scripts\js\moduleindex.js" />
+    <Content Include="Scripts\js\noPermissions.js" />
+    <Content Include="Scripts\js\patients.js" />
+    <Content Include="Scripts\js\permissions.js" />
+    <Content Include="Scripts\js\roles.js" />
+    <Content Include="Scripts\js\rolesAddRole.js" />
+    <Content Include="Scripts\js\rolesindex.js" />
+    <Content Include="Scripts\js\scans.js" />
+    <Content Include="Scripts\js\scheduler.js" />
+    <Content Include="Scripts\js\screenpermissions.js" />
+    <Content Include="Scripts\js\screens.js" />
+    <Content Include="Scripts\js\screensindex.js" />
+    <Content Include="Scripts\js\screensNewScreen.js" />
+    <Content Include="Scripts\js\users.js" />
+    <Content Include="Scripts\js\usersCreate.js" />
+    <Content Include="Scripts\js\usersIndex.js" />
+    <Content Include="Scripts\js\usersRoleList.js" />
+    <Content Include="Scripts\libs\bootstrap-collapse.js" />
+    <Content Include="Scripts\libs\bootstrap-datepicker.js" />
+    <Content Include="Scripts\libs\bootstrap-transition.js" />
+    <Content Include="Scripts\libs\bootstrap.js" />
+    <Content Include="Scripts\libs\bootstrap.min.js" />
+    <Content Include="Scripts\BootStrapDailog\bootstrap-dialog.min.css" />
+    <Content Include="Scripts\BootStrapDailog\bootstrap-dialog.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\apple-touch-icon.png" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\css\bootstrap.css" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\js\bootstrap.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\js\npm.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\css\docs.min.css" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\css\sidenav.css" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\css\style.css" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\flash\ZeroClipboard.swf" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\js\common.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\js\customize.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\js\docs.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\js\ie-emulation-modes-warning.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\js\ie8-responsive-file-warning.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\js\jquery.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\js\sidenav.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\bootstrap-table.min.css" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\bootstrap-table.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\extensions\editable\bootstrap-table-editable.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\extensions\export\bootstrap-table-export.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\extensions\filter\bootstrap-table-filter.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\extensions\flatJSON\bootstrap-table-flatJSON.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-cs-CZ.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-da-DK.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-de-DE.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-el-GR.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-en-US.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-es-AR.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-es-CR.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-es-NI.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-fr-BE.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-fr-FR.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-hu-HU.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-it-IT.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-ko-KR.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-nl-NL.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-pl-PL.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-pt-BR.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-ru-RU.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-sk-SK.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-th-TH.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-tr-TR.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-ur-PK.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-vi-VN.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-zh-CN.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\dist\locale\bootstrap-table-zh-TW.min.js" />
+    <Content Include="Scripts\BootStrapGrid\docs\favicon.ico" />
+    <Content Include="Scripts\BootStrapGrid\docs\robots.txt" />
+    <Content Include="Scripts\BootStrapGrid\docs\sitemap.xml" />
+    <Content Include="Scripts\BootStrapGrid\docs\_includes\footer.html" />
+    <Content Include="Scripts\BootStrapGrid\docs\_includes\header.html" />
+    <Content Include="Scripts\BootStrapGrid\docs\_includes\nav\main.html" />
+    <Content Include="Scripts\BootStrapGrid\docs\_includes\social-buttons.html" />
+    <Content Include="Scripts\BootStrapGrid\docs\_layouts\default.html" />
+    <Content Include="Scripts\BootStrapGrid\docs\_layouts\home.html" />
+    <Content Include="Scripts\BootStrapGrid\index.html" />
+    <Content Include="Scripts\BootStrapGrid\src\1431806156_list-add-user.png" />
+    <Content Include="Scripts\BootStrapGrid\src\Acivate.jpg" />
+    <Content Include="Scripts\BootStrapGrid\src\bootstrap-table.css" />
+    <Content Include="Scripts\BootStrapGrid\src\bootstrap-table.js" />
+    <Content Include="Scripts\BootStrapGrid\src\extensions\editable\bootstrap-table-editable.js" />
+    <Content Include="Scripts\BootStrapGrid\src\extensions\export\bootstrap-table-export.js" />
+    <Content Include="Scripts\BootStrapGrid\src\extensions\filter\bootstrap-table-filter.js" />
+    <Content Include="Scripts\BootStrapGrid\src\extensions\flatJSON\bootstrap-table-flatJSON.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-cs-CZ.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-da-DK.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-de-DE.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-el-GR.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-en-US.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-es-AR.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-es-CR.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-es-NI.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-fr-BE.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-fr-FR.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-hu-HU.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-it-IT.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-ko-KR.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-nl-NL.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-pl-PL.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-pt-BR.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-pt-PT.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-ru-RU.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-sk-SK.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-sv-SE.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-th-TH.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-tr-TR.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-uk-UA.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-ur-PK.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-vi-VN.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-zh-CN.js" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-zh-TW.js" />
+    <Content Include="Scripts\BootStrapGrid\src\massactive.jpg" />
+    <Content Include="Scripts\JqGrid\Changes.txt" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-ar.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-bg.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-bg1251.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-cat.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-cn.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-cs.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-da.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-de.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-dk.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-el.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-en.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-es.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-fa.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-fi.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-fr.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-gl.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-he.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-hr.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-hr1250.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-hu.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-id.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-is.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-it.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-ja.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-kr.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-lt.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-mne.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-nl.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-no.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-pl.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-pt-br.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-pt.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-ro.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-ru.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-sk.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-sr-latin.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-sr.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-sv.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-th.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-tr.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-tw.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-ua.js" />
+    <Content Include="Scripts\JqGrid\i18n\grid.locale-vi.js" />
+    <Content Include="Scripts\JqGrid\install.txt" />
+    <Content Include="Scripts\JqGrid\jquery.jqGrid.min.js" />
+    <Content Include="Scripts\JqGrid\jquery.jqGrid.src.js" />
+    <Content Include="Areas\Users\Views\Users\Create.cshtml" />
+    <Content Include="Areas\Users\Views\Users\Delete.cshtml" />
+    <Content Include="Areas\Users\Views\Users\Details.cshtml" />
+    <Content Include="Areas\Users\Views\Users\Edit.cshtml" />
+    <Content Include="Areas\Users\Views\Users\Index.cshtml" />
+    <Content Include="Areas\Users\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Users\Views\Shared\Layout.cshtml" />
+    <Content Include="Scripts\BootStrapGrid\src\extensions\editable\README.md" />
+    <Content Include="Scripts\BootStrapGrid\src\extensions\export\README.md" />
+    <Content Include="Scripts\BootStrapGrid\src\extensions\filter\README.md" />
+    <Content Include="Scripts\BootStrapGrid\src\extensions\flatJSON\README.md" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\bootstrap-table-en-US.js.template" />
+    <Content Include="Scripts\BootStrapGrid\src\locale\README.md" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Scripts\BootStrapGrid\README.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Scripts\BootStrapGrid\docs\assets\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Scripts\BootStrapGrid\docs\data\data1\demo.response.json" />
+    <Content Include="Scripts\BootStrapGrid\docs\data\data2\demo.response.json" />
+    <Content Include="Scripts\BootStrapGrid\docs\data\data3\demo.response.json" />
+    <Content Include="Scripts\BootStrapGrid\docs\data\data4\demo.response.json" />
+    <Content Include="Scripts\BootStrapGrid\docs\data\data5\demo.response.json" />
+    <Content Include="Scripts\BootStrapGrid\docs\data\README.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\documentation.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\examples.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\extensions.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\faq.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\getting-started.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\index.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\README.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en.yml" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\documentation\column-options.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\documentation\events.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\documentation\localizations.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\documentation\methods.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\documentation\table-options.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\align.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\basic.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\card-view.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\columns.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\events.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\format.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\hide-header.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\methods.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\note.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\pagination.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\select.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\sort.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\style.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\examples\toolbar.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\extensions\editable.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\faq\faq.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\getting-started\download.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\getting-started\grunt.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\getting-started\usage.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\en\getting-started\whats-include.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr.yml" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\documentation\column-options.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\documentation\events.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\documentation\localizations.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\documentation\methods.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\documentation\table-options.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\align.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\basic.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\card-view.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\columns.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\events.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\format.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\hide-header.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\methods.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\note.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\pagination.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\select.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\sort.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\style.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\examples\toolbar.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\extensions\editable.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\faq\faq.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\getting-started\download.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\getting-started\grunt.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\getting-started\usage.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\fr\getting-started\whats-include.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn.yml" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\documentation\column-options.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\documentation\events.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\documentation\localizations.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\documentation\methods.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\documentation\table-options.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\align.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\basic.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\card-view.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\columns.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\events.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\format.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\hide-header.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\methods.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\note.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\pagination.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\select.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\sort.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\style.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\examples\toolbar.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\extensions\editable.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\faq\faq.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\getting-started\download.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\getting-started\grunt.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\getting-started\usage.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_i18n\zh-cn\getting-started\whats-include.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_includes\feature.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_includes\latest-release.md" />
+    <Content Include="Scripts\BootStrapGrid\docs\_plugins\markdown-tag.rb" />
+    <Content Include="Scripts\BootStrapGrid\docs\_plugins\multiple-languages.rb" />
+    <Content Include="Content\variables.less" />
+    <Content Include="Areas\LogInfo\Views\LogInfo\LogIndex.cshtml" />
+    <Content Include="Areas\Users\Views\Users\_RoleList.cshtml" />
+    <Content Include="Areas\Users\Views\Users\Accessdenied.cshtml" />
+    <Content Include="Resources\addon\Barcode.zip" />
+    <Content Include="Resources\addon\Barcodex64.zip" />
+    <Content Include="Resources\addon\Webcam.zip" />
+    <Content Include="Resources\addon\Webcamx64.zip" />
+    <Content Include="Resources\DynamicWebTWAINMacEdition.pkg" />
+    <Content Include="Resources\DynamicWebTWAINPlugIn.msi" />
+    <Content Include="Resources\reference\LICENSE" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\libs\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\libs\jquery-1.10.2.min.map" />
+    <None Include="Scripts\libs\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\libs\jquery-1.10.2.js" />
+    <Content Include="Scripts\libs\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\libs\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\libs\jquery-migrate-1.2.1.js" />
+    <Content Include="Scripts\libs\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Scripts\libs\jquery.contextMenu.js" />
+    <Content Include="Scripts\libs\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\libs\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\libs\jquery.validate.js" />
+    <Content Include="Scripts\libs\jquery.validate.min.js" />
+    <Content Include="Scripts\libs\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\libs\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\libs\modernizr-2.6.2.js" />
+    <Content Include="Scripts\libs\moment.js" />
+    <Content Include="Scripts\libs\moment.min.js" />
+    <Content Include="Scripts\libs\respond.js" />
+    <Content Include="Scripts\libs\respond.min.js" />
+    <Content Include="Scripts\libs\_references.js" />
+    <Content Include="Scripts\User\dashboard.js" />
+    <Content Include="Scripts\User\GetSocialMediaList.js" />
+    <Content Include="Scripts\User\passwordCheck.js" />
+    <Content Include="table.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\AuthorizedUser.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\NinjectDependencyResolver.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\IManageAdminAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\IManageCategoryAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\IManageContentAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\IManagePostAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\IManageRssFeedAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\IManageUserAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManageActivityController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManageAdminAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManageAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManageCategoryAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManageCategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManageContentAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManageContentController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManagePostAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManagePostController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManageRssFeedsAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManageRssFeedsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManageUserAPIController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ManageUserController.cs" />
+    <Compile Include="Areas\LogInfo\Controllers\ILogInfoAPIController.cs" />
+    <Compile Include="Areas\LogInfo\Controllers\LogInfoAPIController.cs" />
+    <Compile Include="Areas\LogInfo\Controllers\LogInfoController.cs" />
+    <Compile Include="Areas\LogInfo\LogInfoAreaRegistration.cs" />
+    <Compile Include="Areas\LogInfo\Models\LogInfoReturnVal.cs" />
+    <Compile Include="Areas\LogInfo\Models\LogInfoListFilters.cs" />
+    <Compile Include="Areas\Users\ApiControllers\IPostAPIController.cs" />
+    <Compile Include="Areas\Users\ApiControllers\IPreferenceAPIController.cs" />
+    <Compile Include="Areas\Users\ApiControllers\PostAPIController.cs" />
+    <Compile Include="Areas\Users\ApiControllers\PreferenceAPIController.cs" />
+    <Compile Include="Areas\Users\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Users\Controllers\AdminAPIController.cs" />
+    <Compile Include="Areas\Users\Controllers\ErrorController.cs" />
+    <Compile Include="Areas\Users\Controllers\ExternalController.cs" />
+    <Compile Include="Areas\Users\Controllers\HomeAPIController.cs" />
+    <Compile Include="Areas\Users\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Users\Controllers\IHomeAPIController.cs" />
+    <Compile Include="Areas\Users\Controllers\IReportsAPIController.cs" />
+    <Compile Include="Areas\Users\Controllers\IScheduleAPIController.cs" />
+    <Compile Include="Areas\Users\Controllers\IUsersAPIController.cs" />
+    <Compile Include="Areas\Users\Controllers\PostController.cs" />
+    <Compile Include="Areas\Users\Controllers\PreferenceController.cs" />
+    <Compile Include="Areas\Users\Controllers\ReportsAPIController.cs" />
+    <Compile Include="Areas\Users\Controllers\ReportsController.cs" />
+    <Compile Include="Areas\Users\Controllers\ScheduleAPIController.cs" />
+    <Compile Include="Areas\Users\Controllers\ScheduleController.cs" />
+    <Compile Include="Areas\Users\Controllers\UsersAPIController.cs" />
+    <Compile Include="Areas\Users\Controllers\UsersController.cs" />
+    <Compile Include="Areas\Users\schedular.cs" />
+    <Compile Include="Common\CommonFunction.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\PrivacyController.cs" />
+    <Compile Include="Filter\AuditLogAttribute.cs" />
+    <Compile Include="Filter\AuthorizedRoles.cs" />
+    <Compile Include="Filter\CheckSessionAttribute.cs" />
+    <Compile Include="Landing.asp.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Landing.asp.designer.cs">
+      <DependentUpon>Landing.asp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomErrorModel.cs" />
+    <Compile Include="Models\FeedModel.cs" />
+    <Compile Include="Models\ReportsGraph.cs" />
+    <Compile Include="Models\ResponseModel.cs" />
+    <Compile Include="Models\URLdata.cs" />
+    <Compile Include="Models\User\FaceBookComments.cs" />
+    <Compile Include="Models\User\LinkedInComments.cs" />
+    <Compile Include="Models\User\LinkedInLikes.cs" />
+    <Compile Include="Models\User\TwitterDataModel.cs" />
+    <Compile Include="Models\User\TwitAuthenticateResponse.cs" />
+    <Compile Include="Models\User\FacebookLikesModel.cs" />
+    <Compile Include="Models\User\ImageModel.cs" />
+    <Compile Include="Common\GridFilter.cs" />
+    <Compile Include="Common\SessionManager.cs" />
+    <Compile Include="Models\User\FacebookProfileModel.cs" />
+    <Compile Include="Areas\Users\UsersAreaRegistration.cs" />
+    <Compile Include="Models\CustomPrincipalSerializeModel.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Areas\Users\Controllers\ElmahController.cs" />
+    <Compile Include="App_Code\CustomMessages.cs" />
+    <Compile Include="Controllers\Error404Controller.cs" />
+    <Compile Include="App_Code\Helpers.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Models\AntiforgeryValidate.cs" />
+    <Compile Include="Models\GridFilter.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Infrastructure\HandleAPIExceptionAttribute.cs" />
+    <Compile Include="Models\Infrastructure\HandleExceptionAttribute.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\smartDataContext.cs" />
+    <Compile Include="Models\User\GooglePlusResponseModel.cs" />
+    <Compile Include="Models\User\LinkedInPostResponseModel.cs" />
+    <Compile Include="Models\User\PostModel.cs" />
+    <Compile Include="Models\User\UserDashboardModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="App_Start\WebRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="Areas\Users\Views\web.config" />
+    <Content Include="Views\Error404\Index.cshtml" />
+    <Content Include="Views\Error404\_ErrorView.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\SessionExpire.cshtml" />
+    <Content Include="Views\Home\Accessdenied.cshtml" />
+    <Content Include="Views\Home\NoPermission.cshtml" />
+    <Content Include="Views\Shared\UrlVariables.cshtml" />
+    <Content Include="Views\Shared\_UserOuterLayout.cshtml" />
+    <Content Include="Views\Shared\_UserInnerLayout.cshtml" />
+    <Content Include="Views\Shared\_AdminInnerLayout.cshtml" />
+    <Content Include="Views\Shared\_EditContentPartial.cshtml" />
+    <Content Include="Views\Shared\_AddCategoryPartial.cshtml" />
+    <Content Include="Views\Shared\_EditCategoryPartial.cshtml" />
+    <Content Include="Views\Shared\_EditFuturePost.cshtml" />
+    <Content Include="Views\Shared\_partialScheduledPost.cshtml" />
+    <Content Include="Views\Shared\_AddSubIndustryPartial.cshtml" />
+    <Content Include="Views\Shared\_ViewSubIndustryPartial.cshtml" />
+    <Content Include="Views\Shared\_AddPreferences.cshtml" />
+    <Content Include="Views\Shared\_EditPreference.cshtml" />
+    <Content Include="Views\Shared\_EditSubIndustryPartial.cshtml" />
+    <Content Include="Views\Shared\_ViewPostPartial.cshtml" />
+    <Content Include="Views\Shared\_selectCategoryPartial.cshtml" />
+    <Content Include="Views\Shared\_EditAdminPasswordPartial.cshtml" />
+    <Content Include="Views\Shared\_EditContentRssPartial.cshtml" />
+    <Content Include="Views\Shared\_AddSubCategoryByAdminPartial.cshtml" />
+    <Content Include="Views\Shared\_EditTermsandCondition.cshtml" />
+    <Content Include="Views\Shared\_SetFaceBookPreference.cshtml" />
+    <Content Include="Views\Shared\_UploadPhoto.cshtml" />
+    <Content Include="Views\Shared\_SelectEditContentPartial.cshtml" />
+    <Content Include="Views\Shared\_SchedularNewContent.cshtml" />
+    <Content Include="Views\Shared\_LeadGeneration.cshtml" />
+    <Content Include="Views\Shared\_GetContentPreference.cshtml" />
+    <Content Include="Views\Privacy\Privacy.cshtml" />
+    <Content Include="Views\Shared\_GetSavedContentPreference.cshtml" />
+    <Content Include="Views\Shared\_SavedLeadGeneration .cshtml" />
+    <Content Include="Views\Shared\_EditLeads.cshtml" />
+    <Content Include="Views\Shared\NotFound.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Users\Models\User\" />
+    <Folder Include="homevalue\js\" />
+    <Folder Include="Images\WallImages\6\" />
+    <Folder Include="Scripts\Custom\" />
+    <Folder Include="Views\Base\" />
+    <Folder Include="Views\BindingDropDown\" />
+    <Folder Include="Views\Elmah\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppInterfaces\AppInterfaces.csproj">
+      <Project>{b98b4615-329b-40ec-8192-b8cfcf1cbe72}</Project>
+      <Name>AppInterfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoreEntities\CoreEntities.csproj">
+      <Project>{08be18d0-0b1a-4606-a4a6-6f8639959f48}</Project>
+      <Name>CoreEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RepositoryLayer\RepositoryLayer.csproj">
+      <Project>{3fa0b798-55ae-469f-a8f8-b1bb262b506a}</Project>
+      <Name>RepositoryLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceLayer\ServiceLayer.csproj">
+      <Project>{9635ac24-5c92-4d8e-b8ba-ec1d46c285db}</Project>
+      <Name>ServiceLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55038/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

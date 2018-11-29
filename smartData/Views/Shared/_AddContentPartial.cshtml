@@ -1,0 +1,224 @@
+﻿@model Core.Domain.smContentLibrary
+
+@{
+    ViewBag.Title = "Add Content";
+    Layout = null;
+}
+
+<script src="~/Scripts/Admin/AddContent.js"></script>
+<style>
+    .indus {
+        width: 172px !important;
+    }
+
+    .subindus {
+        width: 130% !important;
+        margin-left: 100px;
+    }
+
+.dz-error-message {
+        margin-top: 22px;
+    }
+    .divtxt {
+        padding-right: 0;
+    }
+    #urlBind{
+        margin-bottom:15px;
+    }
+        #urlBind .btn {
+            padding: 9.5px 12px;
+            border-radius: 0px;
+        }
+        #urlBind #fetch .btn {
+            padding: 10.5px 12px;
+            border-radius: 0px;
+        }
+        #urlBind .col-md-8 input.form-control {
+            padding: 10px 12px;
+            border-radius: 0px;
+            height:41px;
+        }
+        #urlBind .col-md-2.divtxt .btn {
+            background: #969695;
+            color: #fff;
+        }
+        #urlBind #fetch.col-md-2.divtxt .btn {
+            background: #000;
+            color: #fff;
+        }
+    #urlBind #fetch{ padding-left:5px !important;}
+    #add-content h5{ font-size:17px; font-weight:100 !important;}
+    .form-control {
+        box-shadow:none !important;
+    }
+    .jumbotron {
+        font-size: 15px !important;
+    }
+</style>
+
+@*@using (Ajax.BeginForm("PostContent", "Home", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, OnSuccess = "AddContentSuccess(data)" }, new { @id = "AddContent" }))
+    {*@
+<div class="modal-dialog" role="document" id="add-content">
+    <div class="modal-content add-modal-change">
+        <div class="modal-header  modal-header-custom">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 class="modal-title modal-title-custom">Add Content</h5>
+        </div>
+        
+        <div class="modal-body">
+
+            <div id="urlBind" class="row">
+                <div id="" class="col-md-2 divtxt">
+                    <span class="btn">URL</span>
+                </div>
+                <div id="" class="col-md-8 divtxt">
+
+                    <input type="text" id="txtURL" class="form-control" style="" placeholder="http://www.example.com" />
+                </div>
+                <div id="fetch" class="col-md-2 divtxt">
+
+                    <input type="button" id="fatchData" style="" value="FETCH" class="btn btn-primary" />
+                    <span id="output"></span>
+                </div>
+
+                        </div>   
+            <ul class="drop-fix tabs">
+                @if (smartData.Common.SessionManager.LoggedInUser.UserType == 3)
+                {
+                    <li class="clearfix">@Html.DropDownListFor(m => m.categoryList, new SelectList(Model.categoryList, "Value", "Text"), "Select Industry", new { id = "industryfacebook", @class = "indus form-control" })</li>
+                }
+                else
+                {
+                    @*<li class="clearfix">@Html.DropDownListFor(m => m.CategoryId, (SelectList)@ViewBag.IndustryName, "Select Industry", new { id = "industryfacebook", @class = "indus form-control" })</li>*@
+                    <li class="clearfix">
+                        @Html.DropDownList("industryfacebook", new List<SelectListItem>
+                     {
+                        new SelectListItem() {Text = "Select Industry", Value="0"},
+                        new SelectListItem() {Text = ViewBag.IndustryName, Value= ViewBag.IndustryId},
+                      }, new { @class = "form-control", id = "industryfacebook" })
+                    </li>
+                }
+                <li class="clearfix"><select id="statefacebook" class="subindus form-control" style="width:30%"><option>Select SubIndustry</option></select></li>
+                @*<li class="clearfix">
+                       @Html.DropDownList("Social Media", new List<SelectListItem>
+            {
+               new SelectListItem() {Text = "Select Social Media---", Value="0"},
+               new SelectListItem() {Text = "Facebook", Value="Facebook"},
+               //new SelectListItem() {Text = "LinkedIn", Value="LinkedIn"},
+               // new SelectListItem() {Text = "Twitter", Value="Twitter"},
+               //new SelectListItem() {Text = "Google+", Value="Google"}
+             }, new { @class = "form-control" , id="SocialmediaFacebook"})
+                   </li>*@
+            </ul>
+
+            <div id="tabs" class="drop-fix">
+                <ul>
+                    <li><a href="#facebook-tab" id="tabFacebook" data-groupid="">FaceBook</a></li>
+                    <li><a href="#twitter-tab" id="tabTwitter" data-groupid="">Twitter</a></li>
+                    <li><a href="#LinkedIn-tab" id="tabLinkedIn" data-groupid="">LinkedIn</a></li>
+                </ul>
+                <div id="facebook-tab">
+                    <div class="social-media-wrap clearfix" id="fbdiv">
+                        
+                        <input type="text" placeholder="Enter Heading/Text on the top of article" id="txtheadingfb" style="border:1px solid #ccc; margin-top:10px;"  autofocus="autofocus" />
+                        <input type="text" placeholder="Enter Title" id="txttitlefb" style="border:1px solid #ccc;"  />
+                     
+                        <textarea cols="50" rows="15" id="txtMsgContentfacebook" style="margin-top: 10px;" placeholder="Please write content to post on FaceBook" onkeyup="countCharFacebook(this)"></textarea>
+                        <div id="charNumfacebook" style="position: initial; margin-top: -5px; margin-bottom: 8px; "></div>
+                        <input type="text" placeholder="Enter Image URL" id="txtfbImage" style="border:1px solid #ccc;" />
+                        <div id="uploadImage" class="UploadedImage">
+                         
+                        </div>
+                        <div class="jumbotron">
+                            <form action="@Url.Action("SaveUploadedFile","ManageContent")" method="post" enctype="multipart/form-data" class="dropzone" id="dropzoneForm" style="width: 50px;background: none; border: none;">
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple id="fileUpload" />
+                                    <input type="submit" value="Upload" />
+                                </div>
+                            </form>
+                        </div>
+                        <input type="text" id="UrlfaceBook" placeholder="Please Add link" />
+                        @*<ul class="clearfix">
+                                <li><input type="checkbox" data-id="1" id="chk1" class="socialMedia" /> Facebook</li>
+                                <li><input type="checkbox" data-id="2" id="chk1" class="socialMedia" /> LinkedIn</li>
+                                <li><input type="checkbox" data-id="3" id="chk1" class="socialMedia" /> Twitter</li>
+                                <li><input type="checkbox" data-id="4" id="chk1" class="socialMedia" /> GooglePlus</li>
+                            </ul>*@
+                        @*<input type="text" id="txtKeywords" data-role="tagsinput" placeholder="Please enter comma seperated keywords" />*@
+                    </div>
+                </div>
+                <div id="twitter-tab">
+                    <div class="social-media-wrap clearfix" id="twitdiv">
+                        
+                        <input type="text" placeholder="Enter Heading/Text on the top of article" id="txtheadingtwittr" style="border:1px solid #ccc; margin-top:10px" />
+                        <input type="text" placeholder="Enter Title" id="txttitletwittr" style="border:1px solid #ccc;" />
+                       
+                        <textarea cols="50" rows="15" id="txtMsgContenttwitter" style="margin-top: 10px;" placeholder="Please write content to post  on twitter" onkeyup="countCharTwitter(this)"></textarea>
+                        <div id="charNumtwitter" style="position: initial; margin-top: -5px; margin-bottom: 18px; "></div>
+                        <input type="text" placeholder="Enter Image URL" id="txttwitterImage" style="border:1px solid #ccc;" />
+                        <div id="uploadImage" class="UploadedImage">
+                            <span id="uplodedImage"></span>
+                        </div>
+                        <div class="jumbotron">
+                            <form action="@Url.Action("SaveUploadedFile","ManageContent")" method="post" enctype="multipart/form-data" class="dropzone" id="dropzoneForm" style="width: 50px;background: none; border: none;">
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple id="fileUpload" />
+                                    <input type="submit" value="Upload" />
+                                </div>
+                            </form>
+                        </div>
+                        <input type="text" id="Urltwitter" placeholder="Please Add link" />
+                        @*<ul class="clearfix">
+                                <li><input type="checkbox" data-id="1" id="chk1" class="socialMedia" /> Facebook</li>
+                                <li><input type="checkbox" data-id="2" id="chk1" class="socialMedia" /> LinkedIn</li>
+                                <li><input type="checkbox" data-id="3" id="chk1" class="socialMedia" /> Twitter</li>
+                                <li><input type="checkbox" data-id="4" id="chk1" class="socialMedia" /> GooglePlus</li>
+                            </ul>*@
+                        @*<input type="text" id="txtKeywords" data-role="tagsinput" placeholder="Please enter comma seperated keywords" />*@
+                    </div>
+                </div>
+                <div id="LinkedIn-tab">
+                    <div class="social-media-wrap clearfix" id="Linkdiv">
+                        
+                        <input type="text" placeholder="Enter Heading/Text on the top of article" id="txtheadingLnkin" style="border:1px solid #ccc; margin-top:10px" />
+                        <input type="text" placeholder="Enter Title" id="txttitleLnkin" style="border:1px solid #ccc;" />
+                     
+                        <textarea cols="50" rows="15" id="txtMsgContentLinkedIn" style="margin-top: 10px;" placeholder="Please write content to post on LinkedIn" onkeyup="countCharLinkedIn(this)"></textarea>
+                        <div id="charNumlinkedIn" style="position: initial; margin-top: -5px; margin-bottom: 18px; color: #777; font-size: 11px; font-style: italic; "></div>
+                        <input type="text" placeholder="Enter Image URL" id="txtimagelink" style="border:1px solid #ccc;" />
+                        <div id="uploadImage" class="UploadedImage">
+                            <span id="uplodedImage"></span>
+                        </div>
+                        <div class="jumbotron">
+                            <form action="@Url.Action("SaveUploadedFile","ManageContent")" method="post" enctype="multipart/form-data" class="dropzone" id="dropzoneForm" style="width: 50px;background: none; border: none;">
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple id="fileUpload" />
+                                    <input type="submit" value="Upload" />
+                                </div>
+                            </form>
+                        </div>
+                        <input type="text" id="UrlLinkedIn" placeholder="Please Add link" />
+                        @*<ul class="clearfix">
+                                <li><input type="checkbox" data-id="1" id="chk1" class="socialMedia" /> Facebook</li>
+                                <li><input type="checkbox" data-id="2" id="chk1" class="socialMedia" /> LinkedIn</li>
+                                <li><input type="checkbox" data-id="3" id="chk1" class="socialMedia" /> Twitter</li>
+                                <li><input type="checkbox" data-id="4" id="chk1" class="socialMedia" /> GooglePlus</li>
+                            </ul>*@
+                        @*<input type="text" id="txtKeywords" data-role="tagsinput" placeholder="Please enter comma seperated keywords" />*@
+                    </div>
+                </div>
+            </div>
+            @*<div><input type="button" value="Add Content" id="btnContent" /></div>*@
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+            <button type="button" @*id="add_content" *@ class="btn btn-circlr" id="btnContent" tabindex="800">Save</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="loadercontainingdiv">
+    <img src="~/Images/loadernew.gif" class="loaderprtclr" />
+</div>

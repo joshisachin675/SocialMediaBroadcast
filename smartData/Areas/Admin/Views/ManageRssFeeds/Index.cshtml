@@ -1,0 +1,164 @@
+﻿
+@*@model smartData.Models.User.UserDashboardModel*@
+
+@{
+    ViewBag.Title = "::Social Media::";
+    Layout = "~/Views/Shared/_AdminInnerLayout.cshtml";
+}
+
+<script src="~/Scripts/Admin/Rssfeed.js"></script>
+
+<script type="text/javascript">
+ @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+
+        }
+    }
+    // Antiforgery Token
+    var token = '@TokenHeaderValue()';
+    // alert(token);
+    var headers = {};
+    headers["RequestVerificationToken"] = token;
+</script>
+
+<section class="wrapper scrollable">
+    <h3>Manage Rss</h3>
+    <div id="custom-toolbar" class="filter-sction">
+        <div class="row">
+          
+            <div class="col-md-2 col-sm-3 col-xs-3"><input class="form-control" id="Feed_name" placeholder="Enter feed name" type="text"></div>
+            <div class="col-md-4 col-sm-6 col-xs-6"><input class="form-control" id="txtFeedUrl" placeholder="Enter feed url" type="text"></div>
+            <div class="col-md-1 col-sm-1 col-xs-1">              
+                <a href="javascript:void(0)" class="btn btn-primary add-btn btn-circlr pddng" id="addrss">Add</a>        
+            </div>
+            <div class="col-md-5 col-sm-4 col-xs-2 pull-right"><input class="form-control" id="txtSearchFeeds" placeholder="Enter feed url and name to search" type="text"></div>
+        </div>
+     
+
+        <div class="row mrgntp">
+            <div class="col-sm-12">
+
+            </div>
+        </div>
+    </div>
+
+    <input type="hidden" value="@ViewBag.UserId" id="userId" />
+
+    <table class="table table-hover" data-toolbar="#post" data-show-columns="true" data-show-filter="true" data-click-to-select="true" id="grid">
+        <thead>
+            <tr>
+                <th data-field="FirstName">Social Media</th>
+                <th data-field="LastName">User</th>
+
+            </tr>
+        </thead>
+    </table>
+</section>
+
+@*<h3 class="pageHeading"><span class="fa fa-users"></span> Manage Social Media Accounts </h3>*@
+
+
+@*<div class="modal" id="addCategory" tabindex="-1" role="dialog" aria-labelledby="addCategory">
+        @Html.Partial("_AddCategoryPartial", Model)
+    </div>
+
+    <div class="modal" id="editCategory" tabindex="-1" role="dialog" aria-labelledby="editCategory">
+        @Html.Partial("_EditCategoryPartial")
+    </div>*@
+
+
+<input type="hidden" id="TokenValue" value='@TokenHeaderValue()' />
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.UserType" id="UserType" />
+
+<!--Loader-->
+<div class="loadercontainingdiv">
+    <img src="~/Images/loadernew.gif" class="loaderprtclr" />
+</div>
+<!--End Loader-->
+
+<script>
+    $("#addrss").click(function () {
+        debugger;
+        $('.loadercontainingdiv').show();
+        if ($("#txtFeedUrl").val() == '' ) {
+            $("#txtFeedUrl").css("border", "red 1px solid").attr("title", "Please enter feed Url");          
+            $('.loadercontainingdiv').hide();
+        }
+        if ($('#Feed_name').val() == '') {
+            $("#Feed_name").css("border", "red 1px solid").attr("title", "Please enter feed Name");
+            $('.loadercontainingdiv').hide();
+        }
+   
+        //if ($("#Feed_name").val() != "") {
+        //    $.ajax({
+        //        url: $_UrlGetFeedByName,
+        //        type: "get",
+        //        data: { FeedName: $("#Feed_name").val(), },
+        //        success: function (response) {
+        //            debugger;
+        //            if (response == "exists") {
+        //                $('.loadercontainingdiv').hide();
+        //                $("#Feed_name").css("border", "red 1px solid").attr("title", "Feed name already exists");
+        //            }
+        //            else {
+        //                $('.loadercontainingdiv').hide();
+        //            }
+        //        }
+        //    });
+        //}
+       
+        else {
+            debugger;
+            $.ajax({
+                url: $_UrlGetFeedByUrl,
+                type: "get",
+                data: { FeedUrl: $("#txtFeedUrl").val(), },
+                success: function (response) {
+                    debugger;
+                    if (response == "exists") {
+                        $('.loadercontainingdiv').hide();
+                        $("#txtFeedUrl").css("border", "red 1px solid").attr("title", "Feed url already exists");
+                    }
+                    else {
+                        $.ajax({
+                            url: $_CheckRssFeedUrlAction,
+                            type: "post",
+                            data: { FeedUrl: $("#txtFeedUrl").val(), },
+                            success: function (response) {
+                                $('.loadercontainingdiv').hide();
+                                debugger;
+                                if (response.Message == "Valid URL") {
+                                    $('.loadercontainingdiv').hide();
+                                    $("#txtFeedUrl").css("border", "green 1px solid").removeAttr("title");
+                                    $.ajax({
+                                        url: $_AddRssFeedUrlAction,
+                                        type: "post",
+                                        data: { FeedUrl: $("#txtFeedUrl").val(), UserId: $("#userId").val(), FeedName: $('#Feed_name').val() },
+                                        success: function (response) {
+                                            $('.loadercontainingdiv').hide();
+                                            var popTimer = parseInt($("#hdnPopUpTimer").val()); setTimeout("$.each(BootstrapDialog.dialogs, function(id, dialog){dialog.close();});", popTimer);
+                                            BootstrapDialog.configDefaultOptions({ cssClass: 'bstDialg' });
+                                            BootstrapDialog.show({ title: "<span>Information</span>", type: BootstrapDialog.TYPE_SUCCESS, message: 'Feed added successfully!' });
+                                     
+                                            $('#grid').bootstrapTable('refresh');
+                                            $("#txtFeedUrl").val('').css("border", "1px solid #cccccc");
+                                            $("#Feed_name").val('').css("border", "1px solid #cccccc");
+                                        }
+                                    });
+                                }
+                                else {
+
+                                    $("#txtFeedUrl").css("border", "red 1px solid").attr("title", "Invalid Url");
+                                }
+                            }
+                        });
+                    }
+                }
+            });           
+        }
+    })
+</script>

@@ -1,0 +1,145 @@
+﻿@model Core.Domain.smPreference
+
+@{
+    ViewBag.Title = "Manage Preferences";
+    Layout = "~/Views/Shared/_UserInnerLayout.cshtml";
+}
+
+<style>
+    .fixed-table-container input[type="checkbox"] {
+        margin: 10px auto !important;
+        margin-left: 40px !important;
+    }
+    .bars.pull-left{margin-bottom:30px !important;}
+    .keep-open.btn-group{margin-right:20px;}
+
+
+    #checkBox .fixed-table-container input[type="checkbox"] {
+        margin: 4px 10px 40px !important;
+    }
+
+    #checkBox .fixed-table-body table.table tr > td {
+        padding: 26px 36px;
+    }
+
+    #checkBox .bs-checkbox > input {
+        opacity: 0;
+         /*display: inline-block;*/
+         position: absolute;
+        margin-left: 20px;
+    }
+
+</style>
+
+<link href="~/Content/bootstrap-tagsinput.css" rel="stylesheet" />
+
+
+<script src="~/Scripts/User/GetPreferences.js"></script>
+<script src="~/Scripts/bootstrap-tagsinput.js"></script>
+
+<script type="text/javascript">
+
+ @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+
+        }
+    }
+    // Antiforgery Token
+    var token = '@TokenHeaderValue()';
+    // alert(token);
+    var headers = {};
+    headers["RequestVerificationToken"] = token;
+
+
+</script>
+
+
+
+<script>
+    $(document).ready(function () {
+        $("#txtKeywords").tagsinput('items');
+    });
+</script>
+
+
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12" id="checkBox">
+        <section class="wrapper scrollable inner-table-filter-fx">
+            <div class="form-title">
+                <h3>Manage Preferences</h3>
+            </div>
+            <div class="white_bg side_pad_20px">
+
+                <div id="custom-toolbar" class="filter-sction">
+
+
+
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-xs-3"><input class="form-control manage_post" id="Preference" placeholder="Preference" type="text"></div>
+
+
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <button class="btn btn-success greenbtn" id="btnFilter" type="button" value="Filter" name="btnFilter">Filter</button>
+                            <button class="btn btn-info reset-filter btn-circlr" disabled id="resetBtn">Reset</button>
+
+                            @*<button class="btn btn-info reset-filter btn-circlr" data-target="#addPreferences" id="AddPreference">Add Preference</button>*@
+                        </div>
+                    </div>
+                </div>
+
+                <table class="table table-hover" data-toolbar="#post" data-show-columns="true" data-show-filter="true" data-click-to-select="true" id="grid">
+                    <thead>
+                        <tr>
+                            <th data-field="Preference"> Preference</th>
+                            <th data-field="CreatedDate"> Created Date</th>
+
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+
+@*<div class="modal" id="EditPreference" tabindex="-1" role="dialog" aria-labelledby="EditPreference">
+    @Html.Partial("_EditPreference", Model)
+</div>
+<div class="modal" id="addPreferences" tabindex="-1" role="dialog" aria-labelledby="addContent">
+    @Html.Partial("_AddPreferences", Model)
+</div>*@
+
+<input type="hidden" id="TokenValue" value='@TokenHeaderValue()' />
+<input type="hidden" id="currentUserId" value='@smartData.Common.SessionManager.LoggedInUser.UserID' />
+<input type="hidden" id="IndustryId" value='@smartData.Common.SessionManager.LoggedInUser.IndustryId' />
+<input type="hidden" id="UserType" value='@smartData.Common.SessionManager.LoggedInUser.UserType' />
+
+<!--Loader-->
+<div class="loadercontainingdiv">
+    <img src="~/Images/loadernew.gif" class="loaderprtclr" />
+</div>
+<!--End Loader-->
+<style>
+   .fixed-table-container thead th .th-inner {
+  height: 50px;
+  line-height: 36px;
+   padding: 0 10px 0 0;
+}
+   .fixed-table-container input[type="checkbox"] {
+  margin: 10px 10px 40px !important;
+}
+    .inner-table-filter-fx .columns.columns-right.btn-group.pull-right {
+  position: absolute;
+  right: 40px;
+  top: 134px;
+}
+
+
+   
+
+</style>

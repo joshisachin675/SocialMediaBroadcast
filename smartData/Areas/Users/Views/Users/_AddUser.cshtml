@@ -1,0 +1,123 @@
+﻿@model Core.Domain.UserInsert
+
+@using (Ajax.BeginForm("create", "users", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "spanError", OnBegin = "return checkRole()", OnSuccess = "updateSuccess(data)" }, new { @id = "frmAddUser" }))
+{
+    @Html.AntiForgeryToken()
+
+    @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+        }
+
+        public string UserListingURL()
+        {
+            return @Url.Action("Index", "Users");
+        }
+    }
+
+
+    <div id="testid"></div>
+
+    <div class="form-horizontal">
+
+
+        <hr />
+
+        @Html.ValidationSummary()
+
+        <div id="divSpanError" class="validation-summary-errors hidediv" >
+            <ul>
+                <li><span id="spanError"></span></li>
+            </ul>
+        </div>
+                
+        <div class="form-group">
+            <label class="control-label col-md-4 FirstName">First Name</label>
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.FirstName)
+                </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-4 FirstName">Last Name</label>
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.LastName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, new { @class = "control-label col-md-4", @required = "required" })
+            <div class="col-md-8">
+                @Html.EditorFor(model => model.Email)
+            
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, new { @class = "col-md-4 control-label Email", @required = "required" })
+            <div class="col-md-4">
+                @Html.PasswordFor(m => m.Password)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-4 control-label Password ConfirmPassword", @required = "required" })
+            <div class="col-md-4">
+                @Html.PasswordFor(m => m.ConfirmPassword)
+            </div>
+        </div>
+
+        <div class="form-group" id="SuperAdmin" >
+            @Html.LabelFor(m => m.IsSuperAdmin, new { @class = "col-md-4 control-label" })
+            <div class="col-md-4">
+                @Html.CheckBoxFor(m => m.IsSuperAdmin)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.HiddenFor(m => m.RoleIDs)
+            @Html.Label("Role", null, new { @class = "control-label col-md-4" })
+
+            <div class="col-md-8 op">
+                @Html.Partial("_RoleList", Model)
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button type="submit" id="userUpdate" class="btn btn-primary">Create</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>
+
+}
+
+<input id="HiddenSuperAdmin" type="hidden" value="@ViewBag.IsSuperAdmin" />
+
+@section JSRefernces
+{
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+}
+@System.Web.Optimization.Scripts.Render("~/scripts/js/users.js")
+<script>
+
+    var str = "";
+    $(document).ready(function () {
+        $("#checkableGrid th").each(function () {
+            if ($.trim($(this).text().toString().toLowerCase()) === "{checkall}") {
+                $(this).text('');
+                $("<input/>", { type: "checkbox", id: "cbSelectAll", value: "" }).appendTo($(this));
+                $(this).append("<span></span>");
+            }
+        });
+    });
+
+</script>
+
+<div id='loadingmessage' class="loader fade" style="display:none;z-index:5000">
+    <img src='~/Areas/ScreenPermissions/Images/loading2.gif' style="height: 150px;width: 200px;" />
+</div>
+
+
+

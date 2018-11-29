@@ -1,0 +1,157 @@
+﻿@model smartData.Models.LoginViewModel
+
+
+@{
+    ViewBag.Title = "::Welcome::";
+    Layout = "~/Views/Shared/_UserOuterLayout.cshtml";
+}
+
+@section CSSLinks
+    {
+
+}
+<script src="~/Scripts/Jscripts/confirm.js"></script>
+<link href="~/Content/confirm.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        debugger;
+        var msg = $("#message").val();
+        if (msg == "success")
+        {
+            $.confirm({
+                title: 'Congratulations!',
+                content: 'Your account has been registered please login to continue.',
+                type: 'green',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+
+        if (msg == "DeactivatedUser") {
+            $.confirm({
+                title: 'Error!',
+                content: 'Your account has been deactivated, Please contact to administrator.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+        if (msg == "error")
+        {
+            $.confirm({
+                title: 'Encountered an error!',
+                content: 'Something went wrong.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+
+        if (msg == "successReset") {
+            $.confirm({
+                title: 'Congratulations!',
+                content: 'The reset password link has been sent to your email.',
+                type: 'green',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+        if (msg == "errorInvalidUser") {
+            $.confirm({
+                title: 'Error!',
+                content: 'Invalid Username ,Password or Industry.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+    })
+</script>
+<input type="hidden" value="@TempData["Message"]" id="message" /> 
+
+<section class="main-container fit-assemnt-step-first thankyoubg">
+    <section class="login-box" id="loginForm">
+  
+        <h2> <img src="@Url.Content("~/Images/logo.png")"> </h2>
+        @*@{
+            <p style="padding-left:30px;">@TempData["Message"]</p>
+        }*@
+
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "" }))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            <ul>
+                <li>
+                    @*@Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })*@
+                    @Html.Label("Email", new { @class = "" })
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "", @autofocus = "autofocus" })
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </li>              
+
+                <li class="">
+                    @Html.LabelFor(m => m.Password, new { @class = "" })
+                    @Html.PasswordFor(m => m.Password, new { @class = "" })
+                    @Html.ValidationMessageFor(m => m.Password)
+                </li>
+                @if (@ViewBag.industry == "true")
+                {
+                 
+                }
+                else
+                {
+                  <li>
+                    @Html.Label("Industry Name", new { @class = "" })
+                    @Html.DropDownListFor(m => m.IndustryId, (SelectList)@ViewBag.IndustryName, "Select Industry Name", new { id = "industry" })
+                    @Html.ValidationMessageFor(m => m.IndustryId)
+                </li>
+                }
+              
+                <li class="terms-cndtns">
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe)
+                    @Html.ActionLink("Forgot Password", "ResetPassword")
+                </li>
+
+                <li>
+                    <input type="submit" value="Sign In" class="bluebtn" />
+                </li>
+@if (ViewBag.industry == "true")
+{ 
+                <li>
+                    <a href="/@ViewBag.Realtor/Register">Create a new account</a>
+                </li>
+}
+else
+{
+     <li>
+                    @Html.ActionLink("Create a new account", "Register")
+                </li>
+}
+            </ul>
+
+        }
+    </section>
+</section>
+
+
+@section Scripts {
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+
+}
+

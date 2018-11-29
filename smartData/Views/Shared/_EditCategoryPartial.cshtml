@@ -1,0 +1,40 @@
+﻿@model Core.Domain.smIndustry
+
+@{
+    ViewBag.Title = "Edit Content";
+    Layout = null;
+}
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+<script src="~/Scripts/Admin/EditCategory.js"></script>
+
+@using (Ajax.BeginForm("EditCategory", "ManageCategory", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, OnSuccess = "EditCategorySuccess(data)" }, new { @id = "EditCategory" }))
+{
+     @Html.HiddenFor(m => m.IndustryId)
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header  modal-header-custom">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title modal-title-custom">Edit Category</h4>
+            </div>
+            <div class="modal-body">
+                <div class="social-media-wrap clearfix">
+                    @Html.TextBoxFor(m => m.IndustryName, new { @placeholder = "Edit Industry" })
+                    @Html.ValidationMessageFor(m => m.IndustryName)
+                </div>
+                <div class="social-media-wrap clearfix">
+                    @Html.TextBoxFor(m => m.IndustryShortName, new { @placeholder = "Edit Industry" })
+                    @Html.ValidationMessageFor(m => m.IndustryShortName)
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+                <button type="submit"  class="btn btn-circlr" id="btnEditCategory" tabindex="800">Save</button>
+             
+
+            </div>
+        </div>
+    </div>
+}

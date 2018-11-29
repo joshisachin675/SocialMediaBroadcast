@@ -1,0 +1,1061 @@
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\smartData.dll.config
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\smartData.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\smartData.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Antlr3.Runtime.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\CoreEntities.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Elmah.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Elmah.Mvc.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\EntityFramework.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\EntityFramework.SqlServer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Data.Edm.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Data.OData.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Data.Services.Client.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Google.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Web.Helpers.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Web.Infrastructure.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Storage.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Newtonsoft.Json.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Ninject.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Ninject.Web.Common.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Ninject.Web.Mvc.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Owin.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ServiceLayer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Net.Http.Formatting.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Spatial.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Helpers.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Http.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Http.WebHost.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Mvc.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Optimization.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Razor.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.WebPages.Deployment.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.WebPages.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.WebPages.Razor.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\WebActivatorEx.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\WebGrease.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\WebMatrix.Data.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\WebMatrix.WebData.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\RepositoryLayer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\MonAgentListener.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\CoreEntities.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ServiceLayer.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Antlr3.Runtime.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\EntityFramework.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\EntityFramework.SqlServer.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Data.Edm.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Data.OData.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Data.Services.Client.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Google.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Storage.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Newtonsoft.Json.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Ninject.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Ninject.Web.Common.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\Ninject.Web.Mvc.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Net.Http.Formatting.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Spatial.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Helpers.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Http.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Http.WebHost.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Mvc.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Optimization.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.Razor.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.WebPages.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.WebPages.Deployment.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\System.Web.WebPages.Razor.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\WebMatrix.Data.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\WebMatrix.WebData.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\RepositoryLayer.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\de\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\es\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\it\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\de\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\es\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\fr\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\it\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ja\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ko\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\ru\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hans\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\bin\zh-Hant\System.Spatial.resources.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\obj\Release\smartData.csprojResolveAssemblyReference.cache
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\obj\Release\smartData.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\smartData\obj\Release\smartData.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\smartData.dll.config
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\smartData.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\smartData.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Antlr3.Runtime.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\CoreEntities.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Elmah.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Elmah.Mvc.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\EntityFramework.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\EntityFramework.SqlServer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Data.Edm.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Data.OData.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Data.Services.Client.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Google.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Web.Helpers.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Web.Infrastructure.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Storage.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Newtonsoft.Json.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Ninject.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Ninject.Web.Common.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Ninject.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Owin.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ServiceLayer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Net.Http.Formatting.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Spatial.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Helpers.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Http.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Http.WebHost.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Optimization.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Razor.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.WebPages.Deployment.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.WebPages.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.WebPages.Razor.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\WebActivatorEx.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\WebGrease.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\WebMatrix.Data.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\WebMatrix.WebData.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\MonAgentListener.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ServiceLayer.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Antlr3.Runtime.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\EntityFramework.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\EntityFramework.SqlServer.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Data.Edm.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Data.OData.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Data.Services.Client.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.Google.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Microsoft.WindowsAzure.Storage.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Newtonsoft.Json.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Ninject.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Ninject.Web.Common.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\Ninject.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Net.Http.Formatting.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Spatial.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Helpers.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Http.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Http.WebHost.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Optimization.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.Razor.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.WebPages.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.WebPages.Deployment.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\System.Web.WebPages.Razor.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\WebMatrix.Data.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\WebMatrix.WebData.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\de\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\es\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\it\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\de\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\es\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\fr\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\it\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ja\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ko\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ru\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\de\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\es\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\fr\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\it\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ja\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ko\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\ru\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hans\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\bin\zh-Hant\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\obj\Release\smartData.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\obj\Release\smartData.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\smartData\obj\Release\smartData.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\smartData.dll.config
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\smartData.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\smartData.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Antlr3.Runtime.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\CoreEntities.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Elmah.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Elmah.Mvc.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\EntityFramework.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\EntityFramework.SqlServer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.AspNet.Identity.Core.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Data.Edm.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Data.OData.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Data.Services.Client.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.Cookies.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.Facebook.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.Google.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.OAuth.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Web.Helpers.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Web.Infrastructure.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.Storage.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Newtonsoft.Json.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Ninject.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Ninject.Web.Common.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Ninject.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Owin.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ServiceLayer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Net.Http.Formatting.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Spatial.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Helpers.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Http.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Http.WebHost.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Optimization.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.WebPages.Deployment.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.WebPages.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.WebPages.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\WebActivatorEx.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\WebGrease.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\WebMatrix.Data.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\WebMatrix.WebData.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ServiceLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Antlr3.Runtime.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\EntityFramework.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\EntityFramework.SqlServer.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.AspNet.Identity.Core.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Data.Edm.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Data.OData.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Data.Services.Client.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.Cookies.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.Facebook.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.Google.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.Owin.Security.OAuth.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Microsoft.WindowsAzure.Storage.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Newtonsoft.Json.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Ninject.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Ninject.Web.Common.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\Ninject.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Net.Http.Formatting.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Spatial.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Helpers.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Http.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Http.WebHost.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Optimization.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.Razor.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.WebPages.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.WebPages.Deployment.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\System.Web.WebPages.Razor.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\WebMatrix.Data.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\WebMatrix.WebData.xml
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\de\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\es\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\it\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\de\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\es\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\fr\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\it\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ja\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ko\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ru\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\de\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\es\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\fr\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\it\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ja\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ko\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\ru\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hans\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\bin\zh-Hant\System.Spatial.resources.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\obj\Release\smartData.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\obj\Release\smartData.dll
+D:\DayUsers\lalitka\Official\HealthFramework\smartData\obj\Release\smartData.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\smartData.dll.config
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\smartData.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\smartData.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Antlr3.Runtime.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ASPSnippets.GoogleAPI.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Elmah.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Elmah.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\EntityFramework.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\EntityFramework.SqlServer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Auth.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Auth.PlatformServices.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Core.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Oauth2.v2.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.PlatformServices.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Plus.v1.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Hammock.ClientProfile.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Hammock.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Data.Edm.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Data.OData.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Data.Services.Client.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.Security.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.Security.Google.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Web.Helpers.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.WindowsAzure.Storage.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Newtonsoft.Json.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Ninject.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Ninject.Web.Common.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Ninject.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Owin.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ServiceLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Sparkle.LinkedInNET.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Net.Http.Extensions.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Net.Http.Formatting.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Net.Http.Primitives.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Spatial.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.Helpers.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.Http.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.Http.WebHost.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.Optimization.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.WebPages.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.WebPages.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\TweetSharp.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\WebActivatorEx.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\WebGrease.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\WebMatrix.Data.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\WebMatrix.WebData.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\RepositoryLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Threading.Tasks.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\log4net.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ServiceLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Antlr3.Runtime.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\EntityFramework.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\EntityFramework.SqlServer.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Auth.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Auth.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Auth.PlatformServices.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Auth.PlatformServices.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Core.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Core.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Oauth2.v2.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Oauth2.v2.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.PlatformServices.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.PlatformServices.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Plus.v1.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Google.Apis.Plus.v1.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Hammock.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Hammock.ClientProfile.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Data.Edm.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Data.OData.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Data.Services.Client.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.Security.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.Security.Google.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.WindowsAzure.Storage.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Newtonsoft.Json.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Ninject.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Ninject.Web.Common.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Ninject.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Sparkle.LinkedInNET.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Sparkle.LinkedInNET.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Net.Http.Extensions.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Net.Http.Formatting.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Net.Http.Primitives.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Spatial.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.Helpers.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.Http.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.Http.WebHost.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.Optimization.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.WebPages.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\TweetSharp.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\WebMatrix.Data.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\WebMatrix.WebData.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\RepositoryLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Threading.Tasks.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\log4net.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\de\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\es\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\it\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\de\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\es\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\fr\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\it\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ja\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ko\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\ru\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\zh-Hans\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\bin\zh-Hant\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\obj\Release\smartData.csproj.App.config
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\obj\Release\smartData.csprojResolveAssemblyReference.cache
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\obj\Release\smartData.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\smartData\obj\Release\smartData.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\smartData.dll.config
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\smartData.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\smartData.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Antlr3.Runtime.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ASPSnippets.GoogleAPI.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Elmah.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Elmah.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\EntityFramework.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\EntityFramework.SqlServer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Auth.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Auth.PlatformServices.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Core.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Oauth2.v2.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.PlatformServices.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Plus.v1.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Hammock.ClientProfile.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Hammock.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Data.Edm.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Data.OData.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Data.Services.Client.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.Security.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.Security.Google.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Web.Helpers.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.WindowsAzure.Storage.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Newtonsoft.Json.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Ninject.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Ninject.Web.Common.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Ninject.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Owin.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ServiceLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Sparkle.LinkedInNET.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Net.Http.Extensions.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Net.Http.Formatting.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Net.Http.Primitives.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Spatial.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.Helpers.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.Http.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.Http.WebHost.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.Optimization.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.WebPages.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.WebPages.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\TweetSharp.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\WebActivatorEx.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\WebGrease.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\WebMatrix.Data.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\WebMatrix.WebData.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\RepositoryLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Threading.Tasks.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\log4net.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ServiceLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Antlr3.Runtime.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\EntityFramework.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\EntityFramework.SqlServer.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Auth.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Auth.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Auth.PlatformServices.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Auth.PlatformServices.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Core.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Core.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Oauth2.v2.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Oauth2.v2.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.PlatformServices.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.PlatformServices.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Plus.v1.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Google.Apis.Plus.v1.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Hammock.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Hammock.ClientProfile.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Data.Edm.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Data.OData.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Data.Services.Client.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.Security.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.Security.Google.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.WindowsAzure.Storage.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Newtonsoft.Json.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Ninject.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Ninject.Web.Common.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Ninject.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Sparkle.LinkedInNET.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Sparkle.LinkedInNET.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Net.Http.Extensions.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Net.Http.Formatting.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Net.Http.Primitives.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Spatial.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.Helpers.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.Http.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.Http.WebHost.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.Optimization.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.WebPages.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\TweetSharp.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\WebMatrix.Data.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\WebMatrix.WebData.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\RepositoryLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Threading.Tasks.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\log4net.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\de\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\es\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\it\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\de\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\es\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\fr\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\it\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ja\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ko\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\ru\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\zh-Hans\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\bin\zh-Hant\System.Spatial.resources.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\obj\Release\smartData.csproj.App.config
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\obj\Release\smartData.csprojResolveAssemblyReference.cache
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\obj\Release\smartData.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\smartData\obj\Release\smartData.pdb
+D:\Dayuser\SVNSocial\smartData\bin\smartData.dll.config
+D:\Dayuser\SVNSocial\smartData\bin\smartData.dll
+D:\Dayuser\SVNSocial\smartData\bin\smartData.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Antlr3.Runtime.dll
+D:\Dayuser\SVNSocial\smartData\bin\CoreEntities.dll
+D:\Dayuser\SVNSocial\smartData\bin\Edi.Web.SyndicationFeed.dll
+D:\Dayuser\SVNSocial\smartData\bin\Elmah.dll
+D:\Dayuser\SVNSocial\smartData\bin\Elmah.Mvc.dll
+D:\Dayuser\SVNSocial\smartData\bin\EntityFramework.dll
+D:\Dayuser\SVNSocial\smartData\bin\EntityFramework.SqlServer.dll
+D:\Dayuser\SVNSocial\smartData\bin\Facebook.dll
+D:\Dayuser\SVNSocial\smartData\bin\Hammock.ClientProfile.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Data.Edm.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Data.OData.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Data.Services.Client.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.Security.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.Security.Google.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Web.Helpers.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.WindowsAzure.Storage.dll
+D:\Dayuser\SVNSocial\smartData\bin\Ninject.dll
+D:\Dayuser\SVNSocial\smartData\bin\Ninject.Web.Common.dll
+D:\Dayuser\SVNSocial\smartData\bin\Ninject.Web.Mvc.dll
+D:\Dayuser\SVNSocial\smartData\bin\Owin.dll
+D:\Dayuser\SVNSocial\smartData\bin\ServiceLayer.dll
+D:\Dayuser\SVNSocial\smartData\bin\Sparkle.LinkedInNET.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Net.Http.Extensions.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Net.Http.Formatting.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Net.Http.Primitives.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Spatial.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.Helpers.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.Http.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.Http.WebHost.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.Mvc.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.Optimization.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.Razor.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.WebPages.Deployment.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.WebPages.dll
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.WebPages.Razor.dll
+D:\Dayuser\SVNSocial\smartData\bin\WebActivatorEx.dll
+D:\Dayuser\SVNSocial\smartData\bin\WebGrease.dll
+D:\Dayuser\SVNSocial\smartData\bin\WebMatrix.Data.dll
+D:\Dayuser\SVNSocial\smartData\bin\WebMatrix.WebData.dll
+D:\Dayuser\SVNSocial\smartData\bin\AppInterfaces.dll
+D:\Dayuser\SVNSocial\smartData\bin\RepositoryLayer.dll
+D:\Dayuser\SVNSocial\smartData\bin\Common.Logging.dll
+D:\Dayuser\SVNSocial\smartData\bin\CoreEntities.pdb
+D:\Dayuser\SVNSocial\smartData\bin\ServiceLayer.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Antlr3.Runtime.pdb
+D:\Dayuser\SVNSocial\smartData\bin\EntityFramework.xml
+D:\Dayuser\SVNSocial\smartData\bin\EntityFramework.SqlServer.xml
+D:\Dayuser\SVNSocial\smartData\bin\Facebook.xml
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.xml
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Auth.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Auth.xml
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Auth.PlatformServices.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Auth.PlatformServices.xml
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Core.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Core.xml
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.PlatformServices.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.PlatformServices.xml
+D:\Dayuser\SVNSocial\smartData\bin\Hammock.ClientProfile.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Data.Edm.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Data.OData.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Data.Services.Client.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.Security.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.Security.Google.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.WindowsAzure.Configuration.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Dayuser\SVNSocial\smartData\bin\Microsoft.WindowsAzure.Storage.xml
+D:\Dayuser\SVNSocial\smartData\bin\Ninject.xml
+D:\Dayuser\SVNSocial\smartData\bin\Ninject.Web.Common.xml
+D:\Dayuser\SVNSocial\smartData\bin\Ninject.Web.Mvc.xml
+D:\Dayuser\SVNSocial\smartData\bin\Sparkle.LinkedInNET.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Sparkle.LinkedInNET.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Net.Http.Extensions.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Net.Http.Formatting.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Net.Http.Primitives.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Spatial.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.Helpers.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.Http.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.Http.WebHost.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.Mvc.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.Optimization.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.Razor.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.WebPages.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.WebPages.Deployment.xml
+D:\Dayuser\SVNSocial\smartData\bin\System.Web.WebPages.Razor.xml
+D:\Dayuser\SVNSocial\smartData\bin\WebMatrix.Data.xml
+D:\Dayuser\SVNSocial\smartData\bin\WebMatrix.WebData.xml
+D:\Dayuser\SVNSocial\smartData\bin\AppInterfaces.pdb
+D:\Dayuser\SVNSocial\smartData\bin\RepositoryLayer.pdb
+D:\Dayuser\SVNSocial\smartData\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\de\Microsoft.Data.OData.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\es\Microsoft.Data.OData.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\it\Microsoft.Data.OData.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\de\System.Spatial.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\es\System.Spatial.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\fr\System.Spatial.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\it\System.Spatial.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\ja\System.Spatial.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\ko\System.Spatial.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\ru\System.Spatial.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\zh-Hans\System.Spatial.resources.dll
+D:\Dayuser\SVNSocial\smartData\bin\zh-Hant\System.Spatial.resources.dll
+D:\Dayuser\SVNSocial\smartData\obj\Release\smartData.csproj.App.config
+D:\Dayuser\SVNSocial\smartData\obj\Release\smartData.csprojResolveAssemblyReference.cache
+D:\Dayuser\SVNSocial\smartData\obj\Release\smartData.dll
+D:\Dayuser\SVNSocial\smartData\obj\Release\smartData.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Auth.dll
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Auth.PlatformServices.dll
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Core.dll
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.dll
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.PlatformServices.dll
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Urlshortener.v1.dll
+D:\Dayuser\SVNSocial\smartData\bin\Newtonsoft.Json.dll
+D:\Dayuser\SVNSocial\smartData\bin\Zlib.Portable.dll
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Urlshortener.v1.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Urlshortener.v1.xml
+D:\Dayuser\SVNSocial\smartData\bin\Zlib.Portable.xml
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Oauth2.v2.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Oauth2.v2.xml
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Plus.v1.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Google.Apis.Plus.v1.xml
+D:\Dayuser\SVNSocial\smartData\bin\Hammock.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Quartz.pdb
+D:\Dayuser\SVNSocial\smartData\bin\Quartz.xml
+D:\Dayuser\SVNSocial\smartData\bin\TweetSharp.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\obj\Release\smartData.csproj.App.config
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\obj\Release\smartData.csprojResolveAssemblyReference.cache
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\obj\Release\smartData.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\obj\Release\smartData.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\smartData.dll.config
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\smartData.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\smartData.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Antlr3.Runtime.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\AppInterfaces.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\CoreEntities.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Edi.Web.SyndicationFeed.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Elmah.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Elmah.Mvc.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\EntityFramework.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\EntityFramework.SqlServer.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Facebook.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.Auth.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.Auth.PlatformServices.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.Core.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.PlatformServices.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.Urlshortener.v1.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Hammock.ClientProfile.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Data.Edm.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Data.OData.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Data.Services.Client.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.Security.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Web.Helpers.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Ninject.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Ninject.Web.Common.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Ninject.Web.Mvc.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Owin.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\RepositoryLayer.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ServiceLayer.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Sparkle.LinkedInNET.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Net.Http.Extensions.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Net.Http.Formatting.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Net.Http.Primitives.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Spatial.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.Helpers.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.Http.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.Http.WebHost.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.Mvc.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.Optimization.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.Razor.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.WebPages.Deployment.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.WebPages.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.WebPages.Razor.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\WebActivatorEx.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\WebGrease.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\WebMatrix.Data.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\WebMatrix.WebData.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Zlib.Portable.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\AppInterfaces.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\CoreEntities.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ServiceLayer.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Antlr3.Runtime.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\EntityFramework.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\EntityFramework.SqlServer.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Facebook.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.Auth.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.Auth.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.Auth.PlatformServices.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.Auth.PlatformServices.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.Core.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.Core.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.PlatformServices.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.PlatformServices.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.Urlshortener.v1.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Google.Apis.Urlshortener.v1.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Hammock.ClientProfile.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Data.Edm.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Data.OData.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Data.Services.Client.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.Security.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Ninject.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Ninject.Web.Common.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Ninject.Web.Mvc.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Sparkle.LinkedInNET.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Sparkle.LinkedInNET.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Net.Http.Extensions.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Net.Http.Formatting.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Net.Http.Primitives.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Spatial.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.Helpers.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.Http.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.Http.WebHost.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.Mvc.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.Optimization.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.Razor.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.WebPages.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.WebPages.Deployment.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\System.Web.WebPages.Razor.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\WebMatrix.Data.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\WebMatrix.WebData.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\Zlib.Portable.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\de\System.Spatial.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\es\System.Spatial.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\fr\System.Spatial.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\it\System.Spatial.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ja\System.Spatial.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ko\System.Spatial.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\ru\System.Spatial.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\smartData\bin\RepositoryLayer.pdb

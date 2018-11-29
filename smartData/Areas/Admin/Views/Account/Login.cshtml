@@ -1,0 +1,214 @@
+﻿@model smartData.Models.LoginViewModel
+
+
+@{
+    ViewBag.Title = "::Welcome::";
+    Layout = "~/Views/Shared/_UserOuterLayout.cshtml";
+}
+
+@section CSSLinks
+    {
+
+}
+
+<script src="~/Scripts/Jscripts/confirm.js"></script>
+<link href="~/Content/confirm.css" rel="stylesheet" />
+<script>
+    $(document).ready(function () {
+        debugger;
+        var msg = $("#message").val();
+        if (msg == "success") {
+            $.confirm({
+                title: 'Congratulations!',
+                content: 'Your account has been registered please login to continue.',
+                type: 'green',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+        if (msg == "error") {
+            $.confirm({
+                title: 'Encountered an error!',
+                content: 'Something went wrong.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+
+        if (msg == "successReset") {
+            $.confirm({
+                title: 'Congratulations!',
+                content: 'The reset password link has been sent to your email.',
+                type: 'green',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+        if (msg == "errorInvalidUser") {
+            $.confirm({
+                title: 'Error!',
+                content: 'Invalid Username ,Password or Industry.',
+                type: 'red',
+                typeAnimated: true,
+                buttons: {
+                    close: function () {
+                    }
+                }
+            });
+        }
+    })
+</script>
+<input type="hidden" value="@TempData["Message"]" id="message" /> 
+
+
+@System.Web.Optimization.Styles.Render("~/bundles/bootstrapCss")
+<style>
+    .modal-dialog {
+        margin-left: -300px;
+    }
+
+    .modal-header {
+        color: #ffffff;
+        background-color: #3276b1;
+        border-color: #285e8e;
+    }
+
+    body {
+        padding-top: 0px !important;
+    }
+</style>
+
+@if (Model != null)
+{
+    <input type="hidden" value="@Model.user" id="hdnuser" />
+
+}
+
+<section class="main-container fit-assemnt-step-first thankyoubg">
+    <section class="login-box" id="loginForm">
+        <h2> <img src="@Url.Content("~/Images/logo.png")"> </h2>
+        @*@{
+            <p style="padding-left:30px;">@TempData["Message"]</p>
+        }*@
+
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @Area = "Admin", @class = "" }))
+        {
+            @*@Html.AntiForgeryToken()*@
+            @Html.ValidationSummary(true)
+            <ul>
+
+                @*@Html.Label("Login As :")*@
+                @*<input type="radio" name="radioName" value="SuperAdmin" /> SuperAdmin
+                    <input type="radio" name="radioName" value="Admin" /> Admin*@
+
+                @*@Html.RadioButtonFor(m => m.user, "SuperAdmin", new { @class = "", @name = "radioName" }) SuperAdmin
+                    @Html.RadioButtonFor(m => m.user, "Admin", new { @class = "", @name = "radioName" }) Admin*@
+
+
+                <li>
+                    @*@Html.LabelFor(m => m.UserName, new { @class = "col-md-2 control-label" })*@
+                    @Html.Label("Email", new { @class = "" })
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "", @autofocus = "autofocus" })
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </li>
+
+                <li>
+                    @Html.LabelFor(m => m.Password, new { @class = "nomrgn-btm" })
+                    @Html.PasswordFor(m => m.Password, new { @class = "" })
+                    @Html.ValidationMessageFor(m => m.Password)
+                </li>
+
+
+                <li id="drop">
+                    @Html.Label("Industry Name", new { @class = "" })
+                    @Html.DropDownListFor(m => m.IndustryId, (SelectList)@ViewBag.IndustryName, "Select Industry Name", new { id = "industry" })
+                    @Html.ValidationMessageFor(m => m.IndustryId)
+                </li>
+
+                <li class="terms-cndtns">
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe)
+                    @Html.ActionLink("Forgot Password", "ResetPasswordAdmin")
+                </li>
+
+                <li>
+                    <input type="submit" value="Sign In" class="bluebtn" />
+                </li>
+
+                @*<li>
+                        @Html.ActionLink("Create a new account", "Register")
+                    </li>*@
+            </ul>
+
+        }
+    </section>
+</section>
+
+
+@section Scripts {
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+    @System.Web.Optimization.Scripts.Render("~/bundles/bootstrapgrid")
+    <script>
+        $(document).ready(function () {
+            debugger;
+            var msg = "@ViewBag.ErrMessage";
+            if (msg == "True") {
+                BootstrapDialog.show({
+                    message: 'You are not authorized to view this page.',
+                    buttons: [{
+                        label: 'Ok',
+                        cssClass: 'btn-primary',
+                        action: function (dialogItself) {
+                            dialogItself.close();
+                        }
+                    }]
+                });
+            }
+            //if ($('#hdnuser').val() == "SuperAdmin") {
+            //    $('#drop').hide();
+            //}
+
+            // $("option:selected", $("#industry")).val(30);
+            //alert($('#hdnuser').val())
+            // var $radios = $('input:radio[name=user]');
+            //alert($('input:radio[name=user]').val())
+            //if ($radios.is(':checked') == false) {
+            //    debugger;
+            //    $radios.filter('[value=SuperAdmin]').prop('checked', true);
+            //    $("option:selected", $("#industry")).val(30);
+            //    $('#drop').hide();
+            //}
+
+            //$("input[name=user]").on('change', function () {
+            //    debugger;
+            //    if ($(this).is(":checked")) {
+            //        debugger;// check if the radio is checked
+            //        var val = $(this).val();
+            //        if (val == "SuperAdmin") {
+            //            debugger;
+            //            $('#drop').hide();
+            //            $("option:selected", $("#industry")).val(30);
+            //            $('.validation-summary-errors').hide();
+            //            $('.field-validation-error').hide();
+            //        }
+            //        else if (val == "Admin") {
+            //            $('#drop').show();
+            //            $('.field-validation-error').hide();
+            //            $('.validation-summary-errors').hide();
+            //        }
+            //    }
+            //})
+        });
+    </script>
+}
+

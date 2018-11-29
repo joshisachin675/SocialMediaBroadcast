@@ -1,0 +1,306 @@
+﻿@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*@model IEnumerable<Core.Domain.User>*@
+@model Core.Domain.UserInsert
+@section CSSLinks
+{
+    @System.Web.Optimization.Styles.Render("~/bundles/bootstrapCss")
+}
+@section JSRefernces
+{
+    @System.Web.Optimization.Scripts.Render("~/Scripts/BootStrapGrid/src/bootstrap-table.js")
+    @System.Web.Optimization.Scripts.Render("~/Scripts/BootStrapGrid/src/extensions/filter/bootstrap-table-filter.js")
+    @System.Web.Optimization.Scripts.Render("~/Scripts/BootStrapDailog/bootstrap-dialog.min.js")
+}
+<script>
+    var form;
+    var Param = {};
+    var token;
+    var saveid = 0;
+    $(document).ready(function () {
+        $("#HiddenHostName").val(window.location.origin);
+        $("#hiddenMassUpdatecheckAll").val("");
+        $("#hiddenMassUpdatecheckAllsts").val("");
+        setTimeout(function () {
+            $("#btnMassUpdate").show();
+            $("#ddlactivate").show();
+        }, 2500);
+
+        @functions{
+            public string TokenHeaderValue()
+            {
+                string cookieToken, formToken;
+                AntiForgery.GetTokens(null, out cookieToken, out formToken);
+                return cookieToken + ":" + formToken;
+            }
+        }
+        // Antiforgery Token
+        token = '@TokenHeaderValue()';
+        var headers = {};
+        headers["RequestVerificationToken"] = token;
+
+        // Set Custom filters for searching : Model Property name and search TxtBox Id names must be same
+          
+        form = $('#EditForm');
+          
+        if (saveid == 0) {
+        }
+        var reqUrl = $("#HiddenHostName").val() + '/api/UsersAPI/GetUsers';
+           
+        $('#grid').bootstrapTable({
+            headers: headers,
+            method: 'post',
+            url: reqUrl,
+            cache: false,
+            height: 500,
+            classes: 'table table-hover',
+            customParams: Param,
+            striped: true,
+            pageNumber: 1,
+            pagination: true,
+            pageSize: 10,
+            pageList: [5, 10, 20, 30],
+            search: false,
+            showColumns: true,
+            showRefresh: true,
+            sidePagination: 'server',
+            minimumCountColumns: 2,
+            showHeader: true,
+            showFilter: false,
+            smartDisplay: true,
+            clickToSelect: true,
+            rowStyle: rowStyle,
+            toolbar: '#custom-toolbar',
+            columns: [
+
+                  {
+                      field: '',
+                      title: 'SelectAll',
+                      type: 'checkbox',
+                      checkbox: true,
+                      value: '',
+                      clickToSelect: true,
+                      align: 'left',
+                  },
+                {
+                    field: 'UserId',
+                    title: 'User ID',
+                    type: 'search',
+                    visible: false,
+                    sortable: true
+
+                },
+           {
+               field: 'FirstName',
+               title: 'First Name',
+               type: 'search',
+               sortable: true,
+               formatter: function (value, row, index) {
+                   if (row.FirstName != "" && row.FirstName != null) {
+                       return '<a id="edit"  class="edit ml10" href="javascript:ShowEditPopup(' + row.UserId + ')" title="Edit">' + row.FirstName + '</a>'
+                   }
+                       
+               }
+           }, {
+               field: 'LastName',
+               title: 'Last Name',
+               type: 'search',
+
+               sortable: true,
+                  
+           }, {
+               field: 'Email',
+               title: 'Email',
+               type: 'search',
+
+               sortable: true,
+               formatter: function (value, row, index) {
+                   if (row.FirstName != "" && row.FirstName != null) {
+                       return '<a id="email" href="mailto:' + row.Email + '" title="Email">' + row.Email + '</a>'
+                   }
+
+               }
+           },
+
+              {
+                  field: 'ActiveDisplay',
+                  title: 'Active',
+                  visible: true,
+                  sortable: false,
+                  align: 'left',
+                  clickToSelect: false,
+                  disabled: true
+              },
+
+
+            {
+                field: 'operate',
+                title: 'Actions',
+
+
+                clickToSelect: false,
+                formatter: operateFormatter,
+                events: operateEvents
+            }],
+               
+            onSubmit: function () {
+                var data = $('#filter-bar').bootstrapTableFilter('getData');
+                    
+                console.log(data);
+            },
+            onLoadSuccess: function () {
+                Addtitle();
+            },
+            onPageChange: function () {
+                Addtitle();
+            }
+        });
+    });
+    </script>
+
+
+@System.Web.Optimization.Scripts.Render("~/scripts/js/users.js")
+
+<div class="usertitle">
+    <h3>Users</h3>
+</div>
+<div id="custom-toolbar">
+    <div class="form-inline" role="form">
+        <div class="form-group">
+            <div class="search">
+                <input class="form-control" id="FirstName" placeholder="First Name" type="text" name="FirstName">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="search">
+                <input class="form-control" id="LastName" placeholder="Last Name" type="text" name="LastName">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="search">
+                <input class="form-control" id="Email" placeholder="Email" type="email" name="Email">
+            </div>
+        </div>
+        <div class="form-group">
+
+            <input class="btn btn-success" id="btnFilter" placeholder="" type="button" value="Filter" name="btnFilter">
+        </div>
+    </div>
+</div>
+<div id="filter-bar"> </div>
+<table class="table table-hover" data-toolbar="#custom-toolbar" data-show-columns="true" data-show-filter="true"
+       id="grid">
+    <thead>
+        <tr>
+            <th data-field="UserId">User ID</th>
+            <th data-field="FirstName">First Name</th>
+            <th data-field="Email">Email</th>
+            <th data-checkbox="true" data-field="Active">Active</th>
+            <th data-field="Operate"></th>
+        </tr>
+    </thead>
+</table>
+<input id="hiddenMassUpdatecheckAll" type="hidden" />
+<input id="hiddenMassUpdatecheckAllsts" type="hidden" />
+<input id="hiddenMassUncheckIds" type="hidden" />
+<input id="HiddenHostName" type="hidden" />
+<div id="myModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Edit User</h4>
+            </div>
+            <form id="EditForm">
+                <div class="modal-body">
+
+                    <div class="row hideRow">
+                        <div class="col-sm-4">
+                            User Id
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" name="UserId" readonly id="userId" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            First Name
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" name="FirstName" id="txtFirstName" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            Last Name
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" name="LastName" id="txtLastName" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            Email
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" name="Email" id="txtEmail" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            Role
+                        </div>
+                        <div class="col-md-8 op">
+                            @Html.Partial("_RoleList", Model)
+                        </div>
+                    </div>
+
+                    <div class="hideRow">
+
+                        <div class="col-sm-4">
+                            <input type="password" name="Email" id="Password" value="000000" />
+                            <input type="password" name="Email" id="ConfirmPassword" value="000000" />
+                            <input id="ModifiedBy" type="text" name="ModifiedBy" value="@ViewBag.logUser" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" id="userUpdate" class="btn btn-primary">Update</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    @Html.HiddenFor(m => m.RoleIDs)
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id='loadingmessage' class="loader1 fade1" style="display: none; z-index: 5000; height: 95%; width: 90%; margin-left: 4%; ">
+    <img src='~/Areas/ScreenPermissions/Images/loading2.gif' style="height: 50px;width: 50px;" />
+</div>
+
+
+<div id="AddModal" class="modal adduser">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="CloseAddUserDataPopup" onclick="CloseAddUserPopup()">&times;</button>
+                <h4 class="modal-title">Add User</h4>
+            </div>
+            <div id="addUser">
+                @Html.Partial("_AddUser", Model);
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+

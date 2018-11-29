@@ -1,0 +1,73 @@
+﻿@model Core.Domain.smPost
+
+@{
+    ViewBag.Title = "Edit Content";
+    Layout = null;
+}
+
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+<script src="~/Scripts/User/EditFuture.js"></script>
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header  modal-header-custom">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title modal-title-custom">Edit Content</h4>
+        </div>
+        <div class="modal-body">
+            <div class="social-media-wrap clearfix">
+
+                <textarea cols="50" rows="15" id="txtEditMsgContent" style="margin-top: 10px;" placeholder="Please write content to post" onkeyup="countChar(this)"></textarea>
+                <div id="uploadImage" class="UploadedImage">
+                    <span id="uplodedImage">By uploading new image your uploaded image will be removed</span>
+                </div>
+                <div class="jumbotron">
+                    <form action="@Url.Action("SaveUploadedFile", "Home")" method="post" enctype="multipart/form-data" class="dropzone" id="dropzoneForm" style="width: 50px;background: none; border: none;">
+                        <div class="fallback">
+                            <input name="file" type="file" multiple id="fileUpload" />
+                            <input type="submit" value="Upload" />
+                        </div>
+                    </form>
+                </div>
+                <textarea cols="50" rows="1" id="EditUrl" style="margin-top: 10px;   height: 42px;" placeholder="Please Add link"></textarea>
+
+
+                @*<input type="text" id="EditUrl" placeholder="Please Add link" />*@
+                @*<ul class="clearfix">
+                        <li><input type="checkbox" data-id="1" id="editChk1" class="EditSocialMedia" disabled /> Facebook</li>
+                        <li><input type="checkbox" data-id="2" id="editChk2" class="EditSocialMedia" disabled /> LinkedIn</li>
+                        <li><input type="checkbox" data-id="3" id="editChk3" class="EditSocialMedia" disabled /> Twitter</li>
+                        <li><input type="checkbox" data-id="4" id="editChk4" class="EditSocialMedia" disabled /> GooglePlus</li>
+                    </ul>*@
+                @*<textarea cols="50" rows="1" id="txtEditKeywords" style="margin-top: 10px;   height: 42px;" placeholder="Please Add Name"></textarea>*@
+
+
+
+
+            </div>
+            <span id="">Reschedule</span>
+
+            <div class="Date_Edit">
+                <input class="datepicker" type="text" />
+                <span class="add-on">
+                    <i data-time-icon="icon-time" data-date-icon="icon-calendar" class="fa fa-calendar">
+                    </i>
+                </span>
+            </div>
+            <br /><br />
+
+
+
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+            @*<button type="button" class="btn btn-circlr" id="btnEditContent" tabindex="800">Post Now</button>*@
+            <button type="button" class="btn btn-circlr" id="btnEditContent" tabindex="800">Update</button>
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="PostId" />
+

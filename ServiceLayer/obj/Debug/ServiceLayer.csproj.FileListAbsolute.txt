@@ -1,0 +1,979 @@
+D:\Day User\Sukhvinder\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Day User\Sukhvinder\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Day User\Sukhvinder\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Day User\Sukhvinder\ServiceLayer\bin\Debug\Ninject.dll
+D:\Day User\Sukhvinder\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Day User\Sukhvinder\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Day User\Sukhvinder\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\Sukhvinder\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Day User\Sukhvinder\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Day User\Sukhvinder\ServiceLayer\bin\Debug\Ninject.xml
+D:\Day User\Sukhvinder\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Day User\Sukhvinder\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\Sukhvinder\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Day User\Sukhvinder\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Day User\Sukhvinder\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\Ninject.dll
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\Ninject.xml
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\vikalp\Sukhvinder\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\vikalp\Sukhvinder\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\vikalp\Sukhvinder\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\vikalp\Sukhvinder\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\Ninject.dll
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\Ninject.xml
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\Ninject.dll
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\Ninject.xml
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\Ninject.dll
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\Ninject.xml
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Day User\VikalpS\project\MSFramework_V3\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\Ninject.dll
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\Ninject.xml
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\Ninject.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\Ninject.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\Ninject.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\Ninject.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\Ninject.dll
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\Ninject.xml
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\DayUsers\lalitka\Official\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.pdb
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\Ninject.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.pdb
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\Ninject.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\Ninject.dll
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\Ninject.xml
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Projects\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Projects\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Projects\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Projects\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\Ninject.dll
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\Ninject.xml
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Frameworks\New folder\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\Ninject.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\Ninject.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\AppInterfaces.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\Ninject.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\AppInterfaces.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\Ninject.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\AppInterfaces.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\Ninject.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\AppInterfaces.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\Ninject.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\Ninject.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\Ninject.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\Ninject.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\Ninject.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\Ninject.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\Ninject.xml
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Day User\DeepakD\Projects\Basic Framework\ServiceLayer\obj\Debug\ServiceLayer.pdb
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\ServiceLayer.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\ServiceLayer.pdb
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\AppInterfaces.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\CoreEntities.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\EntityFramework.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\Ninject.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\RepositoryLayer.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\System.Web.Razor.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\AppInterfaces.pdb
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\CoreEntities.pdb
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\EntityFramework.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\Ninject.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\System.Web.Razor.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\obj\Debug\ServiceLayer.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\Newtonsoft.Json.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\Facebook.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\Facebook.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\Newtonsoft.Json.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\Facebook.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\Facebook.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\Newtonsoft.Json.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\Ninject.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\Ninject.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\Newtonsoft.Json.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\Facebook.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\Ninject.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\Facebook.xml
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\Ninject.xml
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\LatestCode\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\LatestCode\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\LatestCode\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Dayuser\LatestCode\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\Facebook.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\Ninject.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\Facebook.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\Ninject.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\Newtonsoft.Json.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\Ninject.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\Ninject.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\Newtonsoft.Json.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\Facebook.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\Ninject.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\Facebook.xml
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\Ninject.xml
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Dayuser\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.pdb
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.pdb
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\Facebook.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\Ninject.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.pdb
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.pdb
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.xml
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\Facebook.xml
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\Ninject.xml
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.xml
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.dll
+C:\Users\shilpap\Desktop\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.pdb
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.pdb
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\Facebook.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\Ninject.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.pdb
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.pdb
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\Facebook.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\Ninject.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.pdb
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.pdb
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\Facebook.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\Ninject.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.pdb
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.pdb
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\Facebook.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\Ninject.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\Facebook.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\Ninject.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\Facebook.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\Ninject.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.pdb
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\ServiceLayer.pdb
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\Facebook.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\Ninject.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\Facebook.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\Ninject.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\ServiceLayer\obj\Debug\ServiceLayer.pdb
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\ServiceLayer.dll.config
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\ServiceLayer.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\ServiceLayer.pdb
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\AppInterfaces.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\CoreEntities.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\EntityFramework.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\Facebook.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\Microsoft.Web.Helpers.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\Ninject.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\Ninject.Web.Common.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\Ninject.Web.Mvc.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\RepositoryLayer.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\System.Web.Mvc.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\System.Web.WebPages.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\System.Web.Razor.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\AppInterfaces.pdb
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\AppInterfaces.dll.config
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\CoreEntities.pdb
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\RepositoryLayer.pdb
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\RepositoryLayer.dll.config
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\EntityFramework.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\Facebook.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\Ninject.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\Ninject.Web.Common.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\Ninject.Web.Mvc.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\System.Web.Mvc.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\System.Web.WebPages.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\System.Web.Razor.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\obj\Debug\ServiceLayer.csprojResolveAssemblyReference.cache
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\obj\Debug\ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\obj\Debug\ServiceLayer.csproj.CopyComplete
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\obj\Debug\ServiceLayer.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\ServiceLayer\obj\Debug\ServiceLayer.pdb

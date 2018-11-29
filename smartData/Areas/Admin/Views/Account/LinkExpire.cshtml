@@ -1,0 +1,39 @@
+﻿
+@model smartData.Models.ChangePasswordModel
+
+@{
+    ViewBag.Title = "::ChangePassword::";
+    Layout = "~/Views/Shared/_UserOuterLayout.cshtml";
+}
+
+@section CSSLinks
+    {
+
+}
+
+@*@section JSRefernces{
+
+    }*@
+
+<section class="main-container fit-assemnt-step-first thankyoubg">
+    <section class="login-box">
+        <h2> <img src="@Url.Content("~/Images/logo.png")"> </h2>
+  <h2>Your reset password link has been expired.</h2>
+    </section>
+</section>
+
+@section Scripts {
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#NewPassword').val('');
+            $("#UserName").val($("#user").val());
+            $("#InustryId").val($('#industryId').val());
+            var location = window.location.pathname;
+
+        });
+    </script>
+}
+
+

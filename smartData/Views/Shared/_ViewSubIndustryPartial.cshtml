@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Core.Domain.smSubIndustry>
+
+<div class="viewSubIndustry">
+    @if(Model!=null)
+    {
+    foreach (var item in Model)
+    {
+        <div class="row">
+            <div class="col-md-4 col-sm-5 col-xs-6">
+                <div class="senddeledit_posts">
+                    <div> <p> @item.SubIndustryName </p> </div>
+                    <i class="fa fa-edit" title="Edit" data-toggle="modal" data-target="#editpost" data-requestid="@item.SubIndustryId"></i>
+                    @*<i class="fa fa-edit"></i>*@
+                    <i class="fa fa-trash" title="Delete"></i>
+
+                    @*<input type="button" data-toggle="modal" data-target="#edit-posts" data-requestid="@post.PostId" value="Edit Posts" class="show-offers" onclick="Dashboard.AjaxCalls.ShowOffers(@post.PostId)" />*@
+                </div>
+            </div>
+
+        </div>
+
+    }
+    }
+
+</div>

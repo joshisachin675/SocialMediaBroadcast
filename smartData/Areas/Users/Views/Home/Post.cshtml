@@ -1,0 +1,21 @@
+﻿@model Core.Domain.smPost
+
+@{
+    ViewBag.Title = "Post";
+    Layout = "~/Views/Shared/_UserInnerLayout.cshtml";
+}
+
+<h2>Post</h2>
+<section class="scrollable ">
+    <div>
+        @Html.ActionLink("Republish Past Posts", "ManagePost", "Home", new { @class = "btn btn-primary lg" })
+
+    </div>
+    <br />
+    <br />
+    <div>
+        @Html.ActionLink("Manage Future Post ", "ManageFuturePost", "Home", new { @class = "btn btn-primary lg" })
+
+    </div>
+
+</section>

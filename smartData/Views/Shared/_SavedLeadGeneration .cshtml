@@ -1,0 +1,75 @@
+﻿@model Core.Domain.Users
+@if (Model != null && Model.LandingPageList != null)
+{
+
+
+    for (int i = 0; i < Model.LandingPageList.Count; i++)
+    {
+        <input type="checkbox" id="landGenCheck" class="SavedlandGenCheck" name="savedLeads" checked="@Model.LandingPageList[i].active" data-pageid="@Model.LandingPageList[i].id" />
+        @*@Html.CheckBoxFor(m => m.LandingPageList[i].active)*@
+        @Model.LandingPageList[i].label
+        @Html.HiddenFor(m => m.LandingPageList[i].id)
+  
+        <br>
+    }
+
+
+}
+<script>
+    $(".SavedlandGenCheck").on('click', function () {
+        // in the handler, 'this' refers to the box clicked on
+        var $box = $(this);
+        if ($box.is(":checked")) {
+            // the name of the box is retrieved using the .attr() method
+            // as it is assumed and expected to be immutable
+            var group = "input:checkbox[name='" + $box.attr("name") + "']";
+            // the checked state of the group/box on the other hand will change
+            // and the current value is retrieved using .prop() method
+            $(group).prop("checked", false);
+            $box.prop("checked", true);
+        } else {
+            $box.prop("checked", false);
+        }
+    });
+
+
+
+    $(".SavedlandGenCheck").change(function () {
+        debugger
+        var PageID = [];      
+        PageID.push($(this).attr("data-pageid"));
+        if ($(this).is(':checked')) {
+            var JsonWorkInfo = {};        
+            JsonWorkInfo.PageID = PageID;
+            JsonWorkInfo.Status = true;
+            $.ajax({
+                url: $_UrlSaveAutoLandPageDetail,
+                type: "Get",
+                data: { "PostInformation": JSON.stringify(JsonWorkInfo) },
+                success: function (result) {
+                    // BootstrapDialog.alert("Post is scheduled Successfully");
+                }
+
+
+            })
+        }
+        else {
+            var JsonWorkInfo = {};
+            JsonWorkInfo.PageID = PageID;         
+            JsonWorkInfo.Status = false;
+            $.ajax({
+                url: $_UrlSaveAutoLandPageDetail,
+                type: "Get",
+                data: { "PostInformation": JSON.stringify(JsonWorkInfo) },
+                success: function (result) {
+                    //BootstrapDialog.alert("Post is scheduled Successfully");
+                }
+
+
+            })
+        }
+
+
+
+    });
+</script>

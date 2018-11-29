@@ -1,0 +1,188 @@
+﻿@model smartData.Models.User.UserDashboardModel
+
+@using smartData.Common;
+<input type="hidden" id="offset" />
+<div class="schduleposts futureposts">
+    @foreach (var post in Model.scheduledPosts)
+    {
+        <div class="row">
+            <div class="col-md-4 col-sm-5 col-xs-6">
+                <div class="schedulepost_lt">
+                    @*<p>09:46PM November 18,2016</p>*@
+                    <p>
+                        @{
+        //TimeZoneInfo tz = TimeZoneInfo.Local;
+        //var timeZoneId = tz.Id;
+        //TimeZoneInfo cstZone = TimeZoneInfo.FindSystemTimeZoneById(timeZoneId);
+        //DateTime cstDateTime = TimeZoneInfo.ConvertTimeFromUtc(post.PostDate, cstZone);
+        var offset = DateTimeOffset.Now.Offset.TotalMinutes;
+        var offsets = TimeZoneInfo.Local.GetUtcOffset(DateTime.UtcNow).TotalMinutes;
+
+        //DateTime iKnowThisIsUtc = post.PostDate;
+        //DateTime runtimeKnowsThisIsUtc = DateTime.SpecifyKind(iKnowThisIsUtc, DateTimeKind.Utc);
+        //DateTime localVersion = runtimeKnowsThisIsUtc.ToLocalTime();        
+        //var offset = (DateTime.UtcNow - DateTime.Now).TotalMinutes;
+        DateTime cstDateTime = post.PostDate + new TimeSpan(Convert.ToInt32(offset) / 60, Convert.ToInt32(offset) % 60, 0);
+        //DateTime cstDateTime = post.PostDate + new TimeSpan(Convert.ToInt32(Model.timeZoneOffset) / 60, Convert.ToInt32(Model.timeZoneOffset) % 60, 0);
+        var date = cstDateTime.Date;
+        var time = cstDateTime.TimeOfDay;
+            var newtime = date +  time;
+                        }                      
+                        @newtime.ToString("M/d/yyyy h:mm tt") 
+                        @*@cstDateTime*@
+                    </p>
+
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        string Name = string.Empty;
+                        Name = SessionManager.LoggedInUser.FirstName ;
+                  
+                    <span>Scheduled By <b>@Name</b> </span>
+                    }
+                    @*<a href="#" class="bluebtn">Publish Post</a>*@
+                </div>
+
+                <div class="schedulepost_rt">
+                    @if (post.SocialMedia.ToLower() == "facebook")
+                    {
+                        @*<a href="#" class="fb_content ">*@
+                            <i class="fb_content fa fa-facebook" aria-hidden="true"></i>
+                        @*</a>*@
+                    }
+                    else if (post.SocialMedia.ToLower() == "twitter")
+                    {
+                        @*<a href="#" class="fb_content twitter_content">*@
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        @*</a>*@
+                    }
+                    else if (post.SocialMedia.ToLower() == "linkedin")
+                    {
+                        @*<a href="#" class="fb_content linkedin_content">*@
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        @*</a>*@
+                    }
+                    else if (post.SocialMedia.ToLower() == "googleplus")
+                    {
+                        <a href="#" class="fb_content gplus_content">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                    }
+
+                </div>
+                <div class="senddeledit_posts">
+                    @*<i class="fa fa-edit" title="Edit" data-toggle="modal" data-target="#editpost" data-requestid="@post.PostId" onclick="Dashboard.AjaxCalls.ShowOffers(@post.PostId)"></i>
+                    @*<i class="fa fa-edit"></i>*@
+                    @*<i class="fa fa-trash" title="Delete"></i>*@
+
+                    @*<input type="button" data-toggle="modal" data-target="#edit-posts" data-requestid="@post.PostId" value="Edit Posts" class="show-offers" onclick="Dashboard.AjaxCalls.ShowOffers(@post.PostId)" />*@
+                </div>
+            </div>
+            @{
+        string initialUrl = Convert.ToString(TempData["SiteUrl"]);
+            }
+            @if (post.ImageUrl != null)
+            {
+
+                <div class="col-md-8 col-sm-7 col-xs-6 image-plus-content">
+                    <div class="textmessage">
+                        <p>
+                            @{
+                string description = string.Empty;
+                if (post.ImageUrl != null && post.SocialMedia.ToLower() == "facebook")
+                {
+                    if (post.Name != null)
+                    {
+                        description = post.Name;
+                    }
+                    else
+                    {
+                        description = post.Description;  
+                    }
+                   
+                    
+                }
+                else
+                {
+                    description = post.Description;
+                }
+
+                if (post.SocialMedia.ToLower() == "linkedin")
+                {
+                    description = post.Description;
+                }
+
+                if (post.SocialMedia.ToLower() == "twitter")
+                {
+                    description = post.Description;
+                }
+                            }
+                            @description
+                        </p>
+                    </div>
+                    <div class="photos_status">
+                        @if (post.ImageUrl != null)
+                        {
+                            string imageUrl = string.Empty;
+                            //if (post.ImageUrl.Contains("www") || post.ImageUrl.Contains("http"))
+                            //{
+                            //    imageUrl =  @post.ImageUrl;
+                            //}
+                            if (Uri.IsWellFormedUriString(post.ImageUrl, UriKind.RelativeOrAbsolute))
+                            {
+                                imageUrl = @post.ImageUrl;
+                            }
+                            else
+                            {
+                                imageUrl = initialUrl + @post.ImageUrl;
+                            }
+                            
+                          
+                            <img src="@Url.Content(imageUrl)" height="100" width="100" />
+                        }
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="col-md-7 col-sm-6 col-xs-6">
+                    <div class="textmessage">
+                        <p>
+                            @{
+                string description = string.Empty;
+                if (post.ImageUrl != null && post.SocialMedia.ToLower() == "facebook")
+                {
+                    description = post.Name;
+                }
+                else
+                {
+                    description = post.Description;
+                }
+
+                if (post.SocialMedia.ToLower() == "linkedin")
+                {
+                    description = post.Description;
+                }
+
+                if (post.SocialMedia.ToLower() == "twitter")
+                {
+                    description = post.Description;
+                }
+                            }
+                            @description
+                        </p>
+                    </div>
+                    <div class="photos_status">
+                        @if (post.ImageUrl != null)
+                        {
+                            string imageUrl = string.Empty;
+                            imageUrl = initialUrl + @post.ImageUrl;
+                            <img src="@post.ImageUrl" height="100" width="100" />
+                        }
+                    </div>
+                </div>
+            }
+
+        </div>
+    }
+</div>

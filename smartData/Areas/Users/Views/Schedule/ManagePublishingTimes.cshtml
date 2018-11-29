@@ -1,0 +1,462 @@
+﻿@{
+    ViewBag.Title = "Manage Publishing Times";
+    Layout = "~/Views/Shared/_UserInnerLayout.cshtml";
+}
+@*<link href="@Url.Content("~/Content/css/bootstrap.min.css")" rel="stylesheet" type="text/css" />*@
+<link href="~/Content/bootstrap-timepicker.css" rel="stylesheet" />
+<script type="text/javascript">
+ @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+
+        }
+    }
+    // Antiforgery Token
+    var token = '@TokenHeaderValue()';
+    // alert(token);
+    var headers = {};
+    headers["RequestVerificationToken"] = token;
+</script>
+
+<script src="~/Scripts/User/PublishingTime.js"></script>
+
+<style>
+    .row.date-picker-edit {
+        margin-bottom: 16px;
+    }
+
+
+    #tabs {
+        /*width: 10%;*/
+        /*margin-left: auto;*/
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .tab-inner-frame {
+        /*width: 50% !important;*/
+        border: 1px solid #e2e2e2 !important;
+        border-radius: 0px !important;
+    }
+
+        .tab-inner-frame .ui-widget-header {
+            background: #fff;
+            color: #333333;
+            font-weight: bold;
+            border: 0px !important;
+            border-bottom: 1px solid #E2E2E2 !important;
+        }
+
+    #tabs {
+        /*width: 20%;*/
+        /* margin-left: auto; */
+        margin-right: auto;
+        margin-top: 10px;
+        padding: 29px 26px;
+        padding-bottom:0px !important;
+    }
+
+    .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+        float: left;
+        padding: 10px 20px;
+        text-decoration: none;
+        /* border-radius: 4px 4px 0 0; */
+        font-size: 17px;
+        /* background: #ccc; */
+    }
+    }
+
+    .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+        border-top-right-radius: 10px;
+    }
+
+    .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+        border-top-left-radius: 10px;
+    }
+
+    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+        border: 1px solid #55ACEE;
+        background: #55ACEE;
+        font-weight: normal;
+        color: #ffffff;
+    }
+
+    .tab-inner-frame .ui-widget-header {
+        padding: 0 15px;
+    }
+
+    .custom-time-pick {
+        margin-top: 35px;
+        margin-left: 18px;
+        border: solid 1px;
+        width: 211px;
+        border-color: #ccc;
+        padding: 7px 7px;
+        border-radius: 4px;
+        position: relative;
+    }
+
+        .custom-time-pick::after {
+            position: absolute;
+            content: "";
+            width: 28px;
+            /* height: 29px; */
+            background: #ccc;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .custom-time-pick i.icon-time {
+            position: absolute;
+            right: 5px;
+            z-index: 55;
+            font-size: 18px;
+            top: 9px;
+            color: #555;
+            opacity: .9;
+        }
+
+    .predefined-time.row {
+        border: 1px solid #e2e2e2;
+    }
+
+    .predefined-time.row {
+        border: 1px solid #e2e2e2;
+        height: 38px;
+        line-height: 36px;
+        position: relative;
+        margin-bottom: 20px;
+        margin-right:30px;
+    }
+
+    label.bg-label {
+        width: 35%;
+        padding: 0 20px;
+        background-color: #ececec;
+        /* margin-bottom: 0px !important; */
+        text-align: right;
+    }
+
+    span.t-value {
+        display: inline-block;
+        width: 65%;
+        padding: 0 20px;
+    }
+
+    span.glyphicon.glyphicon-remove {
+        position: absolute;
+        right: 8px;
+        top: 10px;
+        font-size: 13px;
+    }
+
+    .tab-inner-frame .ui-widget-header {
+        padding: 0 15px;
+        margin-bottom: 0px;
+    }
+
+    .row.date-picker-edit {
+        margin-bottom: 15px;
+    }
+
+    /*.ui-tabs-panel.ui-corner-bottom.ui-widget-content {
+        padding-right: 127px;
+    }*/
+
+    .fixed-table-container input[type="checkbox"] {
+        margin: 16px auto !important;
+        margin-left: 40px !important;
+    }
+
+ 
+    .ui-tabs .ui-tabs-nav li {
+        border-radius: 5px 5px 0 0 !important;
+    }
+    .ui-tabs .ui-tabs-nav li {
+        padding: 0px;
+        margin-right: 3px;
+        min-width: 69px;
+        border-radius: 0px;
+        text-align:center;
+    }
+    .ui-widget-content{border:none;}
+    .ui-widget.ui-widget-content{border:none;}
+    .tab-inner-frame{border:none !important;}
+    .createpost{box-shadow:none;}
+    .ui-tabs .ui-tabs-nav li {
+  margin-right: 6px;
+  min-width: auto;
+}
+    label.bg-label {
+  background-color: #f6f6f6;
+  font-weight: 300;
+  padding: 0 0 0 20px;
+  text-align: left;
+  width: 20%;
+}
+    .custom-time-pick{border-radius:0; border: 1px solid #e2e2e2;}
+    .custom-time-pick i.icon-time {
+  font-size: 18px;
+  right: 6px;
+  top: 8px;
+}
+    .custom-time-pick::after{background:#f6f6f6; }
+    #tabs{padding-left:0px ; padding-right:0px;}
+    .newpost{padding:20px;}
+    .ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-widget-header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+    #scheduledPostSection{padding:20px 0;}
+   
+    .boder_daashed {
+        border-right: 2px dashed #ccc;
+    }
+    @@media all and (max-width:757px;){
+    .col-sm-12{ width:100%;}
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        var tab = $("#tabs .ui-tabs-active").text().trim();
+        var JsonWorkInfo = {};
+        var DayID = 0;
+        if (tab == "Monday") { DayID = 1; }
+        else if (tab == "Tuesday") { DayID = 2 }
+        else if (tab == "Wednesday") { DayID = 3; }
+        else if (tab == "Thursday") { DayID = 4; }
+        else if (tab == "Friday") { DayID = 5; }
+        else if (tab == "Saturday") { DayID = 6; }
+        else if (tab == "Sunday") { DayID = 7; }
+        JsonWorkInfo.DayID = 1;
+        $.ajax({
+            //// bind landing PAges
+            url: $_GetLeadManage,
+            type: "GET",         
+            data: { "PostInformation": JSON.stringify(JsonWorkInfo) },
+            success: function (result) {
+                debugger
+                $("#ManageLeads").html(result);           
+
+                $.ajax({
+                    //// bind ManageAutoPublishing PAges
+                    url: $_GetContentPreference,
+                    type: "GET",
+                    data: { "PostInformation": JSON.stringify(JsonWorkInfo) },
+                    success: function (result) {
+                        debugger
+                        $("#ManageAutoPublishing").html(result);
+                    
+                        $.ajax({
+                            //// bind saved landing PAges
+                            url: $_GetSavedLeadManage,
+                            type: "GET",
+                            data: { "PostInformation": JSON.stringify(JsonWorkInfo) },
+                            success: function (result) {
+                                debugger
+                              $("#SavedManageLeads").html(result);
+                                $.ajax({
+                                    //// bind saved ManageAutoPublishing PAges
+                                    url: $_GetSavedContentPreference,
+                                    type: "GET",
+                                    data: { "PostInformation": JSON.stringify(JsonWorkInfo) },
+                                    success: function (result) {
+                                        debugger
+                                       $("#SavedManageAutoPublishing").html(result);
+                                    }
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+        });
+
+    })
+</script>
+<section class="wrapper scrollable inner-table-filter-fx">
+    <h2 class="social_media">Manage Auto Scheduler</h2>
+    <div class="mar_top_20"></div>
+    <div class="white_bg side_pad_20px">
+
+        <div class="col-md-12 col-lg-12" id="date-tabs">
+            <div class="row">
+                <div class="tab-frame" style="margin-top: 10px;">
+                    <div id="tabs" class="tab-inner-frame">
+                        <ul>
+                            <li>
+                                <a href="#tabs-Mon">Monday</a>
+                            </li>
+                            <li>
+                                <a href="#tabs-Tue">Tuesday </a>
+                            </li>
+                            <li>
+                                <a href="#tabs-Wed">Wednesday</a>
+                            </li>
+                            <li>
+                                <a href="#tabs-Thr">Thursday</a>
+                            </li>
+                            <li>
+                                <a href="#tabs-Fri">Friday</a>
+                            </li>
+                            <li>
+                                <a href="#tabs-Sat">Saturday</a>
+                            </li>
+                            <li>
+                                <a href="#tabs-Sun">Sunday</a>
+                            </li>
+                        </ul>
+                        <div class="col-md-6 col-sm-6 col-lg-6 pull-left"  id ="savedPreferenceData">
+                            <div class=" date-picker-edit">
+                                <h4 class="bttm-heading"> Saved Auto Publishing Schedule</h4>
+                                <div class="bind-main">
+                    <div class="input-append bootstrap-timepicker-component custom-time-pick col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn-tp">
+                        <input type="text" class="timepicker-default input-small" id="timeDefault">
+                        <span class="add-onon" style="margin-left: -40px">
+                            <i class="icon-time"></i>
+                        </span>
+                    </div>
+                </div>
+                                <div class="">
+                                    <div id="tabs-Mon" class="day-bind-common">
+
+                                    </div>
+                                    <div id="tabs-Tue" class="day-bind-common">
+                                    </div>
+                                    <div id="tabs-Wed" class="day-bind-common">
+                                    </div>
+                                    <div id="tabs-Thr" class="day-bind-common">
+                                    </div>
+                                    <div id="tabs-Fri" class="day-bind-common">
+                                    </div>
+                                    <div id="tabs-Sat" class="day-bind-common">
+                                    </div>
+                                    <div id="tabs-Sun" class="day-bind-common">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="bttm-heading">Saved Auto Publishing Content Preference</h4>
+
+                            <div id="SavedManageAutoPublishing"></div>
+
+                            <h4 class="bttm-heading"> Saved Lead Generation/ Landing Pages</h4>
+                            <div id="SavedManageLeads"></div>
+                            <div class="col-md-3 text-left">
+                                <input type="button" id="btnUpdateAutoPreference" class="btn btn-primary" value="Update" />
+                            </div>
+                            <div class="col-md-3 text-left">
+                                <input type="button" id="btnDeleteAutoPreference" class="btn btn-primary" value="Delete" />
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6" id="PreferenceData">
+                            <div class=" date-picker-edit">
+                                <h4 class="bttm-heading">Manage Auto Publishing Schedule</h4>
+                                <div class="bind-main">
+                                    <div class="input-append bootstrap-timepicker-component custom-time-pick col-lg-3 col-md-3 col-sm-3 col-xs-12 mrgn-tp">
+                                        <input type="text" class="timepicker-default input-small" id="timeDefaultSaved">
+                                       <input type="hidden"  id="hdtimeDefaultSaved">
+                                        <span class="add-onon" style="margin-left: -40px">
+                                            <i class="icon-time"></i>
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <h4 class="bttm-heading">Manage Auto Publishing Content Preference</h4>
+
+                            <div id="ManageAutoPublishing"></div>
+
+                            <h4 class="bttm-heading">Lead Generation/ Landing Pages</h4>
+                            <div id="ManageLeads"></div>
+
+                            <div class="btn-frame">
+                                <button class="btn btn-primary" style="margin-top:12px;margin-left: 21px;" id="addpublishingPosts">
+                                    + Add
+                                </button>
+                            </div>
+                        </div>
+                    <div id="tabid"></div>
+
+
+                </div>
+            </div>
+
+            
+
+
+            </div>
+               
+
+      
+        
+    </div>
+        
+        </div>
+ 
+   
+            @*<div class="row" >
+
+                        <div class="col-md-6 boder_daashed">
+                            <div class="createpost" style=" margin-bottom: 10px; ">
+                                <div class="form-title">
+                                    <h3>
+                                        Content Library
+                                    </h3>
+                                </div>
+                                    <div class="createpost_content">
+                                        <div class="_content_gllrytgs">
+                                            <table class="table table-hover" data-toolbar="#post" data-show-columns="true" data-show-filter="true" data-click-to-select="true" id="grid">
+                                                <thead>
+                                                    <tr>
+                                                        <th data-field="Description">Description</th>
+
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="createpost">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="form-title">
+                                            <h3>
+                                                Preview your scheduled posts
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="button" id="addpublishingPosts" class="btn btn-primary" value="Schedule Posts" />
+                                    </div>
+                                </div>
+                                <div id="scheduledPostSection">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>*@
+</section>
+
+<input type="hidden" id="TokenValue" value='@TokenHeaderValue()' />
+<input type="hidden" id="UserId" value='@smartData.Common.SessionManager.LoggedInUser.UserID' />
+<input type="hidden" id="IndustryId" value='@smartData.Common.SessionManager.LoggedInUser.IndustryId' />
+<input type="hidden" id="UserType" value='@smartData.Common.SessionManager.LoggedInUser.UserType' />
+
+
+
+<!--Loader-->
+<div class="loadercontainingdiv">
+    <img src="~/Images/loadernew.gif" class="loaderprtclr" />
+</div>
+<!--End Loader-->

@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    @*<meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    
+    <link href="~/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="@Url.Content("~/Content/css/bootstrap.min.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/jquery.mCustomScrollbar.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/master.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/media.css")" rel="stylesheet" type="text/css" />
+
+    <script src="~/Scripts/Jscripts/jquery-2.2.3.js"></script>
+    <script src="~/Scripts/Jscripts/bootstrap.js"></script>
+    <script src="~/Scripts/Jscripts/jquery.mCustomScrollbar.concat.min.js"></script>
+    @{Html.RenderPartial("~/Views/Shared/UrlVariables.cshtml");}
+    <title>@ViewBag.Title</title>
+
+    @System.Web.Optimization.Styles.Render("~/bundles/css")
+    @if (IsSectionDefined("CSSLinks"))
+    {
+        @RenderSection("CSSLinks")
+    }
+    @System.Web.Optimization.Scripts.Render("~/bundles/jquery")
+    @System.Web.Optimization.Scripts.Render("~/bundles/modernizr")
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryvalidate")
+    @System.Web.Optimization.Scripts.Render("~/bundles/bootstrap")
+    @System.Web.Optimization.Scripts.Render("~/bundles/commonjs")
+    @System.Web.Optimization.Scripts.Render("~/bundles/modernizr")
+    @RenderSection("scripts", required: false)
+  
+    @*@if (IsSectionDefined("JSRefernces"))
+    {
+
+        @RenderSection("JSRefernces")
+    }*@
+    <script type="text/javascript">
+        (function ($) {
+            $(window).load(function () {
+
+                $(".scroll").mCustomScrollbar({
+                    advanced: { updateOnContentResize: true }
+                    //advanced:{autoExpandHorizontalScroll:true}
+                });
+            });
+        })(jQuery);
+
+
+        $(document).ready(function () {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                $('.child-submenu').hide();
+                $('.has-subnav').click(function () {
+                    $(this).find('.child-submenu').toggle();
+                });
+            }
+            else {
+            }
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.show_hide').click(function () {
+                $("#advertisemnt-add").toggle("slide");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    
+        @RenderBody()
+       
+        @*<footer>
+            <p>&copy; @DateTime.Now.Year - Social Media Broadcast</p>
+        </footer>*@
+    
+</body>
+</html>

@@ -1,0 +1,482 @@
+D:\Day User\Sukhvinder\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Day User\Sukhvinder\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Day User\Sukhvinder\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Day User\Sukhvinder\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Day User\Sukhvinder\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\vikalp\Sukhvinder\CoreEntities\bin\Debug\CoreEntities.dll
+D:\vikalp\Sukhvinder\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\vikalp\Sukhvinder\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\vikalp\Sukhvinder\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\vikalp\Sukhvinder\CoreEntities\obj\Debug\CoreEntities.dll
+D:\vikalp\Sukhvinder\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\vikalp\Sukhvinder\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Day User\VikalpS\Official\Projects\MSFramework\MSFramework_V2\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Day User\VikalpS\Hole Project\MSFramework_V2\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Day User\VikalpS\project\MSFramework_V3\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Day User\VikalpS\project\MSFramework_V3\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Day User\VikalpS\project\MSFramework_V3\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Day User\VikalpS\project\MSFramework_V3\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Day User\VikalpS\project\MSFramework_V3\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Day User\VikalpS\project\MSFramework_V3\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Day User\VikalpS\project\MSFramework_V3\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Dayuser\Jagdeepsk\MSFramework\MSFramework_V3\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\CoreEntities.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\obj\Debug\CoreEntities.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\DayUsers\lalitka\Official\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\CoreEntities.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\CoreEntities.pdb
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\obj\Debug\CoreEntities.dll
+E:\Healthcare\Code\HealthFramework\HealthFramework\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Projects\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Projects\HealthFramework\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Projects\HealthFramework\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Projects\HealthFramework\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Frameworks\New folder\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Frameworks\New folder\HealthFramework\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Frameworks\New folder\HealthFramework\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Frameworks\New folder\HealthFramework\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\obj\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HealthFramework_new\HealthFramework\CoreEntities\obj\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\obj\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Projects\Basic Framework\CoreEntities\obj\Debug\CoreEntities.pdb
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\CoreEntities.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\CoreEntities.pdb
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\System.Web.Helpers.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\System.Web.Mvc.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\System.Web.Razor.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\System.Web.WebPages.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\System.Web.Helpers.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\System.Web.Mvc.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\System.Web.Razor.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\System.Web.WebPages.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\obj\Debug\CoreEntities.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\Facebook.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\Facebook.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\Facebook.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\Facebook.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\Facebook.dll
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\Facebook.xml
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\LatestCode\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\LatestCode\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Dayuser\LatestCode\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Dayuser\LatestCode\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\Facebook.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\Facebook.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\Facebook.dll
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\Hammock.dll
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\Newtonsoft.Json.dll
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\Facebook.xml
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\Hammock.pdb
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\SVNSocial\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Dayuser\SVNSocial\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Dayuser\SVNSocial\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\CoreEntities.dll
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\CoreEntities.pdb
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\Facebook.dll
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\System.Web.Helpers.dll
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\System.Web.Mvc.dll
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\System.Web.Razor.dll
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.dll
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\Facebook.xml
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\Hammock.pdb
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\System.Web.Helpers.xml
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\System.Web.Mvc.xml
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\System.Web.Razor.xml
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.xml
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\obj\Debug\CoreEntities.dll
+C:\Users\shilpap\Desktop\SVNSocial\CoreEntities\obj\Debug\CoreEntities.pdb
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\CoreEntities.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\CoreEntities.pdb
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\Facebook.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\Newtonsoft.Json.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\System.Web.Helpers.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\System.Web.Mvc.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\System.Web.Razor.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\Facebook.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\Hammock.pdb
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\System.Web.Helpers.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\System.Web.Mvc.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\System.Web.Razor.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\obj\Debug\CoreEntities.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\CoreEntities\obj\Debug\CoreEntities.pdb
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\CoreEntities.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\CoreEntities.pdb
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\Facebook.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\System.Web.Helpers.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\System.Web.Mvc.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\System.Web.Razor.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\Facebook.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\System.Web.Helpers.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\System.Web.Mvc.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\System.Web.Razor.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\obj\Debug\CoreEntities.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\CoreEntities\obj\Debug\CoreEntities.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\CoreEntities.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\CoreEntities.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\Facebook.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\Newtonsoft.Json.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\System.Web.Helpers.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\System.Web.Mvc.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\System.Web.Razor.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\Facebook.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\Newtonsoft.Json.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\System.Web.Helpers.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\System.Web.Mvc.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\System.Web.Razor.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\obj\Debug\CoreEntities.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\CoreEntities\obj\Debug\CoreEntities.pdb
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\CoreEntities.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\Facebook.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\Newtonsoft.Json.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\System.Web.Helpers.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\Facebook.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\System.Web.Helpers.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\obj\Debug\CoreEntities.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\CoreEntities\obj\Debug\CoreEntities.pdb
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\CoreEntities.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\CoreEntities.pdb
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\Facebook.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\System.Web.Helpers.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\System.Web.Mvc.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\System.Web.Razor.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\System.Web.WebPages.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\Facebook.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\System.Web.Helpers.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\System.Web.Mvc.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\System.Web.Razor.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\System.Web.WebPages.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\obj\Debug\CoreEntities.csprojResolveAssemblyReference.cache
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\obj\Debug\CoreEntities.csproj.CoreCompileInputs.cache
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\obj\Debug\CoreEntities.csproj.CopyComplete
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\obj\Debug\CoreEntities.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\CoreEntities\obj\Debug\CoreEntities.pdb

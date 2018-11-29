@@ -1,0 +1,180 @@
+﻿@model Core.Domain.UserInsert
+
+@using (Html.BeginForm("create", "users", FormMethod.Post, new { id = "FormID" }))
+{
+    @Html.AntiForgeryToken()
+
+    @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+        }
+
+        public string UserListingURL()
+        {
+            return @Url.Action("Index", "Users");
+        }
+    }
+
+
+
+    <div id="testid"></div>
+    
+    <div class="form-horizontal">
+
+        @Html.ValidationSummary()
+        <span id="spanError"></span>
+        <div class="form-group">
+            @Html.LabelFor(model => model.FirstName, new { @class = "control-label col-md-2", @required = "required" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FirstName)
+                @*@Html.ValidationMessageFor(model => model.FirstName)*@
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, new { @class = "control-label col-md-2", @required = "required" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.LastName)
+                @*@Html.ValidationMessageFor(model => model.LastName)*@
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, new { @class = "control-label col-md-2", @required = "required" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email)
+                @*@Html.ValidationMessageFor(model => model.Email)*@
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label", @required = "required" })
+            <div class="col-md-3">
+                @Html.PasswordFor(m => m.Password)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label", @required = "required" })
+            <div class="col-md-3">
+                @Html.PasswordFor(m => m.ConfirmPassword)
+            </div>
+        </div>
+
+        <div class="form-group" id="SuperAdmin" >
+            @Html.LabelFor(m => m.IsSuperAdmin, new { @class = "col-md-2 control-label" })
+            <div class="col-md-3">
+                
+                @Html.CheckBoxFor(m =>m.IsSuperAdmin);
+            </div> 
+        </div>
+        <div class="form-group">
+
+            @Html.Label("Role", null, new { @class = "control-label col-md-2" })
+
+            <div class="col-md-10">
+
+                @{
+    ViewBag.Title = "RoleList";
+    WebGrid grid = new WebGrid(source: ViewBag.AllRoles, canPage: false);
+                }
+                <div class="divscroll">
+                    @grid.GetHtml(
+                    tableStyle: "gridtable",
+                    htmlAttributes: new { id = "checkableGrid" },
+                    columns: grid.Columns
+                        (
+        //Here I am going to add checkbox column
+                            grid.Column(
+                                format: @<text> <input type="checkbox" id="@item.RoleId" value="@item.RoleId" title="RoleName" alt="RoleName" name="ids" onclick="javascript:Selectcheckbox(this);" /><label for="@item.RoleId">@item.RoleName </label> </text>,
+                                                                    header: "{checkall}"
+                                   )
+        
+
+                               )
+                           )
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group buttompd">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-2">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+        <div class="col-md-3">
+
+        </div>
+       
+    </div>
+
+}
+<input id="HiddenSuperAdmin" type="hidden" value="@ViewBag.IsSuperAdmin" />
+@section JSRefernces
+{
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+    <script>
+
+        var form;
+        $(document).ready(function () {
+
+            form = $('#FormID');
+
+            $("#FormID").on("submit", function (event) {
+                mycustomsubmit(event);
+            });
+        });
+    </script>
+
+}
+@System.Web.Optimization.Scripts.Render("~/scripts/js/usersCreate.js")
+@System.Web.Optimization.Scripts.Render("~/scripts/js/users.js")
+<div id='loadingmessage' class="loader fade" style="display:none;">
+    <img src='~/Areas/ScreenPermissions/Images/loading2.gif' style="height: 150px;width: 200px;" />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

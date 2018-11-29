@@ -1,0 +1,492 @@
+﻿@model smartData.Models.User.UserDashboardModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_userinnerlayout.cshtml";
+}
+
+<style>
+    #dropZone {
+        background: gray;
+        border: black dashed 3px;
+        width: 200px;
+        padding: 50px;
+        text-align: center;
+        color: white;
+    }
+
+    .well .input-append.date {
+        position: relative;
+    }
+
+    .well {
+        padding: 0;
+        border: none;
+    }
+
+    .form-control.link_text {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .valid {
+        color: green;
+    }
+
+    .invalid {
+        color: red;
+    }
+</style>
+
+<link href="~/Scripts/dropzone/basic.css" rel="stylesheet" />
+<link href="~/Scripts/dropzone/dropzone.css" rel="stylesheet" />
+<link href="~/Content/css/watermark.css" rel="stylesheet" />
+<link href="~/Content/css/fontselect.css" rel="stylesheet" />
+<link href="~/Content/jquery.qtip.css" rel="stylesheet" />
+
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.UserID" id="hdnUserId" />
+
+<section class="wrapper scrollable">
+    <a href="@Url.Action("Index", "Home", new {@area="Users" })" class="btn btn-primary back_dashboard" style="float: right; margin-bottom: 10px; margin-right: 50px">Back to Dashboard</a>
+     <div class="col-sm-12 col-md-12 col-lg-12 col-pddng">
+        <div class="form-title">
+            @*<h3>Create Post  <a class="floatRight" style="float: right;" id="SyncFBpage"> <i title="Sync your newly created FB page" class="floatRight fa fa-refresh" style="color: black;"> </i> </a> </h3>*@
+            <h3>Create Post </h3>
+        </div>
+        <div class="createpost pad_20px">
+            <div class="createpost_content">
+                <div>
+                    <div>
+                        <input class="form-control link_text" type="text" id="txtpostheading" placeholder="Enter Heading" style="margin-bottom: 10px" />
+                    </div>
+                    <div>
+                        <input class="form-control link_text" type="text" id="txtpostTitle" placeholder="Enter Title" style="margin-bottom: 10px" />
+                    </div>
+                    <div>
+                        <input class="form-control link_text" type="url" id="txtpostLink" placeholder="Enter Link" style="margin-bottom: 10px" />
+                        <span id="output"></span>
+                    </div>
+                </div>
+                <div class="scheduleselect clearfix">
+                    <textarea id="txtMsgContent" placeholder="Enter Description" onkeyup="countChar(this)"></textarea>
+                </div>
+                <div class="scheduleselect_new clearfix">
+                    @foreach (var item in Model.socialMediaProfile)
+                    {
+                        if (item.SocialMedia.ToLower() == "facebook" && item.IsActive == true)
+                        {
+                            <div id="charNum"><span class="fa fa-facebook"></span> 2000</div>
+                        } if (item.SocialMedia.ToLower() == "twitter" && item.IsActive == true)
+                        {
+                            <div id="charNumtwitter" > <span class="fa fa-twitter"></span> 140</div>
+                        } if (item.SocialMedia.ToLower() == "linkedin" && item.IsActive == true)
+                        {
+                            <div id="charNumLinkedIn" > <span class="fa fa-linkedin"></span> 600</div>
+                        }
+                    }
+                    <div class="well" style="display: none; position: absolute; right: 6px;">
+                        <div class="input-append date" style="position:none;top:0;right:0 ">
+                            <input class="datepicker" type="text" />
+                            <span class="add-on">
+                                <i data-time-icon="icon-time" data-date-icon="icon-calendar" class="fa fa-calendar">
+                                </i>
+                            </span>
+                        </div>
+                    </div>
+                    <select class="schedule">
+                        <option value="1">Post Now</option>
+                        <option value="2">Schedule</option>
+                        @*<option value="3">Predefined Publishing Time</option>*@
+                    </select>
+                    <select class="drpPostType" >
+                        <option value="1">Article Post</option>
+                        <option value="2">Property Post</option>
+                        <option value="3">Direct Post</option>
+                        @*<option value="3">Predefined Publishing Time</option>*@
+                    </select>
+                </div>
+
+                @*<div class="well" style="display:none">
+                        <div class="input-append date">
+                            <input class="datepicker" type="text" />
+                            <span class="add-on">
+                                <i data-time-icon="icon-time" data-date-icon="icon-calendar" class="fa fa-calendar">
+                                </i>
+                            </span>
+                        </div>
+                    </div>*@
+                <div class="createpost_content_btm" style="margin-top: -10px;">
+                    <div>
+                        <input class="form-control link_text" type="url" id="txtpostImageLink" placeholder="Enter Image Link" style="margin-bottom: 10px" />
+                        <span id="output"></span>
+                    </div>
+                    <div style="" id="dvImageUpload">
+                        <div class="jumbotron drag_drp_file">
+                            <form action="@Url.Action("SaveUploadedFile","Post")" method="post" enctype="multipart/form-data" class="dropzone" id="dropzoneForm" style="width: 50px; background: none; border: none;">
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple id="fileUpload" />
+                                    <input type="submit" value="Upload" />
+                                </div>
+                                <div id="wetrrmrk" style="float:right"></div>
+                            </form>
+                            <a href="javascript:void(0)" id="watermark" class="btn btn-primary" style="display:none">WaterMark Image </a>
+
+                            <button id="removeWatermark" class="btn btn-primary">Remove WaterMark </button>
+                            @*<a href="@Url.Action("EditWaterMark", "Reports")" id="editwatermark" class="btn btn-primary" style="display:none">Edit WaterMark </a>*@
+                        </div>
+                        <div class="margin_top_30"></div>
+                    </div>
+                    <div id="lower"></div>
+                    <div class="createpost_content_btm_lt">
+                        <p id="selectedids"></p>
+                        <p>Select Social media account for which you want to publish this post</p>
+                        <div id="socialmedia" class="row">
+                            @foreach (var item in Model.socialMediaProfile)
+                            {
+                                string name = string.Empty;
+                                if (item.SocialMedia.ToLower() == "facebook" && item.IsActive == true)
+                                {
+
+                                    name = item.FirstName + " " + item.LastName;
+
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                                        <a style="" id="imagfb" class="imgfb added selected" data-id="@item.Fid">
+                                            <i class="fa fa-circle-o pull-right" aria-hidden="true"></i>
+                                            <i class="icon-ok-sign" id="signtick"></i>
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            @*<img src="@item.Photo" height="30" />*@
+                                            <b>@name</b>
+                                            <span>
+                                                @*@if (item.Email == null)
+                                                    {<b>NA</b> }
+                                                    else
+                                                    {
+                                                        @item.Email
+                                                    }*@
+                                            </span>
+
+                                        </a>
+                                    </div>
+
+
+                                }
+                                if (item.SocialMedia.ToLower() == "linkedin" && item.IsActive == true)
+                                {
+
+                                    name = item.FirstName + " " + item.LastName;
+
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                                        <a style="" id="imagld" class="imgfb added selected" data-id="@item.Fid">
+                                            <i class="fa fa-circle-o pull-right" aria-hidden="true"></i>
+                                            <i class="icon-ok-sign" id="signtick"></i>
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                            @*<img src="@item.Photo" height="30px" />*@
+                                            <b>@name</b>
+                                            <span>@*@item.Email*@</span>
+                                        </a>
+                                    </div>
+
+
+                                }
+                                if (item.SocialMedia.ToLower() == "twitter" && item.IsActive == true)
+                                {
+
+                                    name = item.FirstName + " " + item.LastName;
+
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                                        <a style="" id="imagtw" class="imgfb imgtwitter added selected" data-id="@item.Fid">
+                                            <i class="fa fa-circle-o pull-right" aria-hidden="true"></i>
+                                            <i class="icon-ok-sign" id="signtick"></i>
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            @*<img src="@item.Photo" height="30px" />*@
+                                            <b>@name</b>
+                                            @*<span>
+                                                    @if (item.Email == null)
+                                                    {
+                                                        <b>NA</b>
+                                                    }
+                                                    else
+                                                    {
+                                                        @item.Email
+                                                    }
+                                                </span>*@
+                                        </a>
+                                    </div>
+
+
+                                }
+                                if (item.SocialMedia.ToLower() == "googleplus" && item.IsActive == true)
+                                {
+                                    name = item.FirstName + " " + item.LastName;
+                                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                                        <a style="" id="imaggp" class="imgfb gplus added" data-id="@item.Fid">
+                                            <i class="fa fa-circle-o pull-right" aria-hidden="true"></i>
+                                            <i class="icon-ok-sign" id="signtick"></i>
+                                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                            @*<img src="@item.Photo" height="30px" />*@
+                                            <b>@name</b>
+                                            @*<span>
+                                                    @if (item.Email == null)
+                                                    {<b>NA</b> }
+                                                    else
+                                                    {
+                                                        @item.Email
+                                                    }
+                                                </span>*@
+                                        </a>
+
+                                    </div>
+
+                                }
+                            }
+                        </div>
+                    </div>
+
+                    @*<select id="FBpageDetail" multiple="multiple">
+                        </select>*@
+
+
+                    <div class="createpost_content_btm_rt">
+
+                    </div>
+
+                    <div class="postnowdiv">
+                        <button id="btnPost" class="bluebtn">Post Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @*<footer>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>&copy;Social Media Broadcasting @DateTime.Now.Year</p>
+                </div>
+            </div>
+        </footer>*@
+</section>
+
+<!--Loader-->
+<div class="loadercontainingdiv">
+    <img src="~/Images/loadernew.gif" class="loaderprtclr" />
+</div>
+<!--End Loader-->
+<!-- Button trigger modal -->
+<button id="btn-show-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="display:none"></button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <p id="success-message" style="text-align:center"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                @*<button type="button" class="btn btn-primary">Save changes</button>*@
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<link href="~/Content/confirm.css" rel="stylesheet" />
+@*<script src="~/Scripts/Jscripts/jquery-2.2.3.js"></script>*@
+<script src="~/Scripts/Jscripts/watermark.js"></script>
+<script src="~/Scripts/Jscripts/confirm.js"></script>
+<script src="~/Scripts/Jscripts/jquery.qtip.js"></script>
+<script src="~/Scripts/dropzone/dropzone.js"></script>
+<script src="~/Scripts/User/CreatePost.js"></script>
+<script src="~/Scripts/Jscripts/jquery.fontselect.min.js"></script>
+<script src="~/Scripts/BootStrapDateTimePicker/bootstrap-datetimepicker.js"></script>
+
+
+
+<script>
+    $(document).ready(function () {
+        debugger;
+
+
+
+
+        //// Solve review point check whether any account add or not  :=== SRohit
+        var getSocialmedia = $_BaseUrl + '/Users/api/HomeApi/GetAllSocialMedia';
+        $.ajax({
+
+            type: 'POST',
+            url: getSocialmedia,
+
+            data: { search: "", sort: "", order: "asc", limit: 10, offset: 0, "currentUserId": $("#hdnUserId").val() },
+
+            success: function (data) {
+
+                if (data.rows.length == 0) {
+                    BootstrapDialog.show({
+                        message: 'Please add atleast one account for posting !.',
+                        buttons: [{
+                            label: 'Ok',
+                            action: function (dialogItself) {
+                                dialogItself.close();
+                            }
+                        }, {
+                            label: 'Add Account',
+                            cssClass: 'btn-primary',
+                            action: function () {
+                                var url = "/SocialMedia";
+                                window.location.href = url;
+                            }
+
+                        }]
+                    });
+                }
+            },
+            failure: function () {
+                return false;
+            }
+
+        })
+
+
+        //// Solve review point check whether any account add or not  :=== SRohit
+
+
+
+
+
+
+
+
+
+        $("#removeWatermark").hide();
+        //  $('#example-getting-started').multiselect();
+        //$('#FBpageDetail').multiselect({
+        //    disableIfEmpty: true,
+        //    enableClickableOptGroups: true,
+        //    disabledText: 'Select FB Page'
+        //});
+        $('.drag_drp_file').qtip({
+            content: "Please upload only .jpg, .png, .jpeg files.",
+            show: 'mouseover',
+            hide: 'mouseout'
+        });
+    })
+
+
+
+    Dropzone.options.dropzoneForm = {
+        maxFiles: 1,
+        acceptedFiles: ".jpeg,.jpg,.png,.gif",
+        init: function () {
+            // debugger;
+            var self = this;
+            // config self.options.addRemoveLinks = true;
+            self.options.dictRemoveFile = "Delete";
+            //New file added
+            self.on("addedfile", function (file) {
+                debugger;
+                var count = self.files.length;
+                //  alert(count);
+                // alert(self.maxFiles);
+                if (count > 1) {
+                    alert("You cannot upload more than 1 files");
+                    this.removeFile(file);
+                    return false;
+                }
+            });
+
+            this.on("complete", function (data) {
+                debugger;
+                // alert(data.xhr.responseText);
+                //var res = eval('(' + data.xhr.responseText + ')');
+                var res = JSON.parse(data.xhr.responseText);
+                $('#watermark').show();
+            });
+
+
+            this.on("addedfile", function (file) {
+                debugger;
+                // Create the remove button
+                var removeButton = Dropzone.createElement("<button id='removeImage'>Remove file</button>");
+
+                // Capture the Dropzone instance as closure.
+                var _this = this;
+                removeButton.addEventListener("click", function (e) {
+                    // Make sure the button click doesn't submit the form:
+                    e.preventDefault();
+                    e.stopPropagation();
+                    // Remove the file preview.
+                    _this.removeFile(file);
+                    $('#watermark').hide();
+                    $('#removeWatermark').hide();
+                    $('#wetrrmrk').find('img').remove();
+                    // If you want to the delete the file on the server as well,
+                    // you can do the AJAX request here.
+                });
+                // Add the button to the file preview element.
+                file.previewElement.appendChild(removeButton);
+                $('#watermark').hide();
+                $('#removeWatermark').hide();
+            });
+        }
+    };
+
+
+    function countChar(val) {
+
+        var len = val.value.length;
+        if (len == 140) {
+            debugger;
+            var popTimer = parseInt($("#hdnPopUpTimer").val()); setTimeout("$.each(BootstrapDialog.dialogs, function(id, dialog){dialog.close();});", popTimer);
+            BootstrapDialog.configDefaultOptions({ cssClass: 'bstDialg' });
+            BootstrapDialog.alert({ title: "<span>Information</span>", type: BootstrapDialog.TYPE_SUCCESS, message: 'You can,t post more than 140 character in Twitter!' });
+           
+            val.value = val.value.substring(0, 140);
+        }
+        else {
+            $('#charNumtwitter').html("<span class='fa fa-twitter text-info' ></span>  Twitter ").append(140 - len);
+        }
+        if (len == 600) {
+
+            val.value = val.value.substring(0, 600);
+            
+            var popTimer = parseInt($("#hdnPopUpTimer").val()); setTimeout("$.each(BootstrapDialog.dialogs, function(id, dialog){dialog.close();});", popTimer);
+            BootstrapDialog.configDefaultOptions({ cssClass: 'bstDialg' });
+            BootstrapDialog.alert({ title: "<span>Information</span>", type: BootstrapDialog.TYPE_SUCCESS, message: 'You can,t post more than 600 character in LinkedIn!' });
+        }
+        else {
+            $('#charNumLinkedIn').html("<span class='fa fa-linkedin text-info' ></span>  LinkedIn ").append(600 - len);
+        }
+
+        if (len > 140) {
+
+            $("#charNumtwitter").css("color", "red");
+            $("#imagtw").removeClass("selected");
+            //    $("#charNumtwitter").addClass("errorClass");
+
+        }
+        else {
+            $("#charNumtwitter").css("color", "#777");
+        }
+        if (len > 600) {
+            debugger
+            //  $("#charNumLinkedIn").addClass("errorClass");
+            $("#charNumLinkedIn").css("color", "red");
+            $("#imagtw").removeClass("selected");
+        }
+        else {
+            $("#charNumLinkedIn").css("color", "#777");
+        }
+
+        if (len >= 2000) {
+            val.value = val.value.substring(0, 2000);
+        } else {
+            $('#charNum').html("<span class='fa fa-facebook text-primary' ></span>  Facebook ").append(2000 - len);
+        }               //$(".drag_drp_file").tooltip()
+
+    };
+</script>
+@*<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>*@

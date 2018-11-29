@@ -1,0 +1,202 @@
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\RepositoryLayer.dll.config
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\RepositoryLayer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\RepositoryLayer.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\CoreEntities.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\Ninject.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\System.Web.Mvc.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\CoreEntities.pdb
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\Ninject.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\bin\Release\System.Web.Mvc.xml
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\obj\Release\RepositoryLayer.csprojResolveAssemblyReference.cache
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\obj\Release\RepositoryLayer.dll
+D:\Day Users\tejm\Official\HC Framework\MSFramework_V3\RepositoryLayer\obj\Release\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\RepositoryLayer.dll.config
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\CoreEntities.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\Ninject.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\Ninject.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\bin\Release\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\obj\Release\RepositoryLayer.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\obj\Release\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\MSFramework_V3\RepositoryLayer\obj\Release\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\RepositoryLayer.dll.config
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\CoreEntities.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\EntityFramework.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\Ninject.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.Mvc.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\CoreEntities.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\EntityFramework.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\Ninject.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.Mvc.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\obj\Release\RepositoryLayer.csprojResolveAssemblyReference.cache
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\obj\Release\RepositoryLayer.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\obj\Release\RepositoryLayer.pdb
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.Helpers.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.WebPages.Deployment.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.WebPages.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.WebPages.Razor.dll
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.Helpers.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.Razor.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.WebPages.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.WebPages.Deployment.xml
+D:\DayUsers\lalitka\Official\HealthFramework\RepositoryLayer\bin\Release\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\RepositoryLayer.dll.config
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\RepositoryLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\RepositoryLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\EntityFramework.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\Newtonsoft.Json.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\Ninject.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\System.Web.Helpers.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\System.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\System.Web.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\System.Web.WebPages.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\System.Web.WebPages.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\WebMatrix.Data.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\WebMatrix.WebData.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\EntityFramework.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\Newtonsoft.Json.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\Ninject.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\System.Web.Helpers.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\System.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\System.Web.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\System.Web.WebPages.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\WebMatrix.Data.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\bin\Release\WebMatrix.WebData.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\obj\Release\RepositoryLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\obj\Release\RepositoryLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\RepositoryLayer\obj\Release\RepositoryLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\RepositoryLayer.dll.config
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\RepositoryLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\RepositoryLayer.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\EntityFramework.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\Newtonsoft.Json.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\Ninject.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\System.Web.Helpers.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\System.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\System.Web.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\System.Web.WebPages.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\System.Web.WebPages.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\WebMatrix.Data.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\WebMatrix.WebData.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\EntityFramework.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\Newtonsoft.Json.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\Ninject.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\System.Web.Helpers.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\System.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\System.Web.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\System.Web.WebPages.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\WebMatrix.Data.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\bin\Release\WebMatrix.WebData.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\obj\Release\RepositoryLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\obj\Release\RepositoryLayer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\RepositoryLayer\obj\Release\RepositoryLayer.pdb
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\RepositoryLayer.dll.config
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\RepositoryLayer.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\RepositoryLayer.pdb
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\AppInterfaces.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\CoreEntities.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\EntityFramework.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\EntityFramework.SqlServer.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\Facebook.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\Ninject.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\System.Web.Helpers.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\System.Web.Mvc.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\System.Web.Razor.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\System.Web.WebPages.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\System.Web.WebPages.Razor.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\WebMatrix.Data.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\WebMatrix.WebData.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\AppInterfaces.pdb
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\CoreEntities.pdb
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\EntityFramework.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\EntityFramework.SqlServer.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\Facebook.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\Newtonsoft.Json.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\Ninject.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\System.Web.Helpers.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\System.Web.Mvc.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\System.Web.Razor.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\System.Web.WebPages.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\System.Web.WebPages.Razor.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\WebMatrix.Data.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\bin\Release\WebMatrix.WebData.xml
+D:\Dayuser\SVNSocial\RepositoryLayer\obj\Release\RepositoryLayer.csprojResolveAssemblyReference.cache
+D:\Dayuser\SVNSocial\RepositoryLayer\obj\Release\RepositoryLayer.dll
+D:\Dayuser\SVNSocial\RepositoryLayer\obj\Release\RepositoryLayer.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\obj\Release\RepositoryLayer.csprojResolveAssemblyReference.cache
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\obj\Release\RepositoryLayer.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\obj\Release\RepositoryLayer.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\RepositoryLayer.dll.config
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\RepositoryLayer.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\RepositoryLayer.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\AppInterfaces.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\CoreEntities.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\EntityFramework.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\Facebook.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\Newtonsoft.Json.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\Ninject.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\System.Web.Helpers.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\System.Web.Mvc.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\System.Web.Razor.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\System.Web.WebPages.Deployment.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\System.Web.WebPages.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\System.Web.WebPages.Razor.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\WebMatrix.Data.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\WebMatrix.WebData.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\AppInterfaces.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\CoreEntities.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\EntityFramework.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\Facebook.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\Newtonsoft.Json.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\Ninject.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\System.Web.Helpers.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\System.Web.Mvc.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\System.Web.Razor.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\System.Web.WebPages.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\System.Web.WebPages.Deployment.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\System.Web.WebPages.Razor.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\WebMatrix.Data.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\RepositoryLayer\bin\Release\WebMatrix.WebData.xml

@@ -1,0 +1,357 @@
+﻿@model IEnumerable<Core.Domain.smContentLibrary>
+@{
+    ViewBag.Title = "SchedularCalendar";
+    Layout = "~/Views/Shared/_UserInnerLayout.cshtml";
+}
+<script src="~/Content/moment.min.js"></script>
+<link href="~/Content/bootstrap-timepicker.css" rel="stylesheet" />
+@*<link href="~/Content/bootstrap-combined.min.css" rel="stylesheet" />*@
+<link href="~/Content/fullcalender.css" rel="stylesheet" />
+<link href="~/Content/jquery.qtip.css" rel="stylesheet" />
+@*<script src="~/Scripts/Jscripts/bootstrap.js"></script>*@
+<script src="~/Scripts/Jscripts/fullcalender.js"></script>
+<script src="~/Scripts/JqGrid/bootstrap-popover.js"></script>
+@*<script src="~/Scripts/JqGrid/bootstrap-tooltip.js"></script>*@
+<script src="~/Scripts/Jscripts/jquery.qtip.js"></script>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<link href="~/Content/css/schedulerCalander.css" rel="stylesheet" />
+<script src="~/Scripts/BootStrapGrid/bootstrap-toggle.min.js"></script> 
+
+<script>
+
+    $(document).ready(function () {
+
+        $('.chk').on('change', function () {
+
+            if (this.checked) // if changed state is "CHECKED"
+            {
+                $(this).attr('checked', 'checked');
+            }
+            else {
+                $(this).removeAttr('checked');
+            }
+        });
+        $.ajax({
+            url: $_GetContentListScheduler,
+            type: "GET",
+            data: { data: "1" },
+            success: function (result) {
+                debugger
+                $("#NewPostPartial").html(result);
+            }
+        });
+        $("#toggerOldNew").change(function () {
+            debugger
+            //if ($(this).text() == "Old Content") {
+            //    var data = "0";
+            //}
+            //else {
+            //    data="1"
+            //}
+            //$(this).text() == "Old Content" ? $(this).text("New Content") : $(this).text("Old Content");
+            if (document.getElementById('toggerOldNew').checked) {
+                var data = "0";
+            } else {
+                data = "1"
+            }
+            $.ajax({
+                url: $_GetContentListScheduler,
+                type: "GET",
+                data: { data: data },
+                success: function (result) {
+                    debugger
+                    $("#NewPostPartial").html(result);
+                }
+            });
+        });
+
+
+    });
+
+
+
+
+</script>
+<style>
+    .ui-button .ui-icon {
+        background-image: url('../Images/Untitled-1.png') !important;
+    }
+    .checkbox label .toggle, .checkbox-inline .toggle {
+        margin-left: -20px;
+        margin-right: 5px;
+    }
+
+    .toggle {
+        position: relative;
+        overflow: hidden;
+        width: 120px !important;
+        height: 30px;
+    }
+
+        .toggle input[type=checkbox] {
+            display: none;
+        }
+
+    .toggle-group {
+        position: absolute;
+        width: 200%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+       
+    }
+
+    .toggle.off .toggle-group {
+        left: -100%;
+    }
+
+    .toggle-on {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 50%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .toggle-off {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+    }
+
+  
+
+    .toggle.btn {
+        min-width: 59px;
+        min-height: 34px;
+    }
+
+    .toggle-on.btn {
+        padding-right: 24px;
+    }
+
+    .toggle-off.btn {
+        padding-left: 0px;
+    }
+
+    .toggle.btn-lg {
+        min-width: 79px;
+        min-height: 45px;
+    }
+
+    .toggle-on.btn-lg {
+        padding-right: 31px;
+    }
+
+    .toggle-off.btn-lg {
+        padding-left: 31px;
+    }
+
+    .toggle-handle.btn-lg {
+        width: 40px;
+    }
+
+    .toggle.btn-sm {
+        min-width: 50px;
+        min-height: 30px;
+    }
+
+    .toggle-on.btn-sm {
+        padding-right: 20px;
+    }
+
+    .toggle-off.btn-sm {
+        padding-left: 20px;
+    }
+
+    .toggle.btn-xs {
+        min-width: 35px;
+        min-height: 22px;
+    }
+
+    .toggle-on.btn-xs {
+        padding-right: 12px;
+    }
+
+    .toggle-off.btn-xs {
+        padding-left: 12px;
+    }
+</style>
+<h2>SchedularCalendar</h2>
+
+<div class="col-sm-12 col-md-3 pull-right dv-rt-bttn">
+    <div id='wrap' class="main-wrap pull-left">
+        <a href="@Url.Action("Index", "Home", new {@area="Users" })" class="btn btn-primary dv-bttn-frst" style="">Back to Dashboard</a>
+
+    </div>
+
+        <div class="crowd-options dv-bttn-scnd">
+            <div class=" checkbox">
+                <input id="toggerOldNew" data-toggle="toggle" data-on="Posted Content" data-off="New Content" class="toggleContent" type="checkbox">
+            </div>
+        </div>
+</div>
+    <div class="container main-margin">
+        <div class="col-md-9 col-sm-12 dv-lt-col">
+            <div id='calendar1'></div>
+
+            @*<div class="col-md-6 mb-20">
+                    <div id='calendar2'></div>
+                </div>
+
+                <div class="col-md-6 mb-20">
+                    <div id='calendar3'></div>
+                </div>*@
+
+        </div>
+        <div class="col-sm-5 col-md-3">
+            @*<div id='wrap' class="main-wrap pull-left" style="background-color: #fff; padding-top: 45px; ">
+                <a href="@Url.Action("Index", "Home", new {@area="Users" })" class="btn btn-primary dv-bttn-frst" style="">Back to Dashboard</a>
+                @*<button id="toggerOldNew" class="btn btn-primary toggleContent" style="float: right; margin-top: -40px; margin-right: 220px">Old Content</button>*@
+
+            @*</div>
+
+                <div class="crowd-options dv-bttn-scnd">
+                    <div class=" checkbox">
+                        <input id="toggerOldNew" data-toggle="toggle" data-on="Posted Content" data-off="New Content" class="toggleContent" type="checkbox">
+                    </div>
+                </div>*@
+            @*<div class="row">
+                    <div class="col-sm-12">
+                        <i class="fa fa-circle" style="color: rgb(142, 118, 194)" aria-hidden="true"></i> Posted Events
+                    </div>
+                    <div class="col-sm-12">
+                        <i class="fa fa-circle" style="color: rgb(106, 164, 193)" aria-hidden="true"></i> Scheduled Events
+                    </div>
+                </div>*@
+            <div id="NewPostPartial"></div>
+
+
+        </div>
+    </div>
+    @*<div style='clear:both'></div>*@
+    @*<div id="eventContent" title="Event Details" style="display:none;">
+        <div class="createpost pad_20px">
+            <div class="createpost_content">
+                <div>
+                    <div>
+                        <input class="form-control link_text" type="text" id="txtpostheading" placeholder="Enter Heading" style="margin-bottom: 10px" />
+                    </div>
+                    <div>
+                        <input class="form-control link_text" type="text" id="txtpostTitle" placeholder="Enter Title" style="margin-bottom: 10px" />
+                    </div>
+                </div>
+                <div class="scheduleselect">
+                    <textarea id="txtMsgContent" placeholder="Enter Description" onkeyup="countChar(this)"></textarea>
+                </div>
+                <div class="scheduleselect_new">
+                    @*<div id="charNum" style="margin-left: 117px"><span class="fa fa-facebook"></span> 2000</div>
+                    <div id="charNumtwitter" style="margin-left: 130px"> <span class="fa fa-twitter"></span> 140</div>
+                    <div id="charNumLinkedIn" style="margin-left: 135px"> <span class="fa fa-linkedin"></span> 600</div>*@
+    @*<div class="well" style="display: none; position: absolute; right: 6px;">
+            <div class="input-append date" style="position:none;top:0;right:0 ">
+                <input class="datepicker" type="text" />
+                <span class-on">
+                    <i data-time-icon="icon-time" data-date-icon="icon-calendar" class="fa fa-calendar">
+                    </i>
+                </span>
+            </div>
+        </div>
+        <select class="schedule">*@
+    @*<option value="1">Post Now</option>*@
+    @*<option value="2">Schedule</option>
+            </select>
+        </div>
+        <div class="createpost_content_btm" style="margin-top: -10px;">*@
+    @*<div style="">
+            <div class="jumbotron drag_drp_file">
+                <form action="@Url.Action("SaveUploadedFile","Post")" method="post" enctype="multipart/form-data" class="dropzone" id="dropzoneForm" style="width: 50px; background: none; border: none;">
+                    <div class="fallback">
+                        <input name="file" type="file" multiple id="fileUpload" />
+                        <input type="submit" value="Upload" />
+                    </div>
+                    <div id="wetrrmrk" style="float:right"></div>
+                </form>
+
+            </div>
+            <div class="margin_top_30"></div>
+        </div>*@
+    @*<div id="lower"></div>
+                        <div class="createpost_content_btm_lt">
+                            <p id="selectedids"></p>
+                            <p>Select Social media account for which you want to publish this post</p>
+                            <div id="socialmedia" class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                                    <a style="" id="imagfb" class="imgfb added" data-id="">
+                                        <i class="icon-ok-sign" id="signtick"></i>
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+
+
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                                    <a style="" id="imagld" class="imgfb added" data-id="">
+                                        <i class="icon-ok-sign" id="signtick"></i>
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+                                    <a style="" id="imagtw" class="imgfb imgtwitter added" data-id="">
+                                        <i class="icon-ok-sign" id="signtick"></i>
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+
+                        <div class="createpost_content_btm_rt">
+
+                        </div>
+
+                        <div class="postnowdiv">
+                            <button id="btnPost" class="bluebtn">Post Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <p id="eventInfo"></p>
+        </div>*@
+
+    <div id="eventContent" style="display:none ; overflow:hidden;">
+        <input type="hidden" id="id" />
+        <input type="hidden" id="title" />
+        <input type="hidden" id="date" />
+        <div class="row date-picker-edit">
+            <div class="input-append bootstrap-timepicker-component custom-time-pick col-sm-6 pddng-lft-0">
+
+                <input type="text" class="timepicker-default input-small time_small" id="timeDefaultevent" style="width: 150px;">
+                <span class="add-onon clock">
+                    <i class="icon-time"></i>
+                </span>
+            </div>
+            <div class="col-sm-2 col-sm-offset-2">
+                <button class="btn btn-primary pull-right" id="btnadd" title="Save Time">
+                    Save  @*<i class="fa fa-plus" aria-hidden="true"></i>*@
+                </button>
+            </div>
+
+            <div id="eventAdd" style="margin-top: 50px;margin-left: 15px"></div>
+
+        </div>
+    </div>
+
+
+    <div class="loadercontainingdiv">
+        <img src="~/Images/loadernew.gif" class="loaderprtclr" />
+    </div>
+

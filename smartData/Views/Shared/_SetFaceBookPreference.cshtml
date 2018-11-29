@@ -1,0 +1,235 @@
+﻿@{
+    ViewBag.Title = "Edit Content";
+    Layout = null;
+}
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+<script>
+    $(document).ready(function () {
+        debugger
+        $('#FBpageDetail').multiselect({
+            disableIfEmpty: true,
+            enableClickableOptGroups: true,
+            disabledText: 'Select FB Page'
+        });
+        //// Code for facebook page :SRohit
+        /// For sync new Facepage
+        var UserID = parseInt($("#hdnUserId").val());
+        $.ajax({
+            url: $_SyncFacebookPage,
+            type: 'post',
+            data: { userId: UserID },
+            success: function (data) {
+                debugger
+                $.each(data, function (k, v) {
+                    var category = v.category;
+
+                    $.each(v.dataList, function (k, v) {
+                        var htm = '';
+                        htm += ' <optgroup label="' + category + '">        <option value="' + v.PageId + '">' + v.PageName + '</option>        </optgroup>'
+                        $('#FBpageDetailOption').append(htm);
+                        //$('#FBpageDetail').multiselect('rebuild');
+                    });
+
+
+
+                    //htm += '<option value = "' + v.PageId + '" >' + v.PageName + '</option>';
+
+
+
+                });
+            },
+            error: function () {
+
+            }
+
+        })
+        /// For sync new Facepage
+        //Bind fb page dropdown
+        var reqUrl = $_BaseUrl + '/Users/api/HomeApi/GetFacebookPageDetail';
+        var GetDefaultPrerefenceURL = $_BaseUrl + '/Users/api/HomeApi/GetDefaultPrerefence';
+        var userIds = parseInt($('#hdnUserId').val())
+        var userId = {}
+        userId.userID = userIds;
+        $.ajax({
+            type: "POST",
+            url: reqUrl,
+            data: userId,
+            //  contentType: "application/json; charset=utf-8",
+            // dataType: "json",
+            success: function (data) {
+                debugger
+                $.each(data, function (k, v) {
+                    debugger
+                    var category = v.category;
+                    var htm = '';
+                    var option = '';
+
+
+                    $.each(v.dataList, function (k, v) {
+                        //htm += ' <optgroup label="' + category + '">        <option value="' + v.PageId + '">' + v.PageName + '</option>        </optgroup>'
+
+                        htm += '<div class="radio">  <label class="">             <input type="radio" value="' + v.PageId + ' " name="optradio">' + v.PageName + '         </label>  </div>'
+                        //option += ' <option value="' + v.PageId + '">' + v.PageName + '</option>'
+
+                    });
+                    $('#FBpageDetailOption').append(htm);
+
+
+              
+
+                    //htm += ' <optgroup label="' + category + '"> ' + option + '  </optgroup>';
+                    //$('#FBpageDetail').append(htm);
+                    //$('#FBpageDetail').multiselect('rebuild');
+                    //htm += '<option value = "' + v.PageId + '" >' + v.PageName + '</option>';
+                });
+            },
+            failure: function () {
+                alert("Failed!");
+            }
+        });
+        //// Bind Default 
+
+
+        setTimeout(function () {
+
+
+            $.ajax({
+                type: 'post',
+                url: GetDefaultPrerefenceURL,
+                data: userId,
+                success: function (data) {
+                    debugger;
+                    $("input:radio[name=optradio]").each(function () {
+                        if ($(this).val() == data.PageId) {
+                            $(this).attr('checked', 'checked');
+                        }
+                    });
+
+                },
+                failure: function () {
+
+                }
+
+
+
+            })
+
+
+
+        }, 3000);
+       
+        ///  Bind Default 
+
+        //Bind fb page dropdown
+        //// Code for page
+        //// Code for facebook page :SRohit
+
+
+        //// Button Click To set and save Preference
+        var setPreferenceURL = $_BaseUrl + '/Users/api/HomeApi/SetFacebookDefaultPreference';
+        $("#btnSetPreference").click(function () {
+            debugger
+            var pageID = parseInt($("input[name='optradio']:checked").val());
+            $.ajax({
+
+                type: "post",
+                url: setPreferenceURL,
+                data: { PageId: pageID, userId: parseInt($("#hdnUserId").val()) },
+                success: function (data) {
+
+                    var modal = $("#setPereference");
+                    modal.modal("hide");
+
+                    var popTimer = parseInt($("#hdnPopUpTimer").val());       setTimeout("$.each(BootstrapDialog.dialogs, function(id, dialog){dialog.close();});",popTimer);
+                    BootstrapDialog.configDefaultOptions({    cssClass: 'bstDialg'});
+                    BootstrapDialog.show({ title: "<span>Information</span>", type: BootstrapDialog.TYPE_SUCCESS, message: 'Preference set successfully.' });
+
+                    //BootstrapDialog.show({
+                    //    title: "<span>Information</span>",
+                    //    type: BootstrapDialog.TYPE_SUCCESS,
+                    //    message: "Preference set successfully !",
+                    //    closable: true,
+                    //    closeByBackdrop: false,
+                    //    closeByKeyboard: false,
+                    //    buttons: [{
+                    //        label: 'Ok',
+                    //        action: function (dialogItself) {
+                    //            dialogItself.close();
+
+                    //            // $("#addStaff").modal('hide');
+                    //        }
+                    //    }]
+                    //});
+                },
+                failure :function()
+                {
+                    var modal = $("#setPereference");
+                    modal.modal("hide");
+                }
+
+            })
+
+
+        })
+        //// Button Click To saveData
+
+    });
+
+</script>
+
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header  modal-header-custom">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title modal-title-custom">Set Preference </h4>
+        </div>
+        <div class="modal-body">
+
+            @*<select id="FBpageDetail" multiple="multiple"></select>*@
+            <div class="col-md-12 col-sm-6">
+                <div id="">
+
+                    <div class="col-md-12 radio" style="    background-color: #f5f5f5;    padding: 14px 29px;    margin-bottom: 16px;">
+                        <label class="">             <input type="radio" value="0" name="optradio" checked="checked">Post On Facebook Timeline   </label>
+                    </div>
+                    <br />
+                    <div class="o-lable" style="    text-align: center;">
+                        <p><strong>Or select a page to post</strong></p>
+                    </div>
+                    <div id="FBpageDetailOption" class="pull-left" style=" background-color: #f5f5f5; padding: 6px 11px; width: 100%; ">
+                    </div>
+
+                </div>
+            </div>
+            @*<label class="radio-inline" id="FBpageDetailDiv">
+                    <input type="radio" name="optradio">Option 1
+                </label>*@
+            @*<label class="radio-inline">
+                    <input type="radio" name="optradio">Option 2
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">Option 3
+                </label>*@
+
+
+            <div class="social-media-wrap clearfix">
+
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.UserID" id="hdnUserId" />
+            <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+            <button type="submit" class="btn btn-circlr" id="btnSetPreference" tabindex="800">Set Default Preference</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="~/Scripts/libs/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://davidstutz.github.io/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="http://davidstutz.github.io/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" type="text/css" />

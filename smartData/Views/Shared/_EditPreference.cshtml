@@ -1,0 +1,40 @@
+﻿@model Core.Domain.smPreference
+
+@{
+    ViewBag.Title = "Edit Preference";
+    Layout = null;
+}
+
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+<script src="~/Scripts/User/EditPreference.js"></script>
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header  modal-header-custom">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title modal-title-custom">Edit Preference</h4>
+        </div>
+        <div class="modal-body">
+            <div class="social-media-wrap clearfix">
+
+                <textarea cols="50" rows="15" id="txtEditMsgContent" style="margin-top: 10px;" placeholder="Please Enter Preference"></textarea>
+
+
+
+
+            </div>
+
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+
+            <button type="button" class="btn btn-circlr" id="btnEditPreference" tabindex="800">Update</button>
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="PreferenceId" />
+
+

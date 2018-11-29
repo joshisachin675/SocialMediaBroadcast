@@ -1,0 +1,150 @@
+﻿@model Core.Domain.smTermsConditions
+
+@{
+    ViewBag.Title = "Edit Terms and Conditions ";
+    Layout = null;
+}
+
+@*<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>*@
+@*<script src="~/Scripts/Admin/GetTermsAndConditions.js"></script>*@
+<script>
+
+    var reqUrl = $_BaseUrl + '/Users/api/HomeApi/GetIndustryNameTermsAndCondition';    //// Bind industry Dropdown
+    
+    var userIds = parseInt($('#hdnUserId').val())
+    var userId = {}
+    userId.userID = userIds;
+    $.ajax({
+        type: "POST",
+        url: reqUrl,
+        data: {},
+
+        //  contentType: "application/json; charset=utf-8",
+        // dataType: "json",
+        success: function (data1) {
+            debugger
+            $.each(data1, function (k, v) {
+                var htm = '';
+                htm += '<option value = "' + v.IndustryId + '" >' + v.IndustryName + '</option>';
+            
+                $('#TermsAndConditonIDEdit').append(htm);
+
+            });
+        },
+        failure: function () {
+            alert("Failed!");
+        }
+    });
+
+
+    $(document).ready(function () {
+
+        $('#btnUpdateTermsAndConditions').click(function () {
+            debugger;
+            var modal = $("#editTermsandCondition");
+            var valid = 0;
+            var termsHtml = $('#TermsAndConditionsEdit').html(tinymce.get('TermsAndConditionsEdit').getContent());
+            var labelandtittle = $("#LabelOrTittleTermsEdit").val();
+            var selectedIndustryID = $("#TermsAndConditonIDEdit option:selected").val();
+            termsHtml = termsHtml.val();
+
+            if (labelandtittle == "" || (termsHtml == "" || termsHtml == null)) {
+                valid = 1;
+                ShowMessage(BootstrapDialog.TYPE_DANGER, 'Please Enter Terms and Conditions Or Link and Title.');
+
+            }
+
+
+
+            //if (termsHtml == "" || termsHtml==null) {
+            //    BootstrapDialog.TYPE_SUCCESS("Please Enter Terms and Conditions");
+            //    valid = 1;
+            //}
+            if (valid != 1) {
+                debugger
+                var termObject = {};
+                termObject.TermsConditions = termsHtml;
+                $('.loadercontainingdiv').show();
+                debugger;
+                $.ajax({
+                    url: $_UpdateTermsAndCondition,
+                    type: "POST",
+                    data: { termsHtml: termsHtml, labelandtittle: labelandtittle, selectedIndustryID: selectedIndustryID, TermsAndConditionsId: parseInt( $('#selectedTEremsandConditionID').val())},
+                    success: function (data) {
+                        // debugger;
+                        if (data.status == true) {
+                            $('.loadercontainingdiv').hide();
+                            modal.modal("hide");
+                            ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Terms and conditions updated successfully.');
+                            RefreshGrid();
+                            tinyMCE.activeEditor.setContent('');
+                            $("#LabelOrTittleTerms").val("");
+                            $('#TermsAndConditonID ').prop('selectedIndex', 0);
+                            // $("#addContent").modal("hide");
+                            // $(".modal-backdrop").remove();
+                        }
+                        else {
+                            $('.loadercontainingdiv').hide();
+                            modal.modal("hide");
+                            if (data.message == "Error") { ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.'); }
+                            RefreshGrid();
+                            tinyMCE.activeEditor.setContent('');
+                            $("#LabelOrTittleTerms").val("");
+                            $('#TermsAndConditonID ').prop('selectedIndex', 0);
+
+                        }
+                    },
+                    error: function (result) {
+                        debugger;
+                        $('.loadercontainingdiv').hide();
+                        ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error .');
+                    }
+                });
+            }
+
+
+        })
+    });
+
+</script>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header  modal-header-custom">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title modal-title-custom">Edit Terms and Conditions</h4>
+            </div>
+            <div class="modal-body">
+                <div class="social-media-wrap clearfix">
+                    <div class="col-md-6 col-sm-6 col-xs-6" style="margin-bottom:20px;">
+                        <label> Select Industry:</label>
+                        <select id="TermsAndConditonIDEdit" class="btn-lg" style="font-size:14px">
+                            <option value="0">All Industries</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="social-media-wrap clearfix">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <label>Label or Title:</label>
+                        <input type="text" id="LabelOrTittleTermsEdit" class="form-control" />
+                    </div>
+                </div>
+                <div class="social-media-wrap clearfix">
+                    <div class="col-md-12 col-sm-9 col-xs-9">
+                        <label>Enter Terms and Conditions</label>
+                        <textarea class="form-control tinyMCE" name="hobbies" style="height: 200px;" id="TermsAndConditionsEdit" placeholder="Enter Terms And Conditions "></textarea>
+                        <input type="hidden"  id="selectedTEremsandConditionID" />
+                        @*<input class="form-control" id="TermsAndConditions" placeholder="Enter Terms And Conditions " type="text">*@
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+                <button type="submit" class="btn btn-circlr" id="btnUpdateTermsAndConditions" tabindex="800">Update</button>
+            </div>
+        </div>
+    </div>
+
+
+<script>tinymce.init({ selector: 'textarea' });</script>

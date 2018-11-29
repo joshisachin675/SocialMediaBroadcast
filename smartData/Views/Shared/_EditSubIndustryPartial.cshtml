@@ -1,0 +1,77 @@
+﻿@model Core.Domain.smSubIndustry
+
+@{
+    ViewBag.Title = "Edit SubIndustry";
+    Layout = null;
+}
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+<script src="~/Scripts/Admin/EditSubIndustry.js"></script>
+
+@using (Ajax.BeginForm("EditSubIndustry", "ManageCategory", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, OnBegin = "return ValidateSubIndustry()", OnSuccess = "EditSubIndustrySuccess(data)" }, new { @id = "EditSubIndustry" }))
+{
+    @Html.HiddenFor(m => m.SubIndustryId)
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header  modal-header-custom">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title modal-title-custom">Edit Category</h4>
+            </div>
+            <div class="modal-body">
+                <div class="social-media-wrap clearfix">
+                    @Html.TextBoxFor(m => m.SubIndustryName, new { @placeholder = "Edit SubIndustry" })
+                    @Html.ValidationMessageFor(m => m.SubIndustryName)
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+                <button type="submit" class="btn btn-circlr" id="btnEditSubIndustry" tabindex="800">Save</button>
+            
+                <input type="hidden" id="txtIndustry" />
+            </div>
+        </div>
+    </div>
+}
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.IndustryId" id="hdnIndustry" />
+
+<script>
+  
+    function ValidateSubIndustry() {
+        debugger;
+        var isValid = true;
+        var SubIndustryName = $("#SubIndustryName", $("#editSubIndustry")).val();
+        var industry = $("#txtIndustry").val();
+        $.ajax({
+            url: $_UrlCheckDuplicateSubIndustry,
+            type: "Get",
+            data: { Indusrtyid: industry, subIndustryName: SubIndustryName },
+            async: false,
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                debugger;
+                if (data == "exists") {
+                    debugger;
+                    isValid = false;
+                    $messageData = $("<span>Information</span>");
+                    var popTimer = parseInt($("#hdnPopUpTimer").val());       setTimeout("$.each(BootstrapDialog.dialogs, function(id, dialog){dialog.close();});",popTimer);
+                    BootstrapDialog.configDefaultOptions({ cssClass: 'bstDialg' });
+                    BootstrapDialog.show({
+                        title: $messageData,
+                        type: BootstrapDialog.TYPE_DANGER,
+                        message: "You cannot add same subindustry for an industry",
+                    });
+                                
+                }
+                else {
+
+                    return isValid;
+                }
+
+            },
+
+        });
+        return isValid;
+    }
+
+</script>

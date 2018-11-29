@@ -1,0 +1,192 @@
+﻿
+
+
+<h2>TermsAndConditions</h2>
+
+@model smartData.Models.User.UserDashboardModel
+
+@{
+    ViewBag.Title = "::Social Media::";
+    Layout = "~/Views/Shared/_AdminInnerLayout.cshtml";
+}
+
+
+<script src="~/Scripts/Admin/GetTermsAndConditions.js"></script>
+ 
+
+<script type="text/javascript">
+ @functions{
+        public string TokenHeaderValue()
+        {
+            string cookieToken, formToken;
+            AntiForgery.GetTokens(null, out cookieToken, out formToken);
+            return cookieToken + ":" + formToken;
+
+        }
+    }
+    // Antiforgery Token
+    var token = '@TokenHeaderValue()';
+    // alert(token);
+    var headers = {};
+    headers["RequestVerificationToken"] = token;
+</script>
+<section class="wrapper scrollable">
+    <h3> Terms And Conditions</h3>
+    <div id="custom-tolbar" class="flter-sction">
+        <div class="row">
+            @*<div class="col-md-6 col-sm-6 col-xs-6">
+                <br />
+                <button class="btn btn-success greenbtn" style="display:none" id="btnFilter" type="button" value="Filter" name="btnFilter">Filter</button>
+              
+               @*<input type="text" id="temrsHeading" class="form-control" />*@
+
+
+           @* </div>*@
+            <button class="btn btn-success greenbtn" style="display:none" id="btnFilter" type="button" value="Filter" name="btnFilter">Filter</button>
+            <div class="col-md-2 col-sm-6 col-xs-6" style="margin-bottom:20px;">
+                <label> Select Industry:</label>
+                <select id="TermsAndConditonID" class="btn-lg" style="font-size:14px">
+                    <option value="0">All Industries</option>
+                </select>
+            </div>
+            
+           
+            <div class="col-md-2 col-sm-6 col-xs-6">
+                <label>Label or Title:</label>
+                <input type="text" id="LabelOrTittleTerms" class="form-control" />
+            </div>
+     
+            <div class="col-md-12 col-sm-9 col-xs-9">
+                <label>Enter Terms and Conditions</label>
+                <textarea class="form-control tinyMCE" name="hobbies" style="height: 200px;" id="TermsAndConditions" placeholder="Enter Terms And Conditions "></textarea>
+            @*<input class="form-control" id="TermsAndConditions" placeholder="Enter Terms And Conditions " type="text">*@</div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <button class="btn btn-success greenbtn" id="btnsaveTermsAndConditions" type="button" value="" name="">Save</button>
+         
+              
+                </div>
+            </div>
+
+            <div class="row mrgntp">
+                <div class="col-sm-12">
+
+                </div>
+            </div>
+        </div>
+    
+    <table class="table table-hover" data-toolbar="#post" data-show-columns="true" data-show-filter="false" data-click-to-select="true" id="tblTermsAndConditions"></table>
+
+    </section>
+
+  <div class="modal" id="editTermsandCondition" tabindex="-1" role="dialog" aria-labelledby="editCategory">
+    @Html.Partial("_EditTermsandCondition")
+</div>
+
+   
+
+    <input type="hidden" id="TokenValue" value='@TokenHeaderValue()' />
+    <input type="hidden" id="IndustryId" value="@smartData.Common.SessionManager.LoggedInUser.IndustryId" />
+    <input type="hidden" id="UserType" value="@smartData.Common.SessionManager.LoggedInUser.UserType" />
+
+    <!--Loader-->
+    <div class="loadercontainingdiv">
+        <img src="~/Images/loadernew.gif" class="loaderprtclr" />
+    </div>
+    <!--End Loader-->
+
+
+@*<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>*@
+    <script>
+
+        //$(document).ready(function () {
+        //    tinymce.init({
+        //        selector: 'textarea',
+        //        height: 250,
+        //        theme: 'modern',
+        //        plugins: [
+        //          'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+        //          'searchreplace wordcount visualblocks visualchars code fullscreen',
+        //          'insertdatetime media nonbreaking save table contextmenu directionality',
+        //          'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc help'
+        //        ],
+        //        toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        //        toolbar2: 'print preview media | forecolor backcolor emoticons | codesample help',
+        //        image_advtab: true,
+        //        templates: [
+        //          { title: 'Test template 1', content: 'Test 1' },
+        //          { title: 'Test template 2', content: 'Test 2' }
+        //        ],
+        //        content_css: [
+        //          '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+        //          '//www.tinymce.com/css/codepen.min.css'
+        //        ]
+        //    });
+        //});
+        $('#btnsaveTermsAndConditions').click(function () {
+            debugger;
+            var valid = 0;
+            var termsHtml = $('#TermsAndConditions').html(tinymce.get('TermsAndConditions').getContent());
+            var labelandtittle = $("#LabelOrTittleTerms").val();
+            var selectedIndustryID = $("#TermsAndConditonID option:selected").val();
+            termsHtml = termsHtml.val();
+            
+            if (labelandtittle == "" || (termsHtml == "" || termsHtml == null)) {
+                valid = 1;
+                ShowMessage(BootstrapDialog.TYPE_DANGER, 'Please Enter Terms and Conditions Or Link and Title.');
+              
+            }
+
+          
+           
+            //if (termsHtml == "" || termsHtml==null) {
+            //    BootstrapDialog.TYPE_SUCCESS("Please Enter Terms and Conditions");
+            //    valid = 1;
+            //}
+            if (valid != 1) {
+                debugger
+                var termObject = {};
+                termObject.TermsConditions = termsHtml;
+                $('.loadercontainingdiv').show();
+                debugger;
+                $.ajax({
+                    url: $_SaveTermsAndCondition,
+                    type: "POST",
+                    data: { termsHtml: termsHtml, labelandtittle: labelandtittle, selectedIndustryID: selectedIndustryID },
+                    success: function (data) {
+                        // debugger;
+                        if (data.status == true) {
+                            $('.loadercontainingdiv').hide();
+                            ShowMessage(BootstrapDialog.TYPE_SUCCESS, 'Terms and conditions added successfully.');
+                            RefreshGrid();
+                            tinyMCE.activeEditor.setContent('');
+                            $("#LabelOrTittleTerms").val("");
+                            $('#TermsAndConditonID ').prop('selectedIndex', 0);
+                            // $("#addContent").modal("hide");
+                            // $(".modal-backdrop").remove();
+                        }
+                        else {
+                            $('.loadercontainingdiv').hide();
+                            if (data.message == "Error") { ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured.'); }
+                            RefreshGrid();
+                            tinyMCE.activeEditor.setContent('');
+                            $("#LabelOrTittleTerms").val("");
+                            $('#TermsAndConditonID ').prop('selectedIndex', 0);
+                           
+                        }
+                    },
+                    error: function (result) {
+                        debugger;
+                        $('.loadercontainingdiv').hide();
+                        ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error .');
+                    }
+                });
+            }
+           
+
+        })
+
+
+    </script>
+<script src="//tinymce.cachefly.net/4.3/tinymce.min.js"></script>
+<script>tinymce.init({ selector: 'textarea' });</script>
+

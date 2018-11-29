@@ -1,0 +1,324 @@
+﻿@model Core.Domain.smContentLibrary
+
+@{
+    ViewBag.Title = "::Social Media::";
+    Layout = "~/Views/Shared/_AdminInnerLayout.cshtml";
+}
+
+<style>
+    #dropZone {
+        background: gray;
+        border: black dashed 3px;
+        width: 200px;
+        padding: 50px;
+        text-align: center;
+        color: white;
+    }
+
+    /*#grid tr td:nth-child(2n+1) {
+        width: 40%;
+    }*/
+    #grid tr td:first-child {
+        padding-left: 15px;
+    }
+
+    #content-library .fixed-table-container thead th .th-inner {
+        font-size: 17px;
+    }
+
+    #content-library #grid tr:first-child {
+        background-color: #b2c7ea !important;
+    }
+
+    .modal {
+        top: 51px !important;
+    }
+</style>
+
+<link href="~/Scripts/dropzone/basic.css" rel="stylesheet" />
+<link href="~/Scripts/dropzone/dropzone.css" rel="stylesheet" />
+<link href="~/Content/bootstrap-tagsinput.css" rel="stylesheet" />
+
+<script src="~/Scripts/dropzone/dropzone.js"></script>
+<script src="~/Scripts/Admin/GetContentList.js"></script>
+<script src="~/Scripts/bootstrap-tagsinput.js"></script>
+
+<script src="~/Scripts/datepicker/bootstrap-datepicker.js"></script>
+<link href="~/Scripts/datepicker/datepicker.css" rel="stylesheet" />
+
+
+<link href="~/Content/jquery.qtip.css" rel="stylesheet" />
+<script src="~/Scripts/Jscripts/jquery.qtip.js"></script>
+
+<script type="text/javascript">
+
+ @functions{
+     public string TokenHeaderValue()
+     {
+         string cookieToken, formToken;
+         AntiForgery.GetTokens(null, out cookieToken, out formToken);
+         return cookieToken + ":" + formToken;
+
+     }
+    }
+    // Antiforgery Token
+    var token = '';
+    // alert(token);
+    var headers = {};
+    headers["RequestVerificationToken"] = token;
+
+
+</script>
+
+<script>
+    Dropzone.options.dropzoneForm = {
+        maxFiles: 1,
+        acceptedFiles: ".jpeg,.jpg,.png,.gif",
+        init: function () {
+            // debugger;
+            var self = this;
+            // config self.options.addRemoveLinks = true;
+            self.options.dictRemoveFile = "Delete";
+            //New file added
+            self.on("addedfile", function (file) {
+                var count = self.files.length;
+                //  alert(count);
+                // alert(self.maxFiles);
+                if (count > 1) {
+                    //alert("You cannot upload more than 1 files");
+                    BootstrapDialog.show({
+                        message: 'You cannot upload more than 1 files.',
+                        buttons: [{
+                            label: 'Ok',
+                            cssClass: 'btn-primary',
+                            action: function (dialogItself) {
+                                dialogItself.close();
+                            }
+                        }]
+                    });
+                    this.removeFile(file);
+                    return false;
+                }
+            });
+
+            this.on("complete", function (data) {
+                // alert(data.xhr.responseText);
+                //var res = eval('(' + data.xhr.responseText + ')');
+                var sd = $(this.element.parentNode).find('form');
+                var scr = $("#dropzoneForm img").attr('src')
+                $('#uploadImageProfile img').attr('src', scr);
+                var check = sd.attr("data-sm");
+
+
+                debugger
+                switch (parseInt(check)) {
+                    case 0:
+                        //  $('.UploadedImagefb img').hide();
+                       // $('.UploadedImagefb img').attr('src', scr);
+                      //  $('.UploadedImagefb').append('<div class="dz-preview dz-processing dz-image-preview dz-success dz-complete"><div class="dz-image"><img data-dz-thumbnail height="108px" width="108px" src="' + scr + '"/></div></div>');
+                        //$('.UploadedImagetw img').hide();
+                        //$('.UploadedImageli img').hide();
+                        break;
+                    case 1:
+                        //  $('.UploadedImagefb img').hide();
+                        // $('.UploadedImagetw img').hide();
+                        //  $('.UploadedImagetw img').attr('src', scr);
+                     //   $('.UploadedImagetw').append('<div class="dz-preview dz-processing dz-image-preview dz-success dz-complete"><div class="dz-image"><img data-dz-thumbnail height="108px" width="108px" src="' + scr + '"/></div></div>');
+                        //  $('.UploadedImageli img').hide();
+                       // day = "Monday";
+                        break;
+                    case 2:
+                        //  $('.UploadedImagefb img').hide();
+                        //  $('.UploadedImagetw img').hide();
+                        //  $('.UploadedImageli img').hide();
+                      //  $('.UploadedImageli').append('<div class="dz-preview dz-processing dz-image-preview dz-success dz-complete"><div class="dz-image"><img data-dz-thumbnail height="108px" width="108px" src="' + scr + '"/></div></div>');
+
+                        //$('.UploadedImageli img').attr('src', scr);
+                        break;
+                }
+
+                var res = JSON.parse(data.xhr.responseText);
+            });
+
+
+            this.on("addedfile", function (file) {
+                debugger
+
+                  $('.UploadedImagefb img').remove();
+                  $('.UploadedImagetw img').remove();
+                  $('.UploadedImageli img').remove();
+                // Create the remove button
+                var removeButton = Dropzone.createElement("<button id='removeImage'>Remove file</button>");
+                // Capture the Dropzone instance as closure.
+                var _this = this;
+                removeButton.addEventListener("click", function (e) {
+                    // Make sure the button click doesn't submit the form:
+                    e.preventDefault();
+                    e.stopPropagation();
+                    // Remove the file preview.
+                    _this.removeFile(file);
+                    // If you want to the delete the file on the server as well,
+                    // you can do the AJAX request here.
+                });
+                // Add the button to the file preview element.
+                file.previewElement.appendChild(removeButton);
+            });
+
+        }
+    };
+
+</script>
+
+<style>
+    .columns columns-right btn-group pull-right {
+        display: block;
+        margin-top: 56px;
+    }
+</style>
+
+<script>
+    $(document).ready(function () {
+
+        debugger;
+        //$(".drag_drp_file").tooltip();
+
+        $('.jumbotron').qtip({
+            content: "Please upload only .jpg, .png, .jpeg files.",
+            show: 'mouseover',
+            hide: 'mouseout'
+        });
+
+        $("#txtKeywords").tagsinput('items');
+        $('#DateFrom').datepicker({
+            format: 'mm/dd/yyyy'
+        });
+
+        $('#DateTo').datepicker({
+
+        });
+    });
+</script>
+
+<section class="wrapper scrollable manage-content" id="content-library">
+    @*<div class="row socialmediaall socialmediaall_manage">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <h3 class="commohead">Admin List</h3>
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+
+
+            </div>
+        </div>*@
+    <h3>Manage Content</h3>
+    <div id="custom-toolbar" class="filter-sction">
+
+        <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-2"><input class="form-control" id="Description" placeholder="Description" type="text"></div>
+            @if (smartData.Common.SessionManager.LoggedInUser.UserType == 3)
+            {
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    @Html.DropDownListFor(m => m.categoryList, new SelectList(Model.categoryList, "Text", "Text"), "Industry", new { id = "CategoryName", @class = "form-control", @style = "width: 100%;" })
+                    @*else
+                        {
+                            @Html.DropDownListFor(m => m.CategoryId, (SelectList)@ViewBag.IndustryName, "Select Industry", new { id = "CategoryName", @class = "form-control", @style = "width: 100%;" })
+                        }*@
+                </div>
+            }
+
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                @Html.DropDownList("Social Media", new List<SelectListItem>
+                     {
+                        new SelectListItem() {Text = "Social Media",Selected=true},
+                        new SelectListItem() {Text = "Facebook", Value="Facebook"},
+                        new SelectListItem() {Text = "LinkedIn", Value="LinkedIn"},
+                         new SelectListItem() {Text = "Twitter", Value="Twitter"},
+                        //new SelectListItem() {Text = "Google+", Value="Google"}
+                      }, new { @class = "form-control", @id = "SocialMedia" })
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2"><input class="form-control" id="PostedBy" placeholder="Added By" type="text"></div>
+            
+            <div class="col-md-3 col-sm-3 col-xs-3 input-group input-daterange">
+                <input type="text" id="DateFrom" class="form-control" placeholder="Date From">
+                <div class="input-group-addon">to</div>
+                <input type="text" id="DateTo" class="form-control" placeholder="Date To">
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-1">
+                @Html.DropDownList("Archive", new List<SelectListItem>
+                     {
+                        new SelectListItem() {Text = "Archive",Value="True",Selected=true},
+                        new SelectListItem() {Text = "New", Value="False"},
+
+                      }, new { @class = "form-control", @id = "drpArchive" })
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-6 col-btn-fix" style="margin-top: 9px;">
+                <button class="btn btn-success greenbtn" id="btnFilter" type="button" value="Filter" name="btnFilter">Filter</button>
+                <button class="btn btn-info reset-filter btn-circlr" id="resetBtn">Reset</button>
+                <button type="button" id="add_content" class="btn btn-primary add-btn btn-circlr pddng" data-toggle="modal" data-target="#addContent">Add</button>
+                @*<button type="button" class="btn btn-primary add-btn btn-circlr" data-toggle="modal" data-target="#editContent" style="display:none">Edit</button>*@
+            </div>
+        </div>
+
+        <div class="row mrgntp">
+            <div class="col-sm-12">
+
+            </div>
+        </div>
+    </div>
+    <div class="scl-th-wdth">
+        <table class="table table-hover table-layout-fix table-responsive table-condensed" data-toolbar="#post" data-show-columns="true" data-show-filter="true" data-click-to-select="true" id="grid">
+            <thead>
+                <tr>
+                    <th data-field="FirstName" class="col-sm-1">Social Media</th>
+                    <th data-field="Url" class="col-sm-1">Link</th>
+                    @*<th data-field="ClinicStaffRoleName">Email Id</th>
+                        <th data-field="EmailId">Photo</th>*@
+
+                </tr>
+            </thead>
+        </table>
+    </div>
+</section>
+
+@*<h3 class="pageHeading"><span class="fa fa-users"></span> Manage Social Media Accounts </h3>*@
+@*<div id="custom-toolbar" class="filter-sction">
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="firstName" placeholder="First Name" type="text"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="lastName" placeholder="Last Name" type="text"></div>
+            <div class="col-md-3 col-sm-6 col-xs-6"><input class="form-control" id="emailId" placeholder="Email Id" type="text"></div>
+
+        </div>
+
+        <div class="row mrgntp">
+            <div class="col-sm-12">
+                <button class="btn btn-success greenbtn" id="btnFilter" type="button" value="Filter" name="btnFilter">Filter</button>
+                <button class="btn btn-info btn-sm reset-filter btn-circlr" disabled id="resetBtn">Reset</button>
+                <button type="button" class="btn btn-primary btn-sm add-btn btn-circlr" data-toggle="modal" data-target="#addStaff">Add</button>
+            </div>
+        </div>
+    </div>*@
+
+<input type="hidden" id="TokenValue" value='@TokenHeaderValue()' />
+<input type="hidden" id="UserType" value="@smartData.Common.SessionManager.LoggedInUser.UserType" />
+<input type="hidden" id="IndustryId" value="@smartData.Common.SessionManager.LoggedInUser.IndustryId" />
+
+
+<div class="modal" id="addContent" tabindex="-1" role="dialog" aria-labelledby="addContent">
+    @Html.Partial("_AddContentPartial", Model)
+</div>
+
+<div class="modal" id="editContent" tabindex="-1" role="dialog" aria-labelledby="editContent">
+    @Html.Partial("_EditContentPartial", Model)
+</div>
+
+<div class="modal" id="editContentRss" tabindex="-1" role="dialog" aria-labelledby="editContentRss">
+    @Html.Partial("_EditContentRssPartial", Model)
+</div>
+
+<!--Loader-->
+<div class="loadercontainingdiv">
+    <img src="~/Images/loadernew.gif" class="loaderprtclr" />
+</div>
+<!--End Loader-->

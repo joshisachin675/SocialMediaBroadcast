@@ -1,0 +1,230 @@
+﻿@model smartData.Models.FeedModel
+ @using System.Text.RegularExpressions;
+
+
+@{
+    ViewBag.Title = "::RssRead::";
+    Layout = "~/Views/Shared/_AdminInnerLayout.cshtml";
+}
+<style>
+    .container {
+        max-width: 100%;
+        margin-left:56px;
+    }
+    .ignore_Rss {
+        background-color:#666 !important;
+    }
+</style>
+<script src="~/Scripts/Admin/Read_Rss.js"></script>
+
+
+@*<link href="@Url.Content("~/Content/Social/css/style.css")" rel="stylesheet" />*@
+<link rel="icon" href="favicon.ico">
+<link href="~/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+@if (Model != null)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="feed-top">
+                    <span> @Model.Title</span>
+                    <div>  Site:<a href="@Model.Link" target="_blank">@Model.Link</a></div>
+                    <a href="@Url.Action("Index", "ManageRssFeeds", new { @Area = "Admin" })" class="btn btn-primary" style="float: right;margin-top: -50px;">Back</a>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                @if (Model.Item != null && Model.Item.Count() > 0 )
+                {
+                    <div class="feed-list">
+                        <div>
+                            @for (var i = 0; i < Model.Item.Count(); i++)
+                            {
+                                <div class="rss-item">
+
+                                    <div class="rssfeedlist">
+                                        @if (@Model.Item[i].Title.Length > 100)
+                                        {
+                                            <a href="@Model.Item[i].Link" target="_blank" style="cursor: pointer; color: #15c; text-decoration: none; font-size: 20px">@Html.Raw(Model.Item[i].Title.Substring(0, 100))</a> <i class="fa fa-caret-down open" id="pop" aria-hidden="true" style="cursor:pointer"></i>
+                                        }
+                                        else
+                                        {
+                                            <a href="@Model.Item[i].Link" target="_blank" style="cursor: pointer; color: #15c; text-decoration: none; font-size: 20px">@Html.Raw(Model.Item[i].Title)</a> <i class="fa fa-caret-down open" id="pop" aria-hidden="true" style="cursor:pointer"></i>
+                                        }
+                                        <div class="rss-post-date"><i class="fa fa-clock-o" aria-hidden="true"></i>@Html.Raw(Model.Item[i].PubDate)</div>
+                                        <div class="postrss">
+
+                                            @if (Model.Item[i].isAdded)
+                                            {
+                                                <a class="btn cmn-config disabled ">Already Added</a>
+                                                @*<a class="btn cmn-config disabled ">Added</a>*@
+                                            }
+                                            else
+                                            {
+                                                <a href="javascript:void(0)" data-itemlinktext="@Model.Item[i].Title" data-itemlink="@Model.Item[i].Link" data-postdate="@Model.Item[i].PubDate" class="btn cmn-config ignore_Rss">Ignore</a>
+                                                <a href="javascript:void(0)" class="btn cmn-config add_Rss" data-itemdescription="@Model.Item[i].Description"
+                                                   data-itemlink="@Model.Item[i].Link" data-itemlinktext="@Model.Item[i].Title" data-postdate="@Model.Item[i].PubDate" data-imagelink="@Model.Item[i].Image">Add</a>
+                                            }
+
+                                        </div>
+                                        <br />
+                                        <div class="rss-feed-design">
+                                            <span>
+                                                @if (!String.IsNullOrEmpty(Model.Item[i].Image))
+                                                {
+                                                    <img src="@Model.Item[i].Image" style="height: 54px; width: 78px !important" />
+                                                }
+                                                else
+                                                {
+                                                    <img src="" style="height: 54px; width: 78px !important" />
+                                                }
+
+                                            </span>
+                                            <span style="position: absolute; margin-left: 18px; margin-top:10px;">
+
+                                                                                                @{
+                                                string string1 = Model.Item[i].Description.Replace("&#39;", "").Trim();
+                                                string str = Model.Item[i].Title.Replace("/'", "").Trim();
+                                                str = str.Replace("—", "-");
+                                                string1 = string1.Replace("—", "-");
+                                                  str = str.Replace("’", "'");
+                                                string1 = string1.Replace("’", "'");
+                                                int len = Model.Item[i].Description.Length;
+                                                int string2 = Model.Item[i].Title.Length;
+                                                ///  string result = string1.TrimStart(str.ToCharArray());      /// SRohit
+                                               string result = string1;    /// new
+                                                //string result = string1.Substring(string2,200);
+
+                                                if (result.Length > 300)
+                                                {
+                                                      @Html.Raw(result.Substring(0, 300))
+                                                }
+                                                else
+                                                {
+                                                     @Html.Raw(result)
+                                                }                                                                                          
+                                                
+                                                @*if (Model.Item[i].Description.Length > 300)
+                                                {
+                                                    @Html.Raw(Model.Item[i].Description.Substring(0, 300))
+                                                }
+                                                else
+                                                {
+                                                    @Html.Raw(Model.Item[i].Description)
+                                                }*@
+                                                }
+
+                                            </span>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <hr />
+                                </div>
+
+                                @*@Html.Raw(@item.Link)*@
+                            }
+                        </div>
+
+
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-info">No feed</div>
+                }
+            </div>
+        </div>
+    </div>
+
+}
+
+
+<div class="modal" id="selectCategory" tabindex="-1" role="dialog" aria-labelledby="selectCategory">
+    @Html.Partial("_selectCategoryPartial")
+</div>
+
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.UserType" id="hdnUserType" />
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.IndustryId" id="industryId" />
+
+
+
+<input type="hidden" id="" />
+<input type="hidden" id="" />
+<input type="hidden" id="" />
+<input type="hidden" id="" />
+<input type="hidden" id="" />
+<input type="hidden" id="" />
+<input type="hidden" id="" />
+<input type="hidden" id="" />
+<input type="hidden" id="" />
+
+
+<script>
+    $(document).ready(function () {
+        $('.rss-feed-design').find('table').find('td:first').addClass('leftimg');
+        $('.rss-feed-design').slideUp();
+    });
+    $('.rss-feed-design').find('table').find('td:first').addClass('leftimg');
+
+    $('.open').click(function () {
+        debugger;
+        //$('.rssfeedlist').parents('div').find('.rss-feed-design').hide();
+        $(this).parent('div').find('.rss-feed-design').slideToggle();
+
+
+    })
+
+</script>
+<style>
+    .lh {
+        margin-top: -34px;
+    }
+
+    .leftimg a {
+        display: inline-block;
+        width: 185px;
+    }
+
+    .leftimg font {
+        display: block !important;
+    }
+
+    .feed-list img {
+        height: auto;
+        text-align: left;
+        width: 74%;
+    }
+
+    .postrss {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .rssfeedlist {
+        position: relative;
+    }
+
+    .cmn-config {
+        background-color: #55acee;
+        color: #fff;
+        min-width: 80px;
+    }
+
+        .cmn-config:hover {
+            transition: all .5s;
+            color: #fff;
+        }
+
+    .rss-post-date {
+        color: #898989;
+        font-size: 12px;
+    }
+
+    .disp {
+        display: block;
+    }
+</style>

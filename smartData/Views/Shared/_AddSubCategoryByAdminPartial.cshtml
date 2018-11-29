@@ -1,0 +1,115 @@
+﻿
+@model Core.Domain.smSubIndustry
+@{
+    ViewBag.Title = "Add SubIndustry";
+    Layout = null;
+}
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+@*<script src="~/Scripts/Admin/AddCategory.js"></script>*@
+
+@using (Ajax.BeginForm("AddSubIndustry", "ManageCategory", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, OnBegin = "return ValidateSubIndustryAdd()", OnSuccess = "AddSubIndustrySuccess(data)" }, new { @id = "AddSubIndustry" }))
+{
+    @Html.HiddenFor(m => m.SubIndustryId)
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header  modal-header-custom">
+                <button type="button" class="closemodal" data-dismiss="modal" aria-label="Close" style="float: right"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title modal-title-custom">Add SubIndustry</h4>
+            </div>
+            <div class="modal-body">
+                <div class="social-media-wrap clearfix">
+                    @Html.TextBoxFor(m => m.SubIndustryName, new { @placeholder = "Add SubIndustry" })
+                    @Html.ValidationMessageFor(m => m.SubIndustryName)
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="closemodal btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+                <button type="submit" class="btn btn-circlr" id="btnSubCategory" tabindex="800">Add</button>
+            </div>
+        </div>
+    </div>
+}
+
+
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.IndustryId" id="hdnIndustry" />
+<script>
+    function AddSubIndustrySuccess(data) {
+        debugger;
+        if (data.status == true) {
+            $("#addSubIndustry").modal("hide");
+            $('.modal').css('display', 'none');
+            $(".modal-backdrop").remove();
+            ShowMessage(BootstrapDialog.TYPE_SUCCESS, "SubIndustry added successfully");
+            RefreshGrid();
+            $('#loadercontainingdiv').addClass("hidden");
+        }
+        else {
+            $("#addSubIndustry").modal("hide");
+            $('.modal').css('display', 'none');
+            $(".modal-backdrop").remove();
+            $('#loadercontainingdiv').addClass("hidden");
+            ShowMessage(BootstrapDialog.TYPE_DANGER, "Error occured");
+            RefreshGrid();
+        }
+
+    }
+
+
+    function ValidateSubIndustryAdd() {
+        debugger;
+        var isValid = true;
+        var SubIndustryName = $("#SubIndustryName", $('#addSubCategoryByAdmin')).val();
+        var industry = $("#hdnIndustry").val();
+        $.ajax({
+            url: $_UrlCheckDuplicateSubIndustry,
+            type: "Get",
+            data: { Indusrtyid: industry, subIndustryName: SubIndustryName },
+            async: false,
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                debugger;
+                if (data == "exists") {
+                    debugger;
+                    isValid = false;
+                    $messageData = $("<span>Information</span>");
+                    BootstrapDialog.show({
+                        title: $messageData,
+                        type: BootstrapDialog.TYPE_DANGER,
+                        message: "SubIndustry already exists",
+                        closable: true,
+                        closeByBackdrop: false,
+                        closeByKeyboard: false,
+                        buttons: [{
+                            label: 'Ok',
+                            action: function (dialogItself) {
+                                dialogItself.close();
+                            }
+                        }]
+                    });                   
+                }
+                else {
+
+                    return isValid;
+                }
+                
+            },
+
+        });
+        return isValid;
+    }
+
+
+    $('.closemodal').click(function () {
+        debugger;
+        var modal = $("#addSubIndustry");
+        modal.modal("hide");
+        $('.modal').css('display', 'none');
+        $('#loadercontainingdiv').addClass("hidden");
+    })
+
+
+ 
+
+</script>

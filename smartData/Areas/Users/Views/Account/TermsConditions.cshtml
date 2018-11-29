@@ -1,0 +1,100 @@
+﻿
+
+
+
+@{
+    ViewBag.Title = "::Welcome::";
+    Layout = "~/Views/Shared/_UserOuterLayout.cshtml";
+}
+
+@section CSSLinks
+    {
+
+}
+<script src="~/Scripts/Jscripts/confirm.js"></script>
+<link href="~/Content/confirm.css" rel="stylesheet" />
+
+<input type="hidden" value="@TempData["Message"]" id="message" />
+
+<section class="main-container fit-assemnt-step-first thankyoubg">
+    <section class="login-box" id="loginForm">
+
+        <h2> <img src="@Url.Content("~/Images/logo.png")"> </h2>
+        @*@{
+                <p style="padding-left:30px;">@TempData["Message"]</p>
+            }*@
+
+        <h2> Terms and Conditions </h2>
+        <p id="termsCOn"></p>
+        <ul>
+
+         
+
+            @*<li>
+        The Intellectual Property disclosure will inform users that the contents, logo and other visual media you created is your property and is protected by copyright laws.
+                </li>
+            <li>
+                A Termination clause will inform that users’ accounts on your website and mobile app or users’ access to your website and mobile (if users can’t have an account with you) can be terminated in case of abuses or at your sole discretion.
+              </li>
+            <li>
+                A Governing Law will inform users which laws govern the agreement. This should the country in which your company is headquartered or the country from which you operate your website and mobile app.
+              </li>*@
+
+            @Html.ActionLink("Accept", "AcceptConditions", "Account", new { AcceptTerms = true }, new {@class="btn btn-danger" })
+            @*@Html.ActionLink("No thanks", "AcceptConditions", "Account", new { AcceptTerms = false }, null)*@
+</ul>
+
+    </section>
+</section>
+
+<script>
+
+  
+    $(document).ready(function () {
+        var reqUrl = $_BaseUrl + '/Users/api/AdminApi/GetTermsandConditionUser';
+        debugger;
+        $.ajax({
+            url: reqUrl,
+            type: "POST",
+            data: { useriD: parseInt($("#hdnUserId").val()), IndustryId: parseInt($("#IndustryId").val()) },
+            success: function (data) {
+                debugger;
+                $("#termsCOn").append(data.rows[0].TermsConditions);
+              
+                //$.each(data.rows, function (k, v) {
+                //    /// do stuff
+                //    debugger
+
+                //    if (v.isActive == true && v.id_Industry == parseInt($("#IndustryId").val())) {
+                //        var termsCondition = v.TermsConditions
+                //        //$('#termsCOn').innerHTML = termsCondition;
+                //        $("#termsCOn").append(termsCondition);
+                //    }
+                //    if ( parseInt($("#IndustryId").val() == 0)) {
+                //        if (v.isActive == true && v.id_Industry ==0) {
+                //            var termsCondition = v.TermsConditions
+                //            //$('#termsCOn').innerHTML = termsCondition;
+                //            $("#termsCOn").append(termsCondition);
+                //        }
+                //    }
+                //});
+            },
+            error: function (result) {
+                debugger;
+                $('.loadercontainingdiv').hide();
+                ShowMessage(BootstrapDialog.TYPE_DANGER, 'Error occured while posting content.');
+            }
+        });
+
+
+        });
+</script>
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.UserID" id="hdnUserId" />
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.IndustryId" id="IndustryId" />
+
+
+@section Scripts {
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryval")
+
+}
+

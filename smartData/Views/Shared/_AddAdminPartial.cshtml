@@ -1,0 +1,135 @@
+﻿'@model smartData.Models.AdminRegisterViewModel
+
+@{
+    ViewBag.Title = "Add Admin";
+    Layout = null;
+}
+<link href="~/Content/css/Font-OpenSans.css" rel="stylesheet" />
+<style>
+    body.modal-open {
+        padding-right: 17px !important;
+    }
+
+    .modal-open {
+    }
+
+        .modal-open .inner-table-filter-fx-PS .columns.columns-right.btn-group.pull-right {
+            position: absolute;
+            right: 39px !important;
+            top: 188px;
+        }
+
+        .modal-open .toprightall .username-ryt-right.dropdown {
+            margin-right: 17px !important;
+        }
+</style>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+
+<script src="~/Scripts/Admin/AddAdminStaff.js"></script>
+
+@using (Ajax.BeginForm("CreateAdmin", "ManageUser", new AjaxOptions { OnBegin = "return Validate()", OnSuccess = "AddAdminSuccess(data)" }, new { @id = "AddAdmin" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="modal-content login-box">
+        <div class="modal-header  modal-header-custom">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title modal-title-custom">Add Account</h4>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>
+                    @Html.Label("First Name", new { @class = "" })
+                    @Html.TextBoxFor(m => m.FirstName, new { @class = "", @autofocus = "autofocus" })
+                    @Html.ValidationMessageFor(m => m.FirstName)
+                </li>
+
+                <li>
+                    @Html.Label("Last Name", new { @class = "" })
+                    @Html.TextBoxFor(m => m.LastName, new { @class = "" })
+                    @Html.ValidationMessageFor(m => m.LastName)
+                </li>
+
+                <li>
+                    @Html.Label("Email", new { @class = "" })
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "" })
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </li>
+
+                @if (@smartData.Common.SessionManager.LoggedInUser.UserType == 3)
+                {
+                    <li>
+                        @Html.Label("User Type", new { @class = "" })
+                        @Html.DropDownListFor(m => m.UserType, new List<SelectListItem>
+                     {
+                        new SelectListItem() {Text = "Select User Type"},
+                        new SelectListItem() {Text = "User", Value="1"},
+                        new SelectListItem() {Text = "Admin", Value="2"},
+                      })
+                        @Html.ValidationMessageFor(m => m.UserType)
+                    </li>
+                }
+                @*else
+                {
+                    <li>
+                        @Html.Label("User Type", new { @class = "" })
+                        @Html.DropDownListFor(m => m.UserType, new List<SelectListItem>
+                     {
+                        new SelectListItem() {Text = "Select User Type"},
+                        new SelectListItem() {Text = "User", Value="1"},
+                      })
+                        @Html.ValidationMessageFor(m => m.UserType)
+                    </li>
+                }*@
+
+                @if (smartData.Common.SessionManager.LoggedInUser.UserType == 3)
+                {
+                    <li>
+                        @Html.Label("Industry Name", new { @class = "" })
+                        @Html.DropDownListFor(m => m.IndustryName, (SelectList)@ViewBag.IndustryName, "Select Industry Name", new { id = "industry" })
+                        @Html.ValidationMessageFor(m => m.IndustryName)
+                    </li>
+                }
+                @*else
+                {
+                    <li>
+                        @Html.Label("Industry", new { @class = "" })
+                        @Html.DropDownListFor(m => m.IndustryName, new List<SelectListItem>
+                     {
+                        new SelectListItem() {Text = "Select Industry Name"},
+                        new SelectListItem() {Text = ViewBag.IndustryName, Value= ViewBag.IndustryId},
+                      }, new { id = "industry" })
+                        @Html.ValidationMessageFor(m => m.IndustryName)
+                    </li>
+                }*@
+
+
+                @*<li>
+                    @Html.LabelFor(m => m.Password, new { @class = "" })
+                    @Html.PasswordFor(m => m.Password, new { @class = "", minlength = "8", maxlength = "12" })
+                    @Html.ValidationMessageFor(m => m.Password)
+                    <span id="result"></span>
+                </li>
+
+                <li>
+                    @Html.LabelFor(m => m.ConfirmPassword, new { @class = "" })
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "", minlength = "8", maxlength = "12" })
+                    @Html.ValidationMessageFor(m => m.ConfirmPassword)
+
+                </li>*@
+
+
+            </ul>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+            <button type="submit" class="btn btn-circlr" tabindex="800">Add</button>
+        </div>
+    </div>
+}
+
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.IndustryId" id="hdnindustryId" />
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.UserType" id="hdnuserType" />

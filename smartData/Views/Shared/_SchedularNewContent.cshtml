@@ -1,0 +1,195 @@
+﻿@model IEnumerable<Core.Domain.smContentLibrary>
+@{
+    ViewBag.Title = "SchedularCalendar";
+
+}
+<script src="~/Scripts/User/SchedulerCalendar.js"></script>
+@*<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">*@ 
+
+<div id='external-events'>
+    <div id='external-events-listing'>
+        <h4>Content Library</h4>
+
+        @{
+
+            //   var list = Model;
+
+            // list = list.OrderByDescending(x => x.CreatedDate).ToList();
+            var d = Model.GroupBy(x => x.Title).Distinct();
+
+            var distinctSocilmedia = (from w in Model select w.SocialMedia).Distinct().ToList();
+            var newmodel = Model.GroupBy(x => x.GroupId.Trim())
+         .Select(group =>
+               new
+               {
+                   Name = group.Key,
+                   DAta = group.OrderByDescending(x => x.CreatedDate)
+               })
+         .OrderByDescending(group => group.DAta.First().CreatedDate);
+
+
+            //   newmodel.OrderByDescending(x=>x.)
+            var fullList = Model.ToList();
+        }
+
+
+        @foreach (var it in newmodel)
+        {
+            <div class='fc-event' style=" ">
+
+                @*var ndd = itm.Select(x => x.SocialMedia).ToList();*@
+
+                @foreach (var item in it.DAta)
+                {
+                    if (item.Title.Length > 25)
+                    {
+                        <div class="rgt-header">
+                            <p style="display:none"> @item.ContentId/</p><p style="display:none"> @item.GroupId/</p><p style="display:none">@Html.Raw(item.Title)/</p><h5>@Html.Raw(item.Title)<span style="float: right; margin-right: 2px;" onclick="remove(this, @item.ContentId)"><i title="Remove Content" class="fa fa-times" aria-hidden="true"></i></span>  </h5>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="rgt-header">
+                            <p style="display:none"> @item.ContentId/</p><p style="display:none"> @item.GroupId/</p> <p style="display:none"> @Html.Raw(item.Title)/</p><h5>@Html.Raw(item.Title) <span style="float: right; margin-right: 2px;" onclick="remove(this, @item.ContentId)"><i title="Remove Content" class="fa fa-times" aria-hidden="true"></i></span>  </h5>
+
+                        </div>
+                    }
+
+
+
+                    var url = string.Empty;
+                    if (!string.IsNullOrEmpty(item.ImageUrl))
+                    {
+
+                        if (Uri.IsWellFormedUriString(item.ImageUrl, UriKind.RelativeOrAbsolute))
+                        {
+                            url = @item.ImageUrl;
+                        }
+                        else
+                        {
+                            url = "http://sm4y.cc" + @item.ImageUrl;
+                        }
+
+                    }
+                    else
+                    {
+                        url = "http://sm4y.cc" + "/Images/noimage.png";
+                    }
+                    //var url = "http://localhost:55038/Images/WallImages/3/social_media_management_tampa.png";
+
+                    <div class="oraganic_img">
+                        <img src=@url class="imageContent image1" />
+                        <div class="overlay1">
+                            <div class="text1">
+                                @{
+                    string desc = string.Empty;
+                                }
+                                @if (item.Description.Length > 40)
+                                {
+                                    //desc = item.Description.Substring(0, 40);
+                                desc=    item.Description;
+                                }
+                                else
+                                {
+                                    desc = item.Description;
+                                }
+                                @Html.Raw(desc)
+                            </div>
+                        </div>
+                    </div>
+                                break;
+                }
+                <div class="text-center">
+                    @*<p style="color: rgb(85, 172, 238);/* BACKGROUND: rgb(85, 172, 238); */PADDING: 10px 5px 0;margin: 15px 0 10px;/* FLOAT: LEFT !IMPORTANT; */font-size:12px;border-top: 1px solid #ccc;">Select social media on which you want to post.</p>*@
+                    @foreach (var item in it.DAta.Select(x => x.SocialMedia).Distinct())
+                    {
+                        if (item == "Facebook")
+                        {
+                            <input type='checkbox' name='social' class="chk" checked="checked" value="Facebook" /><label for='social' style="color: black"> <span class="socialmediaicon icon_social"><i class="fa fa-facebook" aria-hidden="true"></i></span> </label>
+                        }
+                        else if (item == "Twitter")
+                        {
+                            <input type='checkbox' name='social' class="chk" checked="checked" value="Twitter" /><label for='social' style="color: black"><span class="socialmediaicon icon_social"><i class="fa fa-twitter" aria-hidden="true"></i></span></label>
+                        }
+                        else if (item == "LinkedIn")
+                        {
+                            <input type='checkbox' name='social' class="chk" checked="checked" value="LinkedIn" /><label for='social' style="color: black"> <span class="socialmediaicon icon_social"><i class="fa fa-linkedin" aria-hidden="true"></i></span></label>
+                        }
+
+
+                    }
+                    @foreach (var item in it.DAta)
+                    {
+                        if (item.SocialMedia == "Rss")
+                        {
+                            foreach (var social in distinctSocilmedia)
+                            {
+                                if (social == "Facebook")
+                                {
+                                    <input type='checkbox' name='social' class="chk" checked="checked" value="Facebook" /><label for='social' style="color: black"> <span class="socialmediaicon icon_social"><i class="fa fa-facebook" aria-hidden="true"></i></span> </label>
+                                }
+                                else if (social == "Twitter")
+                                {
+                                    <input type='checkbox' name='social' class="chk" checked="checked" value="Twitter" /><label for='social' style="color: black"><span class="socialmediaicon icon_social"><i class="fa fa-twitter" aria-hidden="true"></i></span></label>
+                                }
+                                else if (social == "LinkedIn")
+                                {
+                                    <input type='checkbox' name='social' class="chk" checked="checked" value="LinkedIn" /><label for='social' style="color: black"> <span class="socialmediaicon icon_social"><i class="fa fa-linkedin" aria-hidden="true"></i></span></label>
+                                }
+
+                            }
+
+
+                        }
+                    }
+
+
+
+
+                    }
+                </div>
+                <div class="time">
+                    <p style="display:none; color: rgb(85, 172, 238);">Please select the time for which you want to post.</p>
+                    <div class="input-append bootstrap-timepicker-component custom-time-pick col-sm-6 pddng-lft-0 dv_date_box">
+                        <input type="text" class="timepicker-default input-small time_small dv_time" id="timeDefault">
+                        <span class="add-onon clock">
+                            <i class="icon-time"></i>
+                        </span>
+                    </div>
+
+                    <div>
+                        @{
+            var title = Html.Raw(it.DAta.First().Title.Replace("'", ""));
+                        }
+                        <button class="btn btn-default" onclick="PostNow(this,'@it.DAta.First().ContentId','@title')" style="float:right;">Post Now</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    @if (Model.Count() > 0)
+    {
+        @*<p>
+                <input type='checkbox' id='drop-remove' checked='checked' />
+                <label for='drop-remove'>remove after drop</label>
+            </p>*@
+    }
+    else
+    {
+        <p style="text-align: center"> No Records Found </p>
+        <span>To select preferences , <a style="color: blue" href="@Url.Action("ManagePreference", "Preference", new { @area = "Users" })">click here</a>  </span>
+    }
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="~/Scripts/User/SchedulerCalendar.js"></script>

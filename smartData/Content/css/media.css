@@ -1,0 +1,187 @@
+@media screen and (min-width: 1500px) {#watermarkConfig{ margin-left:30%;}
+@media screen and (min-width: 1400px) {
+    .container { max-width: 100% !important;}
+	
+}
+
+@media (min-width: 1200px) {
+    .container { max-width: 1208px;}
+    .dv-lt-col{ margin-top:0px;}
+}
+@media screen and (max-width: 1100px) {
+	.createpost_content_btm_rt{ width:35%;}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+}
+ 
+@media screen and (max-width: 992px) {
+	.box_top_prtclr{margin-bottom:20px;}
+    .mg-tp{ margin-top:0px !important;}
+}
+
+@media screen and (max-width: 940px) {
+	.createpost_content_btm_rt {
+    width: 38%;
+}
+.feeds_whole_mid{ width:60%;}
+.feeds_whole_rt {
+    width: 26%; line-height:11px;
+}
+.feeds_whole_rt i{ font-size:11px;}
+}
+@media (min-width: 768px) and (max-width:850px) {
+    .main-margin{ margin-left:8%;}
+}
+@media screen and (min-width: 768px) {
+    #editContentRss .modal-dialog, #addContent .modal-dialog, #editContent .modal-dialog { width:720px; margin-top:-20px !important;}
+    .container.main-margin{ max-width:100%;}
+}
+@media screen and (max-width: 767px) {
+    .jumbotron.new-frm{
+    width: auto;
+    margin: 0 auto;
+    clear:both;
+}
+   
+    
+    .btm-txt{margin: 0 auto;}
+    .dz-image{ text-align:left;}
+.margintop30{ margin-top:10px;}
+.createpost{ margin-top:20px;}
+.main-margin{ margin-left:10%;}
+.main-wrap{ padding-top:100px !important;}
+#external-events{ width:100% !important; height:auto !important; margin:0 auto; display:inline-block;}
+.add-onon.clock{    position: absolute;
+    top: 12px;
+    right: 13px;
+    color: black;}
+.dv_date_box{ width:106px; float:left;}
+
+.add-onon.clock {
+       right:-10px;
+    }
+.manage-content span.social-icon-tb{ margin-left:-80px;}
+}
+
+
+@media screen and (max-width: 650px) {
+
+	.logo {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+.toprightall {
+    float: none;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-top: 3px;
+    text-align: center;
+    width: 65%;
+}
+.topright-nav {
+    display: inline-block;
+    float: right;
+    min-width: 150px;
+    text-align: right;
+}
+.message_notification {
+    display: inline-block;
+    float: left;
+}
+nav.main-menu{ padding-top:100px;}
+.scrollable {
+    padding-top: 110px;
+}
+.login-box { position:relative;}
+}
+
+@media screen and (max-width: 570px) {
+	.schduleposts .col-xs-6{ width:100%;}
+	.textmessage {
+    border-left: medium none;
+    border-top: 2px solid #e9e9e9;
+    color: #a2a1a1;
+    float: left;
+    margin-top: 10px;
+    min-height: 70px;
+    padding-left: 0;
+    padding-top: 5px;
+    width: 100%;
+}
+    .dv_time {
+            width: 110px; float:left;
+        }
+.socialmediaall .col-xs-6{ width:100%;}
+.createpost_content_btm_lt , .createpost_content_btm_rt{
+    width: 100%;
+}
+.login-box{ width:98%}
+.custom-table th{ font-size:11px !important;}
+}
+@media screen and (max-width: 520px) {
+    #pluginConfig .inputLarge{ width:210px;}
+}
+@media (min-width: 481px) and (max-width:767px) {
+    #external-events{ width:60% !important; height:auto !important; margin:20% !important; display:inline-block;}
+}
+@media screen and (max-width: 480px) {
+	.no-touch nav.main-menu:hover, nav.main-menu.expanded {
+    overflow: visible;
+    width: 60px;
+}
+    #external-events{ width:100% !important; height:auto !important; margin:0 auto; display:inline-block;}
+nav.main-menu .nav-text , nav.main-menu .icon-angle-right, nav.main-menu  .icon-angle-down{ display:none;}
+nav.main-menu li ul{ right:-18px;}
+.login-box h2{ font-size:20px;}
+.login-box ul li label{ font-size:16px;}
+.toprightall {
+    width: 80%;
+}
+.login-box h2 img{ max-width:90%;}
+#socialmedia .col-xs-6{width:100%;margin-bottom:10px;}
+   .socialmediaall_manage  .box_top_prtclr {
+        height: 78px;
+        min-width: 78px;
+    }
+       .socialmediaall_manage  .box_top_prtclr i {
+            font-size: 40px;
+        }
+    .socialmediaall_manage .commohead {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+.scrollable{ padding-top:95px;}
+.feeds_whole_rt {
+    float: left;
+    padding-left: 28px;
+    padding-top: 0;
+    text-align: left;
+    width: 100%;
+}
+.feeds_whole_mid{ width:82%;}
+.login-box h2{ font-size:15px;}
+.login-box ul li.terms-cndtns a{ width:100%;}
+.fit-assemnt-step-first input[type="submit"] {
+    margin: 20px auto 0;
+}
+.login-box ul li label {
+    font-size: 14px;
+}
+.login-box ul li input[type="text"], .login-box ul li input[type="email"], .login-box ul li input[type="password"], .login-box ul li select {
+    padding: 6px 6px;
+}
+.toprightall {
+    width: 94%;
+}
+.main-wrap-bttm{height:430px !important;}
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .dv_date_box{width:105px !important;}
+}

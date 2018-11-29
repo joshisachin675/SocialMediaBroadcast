@@ -1,0 +1,27 @@
+﻿@model Core.Domain.UserInsert
+<div class="col-md-6">
+    @{
+        ViewBag.Title = "RoleList";
+        WebGrid grid = new WebGrid(source: Model.RolesList, canPage: false);
+    }
+    <div class="divscroll col-md-6">
+     @grid.GetHtml(
+                   tableStyle: "gridtable",
+                   htmlAttributes: new { id = "checkableGrid" },
+                   columns: grid.Columns
+                   (
+                    grid.Column(
+                    format: 
+                    @<text> 
+                    <input type="checkbox" id="@item.RoleId" value="@item.RoleId" title="RoleName" alt="RoleName" name="ids" onclick="javascript: Selectcheckbox(this);" />
+                    <label class="label1" for="@item.RoleId">@item.RoleName </label> 
+                    </text>,header: "{checkall}"
+                    )
+                    )
+                    )
+    </div>
+    <input id="HiddenDeleteIds" type="hidden" />
+    <input id="HiddenUserId" type="hidden" />
+</div>
+@System.Web.Optimization.Scripts.Render("~/scripts/js/usersRoleList.js")
+@System.Web.Optimization.Scripts.Render("~/scripts/js/users.js")

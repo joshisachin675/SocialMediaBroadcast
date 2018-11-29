@@ -1,0 +1,310 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_userinnerlayout.cshtml";
+}
+<link href="~/Content/css/watermark.css" rel="stylesheet" />
+<script src="~/Scripts/Jscripts/main.js"></script>
+<script src="~/Scripts/Jscripts/watermark.js"></script>
+<script src="~/Scripts/Jscripts/jquery.watermark.min.js"></script>
+<script src="~/Scripts/Jscripts/jquery.fontselect.min.js"></script>
+<link href="~/Content/css/fontselect.css" rel="stylesheet" />
+<script src="~/Scripts/dropzone/dropzone.js"></script>
+<link href="~/Scripts/dropzone/basic.css" rel="stylesheet" />
+<link href="~/Scripts/dropzone/dropzone.css" rel="stylesheet" />
+<link href="~/Content/jquery.qtip.css" rel="stylesheet" />
+<script src="~/Scripts/Jscripts/jquery.qtip.js"></script>
+
+
+<style>
+    .dz-image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #pluginConfig {
+        background: white;
+        padding: 15px;
+        margin-top: 16px;
+    }
+
+    .imageConfig {
+        border: 0px;
+        padding: 0 12px;
+        margin-bottom: 20px;
+        background: #fff;
+        padding: 0;
+    }
+
+    #pluginConfig {
+        background: white;
+        padding: 36px 28px;
+        margin-top: 16px;
+    }
+
+    p > label:first-child ~ label {
+        margin-left: 0;
+    }
+
+    #pluginConfig {
+        margin-top: 0;
+    }
+
+    .dropzone .dz-preview.dz-error .dz-error-message {
+        margin-top: 40px;
+    }
+
+    #waterrmark > img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .font-select > a {
+        border-radius: 0;
+    }
+
+        .font-select > a div {
+            border-radius: 0;
+        }
+
+    .buttons.water_buttons {
+        margin-right: 25px;
+    }
+</style>
+
+
+<div class="row">
+    <div class="col-sm-7 col-sm-offset-3">
+        <section class="wrapper scrollable">
+            <div class="form-title">
+                <h3>Manage Watermark</h3>
+            </div>
+
+            <div id="pluginConfig">
+                <div class="imageConfig">
+                    <form id="watermarkConfig">
+                        <div id="logoImg">
+                            <span style="position: relative; font-size: 16px; font-weight: bold; color: #333 ;margin-bottom:20px;font-weight:400;margin-bottom:30px;">Logo Image:</span>
+
+                            <div class="clearfix"></div>
+                            <div id="uploadImage" class="UploadedImage" style="width: 585px; margin-left: 0;">
+                                <span id="uplodedImage"></span>
+                            </div>
+                            <div class="jumbotron" style="background: transparent none repeat scroll 0% 0%; border: 2px dashed rgb(223, 223, 223); width: 360px; font-size: 12px; display: inline-block; margin-left: 226px;">
+                                <div class="nest" id="DropZoneClose">
+                                    <div class="body-nest" id="DropZone">
+                                        <div id="myDropZone" class="dropzone dz-clickable" style="background: none;border: none;">
+                                            <div class="dz-default dz-message"><span>Drop files here to upload</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p style=" margin-left: 260px; margin-top: -28px; margin-bottom: 27px; font-size: 11px; font-style: italic; color: gray;">  <span style="color:red">*</span> Logo size should be 100*100 </p>
+                            <p style="text-align: center; font-size: large; font-style: italic; color: gray"> or </p>
+                        </div>
+
+                        @*<label>
+                                <span>Image Path:</span>
+                                <input type="file" placeholder="" name="path" id="path" class="inputLarge">
+                            </label>*@
+
+                        <p>
+                            <label>
+                                <span class="water_label">Text:</span>
+                                <input type="text" placeholder="Enter text" name="text" id="text" class="inputLarge water_mark">
+                            </label>
+                        </p>
+                        <p id="textConfig" style="display: block;">
+                            @*<label>
+                                    <span>textWidth:</span>
+                                    <input type="number" name="textWidth" id="textWidth" class="inputSmall" value="130">
+                                </label>*@
+                            <label>
+                                <span class="water_label">Text Size:</span>
+                                <input type="number" name="textSize" id="textSize" class="inputLarge water_mark" value="12">
+                            </label>
+                            @*</p>
+                                <p>*@
+                            <label>
+                                <span class="water_label">Text Color:</span>
+                                <input type="color" name="textColor" id="textColor" class="inputSmall water_mark" value="#ffffff">
+                            </label>
+                            @*<label>
+                                    textBg:
+                                    <input type="color" name="textBg" id="textBg" class="inputSmall" value="#000000">
+                                </label>*@
+                        </p>
+
+                        <p id="textConfigs" style="display: block;">
+                            <label>
+                                <span class="water_label">Font-Family:</span>
+                                <input id="font" type="text" class="inputSmall water_mark" />
+                            </label>
+                        </p>
+
+                        <p> </p>
+                        <p>
+                            <label>
+                                <span class="water_label">Position:</span>
+                                <select name="gravity" id="gravity" class="inputLarge water_mark">
+                                    <option value="nw">Upper Right</option>
+                                    @*<option value="n">North</option>*@
+                                    <option value="ne" selected="">Upper Left</option>
+                                    @*<option value="w">West</option>
+                                        <option value="e">East</option>*@
+                                    <option value="sw">Lower Right</option>
+                                    @*<option value="s">South</option>*@
+                                    <option value="se">Lower Left</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <span class="water_label">Opacity:</span>
+                                <input type="number" value="0.7" min="0" max="1" step="0.1" id="opacity" name="opacity" class="inputLarge water_mark">
+                            </label>
+                        </p>
+                        @*<p>
+                                <label>
+                                    <span>margin:</span>
+                                    <input type="number" value="10" id="margin" name="margin" class="inputSmall">
+                                </label>
+                            </p>*@
+                        @*<p>
+                                <label>
+                                    <span>outputWidth:</span>
+                                    <input type="text" value="auto" id="outputWidth" name="outputWidth" class="inputSmall">
+                                </label>
+                                <label>
+                                    outputHeight:
+                                    <input type="text" value="auto" id="outputHeight" name="outputHeight" class="inputSmall">
+                                </label>
+                                <label>
+                                    outputType:
+                                    <select name="outputType" id="outputType">
+                                        <option value="jpeg" selected="">jpeg</option>
+                                        <option value="png">png</option>
+                                        <option value="webp">webp</option>
+                                    </select>
+                                </label>
+                            </p>*@
+                        <p class="buttons water_buttons">
+                            <input type="reset" value="Reset">
+                            <input type="button" value="Preview" id="sub">
+                            <input type="button" id="saveWaterMark" value="Save" />
+                        </p>
+                    </form>
+                </div>
+
+                <div id="withWatermark" class="imageWrap">
+                    <div id="waterrmark"></div>
+                    @*<img id="imageDemo" src="~/Images/notification.png" />*@
+                </div>
+            </div>
+        </section>
+        <input type="hidden" id="hdnUserId" value="@smartData.Common.SessionManager.LoggedInUser.UserID" />
+    </div>
+</div>
+
+
+<script>
+
+    $(function () {
+        var urllogo = $_saveWtaermakLogo;
+        $("div#myDropZone").dropzone({
+            url: urllogo,
+            //addRemoveLinks: true
+        });
+
+
+        $('.jumbotron').qtip({
+            content: "Please upload only .jpg, .png, .jpeg files.",
+            show: 'mouseover',
+            hide: 'mouseout'
+        });
+
+    });
+
+
+    var minImageWidth = 100,
+    minImageHeight = 100;
+    Dropzone.options.myDropZone = {
+        maxFiles: 1,
+        maxFilesize: 2,
+        acceptedFiles: ".jpeg,.jpg,.png,.gif",
+        init: function () {
+            // debugger;
+            var self = this;
+            // config self.options.addRemoveLinks = true;
+            self.options.dictRemoveFile = "Delete";
+            //New file added
+            self.on("addedfile", function (file) {
+                debugger;
+                var count = self.files.length;
+                //  alert(count);
+                // alert(self.maxFiles);
+                if (count > 1) {
+                    alert("You cannot upload more than 1 files");
+                    this.removeFile(file);
+                    return false;
+                }
+            });
+
+            this.on("thumbnail", function (file) {
+                debugger;
+                if (file.width == minImageWidth || file.height == minImageHeight) {
+                    file.acceptDimensions();
+                }
+                else {
+                    file.rejectDimensions();
+
+                }
+            });
+
+            this.on("complete", function (data) {
+                debugger;
+                $('#textConfig').slideUp();
+                $('#textConfigs').slideUp();
+                $('#text').prop('disabled', true);
+                $('#text').val('');
+            });
+
+
+            this.on("addedfile", function (file) {
+                debugger;
+                $('.UploadedImage img').remove();
+                // Create the remove button
+                var removeButton = Dropzone.createElement("<button id='removeImage'>Remove file</button>");
+
+                // Capture the Dropzone instance as closure.
+                var _this = this;
+                removeButton.addEventListener("click", function (e) {
+                    // Make sure the button click doesn't submit the form:
+                    e.preventDefault();
+                    e.stopPropagation();
+                    // Remove the file preview.
+                    _this.removeFile(file);
+                    $('#textConfig').slideDown();
+                    $('#textConfigs').slideDown();
+                    $('#text').prop('disabled', false);
+                    // If you want to the delete the file on the server as well,
+                    // you can do the AJAX request here.
+                });
+                // Add the button to the file preview element.
+                file.previewElement.appendChild(removeButton);
+                $('#textConfig').slideUp();
+                $('#textConfig').slideUp();
+                $('#text').prop('disabled', true);
+                $('#text').val('');
+            });
+        },
+        accept: function (file, done) {
+            debugger;
+            file.acceptDimensions = done;
+            file.rejectDimensions = function () { done("Please upload image with 100*100 px"); };
+        }
+    };
+
+
+
+</script>
+

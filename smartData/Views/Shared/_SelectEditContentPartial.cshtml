@@ -1,0 +1,41 @@
+﻿@model Core.Domain.smContentLibrary
+
+@{
+    ViewBag.Title = "Edit Content";
+    Layout = null;
+}
+
+<script src="~/Scripts/JqGrid/jquery-ui.js"></script>
+<link href="@Url.Content("~/Content/jquery.jqGrid/jquery-ui.css")" rel="stylesheet" />
+
+
+@if (TempData["img"] == "True")
+{
+    TempData["img"] = "False";
+}
+else
+{
+    TempData["img"] = "False";
+}
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content add-modal-change">
+        <div class="modal-header  modal-header-custom">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title modal-title-custom">Edit Content</h4>
+        </div>
+        <div class="modal-body">
+         <div id="EditContentSelect">
+
+         </div>
+            
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+            @*<button type="button" class="btn btn-circlr" id="btnEditRssContent" tabindex="800">Add</button>*@
+        </div>
+    </div>
+</div>
+<input type="hidden" id="contentId" />
+
+

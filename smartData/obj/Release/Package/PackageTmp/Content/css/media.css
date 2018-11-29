@@ -1,0 +1,137 @@
+@media screen and (max-width: 1220px) {
+	
+}
+
+@media screen and (max-width: 1100px) {
+	.createpost_content_btm_rt{ width:35%;}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 992px) {
+	.box_top_prtclr{margin-bottom:20px;}
+}
+
+@media screen and (max-width: 940px) {
+	.createpost_content_btm_rt {
+    width: 38%;
+}
+.feeds_whole_mid{ width:60%;}
+.feeds_whole_rt {
+    width: 26%; line-height:11px;
+}
+.feeds_whole_rt i{ font-size:11px;}
+}
+
+@media screen and (max-width: 767px) {
+.margintop30{ margin-top:10px;}
+.createpost{ margin-top:20px;}
+}
+
+
+@media screen and (max-width: 650px) {
+	.logo {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+.toprightall {
+    float: none;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-top: 3px;
+    text-align: center;
+    width: 65%;
+}
+.topright-nav {
+    display: inline-block;
+    float: right;
+    min-width: 150px;
+    text-align: right;
+}
+.message_notification {
+    display: inline-block;
+    float: left;
+}
+nav.main-menu{ padding-top:100px;}
+.scrollable {
+    padding-top: 110px;
+}
+.login-box { position:relative;}
+}
+
+@media screen and (max-width: 570px) {
+	.schduleposts .col-xs-6{ width:100%;}
+	.textmessage {
+    border-left: medium none;
+    border-top: 2px solid #e9e9e9;
+    color: #a2a1a1;
+    float: left;
+    margin-top: 10px;
+    min-height: 70px;
+    padding-left: 0;
+    padding-top: 5px;
+    width: 100%;
+}
+.socialmediaall .col-xs-6{ width:100%;}
+.createpost_content_btm_lt , .createpost_content_btm_rt{
+    width: 100%;
+}
+.login-box{ width:98%}
+}
+
+@media screen and (max-width: 480px) {
+	.no-touch nav.main-menu:hover, nav.main-menu.expanded {
+    overflow: visible;
+    width: 60px;
+}
+nav.main-menu .nav-text , nav.main-menu .icon-angle-right, nav.main-menu  .icon-angle-down{ display:none;}
+nav.main-menu li ul{ right:-18px;}
+.login-box h2{ font-size:20px;}
+.login-box ul li label{ font-size:16px;}
+.toprightall {
+    width: 80%;
+}
+.login-box h2 img{ max-width:90%;}
+#socialmedia .col-xs-6{width:100%;margin-bottom:10px;}
+   .socialmediaall_manage  .box_top_prtclr {
+        height: 78px;
+        min-width: 78px;
+    }
+       .socialmediaall_manage  .box_top_prtclr i {
+            font-size: 40px;
+        }
+    .socialmediaall_manage .commohead {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+.scrollable{ padding-top:95px;}
+.feeds_whole_rt {
+    float: left;
+    padding-left: 28px;
+    padding-top: 0;
+    text-align: left;
+    width: 100%;
+}
+.feeds_whole_mid{ width:82%;}
+.login-box h2{ font-size:15px;}
+.login-box ul li.terms-cndtns a{ width:100%;}
+.fit-assemnt-step-first input[type="submit"] {
+    margin: 20px auto 0;
+}
+.login-box ul li label {
+    font-size: 14px;
+}
+.login-box ul li input[type="text"], .login-box ul li input[type="email"], .login-box ul li input[type="password"], .login-box ul li select {
+    padding: 6px 20px;
+}
+.toprightall {
+    width: 94%;
+}
+}

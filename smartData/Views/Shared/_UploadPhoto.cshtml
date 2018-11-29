@@ -1,0 +1,121 @@
+﻿
+@model Core.Domain.Users
+
+@{
+    ViewBag.Title = "Upload Photo";
+    Layout = null;
+}
+
+
+<style>
+    .indus {
+        width: 172px !important;
+    }
+
+    .subindus {
+        width: 130% !important;
+        margin-left: 100px;
+    }
+
+    .dz-error-message {
+        margin-top: 22px;
+    }
+
+    .divtxt {
+        padding-right: 0;
+    }
+
+    #urlBind {
+        margin-bottom: 15px;
+    }
+
+        #urlBind .btn {
+            padding: 9.5px 12px;
+            border-radius: 0px;
+        }
+
+        #urlBind #fetch .btn {
+            padding: 10.5px 12px;
+            border-radius: 0px;
+        }
+
+        #urlBind .col-md-8 input.form-control {
+            padding: 10px 12px;
+            border-radius: 0px;
+            height: 41px;
+        }
+
+        #urlBind .col-md-2.divtxt .btn {
+            background: #969695;
+            color: #fff;
+        }
+
+        #urlBind #fetch.col-md-2.divtxt .btn {
+            background: #000;
+            color: #fff;
+        }
+
+        #urlBind #fetch {
+            padding-left: 5px !important;
+        }
+
+    #add-content h5 {
+        font-size: 17px;
+        font-weight: 100 !important;
+    }
+
+    .form-control {
+        box-shadow: none !important;
+    }
+    .drp_frm {
+        padding: 30px !important;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 20px;
+        color: rgb(183,183,183);
+        border: 2px dashed #ccc;
+        margin: 20px 0 0;
+        background: none;
+    }
+</style>
+
+@*@using (Ajax.BeginForm("PostContent", "Home", new AjaxOptions { HttpMethod = "post", InsertionMode = InsertionMode.Replace, OnSuccess = "AddContentSuccess(data)" }, new { @id = "AddContent" }))
+    {*@
+<div class="modal-dialog" role="document" id="add-content">
+    <div class="modal-content add-modal-change">
+        <div class="modal-header  modal-header-custom">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h5 class="modal-title modal-title-custom">Upload Photo</h5>
+        </div>
+
+        <div class="modal-body">
+            <div class="col-md-12" id="">
+                <label><b>Photo</b> </label>
+            
+                <div id="uploadImage" class="UploadedImage">
+                    <span id="uplodedImage"></span>
+                </div>
+                
+                    <form action="@Url.Action("SaveUploadedFileforProfile", "Home")" method="post" enctype="multipart/form-data" class="dropzone drp_frm" id="dropzoneForm" style="">
+                        <div class="fallback">
+                            <input name="file" type="file" multiple id="fileUpload" />
+                            <input type="submit" value="Upload" />
+                        </div>
+                    </form>
+                
+            </div>
+
+            <br />
+            <div id="errorPic"></div>
+            <span>Recommended photo size 50px x 50px</span>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-circlr" data-dismiss="modal" id="" tabindex="900">Close</button>
+            <button type="button" @*id="add_content" *@ class="btn btn-circlr" id="savePhoto"  tabindex="800">Save Photo</button>
+        </div>
+    </div>
+</div>
+
+
+

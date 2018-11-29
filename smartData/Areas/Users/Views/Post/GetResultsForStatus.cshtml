@@ -1,0 +1,74 @@
+﻿@model Core.Domain.smPost
+
+<html>
+<head>
+    <title>
+
+    </title>
+    <link rel="canonical" href="">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta property="og:title" content="@Model.Name" />
+    <meta property="og:site_name" content="Social Media" />
+    <meta property="og:url" content="@Model.Url" />
+    <meta property="og:description" content="@Model.Description" />
+    <meta property="og:type" content="website" />
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+</head>
+<body>
+
+   <script>
+       $(document).ready(function () {
+           debugger
+           var PostID  =  @Model.PostId
+           Encrypt(PostID.toString());
+           function Encrypt(str) {
+               debugger;
+               if (!str) str = "";
+               str = (str == "undefined" || str == "null") ? "" : str;
+               try {
+                   var key = 146;
+                   var pos = 0;
+                   ostr = '';
+                   while (pos < str.length) {
+                       ostr = ostr + String.fromCharCode(str.charCodeAt(pos) ^ key);
+                       pos += 1;
+                   }
+
+                   return window.location.href = "/default.asp?data="+ostr+"";
+                  
+               } catch (ex) {
+                   return '';
+               }
+           }
+
+           //function Decrypt(str) {
+           //    if (!str) str = "";
+           //    str = (str == "undefined" || str == "null") ? "" : str;
+           //    try {
+           //        var key = 146;
+           //        var pos = 0;
+           //        ostr = '';
+           //        while (pos < str.length) {
+           //            ostr = ostr + String.fromCharCode(key ^ str.charCodeAt(pos));
+           //            pos += 1;
+           //        }
+
+           //        return ostr;
+           //    } catch (ex) {
+           //        return '';
+           //    }
+           //}
+
+      //     window.location.href = "/default.asp?data=ostr";
+     
+
+      
+       })
+   </script>
+   
+</body>
+</html>
+

@@ -1,0 +1,506 @@
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.dll
+E:\Official\MSFrameworkLatest\HealthFramework_2\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\CoreEntities.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.Razor.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\CoreEntities.pdb
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.Razor.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.dll
+E:\Official\MSFrameworkLatest\HCMerged\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Work\HealthFramework\HealthFramework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Work\HealthFrameworkWithBasicMenus\HealthFrameworkWithBasicMenus\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Day User\DeepakD\Projects\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\AppInterfaces.pdb
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\CoreEntities.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.Razor.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\CoreEntities.pdb
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.Razor.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.dll
+C:\Users\rohitg\Downloads\BasicFramework_WithDBScript\Basic Framework\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcast\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\Facebook.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\Facebook.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Dayuser\Pooja\Official\SocilaMediaNew\SocialMediaBroadcast\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\Facebook.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\Facebook.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Dayuser\Pooja\Official\10jan2017\SocialMediaBroadcast\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SocialMediaBroadcastSVN\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\Facebook.dll
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\Facebook.xml
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\LatestCode\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\LatestCode\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Dayuser\LatestCode\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Dayuser\LatestCode\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\Facebook.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\Facebook.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Dayuser\Backup1-12-2016\LatestCode\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\Facebook.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\Facebook.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Dayuser\Rohit Grover\Official\Project\Source Code\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\Facebook.dll
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\Facebook.xml
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Dayuser\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Dayuser\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.pdb
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.pdb
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.dll
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.dll
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\Facebook.dll
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.dll
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.pdb
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.xml
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\Facebook.xml
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.xml
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.dll
+C:\Users\shilpap\Desktop\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.pdb
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.pdb
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\Facebook.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.pdb
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\Facebook.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.dll
+\\sdd-007\sdd_shared\shilpa\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\SVNSocial\AppInterfaces\bin\Debug\Facebook.dll
+D:\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\SVNSocial\AppInterfaces\bin\Debug\Facebook.xml
+D:\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.pdb
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.pdb
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\Facebook.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.pdb
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\Facebook.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.dll
+C:\Users\ishan\Desktop\dlls\code\SVNSocial\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\Facebook.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.pdb
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\Facebook.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\Newtonsoft.Json.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.dll
+C:\Users\poojad\Desktop\svnsocial\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.pdb
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\AppInterfaces.pdb
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\Facebook.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\Newtonsoft.Json.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\CoreEntities.pdb
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\Facebook.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\Newtonsoft.Json.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\System.Web.Razor.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.dll
+D:\Dayuser\Sachin\Projects\SVNSocial\AppInterfaces\obj\Debug\AppInterfaces.pdb
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\AppInterfaces.dll.config
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\AppInterfaces.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\AppInterfaces.pdb
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\CoreEntities.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\EntityFramework.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\Facebook.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\System.Web.Mvc.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\System.Web.Razor.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\System.Web.WebPages.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\CoreEntities.pdb
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\EntityFramework.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\Facebook.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\System.Web.Mvc.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\System.Web.Razor.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\System.Web.WebPages.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\obj\Debug\AppInterfaces.csprojResolveAssemblyReference.cache
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\obj\Debug\AppInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\obj\Debug\AppInterfaces.csproj.CopyComplete
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\obj\Debug\AppInterfaces.dll
+C:\Users\sachin.joshi\Downloads\SocialMediaFuel Latest Code\SocialMediaFuel\AppInterfaces\obj\Debug\AppInterfaces.pdb

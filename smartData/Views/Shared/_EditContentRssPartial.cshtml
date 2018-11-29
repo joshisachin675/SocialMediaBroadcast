@@ -1,0 +1,492 @@
+﻿@model Core.Domain.smContentLibrary
+
+@{
+    ViewBag.Title = "Edit Content";
+    Layout = null;
+}
+
+<script src="~/Scripts/JqGrid/jquery-ui.js"></script>
+<link href="@Url.Content("~/Content/jquery.jqGrid/jquery-ui.css")" rel="stylesheet" />
+
+<style>
+    .indus {
+        width: 172px !important;
+    }
+
+    .subindus {
+        width: 130% !important;
+        margin-left: 100px;
+    }
+
+    #charNumEditRssfacebook {
+        clear: both;
+    }
+
+    #charNumEditRssfacebook {
+        bottom: 29px;
+        clear: both;
+        color: #777;
+        font-size: 11px;
+        font-style: italic;
+        left: 375px;
+        position: absolute;
+    }
+
+
+    #charNumEditRsstwiter {
+        clear: both;
+    }
+
+    #charNumEditRsstwiter {
+        bottom: 29px;
+        clear: both;
+        color: #777;
+        font-size: 11px;
+        font-style: italic;
+        left: 375px;
+        position: absolute;
+    }
+
+
+    #charNumEditRssLinkedIn {
+        clear: both;
+    }
+
+    #charNumEditRssLinkedIn {
+        bottom: 29px;
+        clear: both;
+        color: #777;
+        font-size: 11px;
+        font-style: italic;
+        left: 375px;
+        position: absolute;
+    }
+
+    .dz-error-message {
+        margin-top: 22px;
+    }
+
+
+</style>
+@if (TempData["img"] == "True")
+{
+    TempData["img"] = "False";
+}
+else
+{
+    TempData["img"] = "False";
+}
+
+<div class="modal-dialog" role="document" id="edit-content">
+    <div class="modal-content add-modal-change">
+        <div class="modal-header  modal-header-custom">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title modal-title-custom">Edit Content</h4>
+        </div>
+        <div class="modal-body">
+
+            @*<div class="social-media-wrap clearfix">
+
+                <ul class="drop-fix">
+                    @if (smartData.Common.SessionManager.LoggedInUser.UserType == 3)
+                    {
+                        <li class="clearfix">@Html.DropDownListFor(m => m.categoryList, new SelectList(Model.categoryList, "Value", "Text"), "Select Industry", new { id = "industry", @class = "form-control", @style = "width: 30%;", @autocomplete = "off" })</li>
+                    }
+                    else
+                    {
+                        <li class="clearfix">@Html.DropDownListFor(m => m.CategoryId, (SelectList)@ViewBag.IndustryName, "Select Industry Name", new { id = "industry", @class = "form-control", @style = "width: 30%;" })</li>
+                    }
+                    <li class="clearfix"><select id="subIndustry" class="form-control" style="width:30%"><option>Select SubIndustry</option></select>     </li>
+                    <li class="clearfix">
+                        @Html.DropDownList("Social Media", new List<SelectListItem>
+                     {
+                        new SelectListItem() {Text = "Select Social Media---", Value="0"},
+                        new SelectListItem() {Text = "Facebook", Value="Facebook"},
+                        new SelectListItem() {Text = "LinkedIn", Value="LinkedIn"},
+                         new SelectListItem() {Text = "Twitter", Value="Twitter"},
+                        new SelectListItem() {Text = "Google+", Value="Google"}
+                      }, new { @class = "form-control" })
+                    </li>
+                </ul>
+                <textarea cols="50" rows="15" id="txtEditMsgContent" style="margin-top: 10px;" placeholder="Please write content to post" onkeyup="countCharEdit(this)"></textarea>
+                <div id="charNumEdit" style="position: initial; margin-top: -15px; margin-bottom: 18px; color: #777; font-size: 11px; font-style: italic; "></div>
+                <div id="uploadImage" class="UploadedImage">
+                    <span id="uplodedImage">By uploading new image your uploaded image will be removed</span>
+                </div>
+                <div class="jumbotron">
+                    <form action="@Url.Action("SaveUploadedFile", "ManageContent")" method="post" enctype="multipart/form-data" class="dropzone" id="dropzoneForm" style="width: 50px;background: none; border: none;">
+                        <div class="fallback">
+                            <input name="file" type="file" multiple id="fileUpload" />
+                            <input type="submit" value="Upload" />
+                        </div>
+                    </form>
+                </div>
+                <input type="text" id="EditUrl" placeholder="Please Add link" />
+                @*<ul class="clearfix">
+                        <li><input type="checkbox" data-id="1" id="editChk1" class="EditSocialMedia" disabled /> Facebook</li>
+                        <li><input type="checkbox" data-id="2" id="editChk2" class="EditSocialMedia" disabled /> LinkedIn</li>
+                        <li><input type="checkbox" data-id="3" id="editChk3" class="EditSocialMedia" disabled /> Twitter</li>
+                        <li><input type="checkbox" data-id="4" id="editChk4" class="EditSocialMedia" disabled /> GooglePlus</li>
+                    </ul>*@
+            @*<input type="text" id="txtEditKeywords" data-role="tagsinput" placeholder="Please enter comma seperated keywords" />*@
+            @*</div>*@
+
+            <div id="tabsRss" class="drop-fix ">
+                <ul>
+                    <li><a href="#facebook-tab">FaceBook</a></li>
+                    <li><a href="#twitter-tab">Twitter</a></li>
+                    <li><a href="#LinkedIn-tab">LinkedIn</a></li>
+                </ul>
+                <div id="facebook-tab">
+                    <div class="social-media-wrap clearfix" id="fbdiv">
+                        <ul class="drop-fix tabs">
+                            @if (smartData.Common.SessionManager.LoggedInUser.UserType == 3)
+                            {
+                                <li class="clearfix">@Html.DropDownListFor(m => m.categoryList, new SelectList(Model.categoryList, "Value", "Text"), "Select Industry", new { id = "industryeditfacebook", @class = "indus form-control", @style = "width: 30%;" })</li>
+                            }
+                            else
+                            {
+                                @*<li class="clearfix">@Html.DropDownListFor(m => m.CategoryId, (SelectList)@ViewBag.IndustryName, "Select Industry", new { id = "industryeditfacebook", @class = "indus form-control", @style = "width: 30%;" })</li>*@
+                                <li class="clearfix">
+                                    @Html.DropDownList("industryeditfacebook", new List<SelectListItem>
+                     {
+                        new SelectListItem() {Text = "Select Industry", Value="0"},
+                        new SelectListItem() {Text = ViewBag.IndustryName, Value= ViewBag.IndustryId},
+                      }, new { @class = "form-control", id = "industryeditfacebook" })
+                                </li>
+                            }
+                            <li class="clearfix"><select id="stateeditfacebook" class="subindus form-control" style="width:30%"><option>Select SubIndustry</option></select></li>
+                            @*<li class="clearfix">
+                       @Html.DropDownList("Social Media", new List<SelectListItem>
+            {
+               new SelectListItem() {Text = "Select Social Media---", Value="0"},
+               new SelectListItem() {Text = "Facebook", Value="Facebook"},
+               //new SelectListItem() {Text = "LinkedIn", Value="LinkedIn"},
+               // new SelectListItem() {Text = "Twitter", Value="Twitter"},
+               //new SelectListItem() {Text = "Google+", Value="Google"}
+             }, new { @class = "form-control", id = "SocialmediaFacebook" })
+                   </li>*@
+                        </ul>
+                        <input type="hidden" id="txtGroupId" />
+                        <input type="text" placeholder="Enter Heading/Text on the top of article" id="txtheadingfbEdit" style="border:1px solid #ccc; margin-top:10px" />
+                        <input type="text" placeholder="Enter Title" id="txttitlefbEdit" style="border:1px solid #ccc;" />
+
+                        <textarea cols="50" rows="15" id="txtEditMsgContentfacebook" style="margin-top: 10px;" placeholder="Please write content to post on FaceBook" onkeyup="countCharEdit(this)"></textarea>
+                        <div id="textnew"></div>
+                        <div id="charNumEditRssfacebook" style="position: initial; margin-top: -5px; margin-bottom: 10px; "></div>
+                        <div id="uploadImage" class="UploadedImagefb">
+                            <span id="uplodedImage">By uploading new image your uploaded image will be removed</span>
+                        </div>
+                        <div class="jumbotron">
+                            <form action="@Url.Action("SaveUploadedFile", "ManageContent")" method="post" data-sm="0" enctype="multipart/form-data" class="dropzone" id="dropzoneForm" style="width: 50px;background: none; border: none;">
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple id="fileUpload" />
+                                    <input type="submit" value="Upload" />
+                                </div>
+                            </form>
+                        </div>
+                        <input type="text" id="EditUrlFacebook" placeholder="Please Add link" />
+                        @*<ul class="clearfix">
+                        <li><input type="checkbox" data-id="1" id="chk1" class="socialMedia" /> Facebook</li>
+                        <li><input type="checkbox" data-id="2" id="chk1" class="socialMedia" /> LinkedIn</li>
+                        <li><input type="checkbox" data-id="3" id="chk1" class="socialMedia" /> Twitter</li>
+                        <li><input type="checkbox" data-id="4" id="chk1" class="socialMedia" /> GooglePlus</li>
+                    </ul>*@
+                        @*<input type="text" id="txtKeywords" data-role="tagsinput" placeholder="Please enter comma seperated keywords" />*@
+                    </div>
+                </div>
+                <div id="twitter-tab">
+                    <div class="social-media-wrap clearfix" id="twitdiv">
+                        <ul class="drop-fix">
+                            @if (smartData.Common.SessionManager.LoggedInUser.UserType == 3)
+                            {
+                                <li class="clearfix">@Html.DropDownListFor(m => m.categoryList, new SelectList(Model.categoryList, "Value", "Text"), "Select Industry", new { id = "industryeditTiwtter", @class = "indus form-control", @style = "width: 30%;" })</li>
+                            }
+                            else
+                            {
+                                @*<li class="clearfix">@Html.DropDownListFor(m => m.CategoryId, (SelectList)@ViewBag.IndustryName, "Select Industry", new { id = "industryeditTiwtter", @class = "indus form-control", @style = "width: 30%;" })</li>*@
+                                <li class="clearfix">
+                                    @Html.DropDownList("industryeditTiwtter", new List<SelectListItem>
+                     {
+                        new SelectListItem() {Text = "Select Industry", Value="0"},
+                        new SelectListItem() {Text = ViewBag.IndustryName, Value= ViewBag.IndustryId},
+                      }, new { @class = "form-control", id = "industryeditTiwtter" })
+                                </li>
+                            }
+                            <li class="clearfix"><select id="stateeditTiwtter" class="subindus form-control" style="width:30%"><option>Select SubIndustry</option></select></li>
+                            @*<li class="clearfix">
+                                   @Html.DropDownList("Social Media", new List<SelectListItem>
+                        {
+                           new SelectListItem() {Text = "Select Social Media---", Value="0"},
+                           //new SelectListItem() {Text = "Facebook", Value="Facebook"},
+                           //new SelectListItem() {Text = "LinkedIn", Value="LinkedIn"},
+                            new SelectListItem() {Text = "Twitter", Value="Twitter"},
+                           //new SelectListItem() {Text = "Google+", Value="Google"}
+                         }, new { @class = "form-control", id = "SocialmediaTwitter" })
+                               </li>*@
+                        </ul>
+                        <input type="text" placeholder="Enter Heading/Text on the top of article" id="txtheadingtwEdit" style="border:1px solid #ccc; margin-top:10px" />
+                        <input type="text" placeholder="Enter Title" id="txttitletwEdit" style="border:1px solid #ccc;" />
+                        <textarea cols="50" rows="15" id="txtEditMsgContenttwitter" style="margin-top: 10px;" placeholder="Please write content to post  on twitter" onkeyup="countCharEdit(this)"></textarea>
+                        <div id="textnew"></div>
+                        <div id="charNumEditRsstwiter" style="position: initial; margin-top: -5px; margin-bottom: 18px; "></div>
+                        <div id="uploadImage" class="UploadedImagetw">
+                            <span id="uplodedImage">By uploading new image your uploaded image will be removed</span>
+                        </div>
+                        <div class="jumbotron">
+                            <form action="@Url.Action("SaveUploadedFile", "ManageContent")" method="post" data-sm="1" enctype="multipart/form-data" class="dropzone" id="dropzoneForm" style="width: 50px;background: none; border: none;">
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple id="fileUpload" />
+                                    <input type="submit" value="Upload" />
+                                </div>
+                            </form>
+                        </div>
+                        <input type="text" id="EditUrlTwitter" placeholder="Please Add link" />
+                        @*<ul class="clearfix">
+                        <li><input type="checkbox" data-id="1" id="chk1" class="socialMedia" /> Facebook</li>
+                        <li><input type="checkbox" data-id="2" id="chk1" class="socialMedia" /> LinkedIn</li>
+                        <li><input type="checkbox" data-id="3" id="chk1" class="socialMedia" /> Twitter</li>
+                        <li><input type="checkbox" data-id="4" id="chk1" class="socialMedia" /> GooglePlus</li>
+                    </ul>*@
+                        @*<input type="text" id="txtKeywords" data-role="tagsinput" placeholder="Please enter comma seperated keywords" />*@
+                    </div>
+                </div>
+                <div id="LinkedIn-tab">
+                    <div class="social-media-wrap clearfix" id="Linkdiv">
+                        <ul class="drop-fix">
+                            @if (smartData.Common.SessionManager.LoggedInUser.UserType == 3)
+                            {
+                                <li class="clearfix">@Html.DropDownListFor(m => m.categoryList, new SelectList(Model.categoryList, "Value", "Text"), "Select Industry", new { id = "industryeditLinkedIn", @class = "indus form-control", @style = "width: 30%;" })</li>
+                            }
+                            else
+                            {
+                                @*<li class="clearfix">@Html.DropDownListFor(m => m.CategoryId, (SelectList)@ViewBag.IndustryName, "Select Industry", new { id = "industryeditLinkedIn", @class = "indus form-control", @style = "width: 30%;" })</li>*@
+                                <li class="clearfix">
+                                    @Html.DropDownList("industryeditLinkedIn", new List<SelectListItem>
+                     {
+                        new SelectListItem() {Text = "Select Industry", Value="0"},
+                        new SelectListItem() {Text = ViewBag.IndustryName, Value= ViewBag.IndustryId},
+                      }, new { @class = "form-control", id = "industryeditLinkedIn" })
+                                </li>
+                            }
+                            <li class="clearfix"><select id="stateeditLinkedIn" class="subindus form-control" style="width:30%"><option>Select SubIndustry</option></select></li>
+                            @*<li class="clearfix">
+                                   @Html.DropDownList("Social Media", new List<SelectListItem>
+                        {
+                           new SelectListItem() {Text = "Select Social Media---", Value="0"},
+                           //new SelectListItem() {Text = "Facebook", Value="Facebook"},
+                           new SelectListItem() {Text = "LinkedIn", Value="LinkedIn"},
+                           // new SelectListItem() {Text = "Twitter", Value="Twitter"},
+                           //new SelectListItem() {Text = "Google+", Value="Google"}
+                         }, new { @class = "form-control", id = "SocialmediaLinkedIN" })
+                               </li>*@
+                        </ul>
+                        <input type="text" placeholder="Enter Heading/Text on the top of article" id="txtheadingliEdit" style="border:1px solid #ccc; margin-top:10px" />
+                        <input type="text" placeholder="Enter Title" id="txttitleliEdit" style="border:1px solid #ccc;" />
+                        <textarea cols="50" rows="15" id="txtEditMsgContentLinkedIn" style="margin-top: 10px;" placeholder="Please write content to post on LinkedIn" onkeyup="countCharEdit(this)"></textarea>
+                        <div id="charNumEditRssLinkedIn" style="position: initial; margin-top: -5px; margin-bottom: 18px; "></div>
+
+                        <div id="uploadImage" class="UploadedImageli">
+                            <span id="uplodedImage">By uploading new image your uploaded image will be removed</span>
+                        </div>
+                        <div class="jumbotron">
+                            <form action="@Url.Action("SaveUploadedFile", "ManageContent")" method="post" data-sm="2" enctype="multipart/form-data" class="dropzone" id="dropzoneForm" style="width: 50px;background: none; border: none;">
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple id="fileUpload" />
+                                    <input type="submit" value="Upload" />
+                                </div>
+                            </form>
+                        </div>
+                        <input type="text" id="EditUrlLinkedIn" placeholder="Please Add link" />
+                        @*<ul class="clearfix">
+                        <li><input type="checkbox" data-id="1" id="chk1" class="socialMedia" /> Facebook</li>
+                        <li><input type="checkbox" data-id="2" id="chk1" class="socialMedia" /> LinkedIn</li>
+                        <li><input type="checkbox" data-id="3" id="chk1" class="socialMedia" /> Twitter</li>
+                        <li><input type="checkbox" data-id="4" id="chk1" class="socialMedia" /> GooglePlus</li>
+                    </ul>*@
+                        @*<input type="text" id="txtKeywords" data-role="tagsinput" placeholder="Please enter comma seperated keywords" />*@
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-circlr" data-dismiss="modal" id="cancelAddPatientComplication" tabindex="900">Close</button>
+            <button type="button" class="btn btn-circlr" id="btnEditRssContent" tabindex="800">Save</button>
+        </div>
+    </div>
+</div>
+<input type="hidden" id="contentId" />
+
+
+<script>
+
+    var charEdit = 0;
+    $(document).ready(function () {
+        debugger;
+        $("#tabsRss").tabs();
+    })
+
+
+    $("#industryeditfacebook").on("change", function (event) {
+        debugger;
+        //alert($("option:selected", $("#industry")).val());
+        var id = $("option:selected", $("#industryeditfacebook")).val();
+        var state = $("#stateeditfacebook");
+        $.ajax({
+            url: $_GetStateByCountry,
+            type: 'Get',
+            data: { IndustryId: id },
+            async: false,
+            contentType: "application/json; charset=utf-8",
+            //data: { IndustryId: $("option:selected", $("#IndustryId")).val() },
+            success: function (data) {
+                debugger
+                if (data != null) {
+                    var $html = '<option selected="selected">Select SubIndustry</option>';
+                    $(data).each(function (index, item) {
+                        $html += '<option value="' + item.id + '" ' + (item.Selected ? 'selected="selected"' : '') + '>' + item.name + '</option>';
+                    });
+                    $("#stateeditfacebook").html($html);//refresh the plugin to show new values in dropdown                   
+                }
+            },
+        });
+    });
+    $("#industryeditTiwtter").on("change", function (event) {
+        debugger;
+        //alert($("option:selected", $("#industry")).val());
+        var id = $("option:selected", $("#industryeditTiwtter")).val();
+        var state = $("#stateeditTiwtter");
+        $.ajax({
+            url: $_GetStateByCountry,
+            type: 'Get',
+            data: { IndustryId: id },
+            async: false,
+            contentType: "application/json; charset=utf-8",
+            //data: { IndustryId: $("option:selected", $("#IndustryId")).val() },
+            success: function (data) {
+                debugger
+                if (data != null) {
+                    var $html = '<option selected="selected">Select SubIndustry</option>';
+                    $(data).each(function (index, item) {
+                        $html += '<option value="' + item.id + '" ' + (item.Selected ? 'selected="selected"' : '') + '>' + item.name + '</option>';
+                    });
+                    $("#stateeditTiwtter").html($html);//refresh the plugin to show new values in dropdown                   
+                }
+            },
+        });
+    });
+    $("#industryeditLinkedIn").on("change", function (event) {
+        debugger;
+        //alert($("option:selected", $("#industry")).val());
+        var id = $("option:selected", $("#industryeditLinkedIn")).val();
+        var state = $("#stateeditLinkedIn");
+        $.ajax({
+            url: $_GetStateByCountry,
+            type: 'Get',
+            data: { IndustryId: id },
+            async: false,
+            contentType: "application/json; charset=utf-8",
+            //data: { IndustryId: $("option:selected", $("#IndustryId")).val() },
+            success: function (data) {
+                debugger
+                if (data != null) {
+                    var $html = '<option selected="selected">Select SubIndustry</option>';
+                    $(data).each(function (index, item) {
+                        $html += '<option value="' + item.id + '" ' + (item.Selected ? 'selected="selected"' : '') + '>' + item.name + '</option>';
+                    });
+                    $("#stateeditLinkedIn").html($html);//refresh the plugin to show new values in dropdown                   
+                }
+            },
+        });
+    });
+
+ 
+    $("#tabsRss").tabs({
+        activate: function (event, ui) {
+            debugger;
+            var left = 0;
+            var select = ui.newPanel.selector;
+            var charsleft = "";
+            if (select == "#twitter-tab") {
+                charsleft = $('#txtEditMsgContenttwitter', $('#editContentRss')).val().length;
+                left = 140 - charsleft;
+                $('#charNumEditRsstwiter').text("Characters remaining ").append(140 - charsleft);
+                charEdit = left;
+            }
+            else if (select == "#facebook-tab") {
+                charsleft = $('#txtEditMsgContentfacebook', $('#editContentRss')).val().length;
+                left = 63206 - charsleft;
+                $('#charNumEditRssfacebook').text("Characters remaining ").append(63206 - charsleft);
+                charEdit = left;
+            }
+            else if (select == "#LinkedIn-tab") {
+                charsleft = $('#txtEditMsgContentLinkedIn', $('#editContentRss')).val().length;
+                left = 2000 - charsleft;
+                $('#charNumEditRssLinkedIn').text("Characters remaining ").append(2000 - charsleft);
+                charEdit = left;
+            }                 
+        }
+    });
+
+
+
+    //var charEdit = 0;
+    //$('#Social_Media', $('#editContent')).on('change', function () {
+    //    debugger;
+    //    var selectedText = $(this).find("option:selected").text();
+    //    if (selectedText == 'Facebook')
+    //        charEdit = 63206;
+    //    else if (selectedText == 'LinkedIn')
+    //        charEdit = 2000;
+    //    else if (selectedText == 'Twitter')
+    //        charEdit = 140;
+    //    else if (selectedText == 'Google+')
+    //        charEdit = 100000;
+    //    //alert($('#txtEditMsgContent').val().length);
+    //    var charremain = $('#txtEditMsgContent').val().length;
+    //    if (charremain > 0) {
+    //        var newchar = parseInt(charEdit) - parseInt(charremain);
+    //        //alert(newchar);
+    //        $('#charNumEditRss').text("Characters remaining " + newchar);
+    //        charEdit = newchar;
+    //        // alert(charEdit);
+    //    }
+    //    else {
+    //        $('#charNumEditRss').text("Characters remaining " + charEdit);
+    //    }
+
+    //});
+
+    function countCharEdit(val) {
+        debugger;
+        var len = val.value.length;
+        if (val.placeholder.includes('twitter')) {
+            charEdit = 140;
+            if (len >= charEdit) {
+                val.value = val.value.substring(0, charEdit);
+            } else {
+                $('#charNumEditRsstwiter').text("Characters remaining ").append(charEdit - len);
+                charEdit = charEdit - len;
+            }
+        }
+        else if (val.placeholder.includes('FaceBook')) {
+            charEdit = 63206;
+            if (len >= charEdit) {
+                val.value = val.value.substring(0, charEdit);
+            } else {
+                $('#charNumEditRssfacebook').text("Characters remaining ").append(charEdit - len);
+                charEdit = charEdit - len;
+            }
+        }
+        else if (val.placeholder.includes('LinkedIn')) {
+            charEdit = 2000;
+            if (len >= charEdit) {
+                val.value = val.value.substring(0, charEdit);
+            } else {
+                $('#charNumEditRssLinkedIn').text("Characters remaining ").append(charEdit - len);
+                charEdit = charEdit - len;
+            }
+        }   
+    };
+
+</script>

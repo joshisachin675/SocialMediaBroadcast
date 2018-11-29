@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Edi.Web.SyndicationFeed</id>
+    <version>2.2.0</version>
+    <title>Edi.Web.SyndicationFeed</title>
+    <authors>Edi Wang</authors>
+    <owners>Edi Wang</owners>
+    <projectUrl>http://diaosbook.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple rss/atom to file generator. Support .NET4.5 async</description>
+    <summary />
+    <copyright>2014 diaosbook.com</copyright>
+    <language />
+    <tags>RSS ATOM XML</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.5" />
+      <frameworkAssembly assemblyName="System.ServiceModel" targetFramework=".NETFramework4.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

@@ -1,0 +1,615 @@
+﻿@using smartData.Common
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    @*<meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <link href="~/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    @System.Web.Optimization.Styles.Render("~/bundles/css")
+    @*<link href="@Url.Content("~/Content/css/bootstrap.min.css")" rel="stylesheet" type="text/css" />*@
+    <link href="@Url.Content("~/Content/css/jquery.mCustomScrollbar.css")" rel="stylesheet" type="text/css" />
+    @*<link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" />*@
+    <link href="@Url.Content("~/Content/css/master.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/css/media.css")" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/Font-OpenSans.css" rel="stylesheet" />
+
+    <link href="@Url.Content("~/Scripts/BootStrapGrid/src/bootstrap-table.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Scripts/BootStrapDailog/bootstrap-dialog.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Scripts/BootStrapDateTimePicker/bootstrap-datetimepicker.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/jquery.jqGrid/jquery-ui.css")" rel="stylesheet" />
+    <link href="~/Scripts/timeout/imeout-dialog.css" rel="stylesheet" />
+    <style>
+        /*#timeout-dialog {
+            padding: 15px;
+            position: absolute;
+            background: #eeeeee url("../images/timeout-icon.png") no-repeat 15px 25px;
+            border: 1px solid #ffffff;
+            -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }*/
+        .timeout-dialog .ui-dialog-title {
+            padding: 5px 0 5px 0 !important; margin-left:0px;
+        }
+        .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset{ text-align:center;}
+         .timeout-dialog p {
+            margin: 0 0 5px 0px !important;
+        }
+        .timeout-dialog{ background:#fff !important;}
+        #timeout-sign-out-button{
+            border-color:none !important;
+        } 
+        #timeout-keep-signin-btn:hover {
+            background-color: #094475 !important;
+        }
+        #timeout-sign-out-button:hover {
+            background-color: #cac8c8 !important;
+        }
+    </style>
+    <title>@ViewBag.Title</title>
+
+
+
+    @System.Web.Optimization.Scripts.Render("~/bundles/jquery")
+    @System.Web.Optimization.Scripts.Render("~/bundles/modernizr")
+    @System.Web.Optimization.Scripts.Render("~/bundles/jqueryvalidate")
+    @System.Web.Optimization.Scripts.Render("~/bundles/bootstrap")
+    @System.Web.Optimization.Scripts.Render("~/bundles/commonjs")
+    @System.Web.Optimization.Scripts.Render("~/bundles/modernizr")
+    @RenderSection("scripts", required: false)
+    @{Html.RenderPartial("~/Views/Shared/UrlVariables.cshtml");}
+
+
+    <script src="~/Scripts/Jscripts/jquery-2.2.3.js"></script>
+    <script src="~/Scripts/Jscripts/bootstrap.js"></script>
+    <script src="~/Scripts/JqGrid/jquery-ui.js"></script>
+
+    <script src="~/Scripts/BootStrapDateTimePicker/moment-with-locales.js"></script>
+    <script src="~/Scripts/BootStrapDateTimePicker/bootstrap-timepicker.js"></script>
+    <script src="@Url.Content("~/Scripts/BootStrapDateTimePicker/bootstrap-datetimepicker.min.js")"></script>
+
+
+
+    <script src="~/Scripts/Jscripts/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script src="~/Scripts/BootStrapGrid/src/bootstrap-table.js"></script>
+
+    <script src="~/Scripts/BootStrapDailog/bootstrap-dialog.min.js"></script>
+    <script src="~/Scripts/timeout/timeout-dialog.js"></script>
+
+    @*<script src="~/Content/moment.min.js"></script>*@
+    <script>
+
+        $("#drop-togle").click(function () {
+            $("drop-wrap").toggleClass(".show-wrap");
+        });
+
+    </script>
+    <script type="text/javascript">
+        (function ($) {
+            $(window).load(function () {
+
+                $(".scroll").mCustomScrollbar({
+                    advanced: { updateOnContentResize: true }
+                    //advanced:{autoExpandHorizontalScroll:true}
+                });
+            });
+        })(jQuery);
+
+
+        $(document).ready(function () {
+
+
+
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                $('.child-submenu').hide();
+                $('.has-subnav').click(function () {
+                    $(this).find('.child-submenu').toggle();
+                });
+            }
+            else {
+            }
+
+
+            $("#switchLogin").click(function () {
+                debugger;
+
+               // setTimeout("$.each(BootstrapDialog.dialogs, function(id, dialog){dialog.close();});", 2000);
+        
+                            $.ajax({
+                                url: $_UrlGetUserById,
+                                type: "Get",
+                                data: { id: $("#hdnuser").val() },
+                                success: function (result) {
+                                    var user = result.Email;
+                                    var pass = result.Password;
+                                    var indus = result.IndustryId;
+                                    window.location.href = $_BaseUrl + '/Admin/Account/SwitchSuperAdminLogin?UserName=' + user + '&Password=' + pass + '&IndustryId=' + indus;      @*'@Url.Action("SwitchSuperAdminLogin", "Account", new { @Area = "Admin", UserName = user, @Password = pass, IndustryId = indus })';*@
+                                    },
+                            });
+
+
+
+             
+
+
+            })
+
+
+         
+
+        });
+
+
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.show_hide').click(function () {
+                $("#advertisemnt-add").toggle("slide");
+            });
+        });
+    </script>
+
+    <style>
+        .user_icon {
+            margin-left: 170px;
+            margin-top: 0px;
+        }
+
+        .switch {
+            margin-top: 0px;
+            position: absolute;
+            top: 10px;
+            margin-left: -14px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        @{
+            var conf = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.Web.Hosting.HostingEnvironment.ApplicationVirtualPath);
+            var section = (System.Web.Configuration.SessionStateSection)conf.GetSection("system.web/sessionState");
+            string timeout = section.Timeout.TotalMinutes.ToString();
+        }
+        <script>
+         
+            ////sESSION 
+        
+            debugger
+
+            var time = @timeout * 1000 *60;
+            time= time-200000;
+
+    var timeout;
+    var isLogout = false;
+
+    timeout = setTimeout(function() {
+        $(function () {
+            debugger
+            var fnTimeOut = function () {
+                var time  = @timeout
+                jQuery.timeoutDialog.setupDialogTimer({
+                    timeout: 1,
+                    countdown: 100,
+                    logout_redirect_url: '@Url.Action("LogOut", "Account")',
+                    keep_alive_url:'@Url.Action("KeepAlive", "Account")',
+                });
+            };
+            fnTimeOut();
+        });
+        isLogout = true;
+     
+    }, time);
+            
+
+    $(document).on('click', function () {
+        if (!isLogout) {
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+                $(function () {
+                    debugger
+                    var fnTimeOut = function () {
+                        var time  = @timeout
+                        jQuery.timeoutDialog.setupDialogTimer({
+                            timeout: 1,
+                            countdown:60 ,
+                            logout_redirect_url: '@Url.Action("LogOut", "Account")',
+                            keep_alive_url: '@Url.Action("KeepAlive", "Account")'
+                        });
+                    };
+                    fnTimeOut();
+                });
+                isLogout = true;
+            }, time);
+        }
+    });
+   
+
+
+
+            // Session 
+
+        </script>
+        <input type="hidden" id="hdnPopUpTimer" value="@System.Configuration.ConfigurationManager.AppSettings["PopupTimer"]" />
+        <input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.ImpersonateUserId" id="hdnuser" />
+
+        <div class="row">
+            <div class="col-sm-4">
+                <h1 class="logo"><a href="@Url.Action("Index","Home")"></a></h1>
+            </div>
+
+            <div class="col-sm-8">
+                <div class="toprightall">
+                    <div class="topright-nav username-ryt" style="position:relative;">
+
+                        <div class="username-ryt-left">
+                            @*<img src="@Url.Content("~/Images/user.jpg")">*@
+                        </div>
+
+
+                        <div class="username-ryt-right dropdown">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                if (User.Identity.IsAuthenticated)
+                                {
+                                    string Name = string.Empty;
+                                    Name = SessionManager.LoggedInUser.FirstName + " " + SessionManager.LoggedInUser.LastName;
+                                    @*<<<<<<< .mine
+                                                                              if (smartData.Common.SessionManager.LoggedInUser.ImpersonateUserId != 0)
+                                                                    {
+                                                                      <h6><span class="user_icon" style="margin-top: 6px;"><i class="fa fa-user" aria-hidden="true"></i></span> Hello @Name  <a href="javascript:void(0)" class="btn btn-primary switch-btn" id="switchLogin" style="font-size:12px;margin-right:8px"><i class="fa fa-exchange" aria-hidden="true"></i> Switch</a></h6>
+                                                                    }
+                                                                              else
+                                                                              {
+                                                                                      <h6 style="margin-left: 23px;"><span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span> <span style="margin-right: 85px; font-size: 14px;">Hello @Name</span></h6>
+                                                                              }
+
+                                        =======*@
+                                    if (smartData.Common.SessionManager.LoggedInUser.ImpersonateUserId != 0)
+                                    {
+                                     <h6 id="drop-togle">
+                                        <span class="user_icon switch"><i class="fa fa-user" aria-hidden="true"></i></span>@Name <a href="javascript:void(0)" class="btn btn-primary switch-btn" id="switchLogin" style="font-size:12px;margin-right:8px"><i class="fa fa-exchange" aria-hidden="true"></i> Switch</a><a class="btn_toggle" href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    </h6> 
+                                    }
+                                    else
+                                    {
+                                     <h6 id="drop-togle">
+                                        <span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>@Name<a class="btn_toggle" href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                    </h6>
+                                    }
+                                   
+                                    <div class="drop-wrap">
+                                        <ul class="drop-menu">
+                                            <li class="clearfix">
+                                                <a href="@Url.Action("ManageUserAccount", "Home", new { @Area = "Users" })" class="lb pull-left">Profile</a><span class="lbi pull-right">
+                                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                                </span>
+                                            </li>
+                                            <li class="clearfix"><a href="@Url.Action("Logout", "Account", new { @Area = "Users" })" class="lb pull-left">Logout</a><span class="lbi pull-right"><i class="fa fa-power-off" aria-hidden="true"></i></span></li>
+
+                                        </ul>
+                                    </div>
+
+                                }
+                            }
+
+                            @*@if (smartData.Common.SessionManager.LoggedInUser.ImpersonateUserId != 0)
+                                {
+                                    <a href="javascript:void(0)" class="btn btn-primary switch-btn" id="switchLogin" style="font-size:12px; margin-top:-5px;margin-right:8px" ><i class="fa fa-exchange" aria-hidden="true"></i> Switch</a>
+                                }*@
+
+
+                                @*<button class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                            <span><font>Administrator</font> <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                        </button>
+
+
+
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" data-dropdown-out="fadeOutDown" data-dropdown-in="fadeInUp">
+                                        <li>
+                                            <a href="#">My Profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Messages <font>12</font></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Logout</a>
+                                        </li>
+                                    </ul>*@
+                            </div>
+
+                        </div>
+
+                        <div class="message_notification">
+
+                            <div class="message_box">
+                                @*<button class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                        <img src="@Url.Content("~/Images/message.png")">
+                                        <span>7</span>
+                                    </button>*@
+
+
+
+                                <ul class="dropdown-menu" id="message_box" role="menu" aria-labelledby="dLabel" data-dropdown-out="fadeOutDown" data-dropdown-in="fadeInUp">
+
+                                    <li>
+                                        <div class="messagestop-lt">
+                                            <h6>Joe </h6>
+                                            <p>Adding new layout to desing...</p>
+                                        </div>
+
+                                        <div class="messagestop-rt">
+                                            <img src="@Url.Content("~/Images/user.jpg")">
+                                            <div class="fullmailrply">
+                                                <a href="#"><i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+                                                <span>2 hrs ago</span>
+                                            </div>
+
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="messagestop-lt">
+                                            <h6>Joe </h6>
+                                            <p>Adding new layout to desing...</p>
+                                        </div>
+
+                                        <div class="messagestop-rt">
+                                            <img src="@Url.Content("~/Images/user.jpg")">
+                                            <div class="fullmailrply">
+                                                <a href="#"><i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+                                                <span>2 hrs ago</span>
+                                            </div>
+
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="messagestop-lt">
+                                            <h6>Joe </h6>
+                                            <p>Adding new layout to desing...</p>
+                                        </div>
+
+                                        <div class="messagestop-rt">
+                                            <img src="@Url.Content("~/Images/user.jpg")">
+                                            <div class="fullmailrply">
+                                                <a href="#"><i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+                                                <span>2 hrs ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="messagestop-lt">
+                                            <h6>Joe </h6>
+                                            <p>Adding new layout to desing...</p>
+                                        </div>
+
+                                        <div class="messagestop-rt">
+                                            <img src="@Url.Content("~/Images/user.jpg")">
+                                            <div class="fullmailrply">
+                                                <a href="#"><i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+                                                <span>2 hrs ago</span>
+                                            </div>
+
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="notification_box">
+                                @*<button class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
+                                        <img src="@Url.Content("~/Images/notification.png")">
+                                        <span>203</span>
+                                    </button>*@
+
+
+
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" data-dropdown-out="fadeOutDown" data-dropdown-in="fadeInUp">
+                                    <li>
+                                        <div class="messagestop-lt">
+                                            <h6>Joe </h6>
+                                            <p>Adding new layout to desing...</p>
+                                        </div>
+
+                                        <div class="messagestop-rt">
+                                            <img src="@Url.Content("~/Images/user.jpg")">
+                                            <div class="fullmailrply">
+                                                <a href="#"><i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+                                                <span>2 hrs ago</span>
+                                            </div>
+
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="messagestop-lt">
+                                            <h6>Joe </h6>
+                                            <p>Adding new layout to desing...</p>
+                                        </div>
+
+                                        <div class="messagestop-rt">
+                                            <img src="@Url.Content("~/Images/user.jpg")">
+                                            <div class="fullmailrply">
+                                                <a href="#"><i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+                                                <span>2 hrs ago</span>
+                                            </div>
+
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="messagestop-lt">
+                                            <h6>Joe </h6>
+                                            <p>Adding new layout to desing...</p>
+                                        </div>
+
+                                        <div class="messagestop-rt">
+                                            <img src="@Url.Content("~/Images/user.jpg")">
+                                            <div class="fullmailrply">
+                                                <a href="#"><i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+                                                <span>2 hrs ago</span>
+                                            </div>
+
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="messagestop-lt">
+                                            <h6>Joe </h6>
+                                            <p>Adding new layout to desing...</p>
+                                        </div>
+
+                                        <div class="messagestop-rt">
+                                            <img src="@Url.Content("~/Images/user.jpg")">
+                                            <div class="fullmailrply">
+                                                <a href="#"><i class="fa fa-mail-reply" aria-hidden="true"></i></a>
+                                                <span>2 hrs ago</span>
+                                            </div>
+
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="main-menu scroll">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Index","Home")">
+                        <i class="fa fa-dashboard nav_icon"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("ManageUserAccount","Home")">
+                        <i class="fa fa-database nav_icon"></i>
+                        <span class="nav-text">
+                            Manage Account
+                        </span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("ManageLeads", "Home")">
+                        <i class="fa fa-file-text nav_icon"></i>
+                        <span class="nav-text">
+                            Manage Leads
+                        </span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("ManageSocialMedia","Home")">
+                        <i class="fa fa-globe nav_icon"></i>
+                        <span class="nav-text">
+                            Manage Social Media
+                        </span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("ManagePost", "Home")">
+                        <i class="fa fa-file-text nav_icon"></i>
+                        <span class="nav-text">
+                            Manage  Post
+                        </span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "Reports")">
+                        <i class="fa fa-bar-chart nav_icon"></i>
+                        <span class="nav-text">
+                            View Reports
+                        </span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("EditWaterMark", "Reports")">
+                        <i class="fa fa-picture-o nav_icon"></i>
+                        <span class="nav-text">
+                            Manage Watermarks
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("ManagePreference", "Preference")">
+                        <i class="fa fa-bookmark nav_icon"></i>
+                        <span class="nav-text">
+                            Manage  Preferences
+                        </span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("ManagePublishingTimes", "Schedule")">
+                        <i class="fa fa-clock-o nav_icon"></i>
+                        <span class="nav-text">
+                            Manage Publishing Times
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Logout","Account")">
+                        <i class="fa fa-sign-out nav_icon"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        @RenderBody()
+
+        @*<footer>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>&copy;Social Media Broadcasting @DateTime.Now.Year</p>
+                    </div>
+                </div>
+            </footer>*@
+
+    </body>
+
+</html>
+<script>
+    $(document).ready(function () {
+        $(".btn_toggle").click(function () {
+            $(".drop-wrap").toggle();
+        });
+    });
+</script>

@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace smartData.Areas.Users.Controllers
+{
+    [AllowAnonymous]
+    public class ErrorController : Controller
+    {
+        //
+        // GET: /Users/Error/
+        public ViewResult Index()
+        {
+            return View("Error");
+        }
+
+        public ViewResult NotExist()
+        {
+            Response.StatusCode = 404;  //you may want to set this to 200
+            return View("NotFound");
+        }
+	}
+}

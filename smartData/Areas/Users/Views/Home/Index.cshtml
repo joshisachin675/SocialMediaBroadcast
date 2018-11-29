@@ -1,0 +1,1200 @@
+﻿@model smartData.Models.User.UserDashboardModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_userinnerlayout.cshtml";
+}
+
+<style>
+    #dropZone {
+        background: gray;
+        border: black dashed 3px;
+        width: 200px;
+        padding: 50px;
+        text-align: center;
+        color: white;
+    }
+
+    .fb_brdr {
+        border: 1px solid #ccc;
+    }
+</style>
+
+<link href="~/Scripts/dropzone/basic.css" rel="stylesheet" />
+<link href="~/Scripts/dropzone/dropzone.css" rel="stylesheet" />
+<link href="~/Content/css/watermark.css" rel="stylesheet" />
+<link href="~/Content/bootstrap-tagsinput.css" rel="stylesheet" />
+<script src="~/Scripts/bootstrap-tagsinput.js"></script>
+<script src="~/Scripts/Jscripts/daterangepicker.js"></script>
+<link href="~/Content/daterangepicker.css" rel="stylesheet" />
+@*<script src="~/Scripts/Jscripts/watermarker.js"></script>*@
+@*<script src="~/Scripts/Jscripts/jquery.watermark.min.js"></script>*@
+
+<script>
+    $(document).ready(function () {
+        debugger;
+        var timezoneOffset = new Date().getTimezoneOffset();
+        //$("#offset").html(timezoneOffset);
+        $.ajax({
+            url: $_UrlGetTimeZone,
+            type: "Get",
+            data: { offset: timezoneOffset },
+            success: function (result) {
+                debugger;
+                $('#scheduledPostSection').html(result);
+                if ($('.futureposts').html().trim() == "") {
+                    $('#scheduledPostSection').html("<img class='norecords' src=" + $_BaseUrl + "/Images/no_document.png>No Records Found").css({ "text-align": "center", "font-style": "italic", "color": "gray" });
+                }
+            }
+        });
+
+
+    })
+</script>
+
+@{
+    bool fbstatus = false;
+    bool linkedinStatus = false;
+    bool twitterStatus = false;
+    bool googlePlusStatus = false;
+}
+
+@{
+    if (TempData["Message"] != null)
+    {
+        @TempData["Message"]
+    }
+}
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.UserID" id="hdnUserId" />
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.UserType" id="UserType" />
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.IndustryId" id="IndustryId" />
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.ImpersonateUserId" id="impersonateId" />
+
+@if (Model != null)
+{
+    <section class="wrapper scrollable posts">
+        <div class="row" style="margin-bottom:10px">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <span style=" color: #16c2fa; font-size: 20px;">Dashboard</span>
+            </div>
+            @*<div class="col-md-6 col-sm-6 col-xs-6">
+                    <div id="reportrange" class="pull-right" style="width: 100%; background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width: 9%;">
+                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>&nbsp;
+                        <span></span> <b class="caret"></b>
+                    </div>
+                </div>*@
+        </div>
+        <div class="white_bg">
+            <div class="row socialmediaall">
+                @if (Model.socialMediaProfile.Any(cus => cus.SocialMedia.Contains("Facebook") && cus.IsActive == true))
+                { 
+
+                    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                        <div class="box_top_prtclr">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            
+                        </div>
+                        <div class="fb_brdr ">
+                            <table class="custom-table" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th width="25%">Activity</th>
+                                        <th width="35%">Posts</th>
+                                        <th width="40%">Engagement</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" class="inner-table-likes">
+                                                <thead>
+                                                    <tr>
+                                                        <th>&nbsp;</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="text-align:left">7 days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:left">30 days</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:left">Total</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table width="100%" class="inner-table-likes">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="text-align:center">Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="text-align:center"><a href="@Url.Action("ManagePost", "Home")">@Model.postCountweek.FacebookPosts</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:center"><a href="@Url.Action("ManagePost", "Home")">@Model.postCountmonth.FacebookPosts</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:center"><a href="@Url.Action("ManagePost", "Home")">@Model.postCount.FacebookPosts</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <table width="100%" class="inner-table-likes">
+                                                <thead>
+                                                    <tr>
+                                                        <th>&nbsp;</th>
+                                                        <th>Clicks</th>
+                                                        <th>Likes</th>
+                                                        <th>Comments</th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td>@ViewBag.weeklikestotalClicksFacebook</td>
+                                                        <td>@ViewBag.weeklikesfacebook</td>
+                                                        <td>@ViewBag.weekCommentsfacebook</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td>@ViewBag.MonthtotalClicksFacebook</td>
+                                                        <td>@ViewBag.monthlikesfacebook</td>
+                                                        <td>@ViewBag.monthCommentsfacebook</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td>@ViewBag.totalClicksFacebook</td>
+                                                        <td>@ViewBag.totallikesfacebook</td>
+                                                        <td>@ViewBag.totalCommentsfacebook</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="row ext-padding-f">
+                            <div class="col-xs-6">
+                            
+                                <a href="@Url.Action("CreatePost", "Home", new {@area="Users"})" class="btn btn-xs" style="border-radius: 0px; width: 100%; background-color: #4f77bc; color: white; "><i class="fa fa-calendar-plus-o" title="Create Post" aria-hidden="true"></i><br /> Create Post</a>
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="@Url.Action("SchedularCalendar", "Home", new {@area = "Users" })" class="btn btn-xs" style="border-radius: 0px; width: 100%; background-color: #4f77bc; color: white; "><i class="fa fa-calendar" title="Schedule Post" aria-hidden="true"></i><br /> Schedule Post</a>
+                       </div>
+                        </div>
+      
+                            @*@Html.ActionLink("Create Post", "CreatePost", "Home", new { id = "Create_post", @class = "btn btn-primary lg" })*@
+                            
+                      
+                    </div>
+                    }
+                    @if (Model.socialMediaProfile.Any(cus => cus.SocialMedia.Contains("Twitter") && cus.IsActive == true))
+{
+    <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+        <div class="box_top_prtclr twitter_bg">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            @*<p>
+                <a href="@Url.Action("CreatePost", "Home", new { @area="Users"})"><i class="fa fa-plus cal_plus" title="Create Post" aria-hidden="true"></i></a>
+                <a href="@Url.Action("SchedularCalendar", "Home", new { @area = "Users" })"><i class="fa fa-calendar  cal_plus" title="Schedule Post" aria-hidden="true"></i></a>
+            </p>*@
+        </div>
+        <div class="fb_brdr ">
+            <table class="custom-table" width="100%">
+                <thead>
+                    <tr>
+                        <th width="25%">Activity</th>
+                        <th width="35%">Posts</th>
+                        <th width="40%">Engagement</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" class="inner-table-likes">
+                                <thead>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align:left">7 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:left">30 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:left">Total</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table width="100%" class="inner-table-likes">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align:center"><a href="@Url.Action("ManagePost", "Home")">@Model.postCountweek.TwitterPosts</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center"><a href="@Url.Action("ManagePost", "Home")">@Model.postCountmonth.TwitterPosts</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center"><a href="@Url.Action("ManagePost", "Home")">@Model.postCount.TwitterPosts</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td>
+                            <table width="100%" class="inner-table-likes">
+                                <thead>
+                                    <tr>
+                                        <th>&nbsp;</th>
+                                        <th>Clicks</th>
+                                        <th>Likes</th>
+                                        <th>&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>@ViewBag.weeklikestotalClicksTwitter</td>
+                                        <td>@ViewBag.weeklikestwitter</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>@ViewBag.MonthtotalClicksTwitter </td>
+                                        <td>@ViewBag.monthlikestwitter </td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>@ViewBag.totalClicksTwitter</td>
+                                        <td>@ViewBag.totallikestwitter</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="row ext-padding-f">
+            <div class="col-xs-6">
+
+                <a href="@Url.Action("CreatePost", "Home", new {@area="Users"})" class="btn btn-xs " style=" border-radius: 0px; width: 100%; background-color: #1dcaff; color:white"><i class="fa fa-calendar-plus-o" title="Create Post" aria-hidden="true"></i><br /> Create Post</a>
+            </div>
+            <div class="col-xs-6">
+                <a href="@Url.Action("SchedularCalendar", "Home", new {@area = "Users" })" class="btn btn-xs " style="border-radius: 0px; width: 100%; background-color: #1dcaff; color: white; "><i class="fa fa-calendar" title="Schedule Post" aria-hidden="true"></i><br /> Schedule Post</a>
+            </div>
+        </div>
+    </div>
+
+}
+                        @*<div class="box_top_prtclr twitter_bg">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <p>
+                                    <b id="TwitterPosts">@Model.postCount.TwitterPosts</b>
+                                    <span>Tweets</span>
+                                </p>
+                            </div>*@
+
+                        @if (Model.socialMediaProfile.Any(cus => cus.SocialMedia.Contains("LinkedIn") && cus.IsActive==true))
+                        { 
+                            <div class="col-md-4 col-sm-6 col-xs-12 col-lg-4">
+                                <div class="box_top_prtclr linkedin_bg">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    @*<p>
+                                        <a href="@Url.Action("CreatePost", "Home", new { @area="Users"})"><i class="fa fa-plus cal_plus" title="Create Posts" aria-hidden="true"></i></a>
+                                        <a href="@Url.Action("SchedularCalendar", "Home", new { @area = "Users" })"><i class="fa fa-calendar  cal_plus" title="Schedule Post" aria-hidden="true"></i></a>
+                                    </p>*@
+                                </div>
+                                <div class="fb_brdr ">
+                                    <table class="custom-table" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th width="25%">Activity</th>
+                                                <th width="35%">Posts</th>
+                                                <th width="40%">Engagement</th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" class="inner-table-likes">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>&nbsp;</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="text-align:left">7 days</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:left">30 days</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:left">Total</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table width="100%" class="inner-table-likes">
+                                                        <thead>
+                                                            <tr>
+                                                                <th style="text-align:center">Total</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="text-align:center"><a href="@Url.Action("ManagePost", "Home")">@Model.postCountweek.LinkedInPosts</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center"><a href="@Url.Action("ManagePost", "Home")">@Model.postCountmonth.LinkedInPosts</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align:center"><a href="@Url.Action("ManagePost", "Home")">@Model.postCount.LinkedInPosts</a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <table width="100%" class="inner-table-likes">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>&nbsp;</th>
+                                                                <th>Clicks</th>
+                                                                <th>Likes</th>
+                                                                <th>Comments</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>&nbsp;</td>
+                                                                <td>@ViewBag.weeklikestotalClickslinkedin</td>
+                                                                <td>@ViewBag.weeklikeslinkedin</td>
+                                                                <td>@ViewBag.weekCommentslinkedin</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>&nbsp;</td>
+                                                                <td>@ViewBag.MonthtotalClickslinkedin</td>
+                                                                <td>@ViewBag.monthlikeslinkedin</td>
+                                                                <td>@ViewBag.monthCommentslinkedin</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>&nbsp;</td>
+                                                                <td>@ViewBag.MonthtotalClickslinkedin</td>
+                                                                <td>@ViewBag.totallikeslinkedin</td>
+                                                                <td>@ViewBag.totalCommentslinkedin</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+
+                                @*<div class="box_top_prtclr linkedin_bg">
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        <p>
+                                            <b id="linkedInPosts">@Model.postCount.LinkedInPosts</b>
+                                            <span>Feeds</span>
+                                        </p>
+                                    </div>*@
+                                <div class="row ext-padding-f">
+                                    <div class="col-xs-6">
+
+                                        <a href="@Url.Action("CreatePost", "Home", new {@area="Users"})" class="btn btn-xs" style=" border-radius: 0px; width: 100%; background-color: #2587ec; color:white"><i class="fa fa-calendar-plus-o" title="Create Post" aria-hidden="true"></i><br /> Create Post</a>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <a href="@Url.Action("SchedularCalendar", "Home", new {@area = "Users" })" class="btn btn-xs " style="border-radius: 0px; width: 100%; background-color: #2587ec; color: white; "><i class="fa fa-calendar" title="Schedule Post" aria-hidden="true"></i><br /> Schedule Post</a>
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        </div>
+
+                        <div >
+                            <div class="row socialmediaall ad-ext-pad">
+                                @if (Model.socialMediaProfile.Any(cus => cus.SocialMedia.Contains("Facebook")))
+{
+    <div class="col-md-4 col-sm-6 col-xs-6 col-lg-4">
+        @if (Model.FacebookPosts.Count > 0)
+        {
+            <div>
+                <h2 class="facebook_bg"><span style="float: left;"><i class="fa fa-facebook" aria-hidden="true" style="margin-left: 10px;color: rgba(255,255,255,0.7);font-size: 20px;top: 0px;transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);"></i></span>Latest Posts</h2>
+                @*<div class="box_top_prtclr">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>*@
+                @{
+            int facebookCounter = 0;
+                }
+                <div class="posts_fb_tweet">
+                    <table class="table social_post_table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th> Posted By</th>
+                                <th>Posted Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.FacebookPosts)
+                            {
+                                if (facebookCounter < 10)
+                                {
+                                    <tr>
+
+                                        @{
+                                    string desc = "";
+                                        }
+                                        @if (item.Name != null)
+                                        {
+                                            if (item.Name.Length > 30)
+                                            {
+                                                desc = item.Name.Substring(0, 30);
+                                                desc = desc + "..";
+                                            }
+                                            else
+                                            {
+                                                desc = item.Name;
+                                            }
+                                        }
+                                        <td> @desc  </td>
+                                        <td>@item.FirstName @item.LastName</td>
+                                        <td>@item.PostDate</td>
+                                    </tr>
+                                }
+                                facebookCounter++;
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div>
+                <h2 class="facebook_bg">
+                    <span style="float: left;">
+                        <i class="fa fa-facebook" aria-hidden="true" style="margin-left: 10px;color: rgba(255,255,255,0.7);font-size: 20px;top: 0px;transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);"></i>
+                    </span>  Latest Posts
+                </h2>
+                @*<div class="box_top_prtclr">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>*@
+
+                <div class="posts_fb_tweet">
+                    <div class="text-center">
+                        <span style="font-style:italic; color:gray;"><img class='norecords' src="~/Images/no_document.png" /></span>
+                        <p>No Records Found</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}
+                                @if (Model.socialMediaProfile.Any(cus => cus.SocialMedia.Contains("Twitter")))
+{
+
+
+    <div class="col-md-4 col-sm-6 col-xs-6 col-lg-4">
+        @if (Model.TwitterPosts.Count > 0)
+        {
+            <div>
+                <h2 class="twitter_bg">
+                    <span style="float: left;">
+                        <i class="fa fa-twitter" aria-hidden="true" style="margin-left: 10px;color: rgba(255,255,255,0.7);font-size: 20px;top: 0px;transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);"></i>
+                    </span>    Latest Tweets
+                </h2>
+                @*<div class="box_top_prtclr twitter_bg">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </div>*@
+
+                @{
+            int twitterCounter = 0;
+                }
+                <div class=" posts_fb_tweet">
+                    <table class="table social_post_table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th> Posted By</th>
+                                <th>Posted Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.TwitterPosts)
+                            {
+                                if (twitterCounter < 10)
+                                {
+
+                                    <tr>
+                                        @{
+                                    string desc = "";
+                                        }
+                                        @if (item.Name != null)
+                                        {
+                                            if (item.Name.Length > 30)
+                                            {
+                                                desc = item.Name.Substring(0, 30);
+                                                desc = desc + "..";
+                                            }
+                                            else
+                                            {
+                                                desc = item.Name;
+                                            }
+                                        }
+
+                                        <td> @desc  </td>
+                                        <td>@item.FirstName @item.LastName</td>
+                                        <td>@item.PostDate</td>
+                                    </tr>
+                                }
+                                twitterCounter++;
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div>
+                <h2 class="twitter_bg"><span style="float: left;"><i class="fa fa-twitter" aria-hidden="true" style="margin-left: 10px;color: rgba(255,255,255,0.7);font-size: 20px;top: 0px;transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);"></i></span>Latest Tweets</h2>
+                @*<div class="box_top_prtclr">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>*@
+
+                <div class=" posts_fb_tweet">
+                    <div class="text-center">
+                        <span style="font-style:italic; color:gray;"><img class='norecords' src="~/Images/no_document.png" /></span>
+                        <p>No Records Found</p>
+                    </div>
+
+                </div>
+            </div>
+        }
+    </div>
+}
+                                @if (Model.socialMediaProfile.Any(cus => cus.SocialMedia.Contains("LinkedIn")))
+                                {
+                                    <div class="col-md-4 col-sm-6 col-xs-6 col-lg-4">
+                                        @if (Model.LinkedInPosts.Count > 0)
+                        {
+                        <div>
+                            <h2 class="linkdeinn_post"><span style="float: left;"> <i class="fa fa-linkedin" aria-hidden="true" style="margin-left: 10px;color: rgba(255,255,255,0.7);font-size: 20px;top: 0px;transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);"></i></span>Latest Activity</h2>
+                            @*<div class="box_top_prtclr linkedin_bg">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </div>*@
+                            @{
+                            int linkedInCounter = 0;
+                            }
+                            <div class="posts_fb_tweet">
+                                <table class="table social_post_table">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th> Posted By</th>
+                                            <th>Posted Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.LinkedInPosts)
+                                            {
+                                                if (linkedInCounter < 10)
+                                                {
+
+                                            <tr>
+                                                @{
+                                                    string desc = "-";
+                                                }
+                                                @if (item.Name != null)
+                                                        {
+                                                            if (item.Name.Length > 30)
+                                                            {
+                                                                desc = item.Name.Substring(0, 30);
+                                                                desc = desc + "..";
+                                                            }
+                                                            else
+                                                            {
+                                                                desc = item.Name;
+                                                            }
+                                                        }
+                                                <td> @desc  </td>
+                                                <td>@item.FirstName @item.LastName</td>
+                                                <td>@item.PostDate</td>
+                                            </tr>
+                                                }
+                                                linkedInCounter++;
+                                            }
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                        }
+                        else
+                        {
+                        <div>
+                            <h2 class="linkdeinn_post"><span style="float: left;"><i class="fa fa-linkedin" aria-hidden="true" style="margin-left: 10px;color: rgba(255,255,255,0.7);font-size: 20px;top: 0px;transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);"></i></span>Latest Activity</h2>
+                            @*<div class="box_top_prtclr">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </div>*@
+                            <div class=" posts_fb_tweet">
+                                <div class="text-center">
+                                    <span style="font-style:italic; color:gray;"><img class='norecords' src="~/Images/no_document.png" /></span>
+                                    <p>No Records Found</p>
+                                </div>
+                            </div>
+                        </div>
+                        }
+                                        @*<div style="border:solid 1px #F6F6F6; width:95%; margin:0 auto; max-height:150px; overflow:scroll">
+                                                <h2>LinkedIn Posts</h2>
+                                                @{
+                                            int linkedInCounter = 0;
+                                                }
+                                                <div style="display:inline; ">
+                                                    <div style="width:50%; float:left; font-weight:800; font-size:15px">
+                                                        Description
+                                                    </div>
+                                                    <div style="width: 25%; float: left; font-weight: 800; font-size: 15px">
+                                                        Posted By
+                                                    </div>
+                                                    <div style="width: 25%; float: left; font-weight: 800; font-size: 15px">
+                                                        Posted date
+                                                    </div>
+                                                </div>
+                                                @foreach (var item in Model.LinkedInPosts)
+                                                {
+                                                    if (linkedInCounter < 10)
+                                                    {
+
+                                                        <div style="display:inline">
+                                                            <div style="width:50%; float:left; line-height:20px" title="@item.Description">
+                                                                @{
+                                                        string desc = "";
+                                                                }
+                                                                @if (item.Description.Length > 30)
+                                                                {
+                                                                    desc = item.Description.Substring(0, 30);
+                                                                    desc = desc + "..";
+                                                                }
+                                                                else
+                                                                {
+                                                                    desc = item.Description;
+                                                                }
+                                                                @desc
+                                                            </div>
+                                                            <div style="width: 25%; float: left; line-height: 20px">
+                                                                @item.FirstName @item.LastName
+                                                            </div>
+                                                            <div style="width: 25%; float: left; line-height: 20px">
+                                                                @item.PostDate
+                                                            </div>
+                                                        </div>
+
+
+                                                    }
+                                                    linkedInCounter++;
+                                                }
+                                            </div>*@
+
+                                    </div>
+                                }
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                        @*<div id="advertisement-control">
+                                <h4 class="show_hide">Add Feed <i class="fa fa-plus-circle"></i></h4>
+
+                                <div id="advertisemnt-add" class="slidingDiv">
+                                    <input type="text" placeholder="Enter URL">
+
+                                    <input type="submit" value="Submit" class="bluebtn">
+                                </div>
+                            </div>*@
+
+                        @*<div class="col-sm-4">
+                            <div class="createpost">
+                                <h3 class="headingposts">
+                                    <b>Feeds</b>
+                                    @*<i class="fa fa-remove" aria-hidden="true"></i>*@
+                        @*</h3>
+
+                                    <div class="feeds_whole">
+                                        <ul>
+                                            <li>
+                                                <div class="feeds_whole_lt">
+                                                    <img src="@Url.Content("~/Images/feed1.png")">
+                                                </div>
+
+                                                <div class="feeds_whole_mid">
+                                                    <p>You have 4 pending tasks</p>
+                                                </div>
+
+                                                <div class="feeds_whole_rt">
+                                                    <i>Just Now</i>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="feeds_whole_lt">
+                                                    <img src="@Url.Content("~/Images/feed2.png")">
+                                                </div>
+
+                                                <div class="feeds_whole_mid">
+                                                    <p>Finance Report for 2013 has been released</p>
+                                                </div>
+
+                                                <div class="feeds_whole_rt">
+                                                    <i>18 min ago</i>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="feeds_whole_lt">
+                                                    <img src="@Url.Content("~/Images/feed3.png")">
+                                                </div>
+
+                                                <div class="feeds_whole_mid">
+                                                    <p>New order arrived</p>
+                                                </div>
+
+                                                <div class="feeds_whole_rt">
+                                                    <i>half hour ago</i>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="feeds_whole_lt">
+                                                    <img src="@Url.Content("~/Images/feed1.png")">
+                                                </div>
+
+                                                <div class="feeds_whole_mid">
+                                                    <p>You have 4 pending tasks</p>
+                                                </div>
+
+                                                <div class="feeds_whole_rt">
+                                                    <i>Just Now</i>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="feeds_whole_lt">
+                                                    <img src="@Url.Content("~/Images/feed2.png")">
+                                                </div>
+
+                                                <div class="feeds_whole_mid">
+                                                    <p>Finance Report for 2013 has been released</p>
+                                                </div>
+
+                                                <div class="feeds_whole_rt">
+                                                    <i>18 min ago</i>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="feeds_whole_lt">
+                                                    <img src="@Url.Content("~/Images/feed3.png")">
+                                                </div>
+
+                                                <div class="feeds_whole_mid">
+                                                    <p>New order arrived</p>
+                                                </div>
+
+                                                <div class="feeds_whole_rt">
+                                                    <i>half hour ago</i>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="feeds_whole_lt">
+                                                    <img src="@Url.Content("~/Images/feed1.png")">
+                                                </div>
+
+                                                <div class="feeds_whole_mid">
+                                                    <p>You have 4 pending tasks</p>
+                                                </div>
+
+                                                <div class="feeds_whole_rt">
+                                                    <i>Just Now</i>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="feeds_whole_lt">
+                                                    <img src="@Url.Content("~/Images/feed2.png")">
+                                                </div>
+
+                                                <div class="feeds_whole_mid">
+                                                    <p>Finance Report for 2013 has been released</p>
+                                                </div>
+
+                                                <div class="feeds_whole_rt">
+                                                    <i>18 min ago</i>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="feeds_whole_lt">
+                                                    <img src="@Url.Content("~/Images/feed3.png")">
+                                                </div>
+
+                                                <div class="feeds_whole_mid">
+                                                    <p>New order arrived</p>
+                                                </div>
+
+                                                <div class="feeds_whole_rt">
+                                                    <i>half hour ago</i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>*@
+
+                        <div class=" margintop30"></div>
+                        <div class="row socialmediaall">
+                            <div class="col-sm-12">
+                                <div class="">
+                                    <h3 class="headingposts">
+                                        Review your scheduled posts
+                                        @*<i class="fa fa-remove" aria-hidden="true"></i>*@
+                                    </h3>
+
+                                    <div id="scheduledPostSection">
+
+                                        @*@Html.Partial("_partialScheduledPost", Model)*@
+                                    </div>
+
+
+
+
+                                    @*<div class="schduleposts">
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-6 col-xs-6">
+                                                    <div class="schedulepost_lt">
+                                                        <p>09:46PM November 18,2016</p>
+                                                        <span>Scheduled By <b>Rohit</b> </span>
+
+                                                        <a href="#" class="bluebtn">Publish Post</a>
+                                                    </div>
+
+                                                    <div class="schedulepost_rt">
+                                                        <a href="#" class="fb_content">
+                                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-7 col-sm-6 col-xs-6">
+                                                    <div class="textmessage">
+                                                        <p>Text message which has been posted</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="schduleposts">
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-6 col-xs-6">
+                                                    <div class="schedulepost_lt">
+                                                        <p>09:46PM November 18,2016</p>
+                                                        <span>Scheduled By <b>Rohit</b> </span>
+
+                                                        <a href="#" class="bluebtn">Publish Post</a>
+                                                    </div>
+
+                                                    <div class="schedulepost_rt">
+                                                        <a href="#" class="fb_content twitter_content">
+                                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-7 col-sm-6 col-xs-6">
+                                                    <div class="textmessage">
+                                                        <p>Text message which has been posted</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p>&copy; @System.Configuration.ConfigurationManager.AppSettings["ApplicationName"] @DateTime.Now.Year</p>
+                            </div>
+                        </div>
+                    </footer>
+                </section>
+    <!--Loader-->
+                <div class="loadercontainingdiv">
+                    <img src="~/Images/loadernew.gif" class="loaderprtclr" />
+                </div>
+    <!--End Loader-->
+    <!--Modal Popup-->
+
+        <!-- Button trigger modal -->
+                <button id="btn-show-modal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="display:none"></button>
+
+    <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p id="success-message" style="text-align:center"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                @*<button type="button" class="btn btn-primary">Save changes</button>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="editpost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-5 col-xs-6">
+                                        <div class="schedulepost_lt">
+                                            <p>
+                                                12-22-2016 10:47:00 AM
+                                            </p>
+                                            <span>Scheduled By <b>Rohit</b> </span>
+                                        </div>
+
+                                        <div class="schedulepost_rt">
+                                            <a href="#" class="fb_content linkedin_content">
+                                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-7 col-sm-6 col-xs-6">
+                                        <div class="textmessage">
+                                            <p>
+                                                test
+                                            </p>
+                                        </div>
+                                        <div class="photos_status">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    <!--End modal popup-->
+}
+
+
+<style>
+    .custom-table th {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .inner-table-likes tbody tr td {
+        font-size: 12px;
+        font-weight: 300;
+        color: rgba(0,0,0,0.6);
+    }
+
+    .inner-table-likes th {
+        font-weight: 14px;
+    }
+
+    .inner-table-likes th {
+        font-size: 11px !important;
+    }
+
+    .inner-table-likes td {
+        text-align: center;
+    }
+
+    .custom-table tr th:first-child {
+        text-align: left;
+    }
+
+    .inner-table-likes tr td:first-child {
+        text-align: left;
+    }
+
+    .fb_brdr {
+        padding: 0 6px;
+    }
+
+    .fb_brdr {
+        padding: 7px 11px;
+    }
+</style>
+@section Scripts{
+
+
+    <script src="~/Scripts/User/dashboard.js"></script>
+    <script src="~/Scripts/User/home.js"></script>
+    @*<script src="~/Scripts/Jscripts/demo.js"></script>*@
+    <script src="~/Scripts/Jscripts/jquery-2.2.3.js"></script>
+    <script src="~/Scripts/Jscripts/watermark.js"></script>
+    @*<script src="~/Scripts/Jscripts/jquery.watermark.min.js"></script>*@
+    @*<script src="~/Scripts/Jscripts/jquery.fontselect.min.js"></script>
+        <link href="~/Content/css/fontselect.css" rel="stylesheet" />*@
+    @*<script src="~/Scripts/Jscripts/highlight.js"></script>*@
+    <script src="~/Scripts/dropzone/dropzone.js"></script>
+
+    <script>
+        Dropzone.options.dropzoneForm = {
+            maxFiles: 1,
+            acceptedFiles: ".jpeg,.jpg,.png,.gif",
+            init: function () {
+                // debugger;
+                var self = this;
+                // config self.options.addRemoveLinks = true;
+                self.options.dictRemoveFile = "Delete";
+                //New file added
+                self.on("addedfile", function (file) {
+                    debugger;
+                    var count = self.files.length;
+                    //  alert(count);
+                    // alert(self.maxFiles);
+                    if (count > 1) {
+                        alert("You cannot upload more than 1 files");
+                        this.removeFile(file);
+                        return false;
+                    }
+                });
+
+                this.on("complete", function (data) {
+                    debugger;
+                    // alert(data.xhr.responseText);
+                    //var res = eval('(' + data.xhr.responseText + ')');
+                    var res = JSON.parse(data.xhr.responseText);
+                    $('#watermark').show();
+                });
+
+
+                this.on("addedfile", function (file) {
+                    debugger;
+                    // Create the remove button
+                    var removeButton = Dropzone.createElement("<button id='removeImage'>Remove file</button>");
+
+                    // Capture the Dropzone instance as closure.
+                    var _this = this;
+                    removeButton.addEventListener("click", function (e) {
+                        // Make sure the button click doesn't submit the form:
+                        e.preventDefault();
+                        e.stopPropagation();
+                        // Remove the file preview.
+                        _this.removeFile(file);
+                        $('#watermark').hide();
+                        $('#wetrrmrk').find('img').remove();
+                        // If you want to the delete the file on the server as well,
+                        // you can do the AJAX request here.
+                    });
+                    // Add the button to the file preview element.
+                    file.previewElement.appendChild(removeButton);
+                    $('#watermark').hide();
+                });
+            }
+        };
+
+
+        function countChar(val) {
+
+            debugger;
+            var len = val.value.length;
+            if (len == 140) {
+                debugger;
+                BootstrapDialog.alert('You can,t post more than 140 character in Twitter  !');
+                val.value = val.value.substring(0, 140);
+            }
+            else {
+                $('#charNumtwitter').html("<span class='fa fa-twitter text-info' ></span>  Twitter ").append(140 - len);
+            }
+            if (len == 600) {
+
+                val.value = val.value.substring(0, 600);
+                BootstrapDialog.alert('You can,t post more than 600 character in LinkedIn  !');
+            }
+            else {
+                $('#charNumLinkedIn').html("<span class='fa fa-linkedin text-info' ></span>  LinkedIn ").append(600 - len);
+            }
+
+            if (len > 140) {
+
+                $("#charNumtwitter").css("color", "red");
+                $("#imagtw").removeClass("selected");
+                //    $("#charNumtwitter").addClass("errorClass");
+
+            }
+            else {
+                $("#charNumtwitter").css("color", "#777");
+            }
+            if (len > 600) {
+                debugger
+                //  $("#charNumLinkedIn").addClass("errorClass");
+                $("#charNumLinkedIn").css("color", "red");
+                $("#imagtw").removeClass("selected");
+            }
+            else {
+                $("#charNumLinkedIn").css("color", "#777");
+            }
+
+            if (len >= 2000) {
+                val.value = val.value.substring(0, 2000);
+            } else {
+                $('#charNum').html("<span class='fa fa-facebook text-primary' ></span>  Facebook ").append(2000 - len);
+            }
+        };
+
+
+    </script>
+}
+
+
+

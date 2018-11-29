@@ -1,0 +1,244 @@
+﻿@{
+    ViewBag.Title = "Edit Content";
+    Layout = null;
+}
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
+
+<style>
+    .indus {
+        width: 172px !important;
+    }
+
+    .subindus {
+        width: 130% !important;
+        margin-left: 100px;
+    }
+
+    .dz-error-message {
+        margin-top: 22px;
+    }
+
+    .divtxt {
+        padding-right: 0;
+    }
+
+    #urlBind {
+        margin-bottom: 15px;
+    }
+
+        #urlBind .btn {
+            padding: 9.5px 12px;
+            border-radius: 0px;
+        }
+
+        #urlBind #fetch .btn {
+            padding: 10.5px 12px;
+            border-radius: 0px;
+        }
+
+        #urlBind .col-md-8 input.form-control {
+            padding: 10px 12px;
+            border-radius: 0px;
+            height: 41px;
+        }
+
+        #urlBind .col-md-2.divtxt .btn {
+            background: #969695;
+            color: #fff;
+        }
+
+        #urlBind #fetch.col-md-2.divtxt .btn {
+            background: #000;
+            color: #fff;
+        }
+
+        #urlBind #fetch {
+            padding-left: 5px !important;
+        }
+
+    #add-content h5 {
+        font-size: 17px;
+        font-weight: 100 !important;
+    }
+
+    .form-control {
+        box-shadow: none !important;
+    }
+    .ImageDiv {
+        padding-bottom: 20px;
+    }
+    .UploadedImage {
+        text-align: center;
+        padding-top: 13px;
+    }
+    #divTitle {
+        padding-top: 12px;
+    }
+
+</style>
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header  modal-header-custom">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title modal-title-custom">Content Library Management</h4>
+        </div>
+        <div class="modal-body">
+            <div class="ImageDiv">
+                <div id="urlBind" class="row">
+
+
+                    <div id="" class="col-md-2 divtxt">
+                        <span class="btn">URL</span>
+                    </div>
+                    <div id="" class="col-md-8 divtxt">
+
+                        <input type="text" id="txtURL" class="form-control" style="" placeholder="http://www.example.com" />
+                    </div>
+                    <div id="fetch" class="col-md-2 divtxt">
+
+                        <input type="button" id="fatchData" style="" value="FETCH" class="btn btn-primary" />
+                        <span id="output"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                      
+                        <input type="text" id="txtImageCDN" class="form-control" placeholder="Enter Image URL" />
+                    </div>
+                    <div class="col-md-12">
+                        <div class="UploadedImage"></div>
+                    </div>
+                </div>
+                </div>
+
+            <div class="row">
+                <div class="col-md-12">                  
+                    <input type="text" id="txtHeading" class="form-control" placeholder="Enter Heading" />
+                </div>
+        
+                <div class="col-md-12" id="divTitle">
+                    <input type="text" id="txtTitle" class="form-control" placeholder="Enter Title" />
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:10px">
+                <div class="">
+                    <div class="col-md-6">
+                        @if (smartData.Common.SessionManager.LoggedInUser.UserType == 3)
+                        {
+                            @Html.DropDownList("IndustryId", (SelectList)@ViewBag.Industry, "Select Industry", new { id = "industry", @class = "form-control" })
+                        }
+                        else
+                        {
+                            @Html.DropDownList("industry", new List<SelectListItem>
+                     {
+                        new SelectListItem() {Text = "Select Industry Name", Value="0"},
+                        new SelectListItem() {Text = ViewBag.IndustryName, Value= ViewBag.IndustryId},
+                      }, new { @class = "form-control", id = "industry" })
+
+                        }
+                    </div>
+
+                    <div class="col-md-6">
+                        @if (smartData.Common.SessionManager.LoggedInUser.UserType == 3) //superadmin
+                        {
+
+                            <select id="subIndustry" class="form-control"><option value="0">Select SubIndustry</option></select>
+                        }
+                        else
+                        {  @*Added By SRohit Joshi  *@
+
+
+                            <select id="subIndustry" class="form-control"><option value="0">Select SubIndustry</option></select>
+
+                            @*Added By SRohit Joshi  *@
+
+                        }
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" id="btnAddRss" tabindex="800">Add</button>
+        </div>
+    </div>
+</div>
+<div class="loadercontainingdiv">
+    <img src="~/Images/loadernew.gif" class="loaderprtclr" />
+</div>
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.IndustryId" id="industryId" /> @*Added By SRohit Joshi for find industry iD *@
+
+<input type="hidden" value="@smartData.Common.SessionManager.LoggedInUser.UserType" id="userTYpe" />    @*Added By SRohit Joshi for find userType*@
+
+<script>
+    //Added by SRohit JOshi
+    $(document).ready(function () {
+        debugger;
+        var userType = $("#userTYpe").val();
+        if (userType == 2) {
+            var id = $("#industryId").val();
+            var state = $("#subIndustry");
+            $.ajax({
+                url: $_GetStateByCountry,
+                type: 'Get',
+                data: { IndustryId: id },
+                async: false,
+                contentType: "application/json; charset=utf-8",
+                //data: { IndustryId: $("option:selected", $("#IndustryId")).val() },
+                success: function (data) {
+                    debugger
+                    if (data != null) {
+                        var $html = '<option selected="selected" value ="0">Select SubIndustry</option>';
+                        $(data).each(function (index, item) {
+                            $html += '<option value="' + item.id + '" ' + (item.Selected ? 'selected="selected"' : '') + '>' + item.name + '</option>';
+                        });
+                        $("#subIndustry").html($html);//refresh the plugin to show new values in dropdown
+                    }
+                },
+            });
+        }
+
+    });
+    //Added by SRohit JOshi
+    $("#industry").on("change", function (event) {
+        debugger;
+        //alert($("option:selected", $("#industry")).val());
+        var id = $("option:selected", $("#industry")).val();
+        var state = $("#subIndustry");
+        $.ajax({
+            url: $_GetStateByCountry,
+            type: 'Get',
+            data: { IndustryId: id },
+            async: false,
+            contentType: "application/json; charset=utf-8",
+            //data: { IndustryId: $("option:selected", $("#IndustryId")).val() },
+            success: function (data) {
+                debugger
+                if (data != null) {
+                    var $html = '<option selected="selected" value="0">Select SubIndustry</option>';
+                    $(data).each(function (index, item) {
+                        $html += '<option value="' + item.id + '" ' + (item.Selected ? 'selected="selected"' : '') + '>' + item.name + '</option>';
+                    });
+                    $("#subIndustry").html($html);//refresh the plugin to show new values in dropdown
+                }
+            },
+        });
+    });
+
+</script>
+
+
+<script src="~/Scripts/Admin/SelectCategoryPartial.js"></script>
